@@ -18,8 +18,9 @@ class ShareController extends Controller
         //
         $prop = DB::table('shares')
       ->join('members', 'members.id', '=', 'shares.member_id')
-        ->join('vehicles', 'vehicles.id', '=', 'shares.vehicle_id')->
-      select('shares.*','members.name','vehicles.registration_no')
+      ->select('shares.*','members.name')
+      ->orderBy('shares.created_at','DESC')
+      
       ->get();
         return response()->json($prop);
     }
@@ -45,14 +46,12 @@ class ShareController extends Controller
         //
         $request->validate([
 
-          'vehicle_id' => 'required',
           'amount' => 'required|integer',
           'payment_date' => 'required'
 
         ]);
           $var = new Share;
 
-          $var->vehicle_id = $request->vehicle_id;
             $var->member_id = $request->member_id;
           $var->amount = $request->amount;
           $var->payment_date =$request->payment_date;
@@ -68,7 +67,7 @@ class ShareController extends Controller
      * @param  \App\Share  $share
      * @return \Illuminate\Http\Response
      */
-    public function show(Share $share)
+    public function show($id)
     {
         //
     }
@@ -79,7 +78,7 @@ class ShareController extends Controller
      * @param  \App\Share  $share
      * @return \Illuminate\Http\Response
      */
-    public function edit(Share $share)
+    public function edit($id)
     {
         //
     }
@@ -91,7 +90,7 @@ class ShareController extends Controller
      * @param  \App\Share  $share
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Share $share)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -102,8 +101,13 @@ class ShareController extends Controller
      * @param  \App\Share  $share
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Share $share)
+    public function destroy($id)
     {
         //
+        $prop = Share::find($id);
+        $prop->delete();
+
+        return response()->json(['success' => 'Share Deleted'], 200);
+
     }
 }

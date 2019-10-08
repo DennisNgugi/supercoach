@@ -31427,7 +31427,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(145);
-module.exports = __webpack_require__(268);
+module.exports = __webpack_require__(272);
 
 
 /***/ }),
@@ -31439,58 +31439,60 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_axios__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_sweetalert2__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_sweetalert2__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vform__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vform__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Dashboard_vue__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Dashboard_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_Dashboard_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Members_Create_vue__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Members_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_Members_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Members_Edit_vue__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Members_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_Members_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Index_vue__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Members_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Show_vue__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_Members_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Vehicles_Create_vue__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Vehicles_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_Vehicles_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Edit_vue__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Index_vue__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Show_vue__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Loans_Create_vue__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Loans_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_Loans_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Loans_Edit_vue__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Loans_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_Loans_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Index_vue__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_Loans_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Show_vue__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_Loans_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_LoanPayment_PayLoan_vue__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_LoanPayment_PayLoan_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_LoanPayment_PayLoan_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_Shares_Create_vue__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_Shares_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__components_Shares_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Shares_Edit_vue__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Shares_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__components_Shares_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Index_vue__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__components_Shares_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Show_vue__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__components_Shares_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_numeral__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_axios__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_sweetalert2__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_sweetalert2__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vform__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vform__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -31508,8 +31510,9 @@ window.Vue = __webpack_require__(166);
 
 
 
-window.swal = __WEBPACK_IMPORTED_MODULE_4_sweetalert2___default.a;
-var toast = __WEBPACK_IMPORTED_MODULE_4_sweetalert2___default.a.mixin({
+
+window.swal = __WEBPACK_IMPORTED_MODULE_5_sweetalert2___default.a;
+var toast = __WEBPACK_IMPORTED_MODULE_5_sweetalert2___default.a.mixin({
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
@@ -31519,18 +31522,21 @@ window.toast = toast;
 
 
 
-window.form = __WEBPACK_IMPORTED_MODULE_5_vform__["Form"];
-Vue.component(__WEBPACK_IMPORTED_MODULE_5_vform__["HasError"].name, __WEBPACK_IMPORTED_MODULE_5_vform__["HasError"]);
-Vue.component(__WEBPACK_IMPORTED_MODULE_5_vform__["AlertError"].name, __WEBPACK_IMPORTED_MODULE_5_vform__["AlertError"]);
+window.form = __WEBPACK_IMPORTED_MODULE_6_vform__["Form"];
+Vue.component(__WEBPACK_IMPORTED_MODULE_6_vform__["HasError"].name, __WEBPACK_IMPORTED_MODULE_6_vform__["HasError"]);
+Vue.component(__WEBPACK_IMPORTED_MODULE_6_vform__["AlertError"].name, __WEBPACK_IMPORTED_MODULE_6_vform__["AlertError"]);
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
-Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_axios___default.a, __WEBPACK_IMPORTED_MODULE_3_axios___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_3_vue_axios___default.a, __WEBPACK_IMPORTED_MODULE_4_axios___default.a);
 Vue.filter('capitalize', function (value) {
     return value.charAt(0).toUpperCase() + value.slice(1);
 });
 
 Vue.filter('date', function (created) {
     return __WEBPACK_IMPORTED_MODULE_1_moment___default()(created).format('LL');
+});
+Vue.filter("formatNumber", function (value) {
+    return __WEBPACK_IMPORTED_MODULE_2_numeral___default()(value).format("0,0"); // displaying other groupings/separators is possible, look at the docs
 });
 
 
@@ -31563,78 +31569,79 @@ Vue.filter('date', function (created) {
 
 
 
+
 var routes = [{
     name: 'dashboard',
     path: '/',
-    component: __WEBPACK_IMPORTED_MODULE_6__components_Dashboard_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue___default.a
 }, {
     name: 'member_create',
     path: '/member/create',
-    component: __WEBPACK_IMPORTED_MODULE_7__components_Members_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue___default.a
 }, {
     name: 'member',
     path: '/member',
-    component: __WEBPACK_IMPORTED_MODULE_9__components_Members_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue___default.a
 }, {
     name: 'member_edit',
     path: '/member/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_8__components_Members_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue___default.a
 }, {
     name: 'member_show',
     path: '/member/:id',
-    component: __WEBPACK_IMPORTED_MODULE_10__components_Members_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue___default.a
 }, {
     name: 'vehicle_create',
     path: '/vehicle/create',
-    component: __WEBPACK_IMPORTED_MODULE_11__components_Vehicles_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue___default.a
 }, {
     name: 'vehicle',
     path: '/vehicle',
-    component: __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue___default.a
 }, {
     name: 'vehicle_edit',
     path: '/vehicle/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue___default.a
 }, {
     name: 'vehicle_show',
     path: '/vehicle/:id',
-    component: __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue___default.a
 }, {
     name: 'loan_create',
     path: '/loan/create',
-    component: __WEBPACK_IMPORTED_MODULE_15__components_Loans_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue___default.a
 }, {
     name: 'loan',
     path: '/loan',
-    component: __WEBPACK_IMPORTED_MODULE_17__components_Loans_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue___default.a
 }, {
     name: 'loan_edit',
     path: '/loan/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_16__components_Loans_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue___default.a
 }, {
     name: 'loan_show',
     path: '/loan/:id',
-    component: __WEBPACK_IMPORTED_MODULE_18__components_Loans_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue___default.a
 }, {
     name: 'loan_pay',
     path: '/payloan/:id',
-    component: __WEBPACK_IMPORTED_MODULE_19__components_LoanPayment_PayLoan_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue___default.a
 }, {
     name: 'share_create',
     path: '/share/create',
-    component: __WEBPACK_IMPORTED_MODULE_20__components_Shares_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue___default.a
 }, {
     name: 'share',
     path: '/share',
-    component: __WEBPACK_IMPORTED_MODULE_22__components_Shares_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue___default.a
 }, {
     name: 'share_edit',
     path: '/share/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_21__components_Shares_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue___default.a
 }, {
-    name: 'share_show',
-    path: '/share/:id',
-    component: __WEBPACK_IMPORTED_MODULE_23__components_Shares_Show_vue___default.a
+    name: 'sharereport',
+    path: '/share/report',
+    component: __WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue___default.a
 }, {
     name: 'guarantor_create',
     path: '/guarantor/create',
@@ -31739,7 +31746,7 @@ if (token) {
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
  * @license
  * Lodash <https://lodash.com/>
- * Copyright JS Foundation and other contributors <https://js.foundation/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
  * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -31750,7 +31757,7 @@ if (token) {
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.11';
+  var VERSION = '4.17.15';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -34409,16 +34416,10 @@ if (token) {
         value.forEach(function(subValue) {
           result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
         });
-
-        return result;
-      }
-
-      if (isMap(value)) {
+      } else if (isMap(value)) {
         value.forEach(function(subValue, key) {
           result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
         });
-
-        return result;
       }
 
       var keysFunc = isFull
@@ -35342,8 +35343,8 @@ if (token) {
         return;
       }
       baseFor(source, function(srcValue, key) {
+        stack || (stack = new Stack);
         if (isObject(srcValue)) {
-          stack || (stack = new Stack);
           baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
         }
         else {
@@ -37160,7 +37161,7 @@ if (token) {
       return function(number, precision) {
         number = toNumber(number);
         precision = precision == null ? 0 : nativeMin(toInteger(precision), 292);
-        if (precision) {
+        if (precision && nativeIsFinite(number)) {
           // Shift with exponential notation to avoid floating-point issues.
           // See [MDN](https://mdn.io/round#Examples) for more details.
           var pair = (toString(number) + 'e').split('e'),
@@ -38343,7 +38344,7 @@ if (token) {
     }
 
     /**
-     * Gets the value at `key`, unless `key` is "__proto__".
+     * Gets the value at `key`, unless `key` is "__proto__" or "constructor".
      *
      * @private
      * @param {Object} object The object to query.
@@ -38351,6 +38352,10 @@ if (token) {
      * @returns {*} Returns the property value.
      */
     function safeGet(object, key) {
+      if (key === 'constructor' && typeof object[key] === 'function') {
+        return;
+      }
+
       if (key == '__proto__') {
         return;
       }
@@ -42151,6 +42156,7 @@ if (token) {
           }
           if (maxing) {
             // Handle invocations in a tight loop.
+            clearTimeout(timerId);
             timerId = setTimeout(timerExpired, wait);
             return invokeFunc(lastCallTime);
           }
@@ -46537,9 +46543,12 @@ if (token) {
       , 'g');
 
       // Use a sourceURL for easier debugging.
+      // The sourceURL gets injected into the source that's eval-ed, so be careful
+      // with lookup (in case of e.g. prototype pollution), and strip newlines if any.
+      // A newline wouldn't be a valid sourceURL anyway, and it'd enable code injection.
       var sourceURL = '//# sourceURL=' +
-        ('sourceURL' in options
-          ? options.sourceURL
+        (hasOwnProperty.call(options, 'sourceURL')
+          ? (options.sourceURL + '').replace(/[\r\n]/g, ' ')
           : ('lodash.templateSources[' + (++templateCounter) + ']')
         ) + '\n';
 
@@ -46572,7 +46581,9 @@ if (token) {
 
       // If `variable` is not specified wrap a with-statement around the generated
       // code to add the data object to the top of the scope chain.
-      var variable = options.variable;
+      // Like with sourceURL, we take care to not check the option's prototype,
+      // as this configuration is a code injection vector.
+      var variable = hasOwnProperty.call(options, 'variable') && options.variable;
       if (!variable) {
         source = 'with (obj) {\n' + source + '\n}\n';
       }
@@ -48777,10 +48788,11 @@ if (token) {
     baseForOwn(LazyWrapper.prototype, function(func, methodName) {
       var lodashFunc = lodash[methodName];
       if (lodashFunc) {
-        var key = (lodashFunc.name + ''),
-            names = realNames[key] || (realNames[key] = []);
-
-        names.push({ 'name': methodName, 'func': lodashFunc });
+        var key = lodashFunc.name + '';
+        if (!hasOwnProperty.call(realNames, key)) {
+          realNames[key] = [];
+        }
+        realNames[key].push({ 'name': methodName, 'func': lodashFunc });
       }
     });
 
@@ -73377,182 +73389,107 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            loansdata: [],
+            sharesdata: [],
+            members: null,
+            vehicles: null,
+            shares: null,
+            loans: null,
+            month: null,
+            monthly: null
+
+        };
+    },
     mounted: function mounted() {
-        console.log('Component mounted.');
+        this.fetchShares();
+        this.fetchLoans();
+        this.fetchVehicles();
+        this.fetchMembers();
+        this.fetchSharesList();
+        this.fetchLoansList();
+        this.monthShares();
+    },
+
+    methods: {
+        fetchShares: function fetchShares() {
+            var _this = this;
+
+            this.axios.get('/api/totalshares').then(function (response) {
+                //console.log(response.data);
+                _this.shares = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchSharesList: function fetchSharesList() {
+            var _this2 = this;
+
+            console.log('Fetching data....');
+
+            this.axios.get('/api/share').then(function (response) {
+                //  console.log(response.data);
+                _this2.sharesdata = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchLoansList: function fetchLoansList() {
+            var _this3 = this;
+
+            console.log('Fetching data....');
+
+            this.axios.get('/api/loan').then(function (response) {
+                //  console.log(response.data);
+                _this3.loansdata = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchMembers: function fetchMembers() {
+            var _this4 = this;
+
+            this.axios.get('/api/totalmembers').then(function (response) {
+                //  console.log(response.data);
+                _this4.members = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchVehicles: function fetchVehicles() {
+            var _this5 = this;
+
+            this.axios.get('/api/totalvehicles').then(function (response) {
+                //  console.log(response.data);
+                _this5.vehicles = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchLoans: function fetchLoans() {
+            var _this6 = this;
+
+            this.axios.get('/api/totalloans').then(function (response) {
+                //  console.log(response.data);
+                _this6.loans = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        monthShares: function monthShares() {
+            var _this7 = this;
+
+            this.axios.get('/api/month').then(function (response) {
+                //  console.log(response.data);
+                _this7.month = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+
     }
 });
 
@@ -73564,1026 +73501,394 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-primary mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Total shares")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm._f("formatNumber")(this.shares)))
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(1)
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-info mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Loan released")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm._f("formatNumber")(this.loans)))
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(2)
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(3),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-pink mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Total vehicles")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(this.vehicles))
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(4)
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-secondary mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Total members")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm._f("formatNumber")(this.members)))
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(5)
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-warning mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Monthly shares")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(this.month))
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(6)
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-4" }, [
+        _c("div", { staticClass: "card m-b-30" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
+              _vm._v("Latest Shares Trasaction\n                          "),
+              _c("span", { staticClass: "float-right" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary btn-sm",
+                    attrs: { type: "button", name: "button" },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.printme($event)
+                      }
+                    }
+                  },
+                  [_vm._v("Print report")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "table-rep-plugin" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "table-responsive b-0",
+                  attrs: { "data-pattern": "priority-columns" }
+                },
+                [
+                  _c(
+                    "table",
+                    { staticClass: "table table-hover table-striped" },
+                    [
+                      _vm._m(7),
+                      _vm._v(" "),
+                      _c(
+                        "tbody",
+                        _vm._l(_vm.sharesdata, function(p, index) {
+                          return _c("tr", { on: { key: index } }, [
+                            _c("td", [_vm._v(_vm._s(index + 1))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(p.name))]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(_vm._s(_vm._f("formatNumber")(p.amount)))
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(_vm._s(_vm._f("date")(p.payment_date)))
+                            ])
+                          ])
+                        }),
+                        0
+                      )
+                    ]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-8" }, [
+        _c("div", { staticClass: "card m-b-30" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
+              _vm._v("Latest Loan Trasaction\n                        "),
+              _c("span", { staticClass: "float-right" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary btn-sm",
+                    attrs: { type: "button", name: "button" },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.printme($event)
+                      }
+                    }
+                  },
+                  [_vm._v("Print report")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "table-rep-plugin" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "table-responsive b-0",
+                  attrs: { "data-pattern": "priority-columns" }
+                },
+                [
+                  _c(
+                    "table",
+                    { staticClass: "table table-hover table-striped" },
+                    [
+                      _vm._m(8),
+                      _vm._v(" "),
+                      _c(
+                        "tbody",
+                        _vm._l(_vm.loansdata, function(p, index) {
+                          return _c("tr", { on: { key: index } }, [
+                            _c("td", [_vm._v(_vm._s(index + 1))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(p.loan_id))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(p.name))]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(_vm._s(_vm._f("formatNumber")(p.amount)))
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(p.interest_rate))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(p.duration))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(_vm._f("date")(p.date)))])
+                          ])
+                        }),
+                        0
+                      )
+                    ]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "page-title-box" }, [
-            _c("div", { staticClass: "row align-items-center" }, [
-              _c("div", { staticClass: "col-md-8" }, [
-                _c("h4", { staticClass: "page-title mt-3" }, [
-                  _vm._v("Dashboard")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "float-right d-none d-md-block" }, [
-                  _c("div", { staticClass: "dropdown" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary dropdown-toggle",
-                        attrs: {
-                          type: "button",
-                          "data-toggle": "dropdown",
-                          "aria-haspopup": "true",
-                          "aria-expanded": "false"
-                        }
-                      },
-                      [
-                        _c("i", { staticClass: "ti-settings mr-1" }),
-                        _vm._v(" Settings")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "dropdown-menu dropdown-menu-right dropdown-menu-animated"
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "#" }
-                          },
-                          [_vm._v("Action")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "#" }
-                          },
-                          [_vm._v("Another action")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "#" }
-                          },
-                          [
-                            _vm._v(
-                              "Something\n                                              else here"
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "dropdown-divider" }),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "#" }
-                          },
-                          [_vm._v("Separated link")]
-                        )
-                      ]
-                    )
-                  ])
-                ])
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "page-title-box" }, [
+          _c("div", { staticClass: "row align-items-center" }, [
+            _c("div", { staticClass: "col-md-8" }, [
+              _c("h4", { staticClass: "page-title mt-3" }, [
+                _vm._v("Dashboard")
               ])
             ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-xl-3 col-md-6" }, [
-          _c("div", { staticClass: "card bg-primary mini-stat text-white" }, [
-            _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-              _c("div", { staticClass: "clearfix" }, [
-                _c(
-                  "h6",
-                  {
-                    staticClass: "text-uppercase mt-0 float-left text-white-50"
-                  },
-                  [_vm._v("Orders")]
-                ),
-                _vm._v(" "),
-                _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-                  _vm._v("1,587")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("span", { staticClass: "badge badge-light text-info" }, [
-                  _vm._v("+11% ")
-                ]),
-                _c("span", { staticClass: "ml-2" }, [
-                  _vm._v("From previous period")
-                ])
-              ])
-            ]),
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "p-3" }, [
+      _c("div", { staticClass: "float-right" }, [
+        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "mdi mdi-cube-outline h5" })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "p-3" }, [
+      _c("div", { staticClass: "float-right" }, [
+        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "mdi mdi-cube-outline h5" })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+      _c("div", { staticClass: "card bg-success mini-stat text-white" }, [
+        _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+          _c("div", { staticClass: "clearfix" }, [
+            _c(
+              "h6",
+              { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+              [_vm._v("Loan payed")]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "p-3" }, [
-              _c("div", { staticClass: "float-right" }, [
-                _c(
-                  "a",
-                  { staticClass: "text-white-50", attrs: { href: "#" } },
-                  [_c("i", { staticClass: "mdi mdi-cube-outline h5" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "font-14 m-0" }, [_vm._v("Last : 1447")])
+            _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+              _vm._v("1,587")
             ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-xl-3 col-md-6" }, [
-          _c("div", { staticClass: "card bg-info mini-stat text-white" }, [
-            _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-              _c("div", { staticClass: "clearfix" }, [
-                _c(
-                  "h6",
-                  {
-                    staticClass: "text-uppercase mt-0 float-left text-white-50"
-                  },
-                  [_vm._v("Revenue")]
-                ),
-                _vm._v(" "),
-                _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-                  _vm._v("$46,785")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("span", { staticClass: "badge badge-light text-danger" }, [
-                  _vm._v("-29% ")
-                ]),
-                _c("span", { staticClass: "ml-2" }, [
-                  _vm._v("From previous period")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "p-3" }, [
-              _c("div", { staticClass: "float-right" }, [
-                _c(
-                  "a",
-                  { staticClass: "text-white-50", attrs: { href: "#" } },
-                  [_c("i", { staticClass: "mdi mdi-buffer h5" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "font-14 m-0" }, [
-                _vm._v("Last : $47,596")
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-3 col-md-6" }, [
-          _c("div", { staticClass: "card bg-pink mini-stat text-white" }, [
-            _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-              _c("div", { staticClass: "clearfix" }, [
-                _c(
-                  "h6",
-                  {
-                    staticClass: "text-uppercase mt-0 float-left text-white-50"
-                  },
-                  [_vm._v("Average Price")]
-                ),
-                _vm._v(" "),
-                _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-                  _vm._v("15.9")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("span", { staticClass: "badge badge-light text-primary" }, [
-                  _vm._v("0% ")
-                ]),
-                _c("span", { staticClass: "ml-2" }, [
-                  _vm._v("From previous period")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "p-3" }, [
-              _c("div", { staticClass: "float-right" }, [
-                _c(
-                  "a",
-                  { staticClass: "text-white-50", attrs: { href: "#" } },
-                  [_c("i", { staticClass: "mdi mdi-tag-text-outline h5" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "font-14 m-0" }, [_vm._v("Last : 15.8")])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-3 col-md-6" }, [
-          _c("div", { staticClass: "card bg-success mini-stat text-white" }, [
-            _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-              _c("div", { staticClass: "clearfix" }, [
-                _c(
-                  "h6",
-                  {
-                    staticClass: "text-uppercase mt-0 float-left text-white-50"
-                  },
-                  [_vm._v("Product Sold")]
-                ),
-                _vm._v(" "),
-                _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-                  _vm._v("1890")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("span", { staticClass: "badge badge-light text-info" }, [
-                  _vm._v("+89% ")
-                ]),
-                _c("span", { staticClass: "ml-2" }, [
-                  _vm._v("From previous period")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "p-3" }, [
-              _c("div", { staticClass: "float-right" }, [
-                _c(
-                  "a",
-                  { staticClass: "text-white-50", attrs: { href: "#" } },
-                  [_c("i", { staticClass: "mdi mdi-briefcase-check h5" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "font-14 m-0" }, [_vm._v("Last : 1776")])
+        _c("div", { staticClass: "p-3" }, [
+          _c("div", { staticClass: "float-right" }, [
+            _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+              _c("i", { staticClass: "mdi mdi-cube-outline h5" })
             ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-xl-9" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title" }, [
-                _vm._v("Sales Report")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-lg-8" }, [
-                  _c("div", {
-                    staticClass: "morris-chart",
-                    staticStyle: { height: "300px" },
-                    attrs: { id: "morris-line-example" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-4" }, [
-                  _c("div", [
-                    _c("h5", { staticClass: "font-14 mb-5" }, [
-                      _vm._v("Yearly Sales Report")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("h5", { staticClass: "mb-3" }, [
-                        _vm._v("2018 : $19523")
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "text-muted mb-4" }, [
-                        _vm._v(
-                          "At vero eos et accusamus et iusto odio dignissimos ducimus atque"
-                        )
-                      ]),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-primary btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _vm._v("Read more "),
-                          _c("i", { staticClass: "mdi mdi-chevron-right" })
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-3" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title" }, [
-                _vm._v("Sales Analytics")
-              ]),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "morris-chart",
-                staticStyle: { height: "300px" },
-                attrs: { id: "morris-donut-example" }
-              })
-            ])
-          ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "p-3" }, [
+      _c("div", { staticClass: "float-right" }, [
+        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "mdi mdi-cube-outline h5" })
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-xl-4" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-                _vm._v("Latest Messages")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "latest-massage" }, [
-                _c(
-                  "a",
-                  { staticClass: "latest-message-list", attrs: { href: "#" } },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "border-bottom position-relative" },
-                      [
-                        _c("div", { staticClass: "float-left user mr-3" }, [
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "bg-primary text-center rounded-circle text-white mt-0"
-                            },
-                            [_vm._v("v")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "message-time" }, [
-                          _c("p", { staticClass: "m-0 text-muted" }, [
-                            _vm._v("Just Now")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "massage-desc" }, [
-                          _c("h5", { staticClass: "font-14 mt-0 text-dark" }, [
-                            _vm._v("Victor Zamora")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "text-muted" }, [
-                            _vm._v("Hey! there I'm available...")
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _c(
-                  "a",
-                  { staticClass: "latest-message-list", attrs: { href: "#" } },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "border-bottom mt-3 position-relative" },
-                      [
-                        _c("div", { staticClass: "float-left user mr-3" }, [
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "bg-success text-center rounded-circle text-white mt-0"
-                            },
-                            [_vm._v("p")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "message-time" }, [
-                          _c("p", { staticClass: "m-0 text-muted" }, [
-                            _vm._v("2 Min. ago")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "massage-desc" }, [
-                          _c("h5", { staticClass: "font-14 mt-0 text-dark" }, [
-                            _vm._v("Patrick Beeler")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "text-muted" }, [
-                            _vm._v("I've finished it! See you so...")
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _c(
-                  "a",
-                  { staticClass: "latest-message-list", attrs: { href: "#" } },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "border-bottom mt-3 position-relative" },
-                      [
-                        _c("div", { staticClass: "float-left user mr-3" }, [
-                          _c("img", {
-                            staticClass: "rounded-circle mb-3",
-                            attrs: {
-                              src: "/assets/images/users/avatar-3.jpg",
-                              alt: ""
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "message-time" }, [
-                          _c("p", { staticClass: "m-0 text-muted" }, [
-                            _vm._v("6 Min. ago")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "massage-desc" }, [
-                          _c("h5", { staticClass: "font-14 mt-0 text-dark" }, [
-                            _vm._v("Ralph Ramirez")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "text-muted" }, [
-                            _vm._v("This theme is awesome!")
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _c(
-                  "a",
-                  { staticClass: "latest-message-list", attrs: { href: "#" } },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "border-bottom mt-3 position-relative" },
-                      [
-                        _c("div", { staticClass: "float-left user mr-3" }, [
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "bg-pink text-center rounded-circle text-white mt-0"
-                            },
-                            [_vm._v("b")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "message-time" }, [
-                          _c("p", { staticClass: "m-0 text-muted" }, [
-                            _vm._v("01:34 pm")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "massage-desc" }, [
-                          _c("h5", { staticClass: "font-14 mt-0 text-dark" }, [
-                            _vm._v("Bryan Lacy")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "text-muted" }, [
-                            _vm._v("I've finished it! See you so...")
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _c(
-                  "a",
-                  { staticClass: "latest-message-list", attrs: { href: "#" } },
-                  [
-                    _c("div", { staticClass: "mt-3 position-relative" }, [
-                      _c("div", { staticClass: "float-left user mr-3" }, [
-                        _c("img", {
-                          staticClass: "rounded-circle mb-3",
-                          attrs: {
-                            src: "/assets/images/users/avatar-4.jpg",
-                            alt: ""
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "message-time" }, [
-                        _c("p", { staticClass: "m-0 text-muted" }, [
-                          _vm._v("02:05 pm")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "massage-desc" }, [
-                        _c("h5", { staticClass: "font-14 mt-0 text-dark" }, [
-                          _vm._v("James Sorrells")
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "text-muted" }, [
-                          _vm._v("Hey! there I'm available...")
-                        ])
-                      ])
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-4" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-                _vm._v("Recent Activity")
-              ]),
-              _vm._v(" "),
-              _c("ol", { staticClass: "activity-feed mb-0" }, [
-                _c("li", { staticClass: "feed-item" }, [
-                  _c("div", { staticClass: "feed-item-list" }, [
-                    _c("span", { staticClass: "date text-white-50" }, [
-                      _vm._v("Jan 10")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "activity-text text-white" }, [
-                      _vm._v("Responded to need “Volunteer Activities”")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "feed-item" }, [
-                  _c("div", { staticClass: "feed-item-list" }, [
-                    _c("span", { staticClass: "date text-white-50" }, [
-                      _vm._v("Jan 09")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "activity-text text-white" }, [
-                      _vm._v("Added an interest “Volunteer Activities”")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "feed-item" }, [
-                  _c("div", { staticClass: "feed-item-list" }, [
-                    _c("span", { staticClass: "date text-white-50" }, [
-                      _vm._v("Jan 08")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "activity-text text-white" }, [
-                      _vm._v("Joined the group “Boardsmanship Forum”")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "feed-item" }, [
-                  _c("div", { staticClass: "feed-item-list" }, [
-                    _c("span", { staticClass: "date text-white-50" }, [
-                      _vm._v("Jan 07")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "activity-text text-white" }, [
-                      _vm._v("Responded to need “In-Kind Opportunity”")
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-4" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-                _vm._v("Social Source")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text-center" }, [
-                _c("div", { staticClass: "social-source-icon lg-icon mb-3" }, [
-                  _c("i", {
-                    staticClass: "mdi mdi-facebook h2 bg-primary text-white"
-                  })
-                ]),
-                _vm._v(" "),
-                _c("h5", { staticClass: "font-16" }, [
-                  _c("a", { staticClass: "text-dark", attrs: { href: "#" } }, [
-                    _vm._v("Facebook - "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("125 sales")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "text-muted" }, [
-                  _vm._v(
-                    "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis tincidunt."
-                  )
-                ]),
-                _c(
-                  "a",
-                  { staticClass: "text-primary font-14", attrs: { href: "#" } },
-                  [
-                    _vm._v("Learn more "),
-                    _c("i", { staticClass: "mdi mdi-chevron-right" })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row mt-5" }, [
-                _c("div", { staticClass: "col-md-4" }, [
-                  _c("div", { staticClass: "social-source text-center mt-3" }, [
-                    _c("div", { staticClass: "social-source-icon mb-2" }, [
-                      _c("i", {
-                        staticClass: "mdi mdi-facebook h5 bg-primary text-white"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "font-14 text-muted mb-2" }, [
-                      _vm._v("125 sales")
-                    ]),
-                    _vm._v(" "),
-                    _c("h6", [_vm._v("Facebook")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4" }, [
-                  _c("div", { staticClass: "social-source text-center mt-3" }, [
-                    _c("div", { staticClass: "social-source-icon mb-2" }, [
-                      _c("i", {
-                        staticClass: "mdi mdi-twitter h5 bg-info text-white"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "font-14 text-muted mb-2" }, [
-                      _vm._v("112 sales")
-                    ]),
-                    _vm._v(" "),
-                    _c("h6", [_vm._v("Twitter")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4" }, [
-                  _c("div", { staticClass: "social-source text-center mt-3" }, [
-                    _c("div", { staticClass: "social-source-icon mb-2" }, [
-                      _c("i", {
-                        staticClass: "mdi mdi-instagram h5 bg-pink text-white"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "font-14 text-muted mb-2" }, [
-                      _vm._v("104 sales")
-                    ]),
-                    _vm._v(" "),
-                    _c("h6", [_vm._v("Instagram")])
-                  ])
-                ])
-              ])
-            ])
-          ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "p-3" }, [
+      _c("div", { staticClass: "float-right" }, [
+        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "mdi mdi-cube-outline h5" })
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-xl-9" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-                _vm._v("Latest Trasaction")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "table-responsive" }, [
-                _c("table", { staticClass: "table table-hover" }, [
-                  _c("thead", [
-                    _c("tr", [
-                      _c("th", { attrs: { scope: "col" } }, [_vm._v("ID No.")]),
-                      _vm._v(" "),
-                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Name")]),
-                      _vm._v(" "),
-                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Date")]),
-                      _vm._v(" "),
-                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Price")]),
-                      _vm._v(" "),
-                      _c("th", { attrs: { scope: "col" } }, [
-                        _vm._v("Quantity")
-                      ]),
-                      _vm._v(" "),
-                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Status")]),
-                      _vm._v(" "),
-                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Amount")])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tbody", [
-                    _c("tr", [
-                      _c("th", { attrs: { scope: "row" } }, [_vm._v("#14567")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Michael Mitchell")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("14 Jan")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$74")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("2")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "progress",
-                            staticStyle: { height: "5px" }
-                          },
-                          [
-                            _c("div", {
-                              staticClass: "progress-bar bg-danger",
-                              staticStyle: { width: "89%" },
-                              attrs: {
-                                role: "progressbar",
-                                "aria-valuenow": "89",
-                                "aria-valuemin": "0",
-                                "aria-valuemax": "100"
-                              }
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$148")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { scope: "row" } }, [_vm._v("#14568")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Dennis Cervantes")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("15 Jan")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$72")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("2")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "progress",
-                            staticStyle: { height: "5px" }
-                          },
-                          [
-                            _c("div", {
-                              staticClass: "progress-bar bg-warning",
-                              staticStyle: { width: "64%" },
-                              attrs: {
-                                role: "progressbar",
-                                "aria-valuenow": "64",
-                                "aria-valuemin": "0",
-                                "aria-valuemax": "100"
-                              }
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$144")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { scope: "row" } }, [_vm._v("#14569")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Bernard Moats")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("16 Jan")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$86")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("1")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "progress",
-                            staticStyle: { height: "5px" }
-                          },
-                          [
-                            _c("div", {
-                              staticClass: "progress-bar bg-success",
-                              staticStyle: { width: "25%" },
-                              attrs: {
-                                role: "progressbar",
-                                "aria-valuenow": "25",
-                                "aria-valuemin": "0",
-                                "aria-valuemax": "100"
-                              }
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$86")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { scope: "row" } }, [_vm._v("#14570")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Patrick Esquivel")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("17 Jan")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$59")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("2")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "progress",
-                            staticStyle: { height: "5px" }
-                          },
-                          [
-                            _c("div", {
-                              staticClass: "progress-bar bg-warning",
-                              staticStyle: { width: "64%" },
-                              attrs: {
-                                role: "progressbar",
-                                "aria-valuenow": "64",
-                                "aria-valuemin": "0",
-                                "aria-valuemax": "100"
-                              }
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$118")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { scope: "row" } }, [_vm._v("#14571")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Michael Barger")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("18 Jan")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$62")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("2")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "progress",
-                            staticStyle: { height: "5px" }
-                          },
-                          [
-                            _c("div", {
-                              staticClass: "progress-bar bg-success",
-                              staticStyle: { width: "25%" },
-                              attrs: {
-                                role: "progressbar",
-                                "aria-valuenow": "25",
-                                "aria-valuemin": "0",
-                                "aria-valuemax": "100"
-                              }
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("$124")])
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-3" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-                _vm._v("Document files")
-              ]),
-              _vm._v(" "),
-              _c("table", { staticClass: "table table-striped mb-0" }, [
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", [
-                      _c("i", {
-                        staticClass: "far fa-file-pdf text-primary h2"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("h6", { staticClass: "mt-0" }, [_vm._v("2015")]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "text-muted mb-0" }, [
-                        _vm._v("dolor sit amet")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-primary btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [_c("i", { staticClass: "fas fa-download" })]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [
-                      _c("i", {
-                        staticClass: "far fa-file-pdf text-primary h2"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("h6", { staticClass: "mt-0" }, [_vm._v("2016")]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "text-muted mb-0" }, [
-                        _vm._v("dolor sit amet")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-primary btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [_c("i", { staticClass: "fas fa-download" })]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [
-                      _c("i", {
-                        staticClass: "far fa-file-pdf text-primary h2"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("h6", { staticClass: "mt-0" }, [_vm._v("2017")]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "text-muted mb-0" }, [
-                        _vm._v("pretium quis")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-primary btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [_c("i", { staticClass: "fas fa-download" })]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [
-                      _c("i", {
-                        staticClass: "far fa-file-pdf text-primary h2"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("h6", { staticClass: "mt-0" }, [_vm._v("2018")]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "text-muted mb-0" }, [
-                        _vm._v("ultricies nec")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-primary btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [_c("i", { staticClass: "fas fa-download" })]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "p-3" }, [
+      _c("div", { staticClass: "float-right" }, [
+        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "mdi mdi-cube-outline h5" })
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Member name")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Shares amount")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Payment Date")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Loan ID")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Member name")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Loan amount ")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Interest rate (p.m)")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Duration(months)")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Date issued")])
       ])
     ])
   }
@@ -74659,7 +73964,7 @@ var content = __webpack_require__(180);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("49721714", content, false, {});
+var update = __webpack_require__(3)("0a1a84c3", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74683,7 +73988,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -74727,6 +74032,7 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -75102,6 +74408,10 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
+                      _c("small", { staticClass: "text-muted" }, [
+                        _vm._v("Optional")
+                      ]),
+                      _vm._v(" "),
                       _vm.allerrors.email
                         ? _c("span", { class: ["label label-danger"] }, [
                             _c("p", { staticStyle: { color: "red" } }, [
@@ -75420,7 +74730,7 @@ var content = __webpack_require__(186);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("1db05724", content, false, {});
+var update = __webpack_require__(3)("fe54d29e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76117,7 +75427,7 @@ var content = __webpack_require__(191);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("8424a43c", content, false, {});
+var update = __webpack_require__(3)("811f4016", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76275,7 +75585,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 if (result.value) {
                     var uri = '/api/member/' + id;
                     _this2.axios.delete(uri).then(function (response) {
-                        _this2.posts.splice(_this2.posts.indexOf(id), 1);
+                        //this.posts.splice(this.posts.indexOf(id), 1);
                         _this2.fetchData();
                     });
                     swal.fire('Deleted!', 'Member has been deleted.', 'success');
@@ -76773,12 +76083,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             post: {},
-            shares: []
+            shares: [],
+            loans: []
         };
     },
 
@@ -76790,10 +76140,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
             //  this.form.total = total;
             return total;
+        },
+        totalLoan: function totalLoan() {
+            var total = 0;
+            this.loans.forEach(function (item) {
+                total += parseInt(item.amount);
+            });
+            //  this.form.total = total;
+            return total;
         }
     },
+
     mounted: function mounted() {
         this.fetchShares();
+        this.fetchLoan();
     },
 
     created: function created() {
@@ -76807,12 +76167,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
     methods: {
+        printme: function printme() {
+            window.print();
+        },
+
         fetchShares: function fetchShares() {
             var _this2 = this;
 
             var url = "/api/membershares/" + this.$route.params.id;
             this.axios.get(url).then(function (response) {
                 _this2.shares = response.data;
+            });
+        },
+        fetchLoan: function fetchLoan() {
+            var _this3 = this;
+
+            var url = "/api/memberloan/" + this.$route.params.id;
+            this.axios.get(url).then(function (response) {
+                _this3.loans = response.data;
             });
         }
     }
@@ -76867,7 +76239,19 @@ var render = function() {
           _vm._v(_vm._s(_vm.post.name))
         ]),
         _vm._v(" "),
-        _c("br")
+        _c("br"),
+        _vm._v(" "),
+        _vm.post.status == "Active"
+          ? _c("p", { staticClass: "page-title" }, [
+              _vm._v("Status: "),
+              _c("span", { staticClass: "text-success" }, [
+                _vm._v(_vm._s(_vm.post.status))
+              ])
+            ])
+          : _c("p", { staticClass: "page-title" }, [
+              _vm._v("Status: "),
+              _c("span", { staticClass: "text-danger" }, [_vm._v("Inactive")])
+            ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xl-4" }, [
@@ -76963,28 +76347,6 @@ var render = function() {
                     ]
                   )
                 ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                { staticClass: "latest-message-list", attrs: { href: "#" } },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "border-bottom mt-3 position-relative" },
-                    [
-                      _c("div", { staticClass: "massage-desc" }, [
-                        _c("h5", { staticClass: "font-14 mt-0 text-dark" }, [
-                          _vm._v("Status")
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "text-muted text-dark" }, [
-                          _vm._v(_vm._s(_vm.post.status))
-                        ])
-                      ])
-                    ]
-                  )
-                ]
               )
             ])
           ])
@@ -77010,7 +76372,23 @@ var render = function() {
           _vm._m(1)
         ]),
         _vm._v(" "),
-        _vm._m(2)
+        _c("div", { staticClass: "card bg-success mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-80" },
+                [_vm._v("Loan amount")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm.totalLoan))
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(2)
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xl-2" }, [
@@ -77046,11 +76424,31 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-xl-9" }, [
+      _c("div", { staticClass: "col-xl-4" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _vm._v("Latest Shares Trasaction")
+              _vm._v(
+                "Shares Trasaction for " +
+                  _vm._s(_vm.post.name) +
+                  "\n                            "
+              ),
+              _c("span", { staticClass: "float-right" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary btn-sm",
+                    attrs: { type: "button", name: "button" },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.printme($event)
+                      }
+                    }
+                  },
+                  [_vm._v("Print report")]
+                )
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
@@ -77064,8 +76462,6 @@ var render = function() {
                       _c("th", { attrs: { scope: "row" } }, [
                         _vm._v(_vm._s(index + 1))
                       ]),
-                      _vm._v(" "),
-                      _c("th", [_vm._v(_vm._s(p.registration_no))]),
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(p.amount))]),
                       _vm._v(" "),
@@ -77093,7 +76489,61 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(5)
+      _c("div", { staticClass: "col-xl-8" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
+              _vm._v("Applied Loan Report for " + _vm._s(_vm.post.name))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "table-responsive" }, [
+              _c("table", { staticClass: "table table-striped" }, [
+                _vm._m(5),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  [
+                    _c("tr"),
+                    _vm._l(_vm.loans, function(p, index) {
+                      return _c("tr", { on: { key: index } }, [
+                        _c("th", { attrs: { scope: "row" } }, [
+                          _vm._v(_vm._s(index + 1))
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(p.loan_id))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(p.amount))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(p.interest_rate))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(p.duration))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm._f("date")(p.date)))]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "btn btn-secondary btn-sm",
+                                attrs: { to: { name: "", params: {} } }
+                              },
+                              [_vm._v("View Loan")]
+                            )
+                          ],
+                          1
+                        )
+                      ])
+                    })
+                  ],
+                  2
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -77122,24 +76572,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card bg-success mini-stat text-white" }, [
-      _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-        _c("div", { staticClass: "clearfix" }, [
-          _c(
-            "h6",
-            { staticClass: "text-uppercase mt-0 float-left text-white-80" },
-            [_vm._v("No of vehicles")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "mb-3 mt-0 float-right" })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "p-3" }, [
-        _c("div", { staticClass: "float-right" }, [
-          _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
-            _c("i", { staticClass: "mdi mdi-briefcase-check h5" })
-          ])
+    return _c("div", { staticClass: "p-3" }, [
+      _c("div", { staticClass: "float-right" }, [
+        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "mdi mdi-briefcase-check h5" })
         ])
       ])
     ])
@@ -77151,8 +76587,6 @@ var staticRenderFns = [
     return _c("thead", [
       _c("tr", [
         _c("th", [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Vehicle No.")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Amount")]),
         _vm._v(" "),
@@ -77170,117 +76604,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xl-3" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-body" }, [
-          _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-            _vm._v("Document files")
-          ]),
-          _vm._v(" "),
-          _c("table", { staticClass: "table table-striped mb-0" }, [
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [
-                  _c("i", { staticClass: "far fa-file-pdf text-primary h2" })
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c("h6", { staticClass: "mt-0" }, [_vm._v("2015")]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "text-muted mb-0" }, [
-                    _vm._v("dolor sit amet")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-primary btn-sm",
-                      attrs: { href: "#" }
-                    },
-                    [_c("i", { staticClass: "fas fa-download" })]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _c("i", { staticClass: "far fa-file-pdf text-primary h2" })
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c("h6", { staticClass: "mt-0" }, [_vm._v("2016")]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "text-muted mb-0" }, [
-                    _vm._v("dolor sit amet")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-primary btn-sm",
-                      attrs: { href: "#" }
-                    },
-                    [_c("i", { staticClass: "fas fa-download" })]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _c("i", { staticClass: "far fa-file-pdf text-primary h2" })
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c("h6", { staticClass: "mt-0" }, [_vm._v("2017")]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "text-muted mb-0" }, [
-                    _vm._v("pretium quis")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-primary btn-sm",
-                      attrs: { href: "#" }
-                    },
-                    [_c("i", { staticClass: "fas fa-download" })]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _c("i", { staticClass: "far fa-file-pdf text-primary h2" })
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c("h6", { staticClass: "mt-0" }, [_vm._v("2018")]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "text-muted mb-0" }, [
-                    _vm._v("ultricies nec")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-primary btn-sm",
-                      attrs: { href: "#" }
-                    },
-                    [_c("i", { staticClass: "fas fa-download" })]
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#.")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Loan ID")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Amount loaned")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Interest rate(%)")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Duration(months)")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Date issued")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Action")])
       ])
     ])
   }
@@ -77356,7 +76694,7 @@ var content = __webpack_require__(199);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("0a1b9308", content, false, {});
+var update = __webpack_require__(3)("788a0a09", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77868,7 +77206,7 @@ var content = __webpack_require__(204);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("38f4b272", content, false, {});
+var update = __webpack_require__(3)("0426f994", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78429,7 +77767,7 @@ var content = __webpack_require__(209);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("24cf8b74", content, false, {});
+var update = __webpack_require__(3)("18589247", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78574,7 +77912,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 if (result.value) {
                     var uri = '/api/vehicle/' + id;
                     _this2.axios.delete(uri).then(function (response) {
-                        _this2.posts.splice(_this2.posts.indexOf(id), 1);
+                        //this.posts.splice(this.posts.indexOf(id), 1);
                         _this2.fetchData();
                     });
                     swal.fire('Deleted!', 'Vehicle has been deleted.', 'success');
@@ -78670,20 +78008,6 @@ var render = function() {
                             _c(
                               "td",
                               [
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass: "btn btn-info btn-sm",
-                                    attrs: {
-                                      to: {
-                                        name: "vehicle_show",
-                                        params: { id: p.id }
-                                      }
-                                    }
-                                  },
-                                  [_vm._v("View")]
-                                ),
-                                _vm._v(" "),
                                 _c(
                                   "router-link",
                                   {
@@ -79298,7 +78622,7 @@ var content = __webpack_require__(217);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("d49096a8", content, false, {});
+var update = __webpack_require__(3)("1508dcf9", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79322,7 +78646,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -79446,91 +78770,158 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
+  data: function data() {
+    return {
 
-            vehicle: [],
-            member: [],
+      //  member: [],
 
-            post: {
-                date: '',
-                duration: '',
-                amount: '',
-                vehicle_id: '',
-                member: '',
-                rate: ''
+      post: {
+        date: '',
+        duration: '',
+        amount: '',
 
-            },
-            allerrors: []
-        };
+        member: '',
+        rate: ''
+      },
+      allerrors: [],
+      rowData: []
+    };
+  },
+
+  computed: {
+    calculatePrincipal: function calculatePrincipal() {
+      var amount = this.post.amount;
+      var duration = this.post.duration;
+      var principal = amount / duration;
+      return principal.toFixed(2);
     },
-
-    mounted: function mounted() {
-        this.fetchMember();
-        this.fetchVehicle();
-    },
-
-    methods: {
-
-        fetchMember: function fetchMember() {
-            var _this = this;
-
-            console.log('Fetching data....');
-
-            this.axios.get('/api/member').then(function (response) {
-                //  console.log(response.data);
-                _this.member = response.data.data;
-            }).catch(function (error) {
-                console.log(error);
-            });
-        },
-        fetchVehicle: function fetchVehicle() {
-            var _this2 = this;
-
-            console.log('Fetching data....');
-
-            this.axios.get('/api/vehicle').then(function (response) {
-                //  console.log(response.data);
-                _this2.vehicle = response.data;
-            }).catch(function (error) {
-                console.log(error);
-            });
-        },
-        add: function add() {
-
-            var self = this;
-            form = new FormData();
-
-            form.append('rate', self.post.rate);
-            form.append('amount', self.post.amount);
-            form.append('date', self.post.date);
-            form.append('duration', self.post.duration);
-            form.append('member', self.post.member);
-            form.append('vehicle_id', self.post.vehicle_id);
-
-            //let params = Object.assign({}, self.post);
-            axios.post('/api/loan', form).then(function (response) {
-                self.allerrors = [];
-                self.post.duration = '';
-                self.post.amount = '';
-                self.post.member = '';
-                self.post.vehicle_id = '';
-                self.post.date = '';
-                self.post.rate = '';
-
-                toast.fire({
-                    type: 'success',
-                    title: 'Loan added successfully'
-                });
-                //flash('post added Succesfully', 'success');
-            }).catch(function (error) {
-                self.allerrors = error.response.data.errors;
-            });
-            return;
-        }
+    initialInterest: function initialInterest() {
+      return this.post.amount * 0.01;
     }
+  },
+  mounted: function mounted() {
+    // this.fetchMember();
+    // this.amortizationTable();
+  },
+
+  methods: {
+
+    calculate: function calculate() {
+      var balance = this.post.amount;
+      var interestRate = this.post.rate / 100;
+      var terms = this.post.duration;
+
+      var monthlyRate = interestRate / 12;
+      var payment = balance * (monthlyRate / (1 - Math.pow(1 + monthlyRate, -terms)));
+
+      for (var count = 0; count < terms; ++count) {
+        //in-loop interest amount holder
+        var interest = 0;
+
+        //in-loop monthly principal amount holder
+        var monthlyPrincipal = 0;
+
+        var count = count + 1;
+        interest = balance * monthlyRate;
+        monthlyPrincipal = payment - interest;
+
+        var my_object = {
+          interest: interest,
+          count: count,
+          balance: balance,
+          monthlyPrincipal: monthlyPrincipal
+
+        };
+        this.rowData.push(my_object);
+      }
+    }
+
+    // fetchMember: function() {
+    //     console.log('Fetching data....');
+    //
+    //     this.axios.get('/api/member').then((response) => {
+    //         //  console.log(response.data);
+    //         this.member = response.data.data;
+    //     }).catch((error) => {
+    //         console.log(error);
+    //     })
+    // },
+
+    // add: function() {
+    //
+    //     let self = this;
+    //     form = new FormData();
+    //
+    //
+    //     form.append('rate', self.post.rate);
+    //     form.append('amount', self.post.amount);
+    //     form.append('date', self.post.date);
+    //     form.append('duration', self.post.duration);
+    //     form.append('member', self.post.member);
+    //
+    //
+    //     //let params = Object.assign({}, self.post);
+    //     axios.post('/api/loan', form)
+    //         .then((response) => {
+    //             self.allerrors = [];
+    //             self.post.duration = '';
+    //             self.post.amount = '';
+    //             self.post.member = '';
+    //             self.post.date = '';
+    //             self.post.rate = '';
+    //
+    //             toast.fire({
+    //                 type: 'success',
+    //                 title: 'Loan added successfully'
+    //             })
+    //           this.$route.push('/loan')
+    //             //flash('post added Succesfully', 'success');
+    //         })
+    //         .catch((error) => {
+    //             self.allerrors = error.response.data.errors;
+    //         });
+    //     return;
+    // },
+  }
 });
 
 /***/ }),
@@ -79568,7 +78959,7 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-12" }, [
+      _c("div", { staticClass: "col-9" }, [
         _c("div", { staticClass: "card m-b-30" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title" }, [
@@ -79581,25 +78972,23 @@ var render = function() {
                 on: {
                   submit: function($event) {
                     $event.preventDefault()
-                    return _vm.add($event)
+                    return _vm.calculate($event)
                   }
                 }
               },
               [
                 _c("fieldset", [
-                  _c("legend", [_vm._v("Loan Information")]),
-                  _vm._v(" "),
                   _c(
                     "div",
                     {
                       class: [
                         "form-group row",
-                        _vm.allerrors.date ? "has-error" : ""
+                        _vm.allerrors.duration ? "has-error" : ""
                       ]
                     },
                     [
                       _c("label", { staticClass: "col-sm-2 col-form-label" }, [
-                        _vm._v("Date loan given")
+                        _vm._v("Duration in months")
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "col-sm-10" }, [
@@ -79608,175 +78997,36 @@ var render = function() {
                             {
                               name: "model",
                               rawName: "v-model",
-                              value: _vm.post.date,
-                              expression: "post.date"
+                              value: _vm.post.duration,
+                              expression: "post.duration"
                             }
                           ],
                           staticClass: "form-control",
-                          attrs: { type: "date", id: "date", placeholder: "" },
-                          domProps: { value: _vm.post.date },
+                          attrs: {
+                            type: "text",
+                            id: "duration",
+                            autocomplete: "off",
+                            placeholder: ""
+                          },
+                          domProps: { value: _vm.post.duration },
                           on: {
                             input: function($event) {
                               if ($event.target.composing) {
                                 return
                               }
-                              _vm.$set(_vm.post, "date", $event.target.value)
+                              _vm.$set(
+                                _vm.post,
+                                "duration",
+                                $event.target.value
+                              )
                             }
                           }
                         }),
                         _vm._v(" "),
-                        _vm.allerrors.date
+                        _vm.allerrors.duration
                           ? _c("span", { class: ["label label-danger"] }, [
                               _c("p", { staticStyle: { color: "red" } }, [
-                                _vm._v(_vm._s(_vm.allerrors.date[0]))
-                              ])
-                            ])
-                          : _vm._e()
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      class: [
-                        "form-group row",
-                        _vm.allerrors.member ? "has-error" : ""
-                      ]
-                    },
-                    [
-                      _c("label", { staticClass: "col-sm-2 col-form-label" }, [
-                        _vm._v("Member")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-sm-10" }, [
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.post.member,
-                                expression: "post.member"
-                              }
-                            ],
-                            staticClass: "form-control",
-                            attrs: { id: "member", placeholder: "" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.$set(
-                                  _vm.post,
-                                  "member",
-                                  $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                )
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "" } }, [
-                              _vm._v("Choose Member")
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.member, function(p) {
-                              return _c(
-                                "option",
-                                { domProps: { value: p.id } },
-                                [_vm._v(_vm._s(p.name))]
-                              )
-                            })
-                          ],
-                          2
-                        ),
-                        _vm._v(" "),
-                        _vm.allerrors.member
-                          ? _c("span", { class: ["label label-danger"] }, [
-                              _c("p", { staticStyle: { color: "red" } }, [
-                                _vm._v(_vm._s(_vm.allerrors.member[0]))
-                              ])
-                            ])
-                          : _vm._e()
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      class: [
-                        "form-group row",
-                        _vm.allerrors.vehicle_id ? "has-error" : ""
-                      ]
-                    },
-                    [
-                      _c("label", { staticClass: "col-sm-2 col-form-label" }, [
-                        _vm._v("Vehicle number\n                          ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-sm-10" }, [
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.post.vehicle_id,
-                                expression: "post.vehicle_id"
-                              }
-                            ],
-                            staticClass: "form-control",
-                            attrs: { id: "vehicle", placeholder: "" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.$set(
-                                  _vm.post,
-                                  "vehicle_id",
-                                  $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                )
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "" } }, [
-                              _vm._v("Choose Vehicle")
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.vehicle, function(p) {
-                              return _c(
-                                "option",
-                                { domProps: { value: p.id } },
-                                [_vm._v(_vm._s(p.registration_no))]
-                              )
-                            })
-                          ],
-                          2
-                        ),
-                        _vm._v(" "),
-                        _vm.allerrors.vehicle_id
-                          ? _c("span", { class: ["label label-danger"] }, [
-                              _c("p", { staticStyle: { color: "red" } }, [
-                                _vm._v(_vm._s(_vm.allerrors.vehicle_id[0]))
+                                _vm._v(_vm._s(_vm.allerrors.duration[0]))
                               ])
                             ])
                           : _vm._e()
@@ -79811,6 +79061,7 @@ var render = function() {
                           attrs: {
                             type: "amount",
                             id: "amount",
+                            autocomplete: "off",
                             placeholder: ""
                           },
                           domProps: { value: _vm.post.amount },
@@ -79859,7 +79110,12 @@ var render = function() {
                             }
                           ],
                           staticClass: "form-control",
-                          attrs: { type: "text", id: "rate", placeholder: "" },
+                          attrs: {
+                            type: "text",
+                            id: "rate",
+                            autocomplete: "off",
+                            placeholder: ""
+                          },
                           domProps: { value: _vm.post.rate },
                           on: {
                             input: function($event) {
@@ -79882,64 +79138,86 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      class: [
-                        "form-group row",
-                        _vm.allerrors.duration ? "has-error" : ""
-                      ]
-                    },
-                    [
-                      _c("label", { staticClass: "col-sm-2 col-form-label" }, [
-                        _vm._v("Duration in months")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-sm-10" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.post.duration,
-                              expression: "post.duration"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "duration",
-                            placeholder: ""
-                          },
-                          domProps: { value: _vm.post.duration },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.post,
-                                "duration",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _vm.allerrors.duration
-                          ? _c("span", { class: ["label label-danger"] }, [
-                              _c("p", { staticStyle: { color: "red" } }, [
-                                _vm._v(_vm._s(_vm.allerrors.duration[0]))
-                              ])
-                            ])
-                          : _vm._e()
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
                   _vm._m(1)
                 ])
               ]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-3" }, [
+        _c("div", { staticClass: "card  mini-stat " }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-dark-50" },
+                [_vm._v("Principal")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm.calculatePrincipal))
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card  mini-stat " }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-dark-50" },
+                [_vm._v("Interest")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm.initialInterest))
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card y mini-stat " }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-dark-50" },
+                [_vm._v("Duration")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(this.post.duration))
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "card y mini-stat " }, [
+        _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+          _c("div", { staticClass: "clearfix" }, [
+            _c(
+              "table",
+              { staticClass: "table table-striped" },
+              _vm._l(_vm.rowData, function(item) {
+                return _c("tr", [
+                  _c("th", { attrs: { scope: "row" } }, [
+                    _vm._v(_vm._s(item.count))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(item.monthlyPrincipal))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(item.balance))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(item.interest))])
+                ])
+              }),
+              0
             )
           ])
         ])
@@ -80041,7 +79319,7 @@ var content = __webpack_require__(222);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("3e4b332b", content, false, {});
+var update = __webpack_require__(3)("b717ea90", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80763,7 +80041,7 @@ var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("327304d0", content, false, {});
+var update = __webpack_require__(3)("dd35c23a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80787,7 +80065,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -80798,8 +80076,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -80908,7 +80184,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             swal.fire({
                 title: 'Are you sure?',
-                text: "You won't be able to revert this!",
+                //  text: "You won't be able to revert this!",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
@@ -80919,7 +80195,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 if (result.value) {
                     var uri = '/api/loan/' + id;
                     _this2.axios.delete(uri).then(function (response) {
-                        _this2.posts.splice(_this2.posts.indexOf(id), 1);
+                        //this.posts.splice(this.posts.indexOf(id), 1);
                         _this2.fetchData();
                     });
                     swal.fire('Deleted!', 'Loan has been deleted.', 'success');
@@ -80992,8 +80268,6 @@ var render = function() {
                             _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(p.loan_id))]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(p.registration_no))]),
-                            _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(p.name))]),
                             _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(p.amount))]),
@@ -81024,7 +80298,7 @@ var render = function() {
                                     attrs: {
                                       to: {
                                         name: "loan_pay",
-                                        params: { id: p.loan_id }
+                                        params: { id: p.id }
                                       }
                                     }
                                   },
@@ -81105,8 +80379,6 @@ var staticRenderFns = [
         _c("th", [_vm._v("#")]),
         _vm._v(" "),
         _c("th", [_vm._v("Loan ID")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Vehicle no")]),
         _vm._v(" "),
         _c("th", [_vm._v("Member name")]),
         _vm._v(" "),
@@ -81226,7 +80498,7 @@ var content = __webpack_require__(233);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("868fa220", content, false, {});
+var update = __webpack_require__(3)("6acc4f7a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81250,7 +80522,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -81261,6 +80533,75 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -81422,6 +80763,62 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-primary mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Amount Loaned")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm.loan.amount))
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-info mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Initial Interest")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm.loan.interest_rate) + "%")
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-xl-3 col-md-6" }, [
+        _c("div", { staticClass: "card bg-warning mini-stat text-white" }, [
+          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
+            _c("div", { staticClass: "clearfix" }, [
+              _c(
+                "h6",
+                { staticClass: "text-uppercase mt-0 float-left text-white-50" },
+                [_vm._v("Duration")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
+                _vm._v(_vm._s(_vm.loan.duration) + " months")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12" }, [
         _c("div", { staticClass: "card m-b-30" }, [
           _c("div", { staticClass: "card-body" }, [
@@ -81441,41 +80838,6 @@ var render = function() {
               },
               [
                 _c("fieldset", [
-                  _c("legend", [_vm._v("Loan Information")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "table-rep-plugin" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "table-responsive b-0",
-                        attrs: { "data-pattern": "priority-columns" }
-                      },
-                      [
-                        _c(
-                          "table",
-                          { staticClass: "table table-hover table-striped" },
-                          [
-                            _vm._m(1),
-                            _vm._v(" "),
-                            _c("tbody", [
-                              _c("tr", [
-                                _c("td", [_vm._v(_vm._s(_vm.loan.loan_id))]),
-                                _vm._v(" "),
-                                _c("td", [_vm._v(_vm._s(_vm.loan.amount))]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm._v(_vm._s(_vm.loan.interest_rate))
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [_vm._v(_vm._s(_vm.loan.duration))])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
                   _c(
                     "div",
                     {
@@ -81523,10 +80885,49 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _vm._m(2)
+                  _vm._m(1)
                 ])
               ]
             )
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("div", { staticClass: "card m-b-30" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h4", { staticClass: "mt-0 header-title" }, [
+              _vm._v("\n            Payment Details\n          ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "table-rep-plugin" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "table-responsive b-0",
+                  attrs: { "data-pattern": "priority-columns" }
+                },
+                [
+                  _c("table", { staticClass: "table table-striped" }, [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v(_vm._s(_vm.loan.loan_id))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.loan.amount))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.loan.interest_rate))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.loan.duration))])
+                      ])
+                    ])
+                  ])
+                ]
+              )
+            ])
           ])
         ])
       ])
@@ -81615,15 +81016,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("Loan ID")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Loan amount")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Interest rate (p.m)")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Duration(months)")])
+    return _c("div", { staticClass: "form-group row" }, [
+      _c("div", { staticClass: "col-sm-10" }, [
+        _c("input", {
+          staticClass: "btn btn-success btn-round",
+          attrs: { type: "submit", id: "loan_submit", value: "Submit" }
+        })
       ])
     ])
   },
@@ -81631,12 +81029,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group row" }, [
-      _c("div", { staticClass: "col-sm-10" }, [
-        _c("input", {
-          staticClass: "btn btn-success btn-round",
-          attrs: { type: "submit", id: "loan_submit", value: "Submit" }
-        })
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Installments")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Amount paid")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("New Interest rate (p.m)")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Duration(months)")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Date paid")])
       ])
     ])
   }
@@ -81712,7 +81115,7 @@ var content = __webpack_require__(238);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("40d27a24", content, false, {});
+var update = __webpack_require__(3)("1c63fe7b", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81736,7 +81139,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -81818,29 +81221,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
 
-            vehicle: [],
             member: [],
 
             post: {
-                vehicle_id: '',
                 member_id: '',
                 amount: '',
                 payment_date: ''
@@ -81852,7 +81240,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     mounted: function mounted() {
         this.fetchMember();
-        this.fetchVehicle();
     },
 
     methods: {
@@ -81869,24 +81256,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 console.log(error);
             });
         },
-        fetchVehicle: function fetchVehicle() {
-            var _this2 = this;
 
-            console.log('Fetching data....');
-
-            this.axios.get('/api/vehicle').then(function (response) {
-                //  console.log(response.data);
-                _this2.vehicle = response.data;
-            }).catch(function (error) {
-                console.log(error);
-            });
-        },
         add: function add() {
 
             var self = this;
             form = new FormData();
 
-            form.append('vehicle_id', self.post.vehicle_id);
             form.append('member_id', self.post.member_id);
 
             form.append('amount', self.post.amount);
@@ -81895,7 +81270,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //let params = Object.assign({}, self.post);
             axios.post('/api/share', form).then(function (response) {
                 self.allerrors = [];
-                self.post.vehicle_id = '';
                 self.post.member_id = '';
                 self.post.amount = '';
                 self.post.payment_date = '';
@@ -81965,77 +81339,6 @@ var render = function() {
                 }
               },
               [
-                _c(
-                  "div",
-                  {
-                    class: [
-                      "form-group row",
-                      _vm.allerrors.vehicle_id ? "has-error" : ""
-                    ]
-                  },
-                  [
-                    _c("label", { staticClass: "col-sm-2 col-form-label" }, [
-                      _vm._v("Vehicle number")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-10" }, [
-                      _c(
-                        "select",
-                        {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.post.vehicle_id,
-                              expression: "post.vehicle_id"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          on: {
-                            change: function($event) {
-                              var $$selectedVal = Array.prototype.filter
-                                .call($event.target.options, function(o) {
-                                  return o.selected
-                                })
-                                .map(function(o) {
-                                  var val = "_value" in o ? o._value : o.value
-                                  return val
-                                })
-                              _vm.$set(
-                                _vm.post,
-                                "vehicle_id",
-                                $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              )
-                            }
-                          }
-                        },
-                        [
-                          _c("option", { attrs: { value: "" } }, [
-                            _vm._v("Choose Vehicle")
-                          ]),
-                          _vm._v(" "),
-                          _vm._l(_vm.vehicle, function(p) {
-                            return _c("option", { domProps: { value: p.id } }, [
-                              _vm._v(_vm._s(p.registration_no))
-                            ])
-                          })
-                        ],
-                        2
-                      ),
-                      _vm._v(" "),
-                      _vm.allerrors.vehicle_id
-                        ? _c("span", { class: ["label label-danger"] }, [
-                            _c("p", { staticStyle: { color: "red" } }, [
-                              _vm._v(_vm._s(_vm.allerrors.vehicle_id[0]))
-                            ])
-                          ])
-                        : _vm._e()
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
                 _c(
                   "div",
                   {
@@ -82182,6 +81485,7 @@ var render = function() {
                         attrs: {
                           type: "date",
                           id: "payment_date",
+                          value: "",
                           placeholder: ""
                         },
                         domProps: { value: _vm.post.payment_date },
@@ -82313,7 +81617,7 @@ var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("2d55c876", content, false, {});
+var update = __webpack_require__(3)("6765d692", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -82337,7 +81641,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -82424,30 +81728,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
 
-            vehicle: [],
             member: [],
 
             post: {
-                vehicle_no: '',
                 member_no: '',
                 amount: '',
                 payment_date: ''
@@ -82459,7 +81747,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     mounted: function mounted() {
         this.fetchMember();
-        this.fetchVehicle();
     },
 
     methods: {
@@ -82476,24 +81763,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 console.log(error);
             });
         },
-        fetchVehicle: function fetchVehicle() {
-            var _this2 = this;
 
-            console.log('Fetching data....');
-
-            this.axios.get('/api/vehicle').then(function (response) {
-                //  console.log(response.data);
-                _this2.vehicle = response.data.data;
-            }).catch(function (error) {
-                console.log(error);
-            });
-        },
         add: function add() {
 
             var self = this;
             form = new FormData();
 
-            form.append('vehicle_no', self.post.vehicle_no);
             form.append('member_no', self.post.member_no);
 
             form.append('amount', self.post.amount);
@@ -82502,7 +81777,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //let params = Object.assign({}, self.post);
             axios.post('/api/shares', form).then(function (response) {
                 self.allerrors = [];
-                self.post.vehicle_no = '';
                 self.post.member_no = '';
                 self.post.amount = '';
                 self.post.payment_date = '';
@@ -82551,72 +81825,6 @@ var render = function() {
                 }
               },
               [
-                _c(
-                  "div",
-                  {
-                    class: [
-                      "form-group row",
-                      _vm.allerrors.vehicle_no ? "has-error" : ""
-                    ]
-                  },
-                  [
-                    _c("label", { staticClass: "col-sm-2 col-form-label" }, [
-                      _vm._v("Vehicle number")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-10" }, [
-                      _c(
-                        "select",
-                        {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.post.vehicle_no,
-                              expression: "post.vehicle_no"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          on: {
-                            change: function($event) {
-                              var $$selectedVal = Array.prototype.filter
-                                .call($event.target.options, function(o) {
-                                  return o.selected
-                                })
-                                .map(function(o) {
-                                  var val = "_value" in o ? o._value : o.value
-                                  return val
-                                })
-                              _vm.$set(
-                                _vm.post,
-                                "vehicle_no",
-                                $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              )
-                            }
-                          }
-                        },
-                        [
-                          _c("option", { attrs: { value: "" } }, [
-                            _vm._v("Choose Vehicle")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "" } })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _vm.allerrors.vehicle_no
-                        ? _c("span", { class: ["label label-danger"] }, [
-                            _c("p", { staticStyle: { color: "red" } }, [
-                              _vm._v(_vm._s(_vm.allerrors.vehicle_no[0]))
-                            ])
-                          ])
-                        : _vm._e()
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
                 _c(
                   "div",
                   {
@@ -82948,7 +82156,7 @@ var content = __webpack_require__(248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("4e115289", content, false, {});
+var update = __webpack_require__(3)("dbd01d48", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -82972,7 +82180,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -82983,8 +82191,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -83174,8 +82380,6 @@ var render = function() {
                           return _c("tr", { on: { key: index } }, [
                             _c("td", [_vm._v(_vm._s(index + 1))]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(p.registration_no))]),
-                            _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(p.name))]),
                             _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(p.amount))]),
@@ -83256,8 +82460,6 @@ var staticRenderFns = [
       _c("tr", [
         _c("th", [_vm._v("#")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Vehicle no")]),
-        _vm._v(" "),
         _c("th", [_vm._v("Member name")]),
         _vm._v(" "),
         _c("th", [_vm._v("Shares amount")]),
@@ -83284,46 +82486,16 @@ if (false) {
 /* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = null
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Shares/Show.vue"
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 252 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(253)
+  __webpack_require__(252)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(255)
+var __vue_script__ = __webpack_require__(254)
 /* template */
-var __vue_template__ = __webpack_require__(256)
+var __vue_template__ = __webpack_require__(255)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -83362,17 +82534,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 253 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(254);
+var content = __webpack_require__(253);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("a6beb15e", content, false, {});
+var update = __webpack_require__(3)("62bd12de", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -83388,7 +82560,7 @@ if(false) {
 }
 
 /***/ }),
-/* 254 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -83402,7 +82574,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 255 */
+/* 254 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83558,7 +82730,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 256 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -83865,19 +83037,19 @@ if (false) {
 }
 
 /***/ }),
-/* 257 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(258)
+  __webpack_require__(257)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(260)
+var __vue_script__ = __webpack_require__(259)
 /* template */
-var __vue_template__ = __webpack_require__(261)
+var __vue_template__ = __webpack_require__(260)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -83916,17 +83088,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 258 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(259);
+var content = __webpack_require__(258);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("02a29a65", content, false, {});
+var update = __webpack_require__(3)("640e8532", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -83942,7 +83114,7 @@ if(false) {
 }
 
 /***/ }),
-/* 259 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -83956,7 +83128,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 260 */
+/* 259 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84112,7 +83284,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 261 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -84419,19 +83591,19 @@ if (false) {
 }
 
 /***/ }),
-/* 262 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(263)
+  __webpack_require__(262)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(265)
+var __vue_script__ = __webpack_require__(264)
 /* template */
-var __vue_template__ = __webpack_require__(266)
+var __vue_template__ = __webpack_require__(265)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -84470,17 +83642,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 263 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(264);
+var content = __webpack_require__(263);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("395f8710", content, false, {});
+var update = __webpack_require__(3)("0570f5e3", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -84496,7 +83668,7 @@ if(false) {
 }
 
 /***/ }),
-/* 264 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -84510,7 +83682,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 265 */
+/* 264 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84638,7 +83810,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 if (result.value) {
                     var uri = '/api/member/' + id;
                     _this2.axios.delete(uri).then(function (response) {
-                        _this2.posts.splice(_this2.posts.indexOf(id), 1);
+                        //  this.posts.splice(this.posts.indexOf(id), 1);
                         _this2.fetchData();
                     });
                     swal.fire('Deleted!', 'Member has been deleted.', 'success');
@@ -84651,7 +83823,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 266 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -84871,7 +84043,7 @@ if (false) {
 }
 
 /***/ }),
-/* 267 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var normalizeComponent = __webpack_require__(1)
@@ -84901,10 +84073,1604 @@ module.exports = Component.exports
 
 
 /***/ }),
+/* 267 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(268)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(270)
+/* template */
+var __vue_template__ = __webpack_require__(271)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-4c049bef"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Report/ShareReport.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4c049bef", Component.options)
+  } else {
+    hotAPI.reload("data-v-4c049bef", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 268 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(269);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("12404280", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4c049bef\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ShareReport.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4c049bef\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ShareReport.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 269 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 270 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            posts: [],
+            members: [],
+            post: {},
+            form: {
+                member_id: ''
+            },
+            showFilter: false,
+            dummy: []
+        };
+    },
+
+    mounted: function mounted() {
+        this.fetchData();
+        this.fetchMember();
+    },
+
+    methods: {
+        filterShares: function filterShares() {
+            var _this = this;
+
+            fetch('api/share/report?q=' + this.form.member_id).then(function (response) {
+                return response.json();
+            }).then(function (response) {
+                _this.dummy = response;
+                _this.form.member_id = '';
+                _this.showFilter = true;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchMember: function fetchMember() {
+            var _this2 = this;
+
+            console.log('Fetching data....');
+
+            this.axios.get('/api/member').then(function (response) {
+                //  console.log(response.data);
+                _this2.members = response.data.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        fetchData: function fetchData() {
+            var _this3 = this;
+
+            console.log('Fetching data....');
+
+            this.axios.get('/api/share').then(function (response) {
+                //  console.log(response.data);
+                _this3.posts = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+
+    }
+});
+
+/***/ }),
+/* 271 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("div", { staticClass: "card m-b-30" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("form", { on: { submit: _vm.filterShares } }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "" } }, [_vm._v("Choose member")]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.member_name,
+                        expression: "form.member_name"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { name: "member" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.form,
+                          "member_name",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "" } }, [
+                      _vm._v("Choose member")
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.members, function(p) {
+                      return _c("option", { domProps: { value: p.id } }, [
+                        _vm._v(_vm._s(p.name))
+                      ])
+                    })
+                  ],
+                  2
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm.showFilter == true
+      ? _c("div", [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "card m-b-30" }, [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h2", { staticClass: "mt-0 header-title text-center" }, [
+                    _vm._v("Supercoach sacco Limited")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "text-muted m-b-30 font-18 text-center" },
+                    [_vm._v("Shares report.")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "table-rep-plugin" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "table-responsive b-0",
+                        attrs: { "data-pattern": "priority-columns" }
+                      },
+                      [
+                        _c(
+                          "table",
+                          { staticClass: "table table-hover table-striped" },
+                          [
+                            _vm._m(2),
+                            _vm._v(" "),
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.dummy, function(p, index) {
+                                return _c("tr", { on: { key: index } }, [
+                                  _c("td", [_vm._v(_vm._s(index + 1))]),
+                                  _vm._v(" "),
+                                  _c("td", [_vm._v(_vm._s(p.amount))]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      _vm._s(_vm._f("date")(p.payment_date))
+                                    )
+                                  ])
+                                ])
+                              }),
+                              0
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.showFilter == false
+      ? _c("div", [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "card m-b-30" }, [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h2", { staticClass: "mt-0 header-title text-center" }, [
+                    _vm._v("Supercoach sacco Limited")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "text-muted m-b-30 font-18 text-center" },
+                    [_vm._v("Shares report.")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "text-muted m-b-30 font-18 text-center" },
+                    [_vm._v(_vm._s(this.form.member_name))]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "table-rep-plugin" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "table-responsive b-0",
+                        attrs: { "data-pattern": "priority-columns" }
+                      },
+                      [
+                        _c(
+                          "table",
+                          { staticClass: "table table-hover table-striped" },
+                          [
+                            _vm._m(3),
+                            _vm._v(" "),
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.posts, function(p, index) {
+                                return _c("tr", { on: { key: index } }, [
+                                  _c("td", [_vm._v(_vm._s(index + 1))]),
+                                  _vm._v(" "),
+                                  _c("td", [_vm._v(_vm._s(p.amount))]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      _vm._s(_vm._f("date")(p.payment_date))
+                                    )
+                                  ])
+                                ])
+                              }),
+                              0
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "page-title-box" }, [
+          _c("div", { staticClass: "row align-items-center" }, [
+            _c("div", { staticClass: "col-md-8" }, [
+              _c("h4", { staticClass: "page-title mt-3" }, [
+                _vm._v("Shares report")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "float-right d-none d-md-block" })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "btn btn-secondary btn-sm",
+        attrs: { type: "submit", name: "", value: "Generate" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Shares amount")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Payment Date")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Shares amount")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Payment Date")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4c049bef", module.exports)
+  }
+}
+
+/***/ }),
+/* 272 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! @preserve
+ * numeral.js
+ * version : 2.0.6
+ * author : Adam Draper
+ * license : MIT
+ * http://adamwdraper.github.com/Numeral-js/
+ */
+
+(function (global, factory) {
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof module === 'object' && module.exports) {
+        module.exports = factory();
+    } else {
+        global.numeral = factory();
+    }
+}(this, function () {
+    /************************************
+        Variables
+    ************************************/
+
+    var numeral,
+        _,
+        VERSION = '2.0.6',
+        formats = {},
+        locales = {},
+        defaults = {
+            currentLocale: 'en',
+            zeroFormat: null,
+            nullFormat: null,
+            defaultFormat: '0,0',
+            scalePercentBy100: true
+        },
+        options = {
+            currentLocale: defaults.currentLocale,
+            zeroFormat: defaults.zeroFormat,
+            nullFormat: defaults.nullFormat,
+            defaultFormat: defaults.defaultFormat,
+            scalePercentBy100: defaults.scalePercentBy100
+        };
+
+
+    /************************************
+        Constructors
+    ************************************/
+
+    // Numeral prototype object
+    function Numeral(input, number) {
+        this._input = input;
+
+        this._value = number;
+    }
+
+    numeral = function(input) {
+        var value,
+            kind,
+            unformatFunction,
+            regexp;
+
+        if (numeral.isNumeral(input)) {
+            value = input.value();
+        } else if (input === 0 || typeof input === 'undefined') {
+            value = 0;
+        } else if (input === null || _.isNaN(input)) {
+            value = null;
+        } else if (typeof input === 'string') {
+            if (options.zeroFormat && input === options.zeroFormat) {
+                value = 0;
+            } else if (options.nullFormat && input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
+                value = null;
+            } else {
+                for (kind in formats) {
+                    regexp = typeof formats[kind].regexps.unformat === 'function' ? formats[kind].regexps.unformat() : formats[kind].regexps.unformat;
+
+                    if (regexp && input.match(regexp)) {
+                        unformatFunction = formats[kind].unformat;
+
+                        break;
+                    }
+                }
+
+                unformatFunction = unformatFunction || numeral._.stringToNumber;
+
+                value = unformatFunction(input);
+            }
+        } else {
+            value = Number(input)|| null;
+        }
+
+        return new Numeral(input, value);
+    };
+
+    // version number
+    numeral.version = VERSION;
+
+    // compare numeral object
+    numeral.isNumeral = function(obj) {
+        return obj instanceof Numeral;
+    };
+
+    // helper functions
+    numeral._ = _ = {
+        // formats numbers separators, decimals places, signs, abbreviations
+        numberToFormat: function(value, format, roundingFunction) {
+            var locale = locales[numeral.options.currentLocale],
+                negP = false,
+                optDec = false,
+                leadingCount = 0,
+                abbr = '',
+                trillion = 1000000000000,
+                billion = 1000000000,
+                million = 1000000,
+                thousand = 1000,
+                decimal = '',
+                neg = false,
+                abbrForce, // force abbreviation
+                abs,
+                min,
+                max,
+                power,
+                int,
+                precision,
+                signed,
+                thousands,
+                output;
+
+            // make sure we never format a null value
+            value = value || 0;
+
+            abs = Math.abs(value);
+
+            // see if we should use parentheses for negative number or if we should prefix with a sign
+            // if both are present we default to parentheses
+            if (numeral._.includes(format, '(')) {
+                negP = true;
+                format = format.replace(/[\(|\)]/g, '');
+            } else if (numeral._.includes(format, '+') || numeral._.includes(format, '-')) {
+                signed = numeral._.includes(format, '+') ? format.indexOf('+') : value < 0 ? format.indexOf('-') : -1;
+                format = format.replace(/[\+|\-]/g, '');
+            }
+
+            // see if abbreviation is wanted
+            if (numeral._.includes(format, 'a')) {
+                abbrForce = format.match(/a(k|m|b|t)?/);
+
+                abbrForce = abbrForce ? abbrForce[1] : false;
+
+                // check for space before abbreviation
+                if (numeral._.includes(format, ' a')) {
+                    abbr = ' ';
+                }
+
+                format = format.replace(new RegExp(abbr + 'a[kmbt]?'), '');
+
+                if (abs >= trillion && !abbrForce || abbrForce === 't') {
+                    // trillion
+                    abbr += locale.abbreviations.trillion;
+                    value = value / trillion;
+                } else if (abs < trillion && abs >= billion && !abbrForce || abbrForce === 'b') {
+                    // billion
+                    abbr += locale.abbreviations.billion;
+                    value = value / billion;
+                } else if (abs < billion && abs >= million && !abbrForce || abbrForce === 'm') {
+                    // million
+                    abbr += locale.abbreviations.million;
+                    value = value / million;
+                } else if (abs < million && abs >= thousand && !abbrForce || abbrForce === 'k') {
+                    // thousand
+                    abbr += locale.abbreviations.thousand;
+                    value = value / thousand;
+                }
+            }
+
+            // check for optional decimals
+            if (numeral._.includes(format, '[.]')) {
+                optDec = true;
+                format = format.replace('[.]', '.');
+            }
+
+            // break number and format
+            int = value.toString().split('.')[0];
+            precision = format.split('.')[1];
+            thousands = format.indexOf(',');
+            leadingCount = (format.split('.')[0].split(',')[0].match(/0/g) || []).length;
+
+            if (precision) {
+                if (numeral._.includes(precision, '[')) {
+                    precision = precision.replace(']', '');
+                    precision = precision.split('[');
+                    decimal = numeral._.toFixed(value, (precision[0].length + precision[1].length), roundingFunction, precision[1].length);
+                } else {
+                    decimal = numeral._.toFixed(value, precision.length, roundingFunction);
+                }
+
+                int = decimal.split('.')[0];
+
+                if (numeral._.includes(decimal, '.')) {
+                    decimal = locale.delimiters.decimal + decimal.split('.')[1];
+                } else {
+                    decimal = '';
+                }
+
+                if (optDec && Number(decimal.slice(1)) === 0) {
+                    decimal = '';
+                }
+            } else {
+                int = numeral._.toFixed(value, 0, roundingFunction);
+            }
+
+            // check abbreviation again after rounding
+            if (abbr && !abbrForce && Number(int) >= 1000 && abbr !== locale.abbreviations.trillion) {
+                int = String(Number(int) / 1000);
+
+                switch (abbr) {
+                    case locale.abbreviations.thousand:
+                        abbr = locale.abbreviations.million;
+                        break;
+                    case locale.abbreviations.million:
+                        abbr = locale.abbreviations.billion;
+                        break;
+                    case locale.abbreviations.billion:
+                        abbr = locale.abbreviations.trillion;
+                        break;
+                }
+            }
+
+
+            // format number
+            if (numeral._.includes(int, '-')) {
+                int = int.slice(1);
+                neg = true;
+            }
+
+            if (int.length < leadingCount) {
+                for (var i = leadingCount - int.length; i > 0; i--) {
+                    int = '0' + int;
+                }
+            }
+
+            if (thousands > -1) {
+                int = int.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + locale.delimiters.thousands);
+            }
+
+            if (format.indexOf('.') === 0) {
+                int = '';
+            }
+
+            output = int + decimal + (abbr ? abbr : '');
+
+            if (negP) {
+                output = (negP && neg ? '(' : '') + output + (negP && neg ? ')' : '');
+            } else {
+                if (signed >= 0) {
+                    output = signed === 0 ? (neg ? '-' : '+') + output : output + (neg ? '-' : '+');
+                } else if (neg) {
+                    output = '-' + output;
+                }
+            }
+
+            return output;
+        },
+        // unformats numbers separators, decimals places, signs, abbreviations
+        stringToNumber: function(string) {
+            var locale = locales[options.currentLocale],
+                stringOriginal = string,
+                abbreviations = {
+                    thousand: 3,
+                    million: 6,
+                    billion: 9,
+                    trillion: 12
+                },
+                abbreviation,
+                value,
+                i,
+                regexp;
+
+            if (options.zeroFormat && string === options.zeroFormat) {
+                value = 0;
+            } else if (options.nullFormat && string === options.nullFormat || !string.replace(/[^0-9]+/g, '').length) {
+                value = null;
+            } else {
+                value = 1;
+
+                if (locale.delimiters.decimal !== '.') {
+                    string = string.replace(/\./g, '').replace(locale.delimiters.decimal, '.');
+                }
+
+                for (abbreviation in abbreviations) {
+                    regexp = new RegExp('[^a-zA-Z]' + locale.abbreviations[abbreviation] + '(?:\\)|(\\' + locale.currency.symbol + ')?(?:\\))?)?$');
+
+                    if (stringOriginal.match(regexp)) {
+                        value *= Math.pow(10, abbreviations[abbreviation]);
+                        break;
+                    }
+                }
+
+                // check for negative number
+                value *= (string.split('-').length + Math.min(string.split('(').length - 1, string.split(')').length - 1)) % 2 ? 1 : -1;
+
+                // remove non numbers
+                string = string.replace(/[^0-9\.]+/g, '');
+
+                value *= Number(string);
+            }
+
+            return value;
+        },
+        isNaN: function(value) {
+            return typeof value === 'number' && isNaN(value);
+        },
+        includes: function(string, search) {
+            return string.indexOf(search) !== -1;
+        },
+        insert: function(string, subString, start) {
+            return string.slice(0, start) + subString + string.slice(start);
+        },
+        reduce: function(array, callback /*, initialValue*/) {
+            if (this === null) {
+                throw new TypeError('Array.prototype.reduce called on null or undefined');
+            }
+
+            if (typeof callback !== 'function') {
+                throw new TypeError(callback + ' is not a function');
+            }
+
+            var t = Object(array),
+                len = t.length >>> 0,
+                k = 0,
+                value;
+
+            if (arguments.length === 3) {
+                value = arguments[2];
+            } else {
+                while (k < len && !(k in t)) {
+                    k++;
+                }
+
+                if (k >= len) {
+                    throw new TypeError('Reduce of empty array with no initial value');
+                }
+
+                value = t[k++];
+            }
+            for (; k < len; k++) {
+                if (k in t) {
+                    value = callback(value, t[k], k, t);
+                }
+            }
+            return value;
+        },
+        /**
+         * Computes the multiplier necessary to make x >= 1,
+         * effectively eliminating miscalculations caused by
+         * finite precision.
+         */
+        multiplier: function (x) {
+            var parts = x.toString().split('.');
+
+            return parts.length < 2 ? 1 : Math.pow(10, parts[1].length);
+        },
+        /**
+         * Given a variable number of arguments, returns the maximum
+         * multiplier that must be used to normalize an operation involving
+         * all of them.
+         */
+        correctionFactor: function () {
+            var args = Array.prototype.slice.call(arguments);
+
+            return args.reduce(function(accum, next) {
+                var mn = _.multiplier(next);
+                return accum > mn ? accum : mn;
+            }, 1);
+        },
+        /**
+         * Implementation of toFixed() that treats floats more like decimals
+         *
+         * Fixes binary rounding issues (eg. (0.615).toFixed(2) === '0.61') that present
+         * problems for accounting- and finance-related software.
+         */
+        toFixed: function(value, maxDecimals, roundingFunction, optionals) {
+            var splitValue = value.toString().split('.'),
+                minDecimals = maxDecimals - (optionals || 0),
+                boundedPrecision,
+                optionalsRegExp,
+                power,
+                output;
+
+            // Use the smallest precision value possible to avoid errors from floating point representation
+            if (splitValue.length === 2) {
+              boundedPrecision = Math.min(Math.max(splitValue[1].length, minDecimals), maxDecimals);
+            } else {
+              boundedPrecision = minDecimals;
+            }
+
+            power = Math.pow(10, boundedPrecision);
+
+            // Multiply up by precision, round accurately, then divide and use native toFixed():
+            output = (roundingFunction(value + 'e+' + boundedPrecision) / power).toFixed(boundedPrecision);
+
+            if (optionals > maxDecimals - boundedPrecision) {
+                optionalsRegExp = new RegExp('\\.?0{1,' + (optionals - (maxDecimals - boundedPrecision)) + '}$');
+                output = output.replace(optionalsRegExp, '');
+            }
+
+            return output;
+        }
+    };
+
+    // avaliable options
+    numeral.options = options;
+
+    // avaliable formats
+    numeral.formats = formats;
+
+    // avaliable formats
+    numeral.locales = locales;
+
+    // This function sets the current locale.  If
+    // no arguments are passed in, it will simply return the current global
+    // locale key.
+    numeral.locale = function(key) {
+        if (key) {
+            options.currentLocale = key.toLowerCase();
+        }
+
+        return options.currentLocale;
+    };
+
+    // This function provides access to the loaded locale data.  If
+    // no arguments are passed in, it will simply return the current
+    // global locale object.
+    numeral.localeData = function(key) {
+        if (!key) {
+            return locales[options.currentLocale];
+        }
+
+        key = key.toLowerCase();
+
+        if (!locales[key]) {
+            throw new Error('Unknown locale : ' + key);
+        }
+
+        return locales[key];
+    };
+
+    numeral.reset = function() {
+        for (var property in defaults) {
+            options[property] = defaults[property];
+        }
+    };
+
+    numeral.zeroFormat = function(format) {
+        options.zeroFormat = typeof(format) === 'string' ? format : null;
+    };
+
+    numeral.nullFormat = function (format) {
+        options.nullFormat = typeof(format) === 'string' ? format : null;
+    };
+
+    numeral.defaultFormat = function(format) {
+        options.defaultFormat = typeof(format) === 'string' ? format : '0.0';
+    };
+
+    numeral.register = function(type, name, format) {
+        name = name.toLowerCase();
+
+        if (this[type + 's'][name]) {
+            throw new TypeError(name + ' ' + type + ' already registered.');
+        }
+
+        this[type + 's'][name] = format;
+
+        return format;
+    };
+
+
+    numeral.validate = function(val, culture) {
+        var _decimalSep,
+            _thousandSep,
+            _currSymbol,
+            _valArray,
+            _abbrObj,
+            _thousandRegEx,
+            localeData,
+            temp;
+
+        //coerce val to string
+        if (typeof val !== 'string') {
+            val += '';
+
+            if (console.warn) {
+                console.warn('Numeral.js: Value is not string. It has been co-erced to: ', val);
+            }
+        }
+
+        //trim whitespaces from either sides
+        val = val.trim();
+
+        //if val is just digits return true
+        if (!!val.match(/^\d+$/)) {
+            return true;
+        }
+
+        //if val is empty return false
+        if (val === '') {
+            return false;
+        }
+
+        //get the decimal and thousands separator from numeral.localeData
+        try {
+            //check if the culture is understood by numeral. if not, default it to current locale
+            localeData = numeral.localeData(culture);
+        } catch (e) {
+            localeData = numeral.localeData(numeral.locale());
+        }
+
+        //setup the delimiters and currency symbol based on culture/locale
+        _currSymbol = localeData.currency.symbol;
+        _abbrObj = localeData.abbreviations;
+        _decimalSep = localeData.delimiters.decimal;
+        if (localeData.delimiters.thousands === '.') {
+            _thousandSep = '\\.';
+        } else {
+            _thousandSep = localeData.delimiters.thousands;
+        }
+
+        // validating currency symbol
+        temp = val.match(/^[^\d]+/);
+        if (temp !== null) {
+            val = val.substr(1);
+            if (temp[0] !== _currSymbol) {
+                return false;
+            }
+        }
+
+        //validating abbreviation symbol
+        temp = val.match(/[^\d]+$/);
+        if (temp !== null) {
+            val = val.slice(0, -1);
+            if (temp[0] !== _abbrObj.thousand && temp[0] !== _abbrObj.million && temp[0] !== _abbrObj.billion && temp[0] !== _abbrObj.trillion) {
+                return false;
+            }
+        }
+
+        _thousandRegEx = new RegExp(_thousandSep + '{2}');
+
+        if (!val.match(/[^\d.,]/g)) {
+            _valArray = val.split(_decimalSep);
+            if (_valArray.length > 2) {
+                return false;
+            } else {
+                if (_valArray.length < 2) {
+                    return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx));
+                } else {
+                    if (_valArray[0].length === 1) {
+                        return ( !! _valArray[0].match(/^\d+$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
+                    } else {
+                        return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
+                    }
+                }
+            }
+        }
+
+        return false;
+    };
+
+
+    /************************************
+        Numeral Prototype
+    ************************************/
+
+    numeral.fn = Numeral.prototype = {
+        clone: function() {
+            return numeral(this);
+        },
+        format: function(inputString, roundingFunction) {
+            var value = this._value,
+                format = inputString || options.defaultFormat,
+                kind,
+                output,
+                formatFunction;
+
+            // make sure we have a roundingFunction
+            roundingFunction = roundingFunction || Math.round;
+
+            // format based on value
+            if (value === 0 && options.zeroFormat !== null) {
+                output = options.zeroFormat;
+            } else if (value === null && options.nullFormat !== null) {
+                output = options.nullFormat;
+            } else {
+                for (kind in formats) {
+                    if (format.match(formats[kind].regexps.format)) {
+                        formatFunction = formats[kind].format;
+
+                        break;
+                    }
+                }
+
+                formatFunction = formatFunction || numeral._.numberToFormat;
+
+                output = formatFunction(value, format, roundingFunction);
+            }
+
+            return output;
+        },
+        value: function() {
+            return this._value;
+        },
+        input: function() {
+            return this._input;
+        },
+        set: function(value) {
+            this._value = Number(value);
+
+            return this;
+        },
+        add: function(value) {
+            var corrFactor = _.correctionFactor.call(null, this._value, value);
+
+            function cback(accum, curr, currI, O) {
+                return accum + Math.round(corrFactor * curr);
+            }
+
+            this._value = _.reduce([this._value, value], cback, 0) / corrFactor;
+
+            return this;
+        },
+        subtract: function(value) {
+            var corrFactor = _.correctionFactor.call(null, this._value, value);
+
+            function cback(accum, curr, currI, O) {
+                return accum - Math.round(corrFactor * curr);
+            }
+
+            this._value = _.reduce([value], cback, Math.round(this._value * corrFactor)) / corrFactor;
+
+            return this;
+        },
+        multiply: function(value) {
+            function cback(accum, curr, currI, O) {
+                var corrFactor = _.correctionFactor(accum, curr);
+                return Math.round(accum * corrFactor) * Math.round(curr * corrFactor) / Math.round(corrFactor * corrFactor);
+            }
+
+            this._value = _.reduce([this._value, value], cback, 1);
+
+            return this;
+        },
+        divide: function(value) {
+            function cback(accum, curr, currI, O) {
+                var corrFactor = _.correctionFactor(accum, curr);
+                return Math.round(accum * corrFactor) / Math.round(curr * corrFactor);
+            }
+
+            this._value = _.reduce([this._value, value], cback);
+
+            return this;
+        },
+        difference: function(value) {
+            return Math.abs(numeral(this._value).subtract(value).value());
+        }
+    };
+
+    /************************************
+        Default Locale && Format
+    ************************************/
+
+    numeral.register('locale', 'en', {
+        delimiters: {
+            thousands: ',',
+            decimal: '.'
+        },
+        abbreviations: {
+            thousand: 'k',
+            million: 'm',
+            billion: 'b',
+            trillion: 't'
+        },
+        ordinal: function(number) {
+            var b = number % 10;
+            return (~~(number % 100 / 10) === 1) ? 'th' :
+                (b === 1) ? 'st' :
+                (b === 2) ? 'nd' :
+                (b === 3) ? 'rd' : 'th';
+        },
+        currency: {
+            symbol: '$'
+        }
+    });
+
+    
+
+(function() {
+        numeral.register('format', 'bps', {
+            regexps: {
+                format: /(BPS)/,
+                unformat: /(BPS)/
+            },
+            format: function(value, format, roundingFunction) {
+                var space = numeral._.includes(format, ' BPS') ? ' ' : '',
+                    output;
+
+                value = value * 10000;
+
+                // check for space before BPS
+                format = format.replace(/\s?BPS/, '');
+
+                output = numeral._.numberToFormat(value, format, roundingFunction);
+
+                if (numeral._.includes(output, ')')) {
+                    output = output.split('');
+
+                    output.splice(-1, 0, space + 'BPS');
+
+                    output = output.join('');
+                } else {
+                    output = output + space + 'BPS';
+                }
+
+                return output;
+            },
+            unformat: function(string) {
+                return +(numeral._.stringToNumber(string) * 0.0001).toFixed(15);
+            }
+        });
+})();
+
+
+(function() {
+        var decimal = {
+            base: 1000,
+            suffixes: ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+        },
+        binary = {
+            base: 1024,
+            suffixes: ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']
+        };
+
+    var allSuffixes =  decimal.suffixes.concat(binary.suffixes.filter(function (item) {
+            return decimal.suffixes.indexOf(item) < 0;
+        }));
+        var unformatRegex = allSuffixes.join('|');
+        // Allow support for BPS (http://www.investopedia.com/terms/b/basispoint.asp)
+        unformatRegex = '(' + unformatRegex.replace('B', 'B(?!PS)') + ')';
+
+    numeral.register('format', 'bytes', {
+        regexps: {
+            format: /([0\s]i?b)/,
+            unformat: new RegExp(unformatRegex)
+        },
+        format: function(value, format, roundingFunction) {
+            var output,
+                bytes = numeral._.includes(format, 'ib') ? binary : decimal,
+                suffix = numeral._.includes(format, ' b') || numeral._.includes(format, ' ib') ? ' ' : '',
+                power,
+                min,
+                max;
+
+            // check for space before
+            format = format.replace(/\s?i?b/, '');
+
+            for (power = 0; power <= bytes.suffixes.length; power++) {
+                min = Math.pow(bytes.base, power);
+                max = Math.pow(bytes.base, power + 1);
+
+                if (value === null || value === 0 || value >= min && value < max) {
+                    suffix += bytes.suffixes[power];
+
+                    if (min > 0) {
+                        value = value / min;
+                    }
+
+                    break;
+                }
+            }
+
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            return output + suffix;
+        },
+        unformat: function(string) {
+            var value = numeral._.stringToNumber(string),
+                power,
+                bytesMultiplier;
+
+            if (value) {
+                for (power = decimal.suffixes.length - 1; power >= 0; power--) {
+                    if (numeral._.includes(string, decimal.suffixes[power])) {
+                        bytesMultiplier = Math.pow(decimal.base, power);
+
+                        break;
+                    }
+
+                    if (numeral._.includes(string, binary.suffixes[power])) {
+                        bytesMultiplier = Math.pow(binary.base, power);
+
+                        break;
+                    }
+                }
+
+                value *= (bytesMultiplier || 1);
+            }
+
+            return value;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'currency', {
+        regexps: {
+            format: /(\$)/
+        },
+        format: function(value, format, roundingFunction) {
+            var locale = numeral.locales[numeral.options.currentLocale],
+                symbols = {
+                    before: format.match(/^([\+|\-|\(|\s|\$]*)/)[0],
+                    after: format.match(/([\+|\-|\)|\s|\$]*)$/)[0]
+                },
+                output,
+                symbol,
+                i;
+
+            // strip format of spaces and $
+            format = format.replace(/\s?\$\s?/, '');
+
+            // format the number
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            // update the before and after based on value
+            if (value >= 0) {
+                symbols.before = symbols.before.replace(/[\-\(]/, '');
+                symbols.after = symbols.after.replace(/[\-\)]/, '');
+            } else if (value < 0 && (!numeral._.includes(symbols.before, '-') && !numeral._.includes(symbols.before, '('))) {
+                symbols.before = '-' + symbols.before;
+            }
+
+            // loop through each before symbol
+            for (i = 0; i < symbols.before.length; i++) {
+                symbol = symbols.before[i];
+
+                switch (symbol) {
+                    case '$':
+                        output = numeral._.insert(output, locale.currency.symbol, i);
+                        break;
+                    case ' ':
+                        output = numeral._.insert(output, ' ', i + locale.currency.symbol.length - 1);
+                        break;
+                }
+            }
+
+            // loop through each after symbol
+            for (i = symbols.after.length - 1; i >= 0; i--) {
+                symbol = symbols.after[i];
+
+                switch (symbol) {
+                    case '$':
+                        output = i === symbols.after.length - 1 ? output + locale.currency.symbol : numeral._.insert(output, locale.currency.symbol, -(symbols.after.length - (1 + i)));
+                        break;
+                    case ' ':
+                        output = i === symbols.after.length - 1 ? output + ' ' : numeral._.insert(output, ' ', -(symbols.after.length - (1 + i) + locale.currency.symbol.length - 1));
+                        break;
+                }
+            }
+
+
+            return output;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'exponential', {
+        regexps: {
+            format: /(e\+|e-)/,
+            unformat: /(e\+|e-)/
+        },
+        format: function(value, format, roundingFunction) {
+            var output,
+                exponential = typeof value === 'number' && !numeral._.isNaN(value) ? value.toExponential() : '0e+0',
+                parts = exponential.split('e');
+
+            format = format.replace(/e[\+|\-]{1}0/, '');
+
+            output = numeral._.numberToFormat(Number(parts[0]), format, roundingFunction);
+
+            return output + 'e' + parts[1];
+        },
+        unformat: function(string) {
+            var parts = numeral._.includes(string, 'e+') ? string.split('e+') : string.split('e-'),
+                value = Number(parts[0]),
+                power = Number(parts[1]);
+
+            power = numeral._.includes(string, 'e-') ? power *= -1 : power;
+
+            function cback(accum, curr, currI, O) {
+                var corrFactor = numeral._.correctionFactor(accum, curr),
+                    num = (accum * corrFactor) * (curr * corrFactor) / (corrFactor * corrFactor);
+                return num;
+            }
+
+            return numeral._.reduce([value, Math.pow(10, power)], cback, 1);
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'ordinal', {
+        regexps: {
+            format: /(o)/
+        },
+        format: function(value, format, roundingFunction) {
+            var locale = numeral.locales[numeral.options.currentLocale],
+                output,
+                ordinal = numeral._.includes(format, ' o') ? ' ' : '';
+
+            // check for space before
+            format = format.replace(/\s?o/, '');
+
+            ordinal += locale.ordinal(value);
+
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            return output + ordinal;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'percentage', {
+        regexps: {
+            format: /(%)/,
+            unformat: /(%)/
+        },
+        format: function(value, format, roundingFunction) {
+            var space = numeral._.includes(format, ' %') ? ' ' : '',
+                output;
+
+            if (numeral.options.scalePercentBy100) {
+                value = value * 100;
+            }
+
+            // check for space before %
+            format = format.replace(/\s?\%/, '');
+
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            if (numeral._.includes(output, ')')) {
+                output = output.split('');
+
+                output.splice(-1, 0, space + '%');
+
+                output = output.join('');
+            } else {
+                output = output + space + '%';
+            }
+
+            return output;
+        },
+        unformat: function(string) {
+            var number = numeral._.stringToNumber(string);
+            if (numeral.options.scalePercentBy100) {
+                return number * 0.01;
+            }
+            return number;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'time', {
+        regexps: {
+            format: /(:)/,
+            unformat: /(:)/
+        },
+        format: function(value, format, roundingFunction) {
+            var hours = Math.floor(value / 60 / 60),
+                minutes = Math.floor((value - (hours * 60 * 60)) / 60),
+                seconds = Math.round(value - (hours * 60 * 60) - (minutes * 60));
+
+            return hours + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
+        },
+        unformat: function(string) {
+            var timeArray = string.split(':'),
+                seconds = 0;
+
+            // turn hours and minutes into seconds and add them all up
+            if (timeArray.length === 3) {
+                // hours
+                seconds = seconds + (Number(timeArray[0]) * 60 * 60);
+                // minutes
+                seconds = seconds + (Number(timeArray[1]) * 60);
+                // seconds
+                seconds = seconds + Number(timeArray[2]);
+            } else if (timeArray.length === 2) {
+                // minutes
+                seconds = seconds + (Number(timeArray[0]) * 60);
+                // seconds
+                seconds = seconds + Number(timeArray[1]);
+            }
+            return Number(seconds);
+        }
+    });
+})();
+
+return numeral;
+}));
+
 
 /***/ })
 /******/ ]);

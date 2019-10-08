@@ -21,28 +21,14 @@ class VehicleController extends Controller
       ->join('members', 'members.id', '=', 'vehicles.member_id')->
 
       select('vehicles.*','members.name')
+      ->where('vehicles.status','Active')
       ->get();
         return response()->json($prop);
     }
 
-    public function vehicleshares($id){
-      $prop = DB::table('shares')
-      ->join('vehicles', 'vehicles.id', '=', 'shares.vehicle_id')->
-    select('shares.*','vehicles.registration_no')
-    ->where('shares.vehicle_id',$id)
-    ->get();
-      return response()->json($prop);
-    }
 
-    public function vehicleloan($id){
-      $prop = DB::table('loans')
-    ->join('members', 'members.id', '=', 'loans.member_id')
-      ->join('vehicles', 'vehicles.id', '=', 'loans.vehicle_id')->
-    select('loans.*','members.name','vehicles.registration_no')
-    ->where('loans.vehicle_id',$id)
-    ->get();
-      return response()->json($prop);
-    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -104,7 +90,7 @@ class VehicleController extends Controller
      * @param  \App\Vehicle  $vehicle
      * @return \Illuminate\Http\Response
      */
-    public function edit(Vehicle $vehicle)
+    public function edit($id)
     {
         //
     }
@@ -116,7 +102,7 @@ class VehicleController extends Controller
      * @param  \App\Vehicle  $vehicle
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Vehicle $vehicle)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -127,8 +113,11 @@ class VehicleController extends Controller
      * @param  \App\Vehicle  $vehicle
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Vehicle $vehicle)
+    public function destroy($id)
     {
         //
+        $prop = Vehicle::where('id',$id)->update(['status' => 'Inactive']);
+
+            return response()->json($prop);
     }
 }

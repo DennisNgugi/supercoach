@@ -118,7 +118,7 @@ export default {
                 if (result.value) {
                   let uri = `/api/member/${id}`;
                   this.axios.delete(uri).then(response => {
-                      this.posts.splice(this.posts.indexOf(id), 1);
+                      //this.posts.splice(this.posts.indexOf(id), 1);
                       this.fetchData();
                   });
                     swal.fire(

@@ -15,20 +15,28 @@ class MemberController extends Controller
      */
     public function index()
     {
-      return new MemberCollection(Member::all());
+      return new MemberCollection(Member::where('status' ,'=','Active')->get());
 
     }
 
     public function membershares($id){
       $prop = DB::table('shares')
     ->join('members', 'members.id', '=', 'shares.member_id')
-      ->join('vehicles', 'vehicles.id', '=', 'shares.vehicle_id')->
-    select('shares.*','members.name','vehicles.registration_no')
+    ->select('shares.*','members.name')
     ->where('shares.member_id',$id)
     ->get();
       return response()->json($prop);
     }
 
+    public function memberloan($id){
+      $prop = DB::table('loans')
+    ->join('members', 'members.id', '=', 'loans.member_id')
+      ->select('loans.*','members.name')
+    ->where('loans.member_id',$id)
+    ->where('loans.status','Active')
+    ->get();
+      return response()->json($prop);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -50,11 +58,10 @@ class MemberController extends Controller
         //
         $request->validate([
           'name' => 'required',
-          'email' => 'email',
           'national_id' => 'required',
           'mobile' => 'required',
           'registration_date' => 'required|date',
-          'number' => 'required|integer'
+          'number' => 'required'
 
         ]);
         if($request->get('image'))
@@ -134,9 +141,8 @@ class MemberController extends Controller
     public function destroy($id)
     {
         //
-        $prop = Member::find($id);
-        $prop->delete();
+        $prop = Member::where('id',$id)->update(['status' => 'Inactive']);
 
-                return response()->json(['success' => 'Member Deleted'], 200);
-    }
+            return response()->json($prop);
+        }
 }

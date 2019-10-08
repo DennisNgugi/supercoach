@@ -15,7 +15,6 @@ class CreateSharesTable extends Migration
     {
         Schema::create('shares', function (Blueprint $table) {
           $table->increments('id');
-          $table->integer('vehicle_id')->unsigned();
           $table->integer('member_id')->unsigned();
           $table->date('payment_date');
           $table->double('amount');

@@ -29,20 +29,6 @@
                     <!-- <p class="text-muted m-b-30 font-14">Here are examples of </p> -->
                     <form @submit.prevent="add" enctype="multipart/form-data">
 
-                      <div :class="['form-group row',allerrors.vehicle_no ? 'has-error' : '']">
-                            <label class="col-sm-2 col-form-label">Vehicle number</label>
-                            <div class="col-sm-10">
-                              <select class="form-control" v-model="post.vehicle_no">
-
-                                <option value="">Choose Vehicle</option>
-
-                                <option value=""></option>
-
-                              </select>
-                              <span v-if="allerrors.vehicle_no" :class="['label label-danger']"><p style="color:red;">{{ allerrors.vehicle_no[0]}}</p></span>
-
-                            </div>
-                        </div>
                         <div :class="['form-group row',allerrors.member_no ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Member name
                             </label>
@@ -94,11 +80,9 @@ export default {
     data() {
         return {
 
-            vehicle: [],
             member: [],
 
             post: {
-                vehicle_no: '',
                 member_no:'',
                 amount: '',
                 payment_date: '',
@@ -110,7 +94,6 @@ export default {
     },
     mounted: function() {
         this.fetchMember();
-        this.fetchVehicle();
 
     },
 
@@ -126,16 +109,7 @@ export default {
                 console.log(error);
             })
         },
-        fetchVehicle: function() {
-            console.log('Fetching data....');
 
-            this.axios.get('/api/vehicle').then((response) => {
-                //  console.log(response.data);
-                this.vehicle = response.data.data;
-            }).catch((error) => {
-                console.log(error);
-            })
-        },
         add: function() {
 
             let self = this;
@@ -143,7 +117,6 @@ export default {
 
 
 
-            form.append('vehicle_no', self.post.vehicle_no);
             form.append('member_no', self.post.member_no);
 
             form.append('amount', self.post.amount);
@@ -154,7 +127,6 @@ export default {
             axios.post('/api/shares', form)
                 .then((response) => {
                     self.allerrors = [];
-                    self.post.vehicle_no = '';
                     self.post.member_no = '';
                     self.post.amount = '';
                     self.post.payment_date = '';

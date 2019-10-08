@@ -15,7 +15,7 @@ class CreateGuarantorsTable extends Migration
     {
         Schema::create('guarantors', function (Blueprint $table) {
           $table->increments('id');
-         $table->integer('guarantor')->unsigned();
+         $table->integer('member_id')->unsigned();
          $table->integer('loan_id')->unsigned();
          $table->double('amount');
          $table->date('date');

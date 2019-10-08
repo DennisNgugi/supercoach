@@ -22,6 +22,9 @@
             <div class="col-xl-3 col-md-6">
               <img :src="'/images/' +post.image" class="rounded-circle mb-3" alt="">
                 <h4 class="page-title mt-3">{{post.name}}</h4> <br>
+                <p v-if="post.status == 'Active'" class="page-title">Status: <span class="text-success">{{post.status}}</span> </p>
+                <p v-else class="page-title">Status: <span class="text-danger">Inactive</span> </p>
+
             </div>
             <div class="col-xl-4">
                 <div class="card">
@@ -59,15 +62,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="latest-message-list">
-                                <div class="border-bottom mt-3 position-relative">
 
-                                    <div class="massage-desc">
-                                        <h5 class="font-14 mt-0 text-dark">Status</h5>
-                                        <p class="text-muted text-dark">{{post.status}}</p>
-                                    </div>
-                                </div>
-                            </a>
                           </div>
                     </div>
                 </div>
@@ -89,8 +84,8 @@
                   <div class="card bg-success mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
-                              <h6 class="text-uppercase mt-0 float-left text-white-80">No of vehicles</h6>
-                              <h4 class="mb-3 mt-0 float-right"></h4>
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Loan amount</h6>
+                              <h4 class="mb-3 mt-0 float-right">{{totalLoan}}</h4>
                           </div>
                       </div>
                       <div class="p-3">
@@ -120,16 +115,20 @@
 
           </div><!-- end row -->
           <div class="row">
-              <div class="col-xl-9">
+              <div class="col-xl-4">
                   <div class="card">
                       <div class="card-body">
-                          <h4 class="mt-0 header-title mb-4">Latest Shares Trasaction</h4>
+                          <h4 class="mt-0 header-title mb-4">Shares Trasaction for {{post.name}}
+                            <span class="float-right">
+                              <button type="button" @click.prevent="printme" class="btn btn-secondary btn-sm" name="button">Print report</button>
+                            </span>
+                          </h4>
+
                           <div class="table-responsive">
                               <table class="table table-striped">
                                   <thead>
                                       <tr>
                                           <th>#</th>
-                                          <th scope="col">Vehicle No.</th>
                                           <th scope="col">Amount</th>
                                           <th scope="col">Payment Date</th>
 
@@ -139,7 +138,6 @@
                                     <tr v-for="(p,index) in shares" @key="index">
 
                                           <th scope="row">{{index+1}}</th>
-                                          <th>{{p.registration_no}}</th>
                                           <td>{{p.amount}}</td>
                                           <td>{{p.payment_date|date}}</td>
 
@@ -160,7 +158,48 @@
                       </div>
                   </div>
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="mt-0 header-title mb-4">Applied Loan Report for {{post.name}}</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#.</th>
+                                        <th scope="col">Loan ID</th>
+                                        <th scope="col">Amount loaned</th>
+                                        <th scope="col">Interest rate(%)</th>
+                                        <th scope="col">Duration(months)</th>
+                                        <th scope="col">Date issued</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <tr v-for="(p,index) in loans" @key="index">
+
+                                        <th scope="row">{{index+1}}</th>
+                                        <td>{{p.loan_id}}</td>
+                                        <td>{{p.amount}}</td>
+                                        <td>{{p.interest_rate}}</td>
+                                        <td>{{p.duration}}</td>
+                                        <td>{{p.date|date}}</td>
+                                        <td>
+
+                                          <router-link :to="{ name: '', params: {} }" class="btn btn-secondary btn-sm">View Loan</router-link>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+              <!-- <div class="col-xl-3">
                   <div class="card">
                       <div class="card-body">
                           <h4 class="mt-0 header-title mb-4">Document files</h4>
@@ -202,7 +241,7 @@
                           </table>
                       </div>
                   </div>
-              </div>
+              </div> -->
           </div><!-- end row -->
 
 
@@ -215,7 +254,8 @@ export default {
   data() {
       return {
           post: {},
-          shares:[]
+          shares:[],
+          loans:[],
       }
   },
   computed:{
@@ -229,9 +269,22 @@ export default {
         return total;
 
     },
+    totalLoan: function() {
+        var total = 0;
+        this.loans.forEach(function(item) {
+          total += parseInt(item.amount);
+
+        });
+      //  this.form.total = total;
+        return total;
+
+    },
   },
+
   mounted: function() {
       this.fetchShares();
+      this.fetchLoan();
+
   },
 
   created() {
@@ -243,13 +296,23 @@ export default {
   },
 
   methods:{
+    printme(){
+      window.print();
+    },
     fetchShares:function(){
       let url = `/api/membershares/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.shares = response.data;
           });
-    }
+    },
+    fetchLoan:function(){
+      let url = `/api/memberloan/${this.$route.params.id}`;
+      this.axios.get(url)
+          .then((response) => {
+              this.loans = response.data;
+          });
+  },
   }
 
 }

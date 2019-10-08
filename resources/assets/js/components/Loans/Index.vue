@@ -28,7 +28,6 @@
                               <tr>
                                 <th>#</th>
                                 <th>Loan ID</th>
-                                <th>Vehicle no</th>
                                 <th>Member name</th>
 
                                 <th>Loan amount</th>
@@ -44,7 +43,6 @@
                               <tr v-for="(p,index) in posts" @key="index">
                                 <td>{{index+1}}</td>
                                 <td>{{p.loan_id}}</td>
-                                <td>{{p.registration_no}}</td>
                                 <td>{{p.name}}</td>
                                 <td>{{p.amount}}</td>
                                 <td>{{p.interest_rate}}</td>
@@ -55,7 +53,7 @@
 
 
                                 <td>
-                                  <router-link :to="{name: 'loan_pay', params: { id: p.loan_id }}" class="btn btn-info btn-sm">Pay loan</router-link>
+                                  <router-link :to="{name: 'loan_pay', params: { id: p.id }}" class="btn btn-info btn-sm">Pay loan</router-link>
                                   <router-link :to="{name: 'loan_edit', params: { id: p.id }}" class="btn btn-secondary btn-sm">Guarantor</router-link>
 
                                 <router-link :to="{name: 'loan_edit', params: { id: p.id }}" class="btn btn-primary btn-sm">Edit</router-link>
@@ -105,7 +103,7 @@ export default {
         disable(id) {
             swal.fire({
                 title: 'Are you sure?',
-                text: "You won't be able to revert this!",
+              //  text: "You won't be able to revert this!",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
@@ -116,7 +114,7 @@ export default {
                 if (result.value) {
                   let uri = `/api/loan/${id}`;
                   this.axios.delete(uri).then(response => {
-                      this.posts.splice(this.posts.indexOf(id), 1);
+                      //this.posts.splice(this.posts.indexOf(id), 1);
                       this.fetchData();
                   });
                     swal.fire(

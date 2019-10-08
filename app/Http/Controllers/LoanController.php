@@ -18,8 +18,9 @@ class LoanController extends Controller
         //
         $prop = DB::table('loans')
       ->join('members', 'members.id', '=', 'loans.member_id')
-        ->join('vehicles', 'vehicles.id', '=', 'loans.vehicle_id')->
-      select('loans.*','members.name','vehicles.registration_no')
+        ->select('loans.*','members.name')
+        ->where('loans.status','Active')
+        ->orderBy('loans.created_at','DESC')
       ->get();
         return response()->json($prop);
     }
@@ -49,14 +50,12 @@ class LoanController extends Controller
         'date'=>'required|date',
         'duration'=> 'required|integer',
         'member' => 'required',
-        'vehicle_id' => 'required'
 
       ]);
         $var = new Loan;
-        $prefix = 'spc';
+        $prefix = 'SPCH';
         $var->loan_id = $prefix.uniqid();
         $var->member_id = $request->member;
-        $var->vehicle_id = $request->vehicle_id;
         $var->date =$request->date;
         $var->amount =$request->amount;
         $var->interest_rate =$request->rate;
@@ -73,7 +72,7 @@ class LoanController extends Controller
      * @param  \App\Loan  $loan
      * @return \Illuminate\Http\Response
      */
-    public function show(Loan $loan)
+    public function show($id)
     {
         //
     }
@@ -86,7 +85,7 @@ class LoanController extends Controller
      * @param  \App\Loan  $loan
      * @return \Illuminate\Http\Response
      */
-    public function edit(Loan $loan)
+    public function edit($id)
     {
         //
     }
@@ -98,7 +97,7 @@ class LoanController extends Controller
      * @param  \App\Loan  $loan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Loan $loan)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -109,8 +108,11 @@ class LoanController extends Controller
      * @param  \App\Loan  $loan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Loan $loan)
+    public function destroy($id)
     {
         //
+        $prop = Loan::where('id',$id)->update(['status' => 'Inactive']);
+
+            return response()->json($prop);
     }
 }

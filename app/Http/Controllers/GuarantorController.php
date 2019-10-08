@@ -44,7 +44,7 @@ class GuarantorController extends Controller
      * @param  \App\Guarantor  $guarantor
      * @return \Illuminate\Http\Response
      */
-    public function show(Guarantor $guarantor)
+    public function show($id)
     {
         //
     }
@@ -55,7 +55,7 @@ class GuarantorController extends Controller
      * @param  \App\Guarantor  $guarantor
      * @return \Illuminate\Http\Response
      */
-    public function edit(Guarantor $guarantor)
+    public function edit($id)
     {
         //
     }
@@ -67,7 +67,7 @@ class GuarantorController extends Controller
      * @param  \App\Guarantor  $guarantor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Guarantor $guarantor)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,8 +78,11 @@ class GuarantorController extends Controller
      * @param  \App\Guarantor  $guarantor
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Guarantor $guarantor)
+    public function destroy($id)
     {
         //
+        $prop = Guarantor::where('id',$id)->update(['status' => 'Inactive']);
+
+            return response()->json($prop);
     }
 }

@@ -26,5 +26,16 @@ Route::apiResource('share','ShareController');
 Route::post('payloan/{id}','LoanPaymentController@payloan');
 Route::get('payloan/{id}','LoanPaymentController@loan_pay_view');
 Route::get('membershares/{id}','MemberController@membershares');
-Route::get('vehiclehares/{id}','VehicleController@vehicleshares');
-Route::get('vehicleloan/{id}','VehicleController@vehicleloan');
+Route::get('memberloan/{id}','MemberController@memberloan');
+
+Route::get('/share/report','ReportController@filter');
+
+Route::get('/totalshares','DashboardController@totalShares');
+Route::get('/totalvehicles','DashboardController@totalVehicles');
+Route::get('/totalmembers','DashboardController@totalMembers');
+Route::get('/totalloans','DashboardController@totalLoans');
+
+// monthly report
+Route::get('/month','DashboardController@month');
+// yearly report
+Route::get('/monthly','DashboardController@monthly');

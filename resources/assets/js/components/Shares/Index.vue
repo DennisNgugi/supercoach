@@ -29,7 +29,6 @@
                             <thead>
                               <tr>
                                 <th>#</th>
-                                <th>Vehicle no</th>
                                 <th>Member name</th>
 
                                 <th>Shares amount</th>
@@ -44,7 +43,6 @@
                               <tr v-for="(p,index) in posts" @key="index">
                                 <td>{{index+1}}</td>
 
-                                <td>{{p.registration_no}}</td>
                                 <td>{{p.name}}</td>
                                 <td>{{p.amount}}</td>
 

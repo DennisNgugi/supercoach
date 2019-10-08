@@ -11,6 +11,7 @@ window.Vue = require('vue');
 
 import VueRouter from 'vue-router'
 import moment from 'moment'
+import numeral from 'numeral'
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
@@ -43,6 +44,9 @@ Vue.filter('capitalize', function (value) {
 Vue.filter('date', function (created) {
   return moment(created).format('LL');
 })
+Vue.filter("formatNumber", function (value) {
+    return numeral(value).format("0,0"); // displaying other groupings/separators is possible, look at the docs
+  });
 
 
 import Dashboard from './components/Dashboard.vue';
@@ -70,12 +74,13 @@ import LoanPay from './components/LoanPayment/PayLoan.vue';
 import ShareCreate from './components/Shares/Create.vue';
 import ShareEdit from './components/Shares/Edit.vue';
 import ShareIndex from './components/Shares/Index.vue';
-import ShareShow from './components/Shares/Show.vue';
 
 import GuarantorCreate from './components/Guarantors/Create.vue';
 import GuarantorEdit from './components/Guarantors/Edit.vue';
 import GuarantorIndex from './components/Guarantors/Index.vue';
 import GuarantorShow from './components/Guarantors/Show.vue';
+
+import ShareReport from './components/Report/ShareReport.vue';
 
 const routes = [
   {
@@ -164,10 +169,11 @@ const routes = [
       path: '/share/edit/:id',
       component: ShareEdit
   },
+
   {
-      name: 'share_show',
-      path: '/share/:id',
-      component: ShareShow
+      name: 'sharereport',
+      path: '/share/report',
+      component: ShareReport
   },
   {
       name: 'guarantor_create',

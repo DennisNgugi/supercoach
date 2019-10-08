@@ -14,10 +14,9 @@ class CreateLoansTable extends Migration
     public function up()
     {
         Schema::create('loans', function (Blueprint $table) {
-          $table->increments('id');
-          $table->string('loan_id');
+        $table->increments('id');
+        $table->string('loan_id');
         $table->integer('member_id')->unsigned();
-        $table->integer('vehicle_id')->unsigned();
         $table->date('date');
         $table->double('amount');
         $table->double('interest_rate');

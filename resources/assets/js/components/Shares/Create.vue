@@ -23,20 +23,7 @@
                     <!-- <p class="text-muted m-b-30 font-14">Here are examples of </p> -->
                     <form @submit.prevent="add" enctype="multipart/form-data">
 
-                      <div :class="['form-group row',allerrors.vehicle_id ? 'has-error' : '']">
-                            <label class="col-sm-2 col-form-label">Vehicle number</label>
-                            <div class="col-sm-10">
-                              <select class="form-control" v-model="post.vehicle_id">
 
-                                <option value="">Choose Vehicle</option>
-
-                                  <option v-for="p in vehicle"v-bind:value="p.id" >{{p.registration_no}}</option>
-
-                              </select>
-                              <span v-if="allerrors.vehicle_id" :class="['label label-danger']"><p style="color:red;">{{ allerrors.vehicle_id[0]}}</p></span>
-
-                            </div>
-                        </div>
                         <div :class="['form-group row',allerrors.member_id ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Member name
                             </label>
@@ -61,7 +48,7 @@
                         <div :class="['form-group row',allerrors.payment_date ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Payment date</label>
                             <div class="col-sm-10">
-                                <input type="date" id="payment_date" v-model="post.payment_date" class="form-control" placeholder="">
+                                <input type="date" id="payment_date" v-model="post.payment_date" class="form-control" value="" placeholder="">
                                 <span v-if="allerrors.payment_date" :class="['label label-danger']"><p style="color:red;">{{ allerrors.payment_date[0]}}</p></span>
 
                             </div>
@@ -88,11 +75,9 @@ export default {
     data() {
         return {
 
-            vehicle: [],
             member: [],
 
             post: {
-                vehicle_id: '',
                 member_id:'',
                 amount: '',
                 payment_date: '',
@@ -104,7 +89,6 @@ export default {
     },
     mounted: function() {
         this.fetchMember();
-        this.fetchVehicle();
 
     },
 
@@ -120,16 +104,7 @@ export default {
                 console.log(error);
             })
         },
-        fetchVehicle: function() {
-            console.log('Fetching data....');
 
-            this.axios.get('/api/vehicle').then((response) => {
-                //  console.log(response.data);
-                this.vehicle = response.data;
-            }).catch((error) => {
-                console.log(error);
-            })
-        },
         add: function() {
 
             let self = this;
@@ -137,7 +112,6 @@ export default {
 
 
 
-            form.append('vehicle_id', self.post.vehicle_id);
             form.append('member_id', self.post.member_id);
 
             form.append('amount', self.post.amount);
@@ -148,7 +122,6 @@ export default {
             axios.post('/api/share', form)
                 .then((response) => {
                     self.allerrors = [];
-                    self.post.vehicle_id = '';
                     self.post.member_id = '';
                     self.post.amount = '';
                     self.post.payment_date = '';

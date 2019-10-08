@@ -19,11 +19,11 @@ class LoanPaymentController extends Controller
     }
 
     public function loan_pay_view($id){
-  //  $prop = Loan::find($id);
-      $prop = DB::table('loans')
-            ->select('loans.*')
-            ->where('loans.loan_id',$id);
-      return response()->json($prop);
+    $prop = Loan::find($id);
+      // $prop = DB::table('loans')
+      //       ->select('loans.*')
+      //       ->where('loans.loan_id',$id);
+    return response()->json($prop);
     }
 
     public function payloan(Request $request ,$id){

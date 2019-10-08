@@ -47,7 +47,7 @@
                                 <td><span class="badge badge-pill badge-success">{{p.status}}</span></td>
 
                                 <td>
-                                  <router-link :to="{name: 'vehicle_show', params: { id: p.id }}" class="btn btn-info btn-sm">View</router-link>
+                                  <!-- <router-link :to="{name: 'vehicle_show', params: { id: p.id }}" class="btn btn-info btn-sm">View</router-link> -->
                                 <router-link :to="{name: 'vehicle_edit', params: { id: p.id }}" class="btn btn-primary btn-sm">Edit</router-link>
                                   <input type="submit" @click.prevent="disable(p.id)" class="btn btn-danger btn-sm" value="Delete">
 
@@ -105,7 +105,7 @@ export default {
                 if (result.value) {
                   let uri = `/api/vehicle/${id}`;
                   this.axios.delete(uri).then(response => {
-                      this.posts.splice(this.posts.indexOf(id), 1);
+                      //this.posts.splice(this.posts.indexOf(id), 1);
                       this.fetchData();
                   });
                     swal.fire(

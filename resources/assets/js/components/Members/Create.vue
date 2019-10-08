@@ -48,6 +48,7 @@
                             <label class="col-sm-2 col-form-label">Member email</label>
                             <div class="col-sm-10">
                                 <input type="email" id="email"  v-model="post.email" class="form-control" placeholder="">
+                                <small class="text-muted">Optional</small>
                                 <span v-if="allerrors.email" :class="['label label-danger']"><p style="color:red;">{{ allerrors.email[0]}}</p></span>
 
                             </div>
