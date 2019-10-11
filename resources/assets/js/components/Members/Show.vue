@@ -118,9 +118,9 @@
               <div class="col-xl-4">
                   <div class="card">
                       <div class="card-body">
-                          <h4 class="mt-0 header-title mb-4">Shares Trasaction for {{post.name}}
+                          <h4 class="mt-0 header-title mb-4">Shares Trasaction
                             <span class="float-right">
-                              <button type="button" @click.prevent="printme" class="btn btn-secondary btn-sm" name="button">Print report</button>
+                              <button type="button" @click.prevent="downloadIndividualMemberShares" class="btn btn-secondary btn-sm" name="button">Download report</button>
                             </span>
                           </h4>
 
@@ -161,7 +161,7 @@
               <div class="col-xl-8">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="mt-0 header-title mb-4">Applied Loan Report for {{post.name}}</h4>
+                        <h4 class="mt-0 header-title mb-4">Applied Loan Report</h4>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -312,6 +312,10 @@ export default {
           .then((response) => {
               this.loans = response.data;
           });
+  },
+  downloadIndividualMemberShares:function(){
+    let url = `/api/individual/shares/${this.$route.params.id}`;
+    axios.get(url)
   },
   }
 

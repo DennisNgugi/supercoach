@@ -30,6 +30,9 @@ Route::get('memberloan/{id}','MemberController@memberloan');
 
 Route::get('/share/report','ReportController@filter');
 
+Route::get('/dashboardshares','DashboardController@dashboardShares');
+Route::get('/dashboardloans','DashboardController@dashboardLoans');
+
 Route::get('/totalshares','DashboardController@totalShares');
 Route::get('/totalvehicles','DashboardController@totalVehicles');
 Route::get('/totalmembers','DashboardController@totalMembers');
@@ -39,3 +42,10 @@ Route::get('/totalloans','DashboardController@totalLoans');
 Route::get('/month','DashboardController@month');
 // yearly report
 Route::get('/monthly','DashboardController@monthly');
+
+// pdf download for all shares
+Route::get('/download/shares','DashboardController@downloadShares');
+// pdf download for all individual shares
+Route::get('/individual/shares/{id}','DashboardController@individualShares');
+// pdf download for monthly shares
+Route::get('/monthly/shares','DashboardController@monthlySharesDownload');

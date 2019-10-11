@@ -30,7 +30,7 @@
                             <div class="col-sm-10">
                                 <select  id="member"  v-model="post.member_id" class="form-control" placeholder="">
                                       <option value="">Choose Member</option>
-                                      <option v-for="p in member"v-bind:value="p.id" >{{p.name}}</option>
+                                      <option v-for="p in member" v-bind:value="p.id" >{{p.name}}</option>
                                 </select>
                                 <span v-if="allerrors.member_id" :class="['label label-danger']"><p style="color:red;">{{ allerrors.member_id[0]}}</p></span>
 
@@ -49,6 +49,7 @@
                             <label class="col-sm-2 col-form-label">Payment date</label>
                             <div class="col-sm-10">
                                 <input type="date" id="payment_date" v-model="post.payment_date" class="form-control" value="" placeholder="">
+                                <!-- <FunctionalCalendar  :is-modal='true' :date-format="'yyyy/mm/dd'" v-model="post.payment_date"  :is-date-picker='true'></FunctionalCalendar> -->
                                 <span v-if="allerrors.payment_date" :class="['label label-danger']"><p style="color:red;">{{ allerrors.payment_date[0]}}</p></span>
 
                             </div>
@@ -70,8 +71,11 @@
 </template>
 
 <script>
+//import { FunctionalCalendar } from 'vue-functional-calendar';
 export default {
-
+  // components: {
+  //       FunctionalCalendar
+  //   },
     data() {
         return {
 

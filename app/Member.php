@@ -10,4 +10,8 @@ class Member extends Model
     public function vehicle(){
       return $this->hasMany(Vehicle::class,'member_id');
     }
+    public function share(){
+      return $this->hasMany(Share::class);
+
+    }
 }

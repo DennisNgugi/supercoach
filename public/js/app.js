@@ -4883,7 +4883,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(181)
+var listToStyles = __webpack_require__(177)
 
 /*
 type StyleObject = {
@@ -31427,7 +31427,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(145);
-module.exports = __webpack_require__(272);
+module.exports = __webpack_require__(286);
 
 
 /***/ }),
@@ -31439,60 +31439,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_numeral__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_axios__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_sweetalert2__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_sweetalert2__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vform__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vform__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_functional_calendar__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_axios__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_sweetalert2__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_sweetalert2__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vform__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vform___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vform__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Dashboard_vue__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Dashboard_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_Dashboard_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Create_vue__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Members_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Members_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Edit_vue__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Members_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_Members_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Members_Index_vue__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Members_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_Members_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Members_Show_vue__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Members_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_Members_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Create_vue__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Edit_vue__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Index_vue__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Vehicles_Show_vue__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Vehicles_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_Vehicles_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Create_vue__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Loans_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_Loans_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Edit_vue__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Loans_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_Loans_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_Loans_Index_vue__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_Loans_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_Loans_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_Loans_Show_vue__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_Loans_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__components_Loans_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_LoanPayment_PayLoan_vue__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_LoanPayment_PayLoan_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__components_LoanPayment_PayLoan_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Create_vue__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Shares_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__components_Shares_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Edit_vue__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Shares_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__components_Shares_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Shares_Index_vue__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Shares_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24__components_Shares_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Create_vue__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Edit_vue__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Index_vue__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Guarantors_Show_vue__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Guarantors_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_28__components_Guarantors_Show_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_Report_ShareReport_vue__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_Report_ShareReport_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_29__components_Report_ShareReport_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -31511,8 +31512,9 @@ window.Vue = __webpack_require__(166);
 
 
 
-window.swal = __WEBPACK_IMPORTED_MODULE_5_sweetalert2___default.a;
-var toast = __WEBPACK_IMPORTED_MODULE_5_sweetalert2___default.a.mixin({
+
+window.swal = __WEBPACK_IMPORTED_MODULE_6_sweetalert2___default.a;
+var toast = __WEBPACK_IMPORTED_MODULE_6_sweetalert2___default.a.mixin({
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
@@ -31522,12 +31524,12 @@ window.toast = toast;
 
 
 
-window.form = __WEBPACK_IMPORTED_MODULE_6_vform__["Form"];
-Vue.component(__WEBPACK_IMPORTED_MODULE_6_vform__["HasError"].name, __WEBPACK_IMPORTED_MODULE_6_vform__["HasError"]);
-Vue.component(__WEBPACK_IMPORTED_MODULE_6_vform__["AlertError"].name, __WEBPACK_IMPORTED_MODULE_6_vform__["AlertError"]);
+window.form = __WEBPACK_IMPORTED_MODULE_7_vform__["Form"];
+Vue.component(__WEBPACK_IMPORTED_MODULE_7_vform__["HasError"].name, __WEBPACK_IMPORTED_MODULE_7_vform__["HasError"]);
+Vue.component(__WEBPACK_IMPORTED_MODULE_7_vform__["AlertError"].name, __WEBPACK_IMPORTED_MODULE_7_vform__["AlertError"]);
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
-Vue.use(__WEBPACK_IMPORTED_MODULE_3_vue_axios___default.a, __WEBPACK_IMPORTED_MODULE_4_axios___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_4_vue_axios___default.a, __WEBPACK_IMPORTED_MODULE_5_axios___default.a);
 Vue.filter('capitalize', function (value) {
     return value.charAt(0).toUpperCase() + value.slice(1);
 });
@@ -31573,91 +31575,91 @@ Vue.filter("formatNumber", function (value) {
 var routes = [{
     name: 'dashboard',
     path: '/',
-    component: __WEBPACK_IMPORTED_MODULE_7__components_Dashboard_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_8__components_Dashboard_vue___default.a
 }, {
     name: 'member_create',
     path: '/member/create',
-    component: __WEBPACK_IMPORTED_MODULE_8__components_Members_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_9__components_Members_Create_vue___default.a
 }, {
     name: 'member',
     path: '/member',
-    component: __WEBPACK_IMPORTED_MODULE_10__components_Members_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_11__components_Members_Index_vue___default.a
 }, {
     name: 'member_edit',
     path: '/member/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_9__components_Members_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_10__components_Members_Edit_vue___default.a
 }, {
     name: 'member_show',
     path: '/member/:id',
-    component: __WEBPACK_IMPORTED_MODULE_11__components_Members_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_12__components_Members_Show_vue___default.a
 }, {
     name: 'vehicle_create',
     path: '/vehicle/create',
-    component: __WEBPACK_IMPORTED_MODULE_12__components_Vehicles_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Create_vue___default.a
 }, {
     name: 'vehicle',
     path: '/vehicle',
-    component: __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Index_vue___default.a
 }, {
     name: 'vehicle_edit',
     path: '/vehicle/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_13__components_Vehicles_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_14__components_Vehicles_Edit_vue___default.a
 }, {
     name: 'vehicle_show',
     path: '/vehicle/:id',
-    component: __WEBPACK_IMPORTED_MODULE_15__components_Vehicles_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_16__components_Vehicles_Show_vue___default.a
 }, {
     name: 'loan_create',
     path: '/loan/create',
-    component: __WEBPACK_IMPORTED_MODULE_16__components_Loans_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_17__components_Loans_Create_vue___default.a
 }, {
     name: 'loan',
     path: '/loan',
-    component: __WEBPACK_IMPORTED_MODULE_18__components_Loans_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_19__components_Loans_Index_vue___default.a
 }, {
     name: 'loan_edit',
     path: '/loan/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_17__components_Loans_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_18__components_Loans_Edit_vue___default.a
 }, {
     name: 'loan_show',
     path: '/loan/:id',
-    component: __WEBPACK_IMPORTED_MODULE_19__components_Loans_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_20__components_Loans_Show_vue___default.a
 }, {
     name: 'loan_pay',
     path: '/payloan/:id',
-    component: __WEBPACK_IMPORTED_MODULE_20__components_LoanPayment_PayLoan_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_21__components_LoanPayment_PayLoan_vue___default.a
 }, {
     name: 'share_create',
     path: '/share/create',
-    component: __WEBPACK_IMPORTED_MODULE_21__components_Shares_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_22__components_Shares_Create_vue___default.a
 }, {
     name: 'share',
     path: '/share',
-    component: __WEBPACK_IMPORTED_MODULE_23__components_Shares_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_24__components_Shares_Index_vue___default.a
 }, {
     name: 'share_edit',
     path: '/share/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_22__components_Shares_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_23__components_Shares_Edit_vue___default.a
 }, {
     name: 'sharereport',
     path: '/share/report',
-    component: __WEBPACK_IMPORTED_MODULE_28__components_Report_ShareReport_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_29__components_Report_ShareReport_vue___default.a
 }, {
     name: 'guarantor_create',
     path: '/guarantor/create',
-    component: __WEBPACK_IMPORTED_MODULE_24__components_Guarantors_Create_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Create_vue___default.a
 }, {
     name: 'guarantor',
     path: 'guarantorn',
-    component: __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Index_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Index_vue___default.a
 }, {
     name: 'guarantor_edit',
     path: '/guarantor/edit/:id',
-    component: __WEBPACK_IMPORTED_MODULE_25__components_Guarantors_Edit_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_26__components_Guarantors_Edit_vue___default.a
 }, {
     name: 'guarantor_show',
     path: '/guarantor/:id',
-    component: __WEBPACK_IMPORTED_MODULE_27__components_Guarantors_Show_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_28__components_Guarantors_Show_vue___default.a
 }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
@@ -69307,12 +69309,3582 @@ webpackContext.id = 171;
 /* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! @preserve
+ * numeral.js
+ * version : 2.0.6
+ * author : Adam Draper
+ * license : MIT
+ * http://adamwdraper.github.com/Numeral-js/
+ */
+
+(function (global, factory) {
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof module === 'object' && module.exports) {
+        module.exports = factory();
+    } else {
+        global.numeral = factory();
+    }
+}(this, function () {
+    /************************************
+        Variables
+    ************************************/
+
+    var numeral,
+        _,
+        VERSION = '2.0.6',
+        formats = {},
+        locales = {},
+        defaults = {
+            currentLocale: 'en',
+            zeroFormat: null,
+            nullFormat: null,
+            defaultFormat: '0,0',
+            scalePercentBy100: true
+        },
+        options = {
+            currentLocale: defaults.currentLocale,
+            zeroFormat: defaults.zeroFormat,
+            nullFormat: defaults.nullFormat,
+            defaultFormat: defaults.defaultFormat,
+            scalePercentBy100: defaults.scalePercentBy100
+        };
+
+
+    /************************************
+        Constructors
+    ************************************/
+
+    // Numeral prototype object
+    function Numeral(input, number) {
+        this._input = input;
+
+        this._value = number;
+    }
+
+    numeral = function(input) {
+        var value,
+            kind,
+            unformatFunction,
+            regexp;
+
+        if (numeral.isNumeral(input)) {
+            value = input.value();
+        } else if (input === 0 || typeof input === 'undefined') {
+            value = 0;
+        } else if (input === null || _.isNaN(input)) {
+            value = null;
+        } else if (typeof input === 'string') {
+            if (options.zeroFormat && input === options.zeroFormat) {
+                value = 0;
+            } else if (options.nullFormat && input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
+                value = null;
+            } else {
+                for (kind in formats) {
+                    regexp = typeof formats[kind].regexps.unformat === 'function' ? formats[kind].regexps.unformat() : formats[kind].regexps.unformat;
+
+                    if (regexp && input.match(regexp)) {
+                        unformatFunction = formats[kind].unformat;
+
+                        break;
+                    }
+                }
+
+                unformatFunction = unformatFunction || numeral._.stringToNumber;
+
+                value = unformatFunction(input);
+            }
+        } else {
+            value = Number(input)|| null;
+        }
+
+        return new Numeral(input, value);
+    };
+
+    // version number
+    numeral.version = VERSION;
+
+    // compare numeral object
+    numeral.isNumeral = function(obj) {
+        return obj instanceof Numeral;
+    };
+
+    // helper functions
+    numeral._ = _ = {
+        // formats numbers separators, decimals places, signs, abbreviations
+        numberToFormat: function(value, format, roundingFunction) {
+            var locale = locales[numeral.options.currentLocale],
+                negP = false,
+                optDec = false,
+                leadingCount = 0,
+                abbr = '',
+                trillion = 1000000000000,
+                billion = 1000000000,
+                million = 1000000,
+                thousand = 1000,
+                decimal = '',
+                neg = false,
+                abbrForce, // force abbreviation
+                abs,
+                min,
+                max,
+                power,
+                int,
+                precision,
+                signed,
+                thousands,
+                output;
+
+            // make sure we never format a null value
+            value = value || 0;
+
+            abs = Math.abs(value);
+
+            // see if we should use parentheses for negative number or if we should prefix with a sign
+            // if both are present we default to parentheses
+            if (numeral._.includes(format, '(')) {
+                negP = true;
+                format = format.replace(/[\(|\)]/g, '');
+            } else if (numeral._.includes(format, '+') || numeral._.includes(format, '-')) {
+                signed = numeral._.includes(format, '+') ? format.indexOf('+') : value < 0 ? format.indexOf('-') : -1;
+                format = format.replace(/[\+|\-]/g, '');
+            }
+
+            // see if abbreviation is wanted
+            if (numeral._.includes(format, 'a')) {
+                abbrForce = format.match(/a(k|m|b|t)?/);
+
+                abbrForce = abbrForce ? abbrForce[1] : false;
+
+                // check for space before abbreviation
+                if (numeral._.includes(format, ' a')) {
+                    abbr = ' ';
+                }
+
+                format = format.replace(new RegExp(abbr + 'a[kmbt]?'), '');
+
+                if (abs >= trillion && !abbrForce || abbrForce === 't') {
+                    // trillion
+                    abbr += locale.abbreviations.trillion;
+                    value = value / trillion;
+                } else if (abs < trillion && abs >= billion && !abbrForce || abbrForce === 'b') {
+                    // billion
+                    abbr += locale.abbreviations.billion;
+                    value = value / billion;
+                } else if (abs < billion && abs >= million && !abbrForce || abbrForce === 'm') {
+                    // million
+                    abbr += locale.abbreviations.million;
+                    value = value / million;
+                } else if (abs < million && abs >= thousand && !abbrForce || abbrForce === 'k') {
+                    // thousand
+                    abbr += locale.abbreviations.thousand;
+                    value = value / thousand;
+                }
+            }
+
+            // check for optional decimals
+            if (numeral._.includes(format, '[.]')) {
+                optDec = true;
+                format = format.replace('[.]', '.');
+            }
+
+            // break number and format
+            int = value.toString().split('.')[0];
+            precision = format.split('.')[1];
+            thousands = format.indexOf(',');
+            leadingCount = (format.split('.')[0].split(',')[0].match(/0/g) || []).length;
+
+            if (precision) {
+                if (numeral._.includes(precision, '[')) {
+                    precision = precision.replace(']', '');
+                    precision = precision.split('[');
+                    decimal = numeral._.toFixed(value, (precision[0].length + precision[1].length), roundingFunction, precision[1].length);
+                } else {
+                    decimal = numeral._.toFixed(value, precision.length, roundingFunction);
+                }
+
+                int = decimal.split('.')[0];
+
+                if (numeral._.includes(decimal, '.')) {
+                    decimal = locale.delimiters.decimal + decimal.split('.')[1];
+                } else {
+                    decimal = '';
+                }
+
+                if (optDec && Number(decimal.slice(1)) === 0) {
+                    decimal = '';
+                }
+            } else {
+                int = numeral._.toFixed(value, 0, roundingFunction);
+            }
+
+            // check abbreviation again after rounding
+            if (abbr && !abbrForce && Number(int) >= 1000 && abbr !== locale.abbreviations.trillion) {
+                int = String(Number(int) / 1000);
+
+                switch (abbr) {
+                    case locale.abbreviations.thousand:
+                        abbr = locale.abbreviations.million;
+                        break;
+                    case locale.abbreviations.million:
+                        abbr = locale.abbreviations.billion;
+                        break;
+                    case locale.abbreviations.billion:
+                        abbr = locale.abbreviations.trillion;
+                        break;
+                }
+            }
+
+
+            // format number
+            if (numeral._.includes(int, '-')) {
+                int = int.slice(1);
+                neg = true;
+            }
+
+            if (int.length < leadingCount) {
+                for (var i = leadingCount - int.length; i > 0; i--) {
+                    int = '0' + int;
+                }
+            }
+
+            if (thousands > -1) {
+                int = int.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + locale.delimiters.thousands);
+            }
+
+            if (format.indexOf('.') === 0) {
+                int = '';
+            }
+
+            output = int + decimal + (abbr ? abbr : '');
+
+            if (negP) {
+                output = (negP && neg ? '(' : '') + output + (negP && neg ? ')' : '');
+            } else {
+                if (signed >= 0) {
+                    output = signed === 0 ? (neg ? '-' : '+') + output : output + (neg ? '-' : '+');
+                } else if (neg) {
+                    output = '-' + output;
+                }
+            }
+
+            return output;
+        },
+        // unformats numbers separators, decimals places, signs, abbreviations
+        stringToNumber: function(string) {
+            var locale = locales[options.currentLocale],
+                stringOriginal = string,
+                abbreviations = {
+                    thousand: 3,
+                    million: 6,
+                    billion: 9,
+                    trillion: 12
+                },
+                abbreviation,
+                value,
+                i,
+                regexp;
+
+            if (options.zeroFormat && string === options.zeroFormat) {
+                value = 0;
+            } else if (options.nullFormat && string === options.nullFormat || !string.replace(/[^0-9]+/g, '').length) {
+                value = null;
+            } else {
+                value = 1;
+
+                if (locale.delimiters.decimal !== '.') {
+                    string = string.replace(/\./g, '').replace(locale.delimiters.decimal, '.');
+                }
+
+                for (abbreviation in abbreviations) {
+                    regexp = new RegExp('[^a-zA-Z]' + locale.abbreviations[abbreviation] + '(?:\\)|(\\' + locale.currency.symbol + ')?(?:\\))?)?$');
+
+                    if (stringOriginal.match(regexp)) {
+                        value *= Math.pow(10, abbreviations[abbreviation]);
+                        break;
+                    }
+                }
+
+                // check for negative number
+                value *= (string.split('-').length + Math.min(string.split('(').length - 1, string.split(')').length - 1)) % 2 ? 1 : -1;
+
+                // remove non numbers
+                string = string.replace(/[^0-9\.]+/g, '');
+
+                value *= Number(string);
+            }
+
+            return value;
+        },
+        isNaN: function(value) {
+            return typeof value === 'number' && isNaN(value);
+        },
+        includes: function(string, search) {
+            return string.indexOf(search) !== -1;
+        },
+        insert: function(string, subString, start) {
+            return string.slice(0, start) + subString + string.slice(start);
+        },
+        reduce: function(array, callback /*, initialValue*/) {
+            if (this === null) {
+                throw new TypeError('Array.prototype.reduce called on null or undefined');
+            }
+
+            if (typeof callback !== 'function') {
+                throw new TypeError(callback + ' is not a function');
+            }
+
+            var t = Object(array),
+                len = t.length >>> 0,
+                k = 0,
+                value;
+
+            if (arguments.length === 3) {
+                value = arguments[2];
+            } else {
+                while (k < len && !(k in t)) {
+                    k++;
+                }
+
+                if (k >= len) {
+                    throw new TypeError('Reduce of empty array with no initial value');
+                }
+
+                value = t[k++];
+            }
+            for (; k < len; k++) {
+                if (k in t) {
+                    value = callback(value, t[k], k, t);
+                }
+            }
+            return value;
+        },
+        /**
+         * Computes the multiplier necessary to make x >= 1,
+         * effectively eliminating miscalculations caused by
+         * finite precision.
+         */
+        multiplier: function (x) {
+            var parts = x.toString().split('.');
+
+            return parts.length < 2 ? 1 : Math.pow(10, parts[1].length);
+        },
+        /**
+         * Given a variable number of arguments, returns the maximum
+         * multiplier that must be used to normalize an operation involving
+         * all of them.
+         */
+        correctionFactor: function () {
+            var args = Array.prototype.slice.call(arguments);
+
+            return args.reduce(function(accum, next) {
+                var mn = _.multiplier(next);
+                return accum > mn ? accum : mn;
+            }, 1);
+        },
+        /**
+         * Implementation of toFixed() that treats floats more like decimals
+         *
+         * Fixes binary rounding issues (eg. (0.615).toFixed(2) === '0.61') that present
+         * problems for accounting- and finance-related software.
+         */
+        toFixed: function(value, maxDecimals, roundingFunction, optionals) {
+            var splitValue = value.toString().split('.'),
+                minDecimals = maxDecimals - (optionals || 0),
+                boundedPrecision,
+                optionalsRegExp,
+                power,
+                output;
+
+            // Use the smallest precision value possible to avoid errors from floating point representation
+            if (splitValue.length === 2) {
+              boundedPrecision = Math.min(Math.max(splitValue[1].length, minDecimals), maxDecimals);
+            } else {
+              boundedPrecision = minDecimals;
+            }
+
+            power = Math.pow(10, boundedPrecision);
+
+            // Multiply up by precision, round accurately, then divide and use native toFixed():
+            output = (roundingFunction(value + 'e+' + boundedPrecision) / power).toFixed(boundedPrecision);
+
+            if (optionals > maxDecimals - boundedPrecision) {
+                optionalsRegExp = new RegExp('\\.?0{1,' + (optionals - (maxDecimals - boundedPrecision)) + '}$');
+                output = output.replace(optionalsRegExp, '');
+            }
+
+            return output;
+        }
+    };
+
+    // avaliable options
+    numeral.options = options;
+
+    // avaliable formats
+    numeral.formats = formats;
+
+    // avaliable formats
+    numeral.locales = locales;
+
+    // This function sets the current locale.  If
+    // no arguments are passed in, it will simply return the current global
+    // locale key.
+    numeral.locale = function(key) {
+        if (key) {
+            options.currentLocale = key.toLowerCase();
+        }
+
+        return options.currentLocale;
+    };
+
+    // This function provides access to the loaded locale data.  If
+    // no arguments are passed in, it will simply return the current
+    // global locale object.
+    numeral.localeData = function(key) {
+        if (!key) {
+            return locales[options.currentLocale];
+        }
+
+        key = key.toLowerCase();
+
+        if (!locales[key]) {
+            throw new Error('Unknown locale : ' + key);
+        }
+
+        return locales[key];
+    };
+
+    numeral.reset = function() {
+        for (var property in defaults) {
+            options[property] = defaults[property];
+        }
+    };
+
+    numeral.zeroFormat = function(format) {
+        options.zeroFormat = typeof(format) === 'string' ? format : null;
+    };
+
+    numeral.nullFormat = function (format) {
+        options.nullFormat = typeof(format) === 'string' ? format : null;
+    };
+
+    numeral.defaultFormat = function(format) {
+        options.defaultFormat = typeof(format) === 'string' ? format : '0.0';
+    };
+
+    numeral.register = function(type, name, format) {
+        name = name.toLowerCase();
+
+        if (this[type + 's'][name]) {
+            throw new TypeError(name + ' ' + type + ' already registered.');
+        }
+
+        this[type + 's'][name] = format;
+
+        return format;
+    };
+
+
+    numeral.validate = function(val, culture) {
+        var _decimalSep,
+            _thousandSep,
+            _currSymbol,
+            _valArray,
+            _abbrObj,
+            _thousandRegEx,
+            localeData,
+            temp;
+
+        //coerce val to string
+        if (typeof val !== 'string') {
+            val += '';
+
+            if (console.warn) {
+                console.warn('Numeral.js: Value is not string. It has been co-erced to: ', val);
+            }
+        }
+
+        //trim whitespaces from either sides
+        val = val.trim();
+
+        //if val is just digits return true
+        if (!!val.match(/^\d+$/)) {
+            return true;
+        }
+
+        //if val is empty return false
+        if (val === '') {
+            return false;
+        }
+
+        //get the decimal and thousands separator from numeral.localeData
+        try {
+            //check if the culture is understood by numeral. if not, default it to current locale
+            localeData = numeral.localeData(culture);
+        } catch (e) {
+            localeData = numeral.localeData(numeral.locale());
+        }
+
+        //setup the delimiters and currency symbol based on culture/locale
+        _currSymbol = localeData.currency.symbol;
+        _abbrObj = localeData.abbreviations;
+        _decimalSep = localeData.delimiters.decimal;
+        if (localeData.delimiters.thousands === '.') {
+            _thousandSep = '\\.';
+        } else {
+            _thousandSep = localeData.delimiters.thousands;
+        }
+
+        // validating currency symbol
+        temp = val.match(/^[^\d]+/);
+        if (temp !== null) {
+            val = val.substr(1);
+            if (temp[0] !== _currSymbol) {
+                return false;
+            }
+        }
+
+        //validating abbreviation symbol
+        temp = val.match(/[^\d]+$/);
+        if (temp !== null) {
+            val = val.slice(0, -1);
+            if (temp[0] !== _abbrObj.thousand && temp[0] !== _abbrObj.million && temp[0] !== _abbrObj.billion && temp[0] !== _abbrObj.trillion) {
+                return false;
+            }
+        }
+
+        _thousandRegEx = new RegExp(_thousandSep + '{2}');
+
+        if (!val.match(/[^\d.,]/g)) {
+            _valArray = val.split(_decimalSep);
+            if (_valArray.length > 2) {
+                return false;
+            } else {
+                if (_valArray.length < 2) {
+                    return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx));
+                } else {
+                    if (_valArray[0].length === 1) {
+                        return ( !! _valArray[0].match(/^\d+$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
+                    } else {
+                        return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
+                    }
+                }
+            }
+        }
+
+        return false;
+    };
+
+
+    /************************************
+        Numeral Prototype
+    ************************************/
+
+    numeral.fn = Numeral.prototype = {
+        clone: function() {
+            return numeral(this);
+        },
+        format: function(inputString, roundingFunction) {
+            var value = this._value,
+                format = inputString || options.defaultFormat,
+                kind,
+                output,
+                formatFunction;
+
+            // make sure we have a roundingFunction
+            roundingFunction = roundingFunction || Math.round;
+
+            // format based on value
+            if (value === 0 && options.zeroFormat !== null) {
+                output = options.zeroFormat;
+            } else if (value === null && options.nullFormat !== null) {
+                output = options.nullFormat;
+            } else {
+                for (kind in formats) {
+                    if (format.match(formats[kind].regexps.format)) {
+                        formatFunction = formats[kind].format;
+
+                        break;
+                    }
+                }
+
+                formatFunction = formatFunction || numeral._.numberToFormat;
+
+                output = formatFunction(value, format, roundingFunction);
+            }
+
+            return output;
+        },
+        value: function() {
+            return this._value;
+        },
+        input: function() {
+            return this._input;
+        },
+        set: function(value) {
+            this._value = Number(value);
+
+            return this;
+        },
+        add: function(value) {
+            var corrFactor = _.correctionFactor.call(null, this._value, value);
+
+            function cback(accum, curr, currI, O) {
+                return accum + Math.round(corrFactor * curr);
+            }
+
+            this._value = _.reduce([this._value, value], cback, 0) / corrFactor;
+
+            return this;
+        },
+        subtract: function(value) {
+            var corrFactor = _.correctionFactor.call(null, this._value, value);
+
+            function cback(accum, curr, currI, O) {
+                return accum - Math.round(corrFactor * curr);
+            }
+
+            this._value = _.reduce([value], cback, Math.round(this._value * corrFactor)) / corrFactor;
+
+            return this;
+        },
+        multiply: function(value) {
+            function cback(accum, curr, currI, O) {
+                var corrFactor = _.correctionFactor(accum, curr);
+                return Math.round(accum * corrFactor) * Math.round(curr * corrFactor) / Math.round(corrFactor * corrFactor);
+            }
+
+            this._value = _.reduce([this._value, value], cback, 1);
+
+            return this;
+        },
+        divide: function(value) {
+            function cback(accum, curr, currI, O) {
+                var corrFactor = _.correctionFactor(accum, curr);
+                return Math.round(accum * corrFactor) / Math.round(curr * corrFactor);
+            }
+
+            this._value = _.reduce([this._value, value], cback);
+
+            return this;
+        },
+        difference: function(value) {
+            return Math.abs(numeral(this._value).subtract(value).value());
+        }
+    };
+
+    /************************************
+        Default Locale && Format
+    ************************************/
+
+    numeral.register('locale', 'en', {
+        delimiters: {
+            thousands: ',',
+            decimal: '.'
+        },
+        abbreviations: {
+            thousand: 'k',
+            million: 'm',
+            billion: 'b',
+            trillion: 't'
+        },
+        ordinal: function(number) {
+            var b = number % 10;
+            return (~~(number % 100 / 10) === 1) ? 'th' :
+                (b === 1) ? 'st' :
+                (b === 2) ? 'nd' :
+                (b === 3) ? 'rd' : 'th';
+        },
+        currency: {
+            symbol: '$'
+        }
+    });
+
+    
+
+(function() {
+        numeral.register('format', 'bps', {
+            regexps: {
+                format: /(BPS)/,
+                unformat: /(BPS)/
+            },
+            format: function(value, format, roundingFunction) {
+                var space = numeral._.includes(format, ' BPS') ? ' ' : '',
+                    output;
+
+                value = value * 10000;
+
+                // check for space before BPS
+                format = format.replace(/\s?BPS/, '');
+
+                output = numeral._.numberToFormat(value, format, roundingFunction);
+
+                if (numeral._.includes(output, ')')) {
+                    output = output.split('');
+
+                    output.splice(-1, 0, space + 'BPS');
+
+                    output = output.join('');
+                } else {
+                    output = output + space + 'BPS';
+                }
+
+                return output;
+            },
+            unformat: function(string) {
+                return +(numeral._.stringToNumber(string) * 0.0001).toFixed(15);
+            }
+        });
+})();
+
+
+(function() {
+        var decimal = {
+            base: 1000,
+            suffixes: ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+        },
+        binary = {
+            base: 1024,
+            suffixes: ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']
+        };
+
+    var allSuffixes =  decimal.suffixes.concat(binary.suffixes.filter(function (item) {
+            return decimal.suffixes.indexOf(item) < 0;
+        }));
+        var unformatRegex = allSuffixes.join('|');
+        // Allow support for BPS (http://www.investopedia.com/terms/b/basispoint.asp)
+        unformatRegex = '(' + unformatRegex.replace('B', 'B(?!PS)') + ')';
+
+    numeral.register('format', 'bytes', {
+        regexps: {
+            format: /([0\s]i?b)/,
+            unformat: new RegExp(unformatRegex)
+        },
+        format: function(value, format, roundingFunction) {
+            var output,
+                bytes = numeral._.includes(format, 'ib') ? binary : decimal,
+                suffix = numeral._.includes(format, ' b') || numeral._.includes(format, ' ib') ? ' ' : '',
+                power,
+                min,
+                max;
+
+            // check for space before
+            format = format.replace(/\s?i?b/, '');
+
+            for (power = 0; power <= bytes.suffixes.length; power++) {
+                min = Math.pow(bytes.base, power);
+                max = Math.pow(bytes.base, power + 1);
+
+                if (value === null || value === 0 || value >= min && value < max) {
+                    suffix += bytes.suffixes[power];
+
+                    if (min > 0) {
+                        value = value / min;
+                    }
+
+                    break;
+                }
+            }
+
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            return output + suffix;
+        },
+        unformat: function(string) {
+            var value = numeral._.stringToNumber(string),
+                power,
+                bytesMultiplier;
+
+            if (value) {
+                for (power = decimal.suffixes.length - 1; power >= 0; power--) {
+                    if (numeral._.includes(string, decimal.suffixes[power])) {
+                        bytesMultiplier = Math.pow(decimal.base, power);
+
+                        break;
+                    }
+
+                    if (numeral._.includes(string, binary.suffixes[power])) {
+                        bytesMultiplier = Math.pow(binary.base, power);
+
+                        break;
+                    }
+                }
+
+                value *= (bytesMultiplier || 1);
+            }
+
+            return value;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'currency', {
+        regexps: {
+            format: /(\$)/
+        },
+        format: function(value, format, roundingFunction) {
+            var locale = numeral.locales[numeral.options.currentLocale],
+                symbols = {
+                    before: format.match(/^([\+|\-|\(|\s|\$]*)/)[0],
+                    after: format.match(/([\+|\-|\)|\s|\$]*)$/)[0]
+                },
+                output,
+                symbol,
+                i;
+
+            // strip format of spaces and $
+            format = format.replace(/\s?\$\s?/, '');
+
+            // format the number
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            // update the before and after based on value
+            if (value >= 0) {
+                symbols.before = symbols.before.replace(/[\-\(]/, '');
+                symbols.after = symbols.after.replace(/[\-\)]/, '');
+            } else if (value < 0 && (!numeral._.includes(symbols.before, '-') && !numeral._.includes(symbols.before, '('))) {
+                symbols.before = '-' + symbols.before;
+            }
+
+            // loop through each before symbol
+            for (i = 0; i < symbols.before.length; i++) {
+                symbol = symbols.before[i];
+
+                switch (symbol) {
+                    case '$':
+                        output = numeral._.insert(output, locale.currency.symbol, i);
+                        break;
+                    case ' ':
+                        output = numeral._.insert(output, ' ', i + locale.currency.symbol.length - 1);
+                        break;
+                }
+            }
+
+            // loop through each after symbol
+            for (i = symbols.after.length - 1; i >= 0; i--) {
+                symbol = symbols.after[i];
+
+                switch (symbol) {
+                    case '$':
+                        output = i === symbols.after.length - 1 ? output + locale.currency.symbol : numeral._.insert(output, locale.currency.symbol, -(symbols.after.length - (1 + i)));
+                        break;
+                    case ' ':
+                        output = i === symbols.after.length - 1 ? output + ' ' : numeral._.insert(output, ' ', -(symbols.after.length - (1 + i) + locale.currency.symbol.length - 1));
+                        break;
+                }
+            }
+
+
+            return output;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'exponential', {
+        regexps: {
+            format: /(e\+|e-)/,
+            unformat: /(e\+|e-)/
+        },
+        format: function(value, format, roundingFunction) {
+            var output,
+                exponential = typeof value === 'number' && !numeral._.isNaN(value) ? value.toExponential() : '0e+0',
+                parts = exponential.split('e');
+
+            format = format.replace(/e[\+|\-]{1}0/, '');
+
+            output = numeral._.numberToFormat(Number(parts[0]), format, roundingFunction);
+
+            return output + 'e' + parts[1];
+        },
+        unformat: function(string) {
+            var parts = numeral._.includes(string, 'e+') ? string.split('e+') : string.split('e-'),
+                value = Number(parts[0]),
+                power = Number(parts[1]);
+
+            power = numeral._.includes(string, 'e-') ? power *= -1 : power;
+
+            function cback(accum, curr, currI, O) {
+                var corrFactor = numeral._.correctionFactor(accum, curr),
+                    num = (accum * corrFactor) * (curr * corrFactor) / (corrFactor * corrFactor);
+                return num;
+            }
+
+            return numeral._.reduce([value, Math.pow(10, power)], cback, 1);
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'ordinal', {
+        regexps: {
+            format: /(o)/
+        },
+        format: function(value, format, roundingFunction) {
+            var locale = numeral.locales[numeral.options.currentLocale],
+                output,
+                ordinal = numeral._.includes(format, ' o') ? ' ' : '';
+
+            // check for space before
+            format = format.replace(/\s?o/, '');
+
+            ordinal += locale.ordinal(value);
+
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            return output + ordinal;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'percentage', {
+        regexps: {
+            format: /(%)/,
+            unformat: /(%)/
+        },
+        format: function(value, format, roundingFunction) {
+            var space = numeral._.includes(format, ' %') ? ' ' : '',
+                output;
+
+            if (numeral.options.scalePercentBy100) {
+                value = value * 100;
+            }
+
+            // check for space before %
+            format = format.replace(/\s?\%/, '');
+
+            output = numeral._.numberToFormat(value, format, roundingFunction);
+
+            if (numeral._.includes(output, ')')) {
+                output = output.split('');
+
+                output.splice(-1, 0, space + '%');
+
+                output = output.join('');
+            } else {
+                output = output + space + '%';
+            }
+
+            return output;
+        },
+        unformat: function(string) {
+            var number = numeral._.stringToNumber(string);
+            if (numeral.options.scalePercentBy100) {
+                return number * 0.01;
+            }
+            return number;
+        }
+    });
+})();
+
+
+(function() {
+        numeral.register('format', 'time', {
+        regexps: {
+            format: /(:)/,
+            unformat: /(:)/
+        },
+        format: function(value, format, roundingFunction) {
+            var hours = Math.floor(value / 60 / 60),
+                minutes = Math.floor((value - (hours * 60 * 60)) / 60),
+                seconds = Math.round(value - (hours * 60 * 60) - (minutes * 60));
+
+            return hours + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
+        },
+        unformat: function(string) {
+            var timeArray = string.split(':'),
+                seconds = 0;
+
+            // turn hours and minutes into seconds and add them all up
+            if (timeArray.length === 3) {
+                // hours
+                seconds = seconds + (Number(timeArray[0]) * 60 * 60);
+                // minutes
+                seconds = seconds + (Number(timeArray[1]) * 60);
+                // seconds
+                seconds = seconds + Number(timeArray[2]);
+            } else if (timeArray.length === 2) {
+                // minutes
+                seconds = seconds + (Number(timeArray[0]) * 60);
+                // seconds
+                seconds = seconds + Number(timeArray[1]);
+            }
+            return Number(seconds);
+        }
+    });
+})();
+
+return numeral;
+}));
+
+
+/***/ }),
+/* 173 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_FunctionalCalendar__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_FunctionalCalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_components_FunctionalCalendar__);
+/* unused harmony reexport FunctionalCalendar */
+// Import vue component
+
+
+// Creating a module value for Vue.use ()
+const FunctionalCalendarPlugin = {
+    install(Vue, options = []) {
+        Vue.prototype.$getOptions = function () {
+            return options;
+        };
+
+        Vue.component('FunctionalCalendar', __WEBPACK_IMPORTED_MODULE_0__src_components_FunctionalCalendar___default.a);
+    },
+    FunctionalCalendar: __WEBPACK_IMPORTED_MODULE_0__src_components_FunctionalCalendar___default.a
+}
+
+// // Export component for use as a module (npm / webpack / etc.)
+/* unused harmony default export */ var _unused_webpack_default_export = (FunctionalCalendarPlugin);
+
+
+/***/ }),
+/* 174 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(175)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(178)
+/* template */
+var __vue_template__ = __webpack_require__(186)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "node_modules/vue-functional-calendar/src/components/FunctionalCalendar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-eb8491ac", Component.options)
+  } else {
+    hotAPI.reload("data-v-eb8491ac", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(176);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("7219a76f", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eb8491ac\",\"scoped\":false,\"hasInlineConfig\":true}!../../../sass-loader/lib/loader.js!../../../vue-loader/lib/selector.js?type=styles&index=0!./FunctionalCalendar.vue", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eb8491ac\",\"scoped\":false,\"hasInlineConfig\":true}!../../../sass-loader/lib/loader.js!../../../vue-loader/lib/selector.js?type=styles&index=0!./FunctionalCalendar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.vfc-styles-conditional-class html, .vfc-styles-conditional-class body {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  height: 100%;\n}\n.vfc-styles-conditional-class input.vfc-single-input, .vfc-styles-conditional-class .vfc-multiple-input input {\n  font-size: inherit;\n  -webkit-transition: width 200ms;\n  transition: width 200ms;\n  padding: 7px;\n  width: 120px;\n  color: #aaa;\n  border: 1px solid #eeeeee;\n  text-align: center;\n  outline: none;\n}\n.vfc-styles-conditional-class input.vfc-single-input {\n  border-radius: 10px;\n}\n.vfc-styles-conditional-class .vfc-multiple-input input:first-child {\n  border-radius: 10px 0 0 10px;\n}\n.vfc-styles-conditional-class .vfc-multiple-input input:last-child {\n  border-radius: 0 10px 10px 0;\n}\n.vfc-styles-conditional-class .vfc-dark.vfc-multiple-input input {\n  border-color: #28456C;\n  background-color: #1A202C;\n}\n.vfc-styles-conditional-class .vfc-dark .vfc-single-input {\n  border-color: #28456C;\n  background-color: #1A202C;\n}\n.vfc-styles-conditional-class .vfc-main-container {\n  position: relative;\n  border-radius: .28571429rem;\n  -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);\n          box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);\n  font-family: -apple-system, BlinkMacSystemFont, \"PingFang SC\", serif;\n  background-color: #FFFFFF;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-modal {\n    position: absolute;\n    width: inherit;\n    z-index: 1000;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container {\n    height: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-navigation-buttons .vfc-top-date {\n      text-align: center;\n      font-size: 21px;\n      font-weight: bold;\n      margin: 0;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-navigation-buttons .vfc-top-date div {\n        margin: 20px 20px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-navigation-buttons .vfc-top-date.vfc-underline {\n        cursor: pointer;\n        -webkit-text-decoration: underline dotted #66b3cc;\n                text-decoration: underline dotted #66b3cc;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-months {\n      -webkit-box-flex: 1;\n          -ms-flex: 1 1 75%;\n              flex: 1 1 75%;\n      padding: 0;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n      -webkit-box-pack: justify;\n          -ms-flex-pack: justify;\n              justify-content: space-between;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-months div.vfc-item {\n        border-top: 1px solid #d4d4d4;\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n        -ms-flex-preferred-size: 30%;\n            flex-basis: 30%;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        -webkit-box-orient: vertical;\n        -webkit-box-direction: normal;\n            -ms-flex-direction: column;\n                flex-direction: column;\n        text-align: center;\n        outline-style: none;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-months div.vfc-item:hover {\n          background-color: rgba(113, 113, 113, 0.3);\n          -webkit-transition: background-color 0.2s ease-in-out;\n          transition: background-color 0.2s ease-in-out;\n          cursor: pointer;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-months div.vfc-item.vfc-selected {\n          background-color: #66b3cc;\n          color: #fff;\n          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\n          font-weight: 700;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-months div.vfc-item.vfc-selected:nth-last-child(3) {\n            border-radius: 0 0 0 5px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-months-container .vfc-months div.vfc-item.vfc-selected:last-child {\n            border-radius: 0 0 5px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker {\n      -webkit-box-sizing: border-box;\n              box-sizing: border-box;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker::after {\n        content: '';\n        display: table;\n        clear: both;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker * {\n        -webkit-box-sizing: border-box;\n                box-sizing: border-box;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__list {\n      float: left;\n      width: 50%;\n      height: 200px;\n      overflow-y: scroll;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__list::-webkit-scrollbar {\n        width: 3px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__list::-webkit-scrollbar-track {\n        background: #efefef;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__list::-webkit-scrollbar-thumb {\n        background: #ccc;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__with-suffix .vfc-time-picker__list {\n      width: 33.3%;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__item {\n      padding: 10px 0;\n      font-size: 20px;\n      text-align: center;\n      cursor: pointer;\n      -webkit-transition: font-size .3s;\n      transition: font-size .3s;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__item:hover {\n      font-size: 32px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__item--selected {\n      color: #66b3cc;\n      font-size: 32px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-time-picker__item--disabled {\n      opacity: 0.4;\n      cursor: default;\n      font-size: 20px !important;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-close {\n      position: absolute;\n      right: 12px;\n      top: 16px;\n      width: 32px;\n      height: 32px;\n      opacity: 0.3;\n      z-index: 10000;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-close:hover {\n      opacity: 1;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-close:before, .vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-close:after {\n      position: absolute;\n      left: 15px;\n      content: ' ';\n      height: 26px;\n      width: 2px;\n      background-color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-close:before {\n      -webkit-transform: rotate(45deg);\n              transform: rotate(45deg);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-close:after {\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-time-mechanic {\n      position: relative;\n      margin: 0 auto;\n      width: 100%;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-time-mechanic .vfc-modal-time-line {\n        width: 100%;\n        background-color: #66b3cc;\n        text-align: left;\n        color: #FFFFFF;\n        font-size: 16px;\n        padding-top: 15px;\n        padding-bottom: 15px;\n        border-radius: .28571429rem .28571429rem 0 0;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-time-mechanic .vfc-modal-time-line span {\n          margin-left: 15px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-time-mechanic .vfc-modal-time-line span span.vfc-active {\n            text-decoration: underline;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-append {\n      color: #7d7d7d;\n      font-weight: normal;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: justify;\n          -ms-flex-pack: justify;\n              justify-content: space-between;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-append .vfc-arrow {\n        opacity: 0.3;\n        -webkit-transition: 0.2s;\n        transition: 0.2s;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-append .vfc-arrow:hover {\n        opacity: 1;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-append .vfc-arrow-up {\n        width: 0;\n        height: 0;\n        border-left: 20px solid transparent;\n        border-right: 20px solid transparent;\n        border-bottom: 20px solid #333333;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-append .vfc-arrow-down {\n        width: 0;\n        height: 0;\n        border-left: 20px solid transparent;\n        border-right: 20px solid transparent;\n        border-top: 20px solid #333333;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-midle {\n      display: inline-block;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-midle-dig {\n      display: inline-block;\n      text-align: center;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-digits {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: justify;\n          -ms-flex-pack: justify;\n              justify-content: space-between;\n      font-size: 50px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-time-picker-container .vfc-modal-digits select {\n        margin: 5px 0;\n        width: 100%;\n        text-align: center;\n        -moz-text-align-last: center;\n             text-align-last: center;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons {\n    margin-bottom: -80px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 1 15%;\n            flex: 0 1 15%;\n    margin-top: -10px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div {\n      z-index: 200;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      color: #000000;\n      font-size: 18px;\n      margin: 20px 10px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div.vfc-cursor-pointer, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div.vfc-cursor-pointer {\n        cursor: pointer;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div .vfc-arrow-left, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div .vfc-arrow-left {\n        width: 12px;\n        height: 12px;\n        border-top: 2px solid;\n        border-left: 2px solid;\n        border-color: #0A0C19;\n        -webkit-transform: rotate(-45deg);\n                transform: rotate(-45deg);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div .vfc-arrow-left:active,\n      .vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div .vfc-arrow-right:active, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div .vfc-arrow-left:active,\n      .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div .vfc-arrow-right:active {\n        border-color: #ddd;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div .vfc-arrow-left.vfc-disabled, .vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div .vfc-arrow-right.vfc-disabled, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div .vfc-arrow-left.vfc-disabled, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div .vfc-arrow-right.vfc-disabled {\n        border-color: #dddddd;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-navigation-buttons div .vfc-arrow-right, .vfc-styles-conditional-class .vfc-main-container .vfc-separately-navigation-buttons div .vfc-arrow-right {\n        width: 12px;\n        height: 12px;\n        border-top: 2px solid;\n        border-right: 2px solid;\n        border-color: #0A0C19;\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    height: 100%;\n    position: relative;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-navigation-buttons {\n      width: 100%;\n      position: absolute;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars {\n      -webkit-box-flex: 1;\n          -ms-flex: 1 1 75%;\n              flex: 1 1 75%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar {\n        -webkit-box-flex: 1;\n            -ms-flex: 1;\n                flex: 1;\n        height: 100%;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-orient: vertical;\n        -webkit-box-direction: normal;\n            -ms-flex-flow: column nowrap;\n                flex-flow: column nowrap;\n        -webkit-box-align: stretch;\n            -ms-flex-align: stretch;\n                align-items: stretch;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content {\n          margin: 0 20px;\n          z-index: 100;\n          /* Calendar rows */\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content h2.vfc-top-date {\n            text-align: center;\n            margin: 25px;\n            font-size: 18px;\n            font-weight: normal;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content h2.vfc-top-date.vfc-cursor-pointer {\n              cursor: pointer;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content h2.vfc-top-date.vfc-underline {\n              cursor: pointer;\n              -webkit-text-decoration: underline #66b3cc;\n                      text-decoration: underline #66b3cc;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-dayNames, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-dayNames {\n            -webkit-box-flex: 30px;\n                -ms-flex: 30px 0 0px;\n                    flex: 30px 0 0;\n            margin-bottom: 10px;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-dayNames span {\n              width: 100%;\n              margin-right: 5px;\n              color: #333333;\n              text-align: center;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-dayNames span:last-child {\n                margin-right: 0;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day {\n            position: relative;\n            width: 100%;\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-orient: vertical;\n            -webkit-box-direction: normal;\n                -ms-flex-direction: column;\n                    flex-direction: column;\n            margin-top: 3px;\n            /* Weekends */\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day .vfc-base-start, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day .vfc-base-end {\n              position: absolute;\n              background: #8fd8ec;\n              width: 50% !important;\n              border-radius: 0 !important;\n              border-right-width: 0 !important;\n              height: 100%;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day .vfc-base-start {\n              right: 0;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day .vfc-base-end {\n              left: 0;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day {\n              display: inline-block;\n              text-align: center;\n              width: 30px;\n              line-height: 30px;\n              border-radius: 50%;\n              margin: 0 auto;\n              vertical-align: middle;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-today {\n                background-color: #ff8498;\n                color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-cursor-not-allowed {\n                cursor: not-allowed;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked {\n                margin: auto;\n                background-color: #66b3cc;\n                border-radius: 50%;\n                opacity: 1;\n                z-index: 1;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-borderd, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-start-marked, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-end-marked {\n                  color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-borderd:before, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-start-marked:before, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-end-marked:before {\n                    background: transparent;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked:before {\n                  top: 0;\n                  left: 0;\n                  content: \"\";\n                  position: absolute;\n                  background-color: #8fd8ec;\n                  width: 100%;\n                  height: 100%;\n                  z-index: -1;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked:after {\n                  color: #000000;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-hide {\n                  color: #d9d9d9;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-hide {\n                color: #bfbfbf;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-disabled {\n                margin: auto;\n                color: rgba(0, 0, 0, 0.2);\n                border-radius: 50%;\n                opacity: 1;\n                z-index: 2;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day:after {\n                z-index: 2;\n                position: absolute;\n                top: 0;\n                left: 0;\n                bottom: 0;\n                right: 0;\n                content: attr(data-date);\n                color: #000000;\n                display: -webkit-box;\n                display: -ms-flexbox;\n                display: flex;\n                -webkit-box-pack: center;\n                    -ms-flex-pack: center;\n                        justify-content: center;\n                -webkit-box-align: center;\n                    -ms-flex-align: center;\n                        align-items: center;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-hover:hover, .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-hovered {\n                background-color: #dadada;\n                z-index: 100;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day:last-child {\n              color: #000000;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-fade-enter-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-fade-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-down-enter-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-down-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-left-enter-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-left-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-right-enter-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-right-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-up-enter-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-up-leave-active {\n            -webkit-transition: all 0.25s ease-in-out;\n            transition: all 0.25s ease-in-out;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-fade-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-none-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-down-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-left-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-right-leave-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-up-leave-active {\n            position: absolute;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-none-enter-active,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-none-leave-active {\n            -webkit-transition-duration: 0s;\n                    transition-duration: 0s;\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-left-enter,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-right-leave-to {\n            opacity: 0;\n            -webkit-transform: translateX(25px);\n            transform: translateX(25px);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-left-leave-to,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-right-enter {\n            opacity: 0;\n            -webkit-transform: translateX(-25px);\n            transform: translateX(-25px);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-down-leave-to,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-up-enter {\n            opacity: 0;\n            -webkit-transform: translateY(20px);\n            transform: translateY(20px);\n}\n.vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-down-enter,\n          .vfc-styles-conditional-class .vfc-main-container .vfc-calendars-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-calendar-slide-up-leave-to {\n            opacity: 0;\n            -webkit-transform: translateY(-20px);\n            transform: translateY(-20px);\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark {\n    background-color: #1A202C;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-top-date {\n      color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-navigation-buttons div .vfc-arrow-right, .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-navigation-buttons div .vfc-arrow-left {\n      border-color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-navigation-buttons div .vfc-arrow-left:active,\n    .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-navigation-buttons div .vfc-arrow-right:active {\n      border-color: #d9d9d9;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content h2.vfc-top-date.vfc-underline {\n      -webkit-text-decoration: underline #4299e1;\n              text-decoration: underline #4299e1;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-dayNames span {\n      color: #bfbfbf;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day .vfc-base-start, .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day .vfc-base-end {\n      background-color: #28456C;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day {\n      color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-today {\n        background-color: #38B2AC;\n        color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked {\n        background-color: #4299e1;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-borderd, .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-start-marked, .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-end-marked {\n          color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked:before {\n          background-color: #28456C;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked:after {\n          color: #000000;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-marked.vfc-hide {\n          color: #bfbfbf;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-hide {\n        color: #464646;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-disabled {\n        color: rgba(133, 133, 133, 0.2);\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day:after {\n        color: #000000;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-hover:hover, .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-span-day.vfc-hovered {\n        z-index: 1;\n        background-color: rgba(76, 76, 76, 0.3);\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-months-container .vfc-navigation-buttons .vfc-top-date.vfc-underline {\n      -webkit-text-decoration: underline dotted #66b3cc;\n              text-decoration: underline dotted #66b3cc;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-months-container .vfc-months div.vfc-item {\n      color: #FFFFFF;\n      border-top: 1px solid #d4d4d4;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-months-container .vfc-months div.vfc-item:hover {\n        background-color: rgba(113, 113, 113, 0.3);\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-months-container .vfc-months div.vfc-item.vfc-selected {\n        background-color: #4299e1;\n        color: #fff;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-time-picker__list .vfc-time-picker__item {\n      color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-time-picker__list .vfc-time-picker__item--selected {\n      color: #4299e1;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-time-picker__list::-webkit-scrollbar-track {\n      background: #28456C;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-time-picker__list::-webkit-scrollbar-thumb {\n      background: #4299e1;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-close:before, .vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-close:after {\n      background-color: #FFFFFF;\n}\n.vfc-styles-conditional-class .vfc-main-container.vfc-dark .vfc-time-picker-container .vfc-modal-time-mechanic .vfc-modal-time-line {\n      background-color: #4299e1;\n      color: #FFFFFF;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports) {
+
+/**
+ * Translates the list format produced by css-loader into something
+ * easier to manipulate.
+ */
+module.exports = function listToStyles (parentId, list) {
+  var styles = []
+  var newStyles = {}
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i]
+    var id = item[0]
+    var css = item[1]
+    var media = item[2]
+    var sourceMap = item[3]
+    var part = {
+      id: parentId + ':' + i,
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    }
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = { id: id, parts: [part] })
+    } else {
+      newStyles[id].parts.push(part)
+    }
+  }
+  return styles
+}
+
+
+/***/ }),
+/* 178 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_propsAndData__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TimePicker__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TimePicker___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__TimePicker__);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "FunctionalCalendar",
+    components: { TimePicker: __WEBPACK_IMPORTED_MODULE_2__TimePicker___default.a },
+    mixins: [__WEBPACK_IMPORTED_MODULE_1__mixins_propsAndData__["a" /* propsAndData */]],
+    created: function created() {
+        var _this = this;
+
+        this.setConfigs();
+        this.initCalendar();
+
+        if (this.fConfigs.isModal && !this.fConfigs.withTimePicker) {
+            // Event
+            window.addEventListener('click', function (e) {
+                if (!_this.$el.contains(e.target)) {
+                    _this.showCalendar = false;
+                }
+            });
+        }
+    },
+    mounted: function mounted() {
+        // Reacts to external selected dates
+        this.$watch('value', function (value) {
+            if (this.fConfigs.isDateRange) {
+                this.calendar.dateRange.start.date = value.dateRange.start.date || false;
+                this.calendar.dateRange.end.date = value.dateRange.end.date || false;
+            } else {
+                this.calendar.selectedDate = value.selectedDate || false;
+            }
+        }, { deep: true });
+
+        this.$watch('showCalendar', function (value) {
+            if (value) this.$emit('opened');else this.$emit('closed');
+        }, { immediate: true, deep: true });
+
+        this.setCalendarStyles();
+    },
+
+    computed: {
+        yearList: function yearList() {
+            var years = [];
+            var year = this.calendar.currentDate.getFullYear() - 4;
+            for (var i = 0; i < 12; i++) {
+                var finalYear = year + i;
+
+                var selected = false;
+
+                if (finalYear === this.calendar.currentDate.getFullYear()) {
+                    selected = true;
+                }
+
+                years.push({
+                    year: finalYear,
+                    selected: selected
+                });
+            }
+            return years;
+        }
+    },
+    watch: {
+        'calendar.selectedDate': {
+            handler: function handler(val) {
+                this.input.selectedDate = val || '';
+                this.markChooseDays();
+            }
+        },
+        'calendar.currentDate': {
+            handler: function handler(value) {
+                this.$emit('input', this.calendar);
+                this.checkLimits(value);
+            }
+        },
+        'calendar.dateRange.start.date': {
+            handler: function handler(val) {
+                this.input.dateRange.start.date = val || '';
+                this.markChooseDays();
+            }
+        },
+        'calendar.dateRange.end.date': {
+            handler: function handler(val) {
+                this.input.dateRange.end.date = val || '';
+                this.markChooseDays();
+            }
+        },
+        'input.selectedDate': {
+            handler: function handler(val) {
+                this.input.selectedDate = val = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].mask(val);
+                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(val).getMonth()) {
+                    this.calendar.selectedDate = val;
+                    this.markChooseDays();
+                }
+
+                // Typeable
+                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].checkValidDate(val) && this.fConfigs.isTypeable) {
+                    this.ChooseDate(val);
+                }
+            }
+        },
+        'input.dateRange.start.date': {
+            handler: function handler(val) {
+                this.input.dateRange.start.date = val = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].mask(val);
+                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(val).getMonth()) {
+                    this.calendar.dateRange.start.date = val;
+                    this.markChooseDays();
+                }
+
+                // Typeable
+                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].checkValidDate(val) && this.fConfigs.isTypeable) {
+                    this.ChooseDate(val);
+                }
+            }
+        },
+        'input.dateRange.end.date': {
+            handler: function handler(val) {
+                this.input.dateRange.end.date = val = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].mask(val);
+                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(val).getMonth()) {
+                    this.calendar.dateRange.end.date = val;
+                    this.markChooseDays();
+                }
+
+                // Typeable
+                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].checkValidDate(val) && this.fConfigs.isTypeable) {
+                    this.ChooseDate(val);
+                }
+            }
+        }
+    },
+    ready: function ready() {
+        window.addEventListener('resize', this.setCalendarStyles);
+    },
+    beforeDestroy: function beforeDestroy() {
+        window.removeEventListener('resize', this.setCalendarStyles);
+    },
+    methods: {
+        initCalendar: function initCalendar() {
+            // Set Help Calendar Configs
+            __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].configs.sundayStart = this.fConfigs.sundayStart;
+            __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].configs.leftAndRightDays = this.checkHiddenElement('leftAndRightDays');
+            __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].configs.dateFormat = this.fConfigs.dateFormat;
+            __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].configs.dayNames = this.fConfigs.dayNames;
+            __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].configs.monthNames = this.fConfigs.monthNames;
+
+            this.setCalendarData();
+            this.listRendering();
+            this.markChooseDays();
+            this.checkLimits(this.calendar.currentDate);
+        },
+        updateCalendar: function updateCalendar() {
+            this.setExistingCalendarData();
+            this.listRendering();
+            this.markChooseDays();
+        },
+        setCalendarData: function setCalendarData() {
+            var date = this.calendar.currentDate;
+            date = new Date(date.getFullYear(), date.getMonth() - 1);
+
+            this.listCalendars = [];
+
+            for (var i = 0; i < this.fConfigs.calendarsCount; i++) {
+                date = new Date(date.getFullYear(), date.getMonth() + 1);
+
+                var calendar = {
+                    key: i,
+                    date: date,
+                    dateTop: this.fConfigs.monthNames[date.getMonth()] + " " + date.getFullYear(),
+                    weeks: __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getFinalizedWeeks(date.getMonth(), date.getFullYear())
+                };
+
+                this.listCalendars.push(calendar);
+
+                if (!this.fConfigs.isMultiple) {
+                    break;
+                }
+            }
+        },
+        setExistingCalendarData: function setExistingCalendarData() {
+            for (var i = 0; i < this.listCalendars.length; i++) {
+                var calendar = this.listCalendars[i];
+                var date = calendar.date;
+
+                this.$set(this.listCalendars, i, {
+                    key: calendar.key,
+                    date: date,
+                    dateTop: this.fConfigs.monthNames[date.getMonth()] + " " + date.getFullYear(),
+                    weeks: __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getFinalizedWeeks(date.getMonth(), date.getFullYear())
+                });
+
+                if (!this.fConfigs.isMultiple) {
+                    break;
+                }
+            }
+        },
+        setConfigs: function setConfigs() {
+            var vm = this;
+            var globalOptions = void 0;
+            if (typeof vm.$getOptions !== "undefined") {
+                // Global Options
+                globalOptions = vm.$getOptions();
+                Object.keys(globalOptions).map(function (objectKey) {
+                    if (typeof vm.fConfigs[objectKey] !== "undefined") {
+                        vm.$set(vm.fConfigs, objectKey, globalOptions[objectKey]);
+                    }
+                });
+            }
+
+            if (typeof vm.configs !== "undefined") {
+                Object.keys(vm.fConfigs).map(function (objectKey) {
+                    if (typeof vm.configs[objectKey] !== "undefined") {
+                        // Get From Configs
+                        vm.$set(vm.fConfigs, objectKey, vm.configs[objectKey]);
+                    }
+                });
+            } else {
+                Object.keys(vm.$props).map(function (objectKey) {
+                    if (typeof vm.fConfigs[objectKey] !== "undefined" && typeof vm.$props[objectKey] !== "undefined") {
+                        vm.$set(vm.fConfigs, objectKey, vm.$props[objectKey]);
+                    }
+                });
+            }
+
+            // Is Modal
+            if (vm.fConfigs.isModal) vm.showCalendar = false;
+
+            // Placeholder
+            if (!vm.fConfigs.placeholder) vm.fConfigs.placeholder = vm.fConfigs.dateFormat;
+
+            if (typeof vm.newCurrentDate !== "undefined") {
+                vm.calendar.currentDate = vm.newCurrentDate;
+            }
+
+            // Sunday Start
+            if (vm.fConfigs.sundayStart) {
+                var dayNames = vm.fConfigs.dayNames;
+                var sundayName = dayNames[dayNames.length - 1];
+                dayNames.splice(dayNames.length - 1, 1);
+                dayNames.unshift(sundayName);
+            }
+        },
+        listRendering: function listRendering() {
+            var vm = this;
+
+            // Each Calendars
+            vm.listCalendars.forEach(function (calendar) {
+                // Set Calendar Weeks
+                calendar.weeks.forEach(function (week) {
+
+                    var finalizedDays = [];
+
+                    week.days.forEach(function (day) {
+                        var date = new Date(day.year, day.month, day.day);
+                        var now = new Date();
+
+                        var isToday = false;
+
+                        date.setHours(0, 0, 0, 0);
+                        now.setHours(0, 0, 0, 0);
+
+                        if (date.getTime() === now.getTime()) {
+                            isToday = true;
+                        }
+
+                        var checkMarked = void 0;
+                        // With Custom Classes
+                        if (_typeof(vm.fConfigs.markedDates[0]) === "object") {
+                            checkMarked = vm.fConfigs.markedDates.find(function (markDate) {
+                                return markDate.date === __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].formatDate(date);
+                            });
+                        } else {
+                            // Without Classes
+                            checkMarked = vm.fConfigs.markedDates.find(function (markDate) {
+                                return markDate === __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].formatDate(date);
+                            });
+                        }
+
+                        if (vm.calendar.dateRange.start.date === __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].formatDate(date)) {
+                            checkMarked = true;
+                        }
+
+                        var isMarked = false;
+                        if (typeof checkMarked !== "undefined") {
+                            isMarked = true;
+                        }
+
+                        finalizedDays.push({
+                            day: day.day,
+                            date: __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].formatDate(date),
+                            hide: day.hide,
+                            isMouseToLeft: false,
+                            isMouseToRight: false,
+                            isHovered: false,
+                            isDateRangeStart: vm.checkDateRangeStart(__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].formatDate(date)),
+                            isDateRangeEnd: vm.checkDateRangeEnd(__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].formatDate(date)),
+                            hideLeftAndRightDays: day.hideLeftAndRightDays,
+                            isToday: isToday,
+                            isMarked: isMarked
+                        });
+                    });
+
+                    week.days = finalizedDays;
+                });
+            });
+        },
+        clickDay: function clickDay(item) {
+            if (!this.fConfigs.isDateRange && !this.fConfigs.isDatePicker && !this.fConfigs.isMultipleDatePicker) {
+                return false;
+            }
+
+            // Disable days of week if set in configuration
+            var dateDay = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(item.date).getDay() - 1;
+            if (dateDay === -1) {
+                dateDay = 6;
+            }
+
+            var dayOfWeekString = this.fConfigs.dayNames[dateDay];
+            if (this.fConfigs.disabledDayNames.includes(dayOfWeekString)) {
+                return false;
+            }
+
+            // Disabled dates
+            if (this.fConfigs.disabledDates.includes(item.date)) {
+                return false;
+            }
+
+            // Limits
+            if (this.fConfigs.limits) {
+                var min = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.min).getTime();
+                var max = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.max).getTime();
+                var date = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(item.date).getTime();
+
+                if (date < min || date > max) {
+                    return false;
+                }
+            }
+
+            // Date Range
+            if (this.fConfigs.isDateRange) {
+
+                var clickDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(item.date).getTime();
+
+                var startDate = false;
+                if (this.calendar.dateRange.start.date) {
+                    startDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.calendar.dateRange.start.date).getTime();
+                }
+
+                // Two dates is not empty
+                if (this.calendar.dateRange.start.date !== false && this.calendar.dateRange.end.date !== false) {
+                    this.calendar.dateRange.start.date = item.date;
+                    this.calendar.dateRange.end.date = false;
+                    // Not date selected
+                } else if (this.calendar.dateRange.start.date === false && this.calendar.dateRange.end.date === false) {
+                    this.calendar.dateRange.start.date = item.date;
+                    // Start Date not empty, chose date > start date
+                } else if (this.calendar.dateRange.end.date === false && clickDate > startDate) {
+                    this.calendar.dateRange.end.date = item.date;
+                    // Start date not empty, chose date < start date
+                } else if (this.calendar.dateRange.start.date !== false && clickDate < startDate) {
+                    this.calendar.dateRange.end.date = this.calendar.dateRange.start.date;
+                    this.calendar.dateRange.start.date = item.date;
+                }
+
+                //Get number of days between date range dates
+                if (this.calendar.dateRange.start.date !== false && this.calendar.dateRange.end.date !== false) {
+                    var oneDay = 24 * 60 * 60 * 1000;
+                    var firstDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.calendar.dateRange.start.date);
+                    var secondDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.calendar.dateRange.end.date);
+                    var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime()) / oneDay));
+
+                    this.$emit('selectedDaysCount', diffDays);
+
+                    // Is Auto Closeable
+                    if (this.fConfigs.isModal && this.fConfigs.isAutoCloseable) {
+                        this.showCalendar = false;
+                    }
+                }
+
+                this.$emit('input', this.calendar);
+            } else if (this.fConfigs.isDatePicker) {
+                this.calendar.selectedDate = item.date;
+                this.$emit('input', this.calendar);
+
+                // Is Auto Closeable
+                if (this.fConfigs.isModal && this.fConfigs.isAutoCloseable) {
+                    this.showCalendar = false;
+                }
+            } else if (this.fConfigs.isMultipleDatePicker) {
+                if (this.calendar.selectedDates.find(function (date) {
+                    return date.date === item.date;
+                })) {
+                    var dateIndex = this.calendar.selectedDates.findIndex(function (date) {
+                        return date.date === item.date;
+                    });
+                    this.calendar.selectedDates.splice(dateIndex, 1);
+                } else {
+                    var _date = Object.assign({}, this.defaultDateFormat);
+                    _date.date = item.date;
+                    this.calendar.selectedDates.push(_date);
+                }
+
+                this.$emit('input', this.calendar);
+            }
+
+            this.markChooseDays();
+
+            // Time Picker
+            if (this.fConfigs.withTimePicker) {
+                if (this.fConfigs.isDateRange || this.fConfigs.isDatePicker) {
+                    this.openTimePicker();
+                }
+
+                if (this.calendar.selectedDates.find(function (date) {
+                    return date.date === item.date;
+                }) && this.fConfigs.isMultipleDatePicker) {
+                    this.openTimePicker();
+                }
+            }
+        },
+        markChooseDays: function markChooseDays() {
+            var _this2 = this;
+
+            var vm = this;
+            var startDate = vm.calendar.dateRange.start.date;
+            var endDate = vm.calendar.dateRange.end.date;
+
+            this.listCalendars.forEach(function (calendar) {
+                calendar.weeks.forEach(function (week) {
+                    week.days.forEach(function (day) {
+
+                        day.isMarked = false;
+
+                        // Date Picker
+                        if (vm.fConfigs.isDatePicker) {
+                            if (_this2.calendar.selectedDate === day.date) day.isMarked = true;
+                        } else if (vm.fConfigs.isMultipleDatePicker) {
+                            if (vm.calendar.selectedDates.find(function (date) {
+                                return date.date === day.date;
+                            })) day.isMarked = true;
+                        } else {
+                            day.isMouseToLeft = false;
+                            day.isMouseToRight = false;
+
+                            // Date Range
+                            if (startDate === day.date) {
+                                day.isMouseToLeft = !!endDate;
+                                day.isMarked = true;
+                            }
+
+                            if (endDate === day.date) {
+                                day.isMouseToRight = !!endDate;
+                                day.isMarked = true;
+                            }
+
+                            if (startDate && endDate) {
+                                if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date).getTime() > __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(startDate) && __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date) < __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(endDate)) {
+                                    day.isMarked = true;
+                                }
+                            }
+                        }
+
+                        if (_this2.fConfigs.markedDates.includes(day.date)) day.isMarked = true;
+                    });
+                });
+            });
+        },
+        dayMouseOver: function dayMouseOver(week_key, date) {
+            if (!this.fConfigs.isDateRange) {
+                return false;
+            }
+
+            // Limits
+            if (this.fConfigs.limits) {
+                var limitMin = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.min).getTime();
+                var limitMax = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.max).getTime();
+                var limitDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(date).getTime();
+
+                if (limitDate < limitMin || limitDate > limitMax) {
+                    return false;
+                }
+            }
+
+            if ((this.calendar.dateRange.start.date === false || this.calendar.dateRange.end.date === false) && (this.calendar.dateRange.start.date !== false || this.calendar.dateRange.end.date !== false)) {
+
+                for (var e = 0; e < this.listCalendars.length; e++) {
+                    var calendar = this.listCalendars[e];
+
+                    for (var f = 0; f < calendar.weeks.length; f++) {
+                        var week = calendar.weeks[f];
+
+                        for (var i = 0; i < week.days.length; i++) {
+
+                            var item = week.days[i];
+
+                            this.listCalendars[e].weeks[f].days[i].isHovered = false;
+
+                            if (item.date !== this.calendar.dateRange.start.date && !this.fConfigs.markedDates.includes(item.date)) {
+                                this.listCalendars[e].weeks[f].days[i].isMarked = false;
+                            }
+
+                            if (this.calendar.dateRange.start.date) {
+                                var itemDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(item.date).getTime();
+                                var thisDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(date).getTime();
+                                var startDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.calendar.dateRange.start.date).getTime();
+
+                                this.listCalendars[e].weeks[f].days[i].isMouseToLeft = itemDate === startDate && thisDate > startDate || itemDate === thisDate && thisDate < startDate;
+                                this.listCalendars[e].weeks[f].days[i].isMouseToRight = itemDate === startDate && thisDate < startDate || itemDate === thisDate && thisDate > startDate;
+
+                                var dateDay = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(item.date).getDay() - 1;
+                                if (dateDay === -1) {
+                                    dateDay = 6;
+                                }
+
+                                var dayOfWeekString = this.fConfigs.dayNames[dateDay];
+                                if (!this.fConfigs.disabledDayNames.includes(dayOfWeekString) && (itemDate > startDate && itemDate < thisDate || itemDate < startDate && itemDate > thisDate)) {
+                                    this.listCalendars[e].weeks[f].days[i].isMarked = true;
+                                }
+
+                                if (!this.calendar.dateRange.end.date && itemDate === thisDate) {
+                                    this.listCalendars[e].weeks[f].days[i].isHovered = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        /**
+         * @return {boolean}
+         */
+        PreMonth: function PreMonth() {
+            var calendarKey = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+            if (!this.allowPreDate) return false;
+
+            this.transitionPrefix = 'right';
+
+            if (calendarKey !== null) {
+                var currentCalendar = this.listCalendars[calendarKey];
+                currentCalendar.date = new Date(currentCalendar.date.getFullYear(), currentCalendar.date.getMonth() - 1);
+                currentCalendar.key -= 1;
+                this.updateCalendar();
+            } else {
+                this.calendarsKey -= 1;
+                this.calendar.currentDate = new Date(this.calendar.currentDate.getFullYear(), this.calendar.currentDate.getMonth() - 1);
+                this.initCalendar();
+            }
+
+            this.$emit('changedMonth', this.calendar.currentDate);
+        },
+
+        /**
+         * @return {boolean}
+         */
+        NextMonth: function NextMonth() {
+            var calendarKey = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+            if (!this.allowNextDate) return false;
+
+            this.transitionPrefix = 'left';
+
+            if (calendarKey !== null) {
+                var currentCalendar = this.listCalendars[calendarKey];
+                currentCalendar.date = new Date(currentCalendar.date.getFullYear(), currentCalendar.date.getMonth() + 1);
+                currentCalendar.key += 1;
+                this.updateCalendar();
+            } else {
+                this.calendarsKey += 1;
+                this.calendar.currentDate = new Date(this.calendar.currentDate.getFullYear(), this.calendar.currentDate.getMonth() + 1);
+                this.initCalendar();
+            }
+
+            this.$emit('changedMonth', this.calendar.currentDate);
+        },
+
+        /**
+         * @return {boolean}
+         */
+        PreYear: function PreYear() {
+            if (!this.allowPreDate) return false;
+
+            var step = this.showYearPicker ? this.fConfigs.changeYearStep : 1;
+
+            this.calendar.currentDate = new Date(this.calendar.currentDate.getFullYear() - step, this.calendar.currentDate.getMonth());
+            this.initCalendar();
+            this.$emit('changedYear', this.calendar.currentDate);
+        },
+
+        /**
+         * @return {boolean}
+         */
+        NextYear: function NextYear() {
+            if (!this.allowNextDate) return false;
+
+            var step = this.showYearPicker ? this.fConfigs.changeYearStep : 1;
+
+            this.calendar.currentDate = new Date(this.calendar.currentDate.getFullYear() + step, this.calendar.currentDate.getMonth());
+            this.initCalendar();
+            this.$emit('changedYear', this.calendar.currentDate);
+        },
+        ChooseDate: function ChooseDate(date) {
+            var newDate = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(date);
+
+            if (date === 'today') {
+                newDate = new Date();
+            }
+
+            this.calendar.currentDate = newDate;
+            this.initCalendar();
+        },
+        openMonthPicker: function openMonthPicker() {
+            if (this.fConfigs.changeMonthFunction) this.showMonthPicker = true;
+        },
+        openYearPicker: function openYearPicker() {
+            if (this.fConfigs.changeYearFunction) this.showYearPicker = true;
+        },
+        openTimePicker: function openTimePicker() {
+            this.showTimePicker = true;
+        },
+        pickMonth: function pickMonth(key) {
+            this.showMonthPicker = false;
+            var date = this.calendar.currentDate;
+            this.calendar.currentDate = new Date(date.getFullYear(), key + 1, 0);
+            this.initCalendar();
+        },
+        pickYear: function pickYear(year) {
+            this.showYearPicker = false;
+            var date = this.calendar.currentDate;
+            this.calendar.currentDate = new Date(year, date.getMonth(), 0);
+            this.initCalendar();
+        },
+        getClassNames: function getClassNames(day) {
+            var classes = [];
+
+            // Disable days of week if set in configuration
+            var dateDay = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date).getDay() - 1;
+            if (dateDay === -1) {
+                dateDay = 6;
+            }
+            var dayOfWeekString = this.fConfigs.dayNames[dateDay];
+            if (this.fConfigs.disabledDayNames.includes(dayOfWeekString)) {
+                day.hide = true;
+                classes.push('vfc-cursor-not-allowed');
+            }
+
+            // Disabled dates
+            if (this.fConfigs.disabledDates.includes(day.date)) {
+                classes.push('vfc-disabled');
+                classes.push('vfc-cursor-not-allowed');
+            }
+
+            if (this.fConfigs.limits) {
+                var min = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.min).getTime();
+                var max = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.max).getTime();
+                var date = __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date).getTime();
+
+                if (date < min || date > max) {
+                    classes.push('vfc-disabled');
+                    classes.push('vfc-cursor-not-allowed');
+                }
+            }
+
+            if (day.hide) {
+                classes.push('vfc-hide');
+            }
+
+            // Today date
+            if (day.isToday) {
+                classes.push('vfc-today');
+            }
+
+            if (!day.hideLeftAndRightDays && !this.fConfigs.disabledDayNames.includes(dayOfWeekString)) {
+
+                // Mark Date
+                if (day.isMarked) {
+                    classes.push('vfc-marked');
+                } else if (day.isHovered) {
+                    classes.push('vfc-hovered');
+                }
+
+                if (this.fConfigs.markedDates.includes(day.date)) {
+                    classes.push('vfc-borderd');
+                }
+
+                // Date Range Marked
+                if (this.fConfigs.markedDateRange.start && this.fConfigs.markedDateRange.end) {
+                    if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.markedDateRange.start) <= __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date) && __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.markedDateRange.end) >= __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date)) {
+                        classes.push('vfc-marked');
+                    }
+
+                    if (day.date === this.fConfigs.markedDateRange.start) {
+                        classes.push('vfc-start-marked');
+                    } else if (day.date === this.fConfigs.markedDateRange.end) {
+                        classes.push('vfc-end-marked');
+                    }
+                } else {
+
+                    // Only After Start Marked
+                    if (this.fConfigs.markedDateRange.start) {
+                        if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.markedDateRange.start) <= __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date)) classes.push('vfc-marked');
+                    }
+
+                    // Only Before End Marked
+                    if (this.fConfigs.markedDateRange.end) {
+                        if (__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.markedDateRange.end) >= __WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(day.date)) classes.push('vfc-marked');
+                    }
+                }
+
+                classes.push('vfc-hover');
+            }
+
+            // Date Mark With Custom Classes
+            if (_typeof(this.fConfigs.markedDates) === "object") {
+                var checkMarked = this.fConfigs.markedDates.find(function (markDate) {
+                    return markDate.date === day.date;
+                });
+
+                if (typeof checkMarked !== "undefined") {
+                    classes.push(checkMarked.class);
+                }
+            }
+
+            if (day.date === this.calendar.dateRange.start.date) {
+                classes.push('vfc-start-marked');
+            }
+
+            if (day.date === this.calendar.dateRange.end.date) {
+                classes.push('vfc-end-marked');
+            }
+
+            if (day.date === this.calendar.selectedDate || this.calendar.selectedDates.find(function (date) {
+                return date.date === day.date;
+            })) {
+                classes.push('vfc-borderd');
+            }
+
+            return classes;
+        },
+        checkDateRangeStart: function checkDateRangeStart(date) {
+            return date === this.fConfigs.markedDateRange.start;
+        },
+        checkDateRangeEnd: function checkDateRangeEnd(date) {
+            return date === this.fConfigs.markedDateRange.end;
+        },
+        checkLimits: function checkLimits(value) {
+            if (this.fConfigs.limits) {
+                var min = new Date(__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.min));
+                min.setDate(1);
+                min.setHours(0, 0, 0, 0);
+                var max = new Date(__WEBPACK_IMPORTED_MODULE_0__assets_js_calendar__["a" /* default */].getDateFromFormat(this.fConfigs.limits.max));
+                max.setDate(1);
+                max.setHours(0, 0, 0, 0);
+
+                this.allowPreDate = true;
+                this.allowNextDate = true;
+
+                var current = new Date(value);
+                current.setDate(1);
+                current.setHours(0, 0, 0, 0);
+
+                if (current <= min) {
+                    this.allowPreDate = false;
+                }
+
+                if (current >= max) {
+                    this.allowNextDate = false;
+                }
+            }
+        },
+        getTransition_: function getTransition_() {
+            if (!this.fConfigs.transition) return '';
+
+            var name = '';
+            if (this.transitionPrefix === 'left') {
+                name = 'vfc-calendar-slide-left';
+            } else if (this.transitionPrefix === 'right') {
+                name = 'vfc-calendar-slide-right';
+            }
+            return name;
+        },
+        setCalendarStyles: function setCalendarStyles() {
+            var day = this.$refs.day[0];
+            var container = this.$refs.mainContainer;
+
+            container.style.display = "";
+            var height = container.clientHeight + (day.clientHeight + day.clientHeight / 2.5);
+            container.style.height = height + "px";
+
+            if (this.fConfigs.isModal) {
+                container.style.display = "none";
+            }
+        },
+        checkHiddenElement: function checkHiddenElement(elementName) {
+            return !this.fConfigs.hiddenElements.includes(elementName);
+        }
+    }
+});
+
+/***/ }),
+/* 179 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+    configs: {
+        sundayStart: false,
+        leftAndRightDays: true,
+        dateFormat: 'dd/mm/yyyy',
+        dayNames: [],
+        monthNames: []
+    },
+    formatDate(date) {
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let formattedDate = this.configs.dateFormat.replace("dd", day.toString());
+        formattedDate = formattedDate.replace("mm", month.toString());
+        formattedDate = formattedDate.replace("yyyy", year.toString());
+
+        return formattedDate;
+    },
+    getDateFromFormat(date) {
+        let format = this.configs.dateFormat;
+
+        if (format.indexOf('/') !== -1) {
+            format = format.split('/');
+            date = date.split('/');
+        } else if (format.indexOf('-') !== -1) {
+            format = format.split('-');
+            date = date.split('-');
+        } else if (format.indexOf('.') !== -1) {
+            format = format.split('.');
+            date = date.split('.');
+        } else {
+            alert('Your date format not valid. Please read documentation.!');
+        }
+
+        let year = format.indexOf('yyyy');
+        let month = format.indexOf('mm');
+        let day = format.indexOf('dd');
+
+        return new Date(date[year], date[month] - 1, date[day]);
+    },
+    checkValidDate(val){
+        val = this.getDateFromFormat(val);
+
+        if(val != "Invalid Date"){
+            return true;
+        }
+
+        return false;
+    },
+    getWeeksInMonth(month, year) {
+        let weeks = [],
+            firstDate = new Date(year, month, 1),
+            lastDate = new Date(year, month + 1, 0),
+            numDays = lastDate.getDate();
+
+        let start = 1;
+
+
+        let end = !this.configs.sundayStart ?
+            (firstDate.getDay() === 0 ? 1 : 7 - firstDate.getDay() + 1)
+            : 7 - firstDate.getDay();
+
+        while (start <= numDays) {
+            weeks.push({year: year, start: start, end: end, days: []});
+            start = end + 1;
+            end = end + 7;
+            if (end > numDays)
+                end = numDays;
+        }
+        return {weeks: weeks, month: lastDate.getMonth(), year: lastDate.getFullYear()};
+    },
+    getLeftMonthDays(month, year) {
+        let weeks = this.getWeeksInMonth(month, year);
+        let firstWeek = weeks.weeks[0];
+        let weekDaysCount = firstWeek.end - firstWeek.start + 1;
+
+        let days = [];
+        let finalYear = 0;
+        let finalMonth = 0;
+
+        if (weekDaysCount !== 7) {
+            let weeksLeftMonth = this.getWeeksInMonth(month - 1, year);
+
+            let leftMonthLastWeek = weeksLeftMonth.weeks[weeksLeftMonth.weeks.length - 1];
+
+            for (let i = leftMonthLastWeek.start; i <= leftMonthLastWeek.end; i++) {
+                days.push(i);
+            }
+
+            finalMonth = weeksLeftMonth.month;
+            finalYear = weeksLeftMonth.year;
+        }
+
+        return {days: days.reverse(), month: finalMonth, year: finalYear};
+    },
+    getRightMonthDays(month, year) {
+        let weeks = this.getWeeksInMonth(month, year);
+        let lastWeek = weeks.weeks[weeks.weeks.length - 1];
+
+        let weekDaysCount = lastWeek.end - lastWeek.start + 1;
+
+        let days = [];
+        let finalYear = 0;
+        let finalMonth = 0;
+
+        if (weekDaysCount !== 7) {
+            let weeksRightMonth = this.getWeeksInMonth(month + 1, year);
+            let rightMonthFirstWeek = weeksRightMonth.weeks[0];
+
+            for (let i = rightMonthFirstWeek.start; i <= rightMonthFirstWeek.end; i++) {
+                days.push(i);
+            }
+
+            finalMonth = weeksRightMonth.month;
+            finalYear = weeksRightMonth.year;
+        }
+
+
+        return {days: days, month: finalMonth, year: finalYear};
+    },
+    getFinalizedWeeks(month, year) {
+        let thisObj = this;
+        let monthWeeks = this.getWeeksInMonth(month, year);
+        let leftMonthDays = this.getLeftMonthDays(month, year);
+        let rightMonthDays = this.getRightMonthDays(month, year);
+
+        // Push Current Month Week days
+        monthWeeks.weeks.forEach(function (week) {
+            for (let i = week.start; i <= week.end; i++) {
+                week.days.push({
+                    day: i,
+                    month: monthWeeks.month,
+                    year: monthWeeks.year,
+                    hide: false,
+                    hideLeftAndRightDays: false
+                });
+            }
+        });
+
+
+        // Left month days
+        if (leftMonthDays.days.length) {
+            leftMonthDays.days.forEach(function (day) {
+                let hideLeftAndRightDays = false;
+
+                if (!thisObj.configs.leftAndRightDays) {
+                    day = '';
+                    hideLeftAndRightDays = true;
+                }
+
+                monthWeeks.weeks[0].days.unshift({
+                    day: day,
+                    month: leftMonthDays.month,
+                    year: leftMonthDays.year,
+                    hide: true,
+                    hideLeftAndRightDays: hideLeftAndRightDays
+                });
+            })
+        }
+
+        // Right month days
+        if (rightMonthDays.days.length) {
+            rightMonthDays.days.forEach(function (day) {
+                let hideLeftAndRightDays = false;
+
+                if (!thisObj.configs.leftAndRightDays) {
+                    day = '';
+                    hideLeftAndRightDays = true;
+                }
+
+                monthWeeks.weeks[monthWeeks.weeks.length - 1].days.push({
+                    day: day,
+                    month: rightMonthDays.month,
+                    year: rightMonthDays.year,
+                    hide: true,
+                    hideLeftAndRightDays: hideLeftAndRightDays
+                });
+            })
+        }
+
+        // Remove Week Year
+        monthWeeks.weeks.forEach(function (week) {
+            delete week.year;
+        });
+
+        return monthWeeks.weeks;
+    },
+    mask(value) {
+        let dayLength = this.getDateFromFormat(value).getDate().toString().length;
+        let month = this.getDateFromFormat(value).getMonth();
+
+        let dayMask = '00';
+        if(dayLength===1){
+            dayMask = '0';
+        }
+
+        let monthMask = '00';
+        if(month+1 <= 9){
+            monthMask = '0';
+        }
+
+        let mask = this.configs.dateFormat.replace('dd', dayMask).replace('mm', monthMask).replace('yyyy', '0000');
+        // eslint-disable-next-line
+        let literalPattern = /[0\*]/;
+        let numberPattern = /[0-9]/;
+        let newValue = "";
+
+        for (let vId = 0, mId = 0; mId < mask.length;) {
+            if (mId >= value.length)
+                break;
+
+            // Number expected but got a different value, store only the valid portion
+            if (mask[mId] === '0' && value[vId].match(numberPattern) == null) {
+                break;
+            }
+
+            // Found a literal
+            while (mask[mId].match(literalPattern) == null) {
+                if (value[vId] === mask[mId])
+                    break;
+                newValue += mask[mId++];
+            }
+
+            newValue += value[vId++];
+
+            mId++;
+        }
+
+        return newValue;
+    }
+});
+
+/***/ }),
+/* 180 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const propsAndData = {
+    props: {
+        configs: {
+            type: Object,
+            default: () => {
+            }
+        },
+        sundayStart: {
+            type: Boolean,
+            default: () => false
+        },
+        placeholder: {
+            type: [String, Boolean],
+            default: () => false
+        },
+        dateFormat: {
+            type: String
+        },
+        isMultiple: {
+            type: Boolean,
+            default: () => false
+        },
+        isSeparately: {
+            type: Boolean,
+            default: () => false
+        },
+        isDatePicker: {
+            type: Boolean,
+            default: () => false
+        },
+        isMultipleDatePicker: {
+            type: Boolean,
+            default: () => false
+        },
+        isDateRange: {
+            type: Boolean,
+            default: () => false
+        },
+        withTimePicker: {
+            type: Boolean,
+            default: () => false
+        },
+        calendarsCount: {
+            type: Number
+        },
+        isModal: {
+            type: Boolean,
+            default: () => false
+        },
+        isTypeable: {
+            type: Boolean,
+            default: () => false
+        },
+        changeMonthFunction: {
+            type: Boolean,
+            default: () => false
+        },
+        changeYearFunction: {
+            type: Boolean,
+            default: () => false
+        },
+        changeYearStep: {
+            type: Number,
+            default: () => 12
+        },
+        applyStylesheet: {
+            type: Boolean,
+            default: () => true
+        },
+        newCurrentDate: {
+            type: Date
+        },
+        markedDates: {
+            type: Array,
+            default: () => []
+        },
+        markedDateRange: {
+            type: Object
+        },
+        disabledDayNames: {
+            type: Array
+        },
+        disabledDates: {
+            type: Array
+        },
+        limits: {
+            type: [Object, Boolean],
+            default: () => false
+        },
+        dayNames: {
+            type: Array,
+        },
+        monthNames: {
+            type: Array
+        },
+        value: {
+            type: Object
+        },
+        transition: {
+            type: Boolean,
+            default: () => true
+        },
+        hiddenElements: {
+            type: Array
+        },
+        isAutoCloseable: {
+            type: Boolean,
+            default: false,
+        },
+        isDark: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data() {
+        return {
+            defaultDateFormat: {
+                date: false,
+                dateTime: false,
+                hour: '00',
+                minute: '00',
+            },
+            calendar: {
+                currentDate: new Date(),
+                selectedDate: false,
+                selectedDateTime: false,
+                selectedHour: '00',
+                selectedMinute: '00',
+                selectedDates: [],
+                dateRange: {
+                    start: {
+                        date: false,
+                        dateTime: false,
+                        hour: '00',
+                        minute: '00',
+                    },
+                    end: {
+                        date: false,
+                        dateTime: false,
+                        hour: '00',
+                        minute: '00',
+                    }
+                }
+            },
+            input: {
+                selectedDate: '',
+                dateRange: {
+                    start: {
+                        date: '',
+                        dateTime: '',
+                        hour: '',
+                        minute: ''
+                    },
+                    end: {
+                        date: '',
+                        dateTime: '',
+                        hour: '',
+                        minute: ''
+                    }
+                }
+            },
+            calendarsKey: 0,
+            transitionPrefix: 'left',
+            showCalendar: true,
+            showMonthPicker: false,
+            showYearPicker: false,
+            showTimePicker: false,
+            allowPreDate: true,
+            allowNextDate: true,
+            listCalendars: [],
+            fConfigs: {
+                sundayStart: false,
+                placeholder: false,
+                dateFormat: 'dd/mm/yyyy',
+
+                isDatePicker: false,
+                isMultipleDatePicker: false,
+                isDateRange: false,
+                withTimePicker: false,
+                isMultiple: false,
+                calendarsCount: 1,
+                isSeparately: false,
+
+                isModal: false,
+                isTypeable: false,
+
+                changeMonthFunction: false,
+                changeYearFunction: false,
+                changeYearStep: 12,
+
+                applyStylesheet: true,
+
+                markedDates: [],
+                markedDateRange: {
+                    start: false,
+                    end: false
+                },
+
+                limits: false,
+
+                disabledDates: [],
+                disabledDayNames: [],
+
+                dayNames: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+                monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+
+                transition: true,
+                hiddenElements: [],
+                isAutoCloseable: false,
+                isDark: false
+            }
+        }
+    }
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = propsAndData;
+
+
+
+/***/ }),
+/* 181 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(182)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(184)
+/* template */
+var __vue_template__ = __webpack_require__(185)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-5a4f42f8"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "node_modules/vue-functional-calendar/src/components/TimePicker.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5a4f42f8", Component.options)
+  } else {
+    hotAPI.reload("data-v-5a4f42f8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(183);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("62a23570", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5a4f42f8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./TimePicker.vue", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5a4f42f8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./TimePicker.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 184 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "TimePicker",
+    data: function data() {
+        return {
+            startDateActive: true,
+            currentSelectedDate: ''
+        };
+    },
+
+    watch: {
+        'startDateActive': function startDateActive() {
+            this.setScrollPosition();
+        }
+    },
+    computed: {
+        getCurrentDate: function getCurrentDate() {
+            return this.currentSelectedDate.date;
+        },
+        getCurrentDateTime: function getCurrentDateTime() {
+            return this.currentSelectedDate.dateTime;
+        }
+    },
+    created: function created() {
+        var selectedDates = this.$parent.calendar.selectedDates;
+        this.currentSelectedDate = selectedDates[selectedDates.length - 1];
+    },
+    mounted: function mounted() {
+        var startDate = this.$parent.calendar.dateRange.start.date;
+        var endDate = this.$parent.calendar.dateRange.end.date;
+
+        if (startDate && startDate < endDate) {
+            this.startDateActive = false;
+        } else {
+            this.startDateActive = true;
+        }
+
+        this.setSelectedDateTime();
+        this.setStyles();
+    },
+
+    methods: {
+        close: function close() {
+            this.$parent.showTimePicker = false;
+        },
+        changeHour: function changeHour(hour) {
+            var _this = this;
+
+            if (this.$parent.fConfigs.isDateRange) {
+                if (this.checkStartDate()) {
+                    this.$parent.calendar.dateRange.start.hour = hour;
+                } else {
+                    this.$parent.calendar.dateRange.end.hour = hour;
+                }
+            } else if (this.$parent.fConfigs.isMultipleDatePicker) {
+                var currentDate = this.$parent.calendar.selectedDates.find(function (date) {
+                    return date.date === _this.getCurrentDate;
+                });
+                currentDate.hour = hour;
+            } else {
+                this.$parent.calendar.selectedHour = hour;
+            }
+
+            this.setSelectedDateTime();
+            this.setScrollPosition();
+        },
+        changeMinute: function changeMinute(minute) {
+            var _this2 = this;
+
+            if (this.$parent.fConfigs.isDateRange) {
+                if (this.checkStartDate()) {
+                    this.$parent.calendar.dateRange.start.minute = minute;
+                } else {
+                    this.$parent.calendar.dateRange.end.minute = minute;
+                }
+            } else if (this.$parent.fConfigs.isMultipleDatePicker) {
+                var currentDate = this.$parent.calendar.selectedDates.find(function (date) {
+                    return date.date === _this2.getCurrentDate;
+                });
+                currentDate.minute = minute;
+            } else {
+                this.$parent.calendar.selectedMinute = minute;
+            }
+
+            this.setSelectedDateTime();
+            this.setScrollPosition();
+        },
+        setSelectedDateTime: function setSelectedDateTime() {
+            var _this3 = this;
+
+            if (this.$parent.fConfigs.isDatePicker) {
+                this.$parent.calendar.selectedDateTime = this.$parent.calendar.selectedDate + " " + this.$parent.calendar.selectedHour + ':' + this.$parent.calendar.selectedMinute;
+            } else if (this.$parent.fConfigs.isDateRange) {
+                this.$parent.calendar.dateRange.start.dateTime = this.$parent.calendar.dateRange.start.date + " " + this.$parent.calendar.dateRange.start.hour + ':' + this.$parent.calendar.dateRange.start.minute;
+                this.$parent.calendar.dateRange.end.dateTime = this.$parent.calendar.dateRange.end.date + " " + this.$parent.calendar.dateRange.end.hour + ':' + this.$parent.calendar.dateRange.end.minute;
+            } else if (this.$parent.fConfigs.isMultipleDatePicker) {
+                var currentDate = this.$parent.calendar.selectedDates.find(function (date) {
+                    return date.date === _this3.getCurrentDate;
+                });
+                currentDate.dateTime = currentDate.date + " " + currentDate.hour + ":" + currentDate.minute;
+            }
+        },
+        checkStartDate: function checkStartDate() {
+            return this.startDateActive;
+        },
+        checkHourActiveClass: function checkHourActiveClass(i) {
+            var _this4 = this;
+
+            var hour = void 0;
+            if (this.$parent.fConfigs.isDateRange) {
+                if (this.checkStartDate()) {
+                    hour = this.$parent.calendar.dateRange.start.hour;
+                } else {
+                    hour = this.$parent.calendar.dateRange.end.hour;
+                }
+            } else if (this.$parent.fConfigs.isMultipleDatePicker) {
+                hour = this.$parent.calendar.selectedDates.find(function (date) {
+                    return date.date === _this4.getCurrentDate;
+                }).hour;
+            } else {
+                hour = this.$parent.calendar.selectedHour;
+            }
+
+            return hour === (i < 10 ? '0' + (i - 1) : i);
+        },
+        checkMinuteActiveClass: function checkMinuteActiveClass(i) {
+            var _this5 = this;
+
+            var minute = void 0;
+            if (this.$parent.fConfigs.isDateRange) {
+                if (this.checkStartDate()) {
+                    minute = this.$parent.calendar.dateRange.start.minute;
+                } else {
+                    minute = this.$parent.calendar.dateRange.end.minute;
+                }
+            } else if (this.$parent.fConfigs.isMultipleDatePicker) {
+                minute = this.$parent.calendar.selectedDates.find(function (date) {
+                    return date.date === _this5.getCurrentDate;
+                }).minute;
+            } else {
+                minute = this.$parent.calendar.selectedMinute;
+            }
+
+            return minute === (i < 10 ? '0' + (i - 1) : i);
+        },
+        setStyles: function setStyles() {
+            var container = this.$parent.$refs.mainContainer;
+
+            this.setScrollPosition();
+
+            var timeLine = document.getElementById('time-line');
+            document.getElementsByClassName('vfc-time-picker__list')[0].style.height = container.clientHeight - timeLine.clientHeight + 'px';
+            document.getElementsByClassName('vfc-time-picker__list')[1].style.height = container.clientHeight - timeLine.clientHeight + 'px';
+        },
+        setScrollPosition: function setScrollPosition() {
+            var container = this.$parent.$refs.mainContainer;
+
+            this.$nextTick(function () {
+                var selectedHour = this.$refs.hourList.querySelector('.vfc-time-picker__item--selected');
+                var selectedMinute = this.$refs.minuteList.querySelector('.vfc-time-picker__item--selected');
+
+                this.$refs.hourList.scrollTop = selectedHour ? selectedHour.offsetTop - container.clientHeight / 2 : 0;
+                this.$refs.minuteList.scrollTop = selectedMinute ? selectedMinute.offsetTop - container.clientHeight / 2 : 0;
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "vfc-time-picker-container" }, [
+    _c("div", {
+      staticClass: "vfc-close",
+      on: {
+        click: function($event) {
+          return _vm.close()
+        }
+      }
+    }),
+    _vm._v(" "),
+    _c("div", { staticClass: "vfc-modal-time-mechanic" }, [
+      _c(
+        "div",
+        { staticClass: "vfc-modal-time-line", attrs: { id: "time-line" } },
+        [
+          _c(
+            "span",
+            [
+              _vm.$parent.fConfigs.isDateRange
+                ? [
+                    _c(
+                      "span",
+                      {
+                        class: { "vfc-active": _vm.startDateActive },
+                        on: {
+                          click: function($event) {
+                            _vm.startDateActive = true
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          _vm._s(_vm.$parent.calendar.dateRange.start.dateTime)
+                        )
+                      ]
+                    ),
+                    _vm.$parent.calendar.dateRange.end.date
+                      ? [
+                          _vm._v(" -"),
+                          _c(
+                            "span",
+                            {
+                              class: { "vfc-active": !_vm.startDateActive },
+                              on: {
+                                click: function($event) {
+                                  _vm.startDateActive = false
+                                }
+                              }
+                            },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  this.$parent.calendar.dateRange.end.dateTime
+                                )
+                              )
+                            ]
+                          )
+                        ]
+                      : _vm._e()
+                  ]
+                : _vm.$parent.fConfigs.isMultipleDatePicker
+                ? [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.getCurrentDateTime) +
+                        "\n                "
+                    )
+                  ]
+                : [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.$parent.calendar.selectedDateTime) +
+                        "\n                "
+                    )
+                  ]
+            ],
+            2
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "vfc-time-picker" }, [
+        _c(
+          "div",
+          {
+            ref: "hourList",
+            staticClass: "vfc-time-picker__list vfc-time-picker__list--hours"
+          },
+          _vm._l(23, function(i) {
+            return _c(
+              "div",
+              {
+                staticClass: "vfc-time-picker__item",
+                class: {
+                  "vfc-time-picker__item--selected": _vm.checkHourActiveClass(i)
+                },
+                on: {
+                  click: function($event) {
+                    _vm.changeHour(i < 10 ? "0" + (i - 1) : i)
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  _vm._s(i < 10 ? "0" + (i - 1) : i) + "\n                "
+                )
+              ]
+            )
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            ref: "minuteList",
+            staticClass: "vfc-time-picker__list vfc-time-picker__list--minutes"
+          },
+          _vm._l(59, function(i) {
+            return _c(
+              "div",
+              {
+                staticClass: "vfc-time-picker__item",
+                class: {
+                  "vfc-time-picker__item--selected": _vm.checkMinuteActiveClass(
+                    i
+                  )
+                },
+                on: {
+                  click: function($event) {
+                    _vm.changeMinute(i < 10 ? "0" + (i - 1) : i)
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  _vm._s(i < 10 ? "0" + (i - 1) : i) + "\n                "
+                )
+              ]
+            )
+          }),
+          0
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5a4f42f8", module.exports)
+  }
+}
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { class: { "vfc-styles-conditional-class": _vm.fConfigs.applyStylesheet } },
+    [
+      _vm.fConfigs.isModal && _vm.fConfigs.isDateRange
+        ? _c(
+            "div",
+            {
+              staticClass: "vfc-multiple-input",
+              class: { "vfc-dark": _vm.fConfigs.isDark }
+            },
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.input.dateRange.start.date,
+                    expression: "input.dateRange.start.date"
+                  }
+                ],
+                attrs: {
+                  type: "text",
+                  title: "Start Date",
+                  placeholder: _vm.fConfigs.placeholder,
+                  readonly: !_vm.fConfigs.isTypeable,
+                  maxlength: _vm.fConfigs.dateFormat.length
+                },
+                domProps: { value: _vm.input.dateRange.start.date },
+                on: {
+                  click: function($event) {
+                    _vm.showCalendar = !_vm.showCalendar
+                  },
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(
+                      _vm.input.dateRange.start,
+                      "date",
+                      $event.target.value
+                    )
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.input.dateRange.end.date,
+                    expression: "input.dateRange.end.date"
+                  }
+                ],
+                attrs: {
+                  type: "text",
+                  title: "End Date",
+                  placeholder: _vm.fConfigs.placeholder,
+                  readonly: !_vm.fConfigs.isTypeable,
+                  maxlength: _vm.fConfigs.dateFormat.length
+                },
+                domProps: { value: _vm.input.dateRange.end.date },
+                on: {
+                  click: function($event) {
+                    _vm.showCalendar = !_vm.showCalendar
+                  },
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(
+                      _vm.input.dateRange.end,
+                      "date",
+                      $event.target.value
+                    )
+                  }
+                }
+              })
+            ]
+          )
+        : _vm.fConfigs.isModal && _vm.fConfigs.isDatePicker
+        ? _c("div", { class: { "vfc-dark": _vm.fConfigs.isDark } }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.input.selectedDate,
+                  expression: "input.selectedDate"
+                }
+              ],
+              staticClass: "vfc-single-input",
+              attrs: {
+                type: "text",
+                title: "Date",
+                placeholder: _vm.fConfigs.placeholder,
+                readonly: !_vm.fConfigs.isTypeable,
+                maxlength: _vm.fConfigs.dateFormat.length
+              },
+              domProps: { value: _vm.input.selectedDate },
+              on: {
+                click: function($event) {
+                  _vm.showCalendar = !_vm.showCalendar
+                },
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.input, "selectedDate", $event.target.value)
+                }
+              }
+            })
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.showCalendar,
+              expression: "showCalendar"
+            }
+          ],
+          ref: "mainContainer",
+          staticClass: "vfc-main-container",
+          class: {
+            "vfc-modal":
+              _vm.fConfigs.isModal &&
+              (_vm.fConfigs.isDatePicker || _vm.fConfigs.isDateRange),
+            "vfc-dark": _vm.fConfigs.isDark
+          }
+        },
+        [
+          _vm.showMonthPicker
+            ? [
+                _c("div", { staticClass: "vfc-months-container" }, [
+                  true
+                    ? _c("div", { staticClass: "vfc-navigation-buttons" }, [
+                        _c("div", { on: { click: _vm.PreYear } }, [
+                          _c("div", { staticClass: "vfc-arrow-left" })
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "h2",
+                          {
+                            staticClass: "vfc-top-date",
+                            class: {
+                              "vfc-underline":
+                                !_vm.showYearPicker &&
+                                _vm.fConfigs.changeYearFunction
+                            },
+                            on: { click: _vm.openYearPicker }
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.calendar.currentDate.getFullYear())
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { on: { click: _vm.NextYear } }, [
+                          _c("div", { staticClass: "vfc-arrow-right" })
+                        ])
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "vfc-months" },
+                    [
+                      !_vm.showYearPicker
+                        ? _vm._l(_vm.fConfigs.monthNames, function(month, key) {
+                            return _c(
+                              "div",
+                              {
+                                key: key,
+                                staticClass: "vfc-item",
+                                class: {
+                                  "vfc-selected":
+                                    _vm.calendar.currentDate.getMonth() === key
+                                },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.pickMonth(key)
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                            " +
+                                    _vm._s(month) +
+                                    "\n                        "
+                                )
+                              ]
+                            )
+                          })
+                        : _vm._l(_vm.yearList, function(year, key) {
+                            return _c(
+                              "div",
+                              {
+                                key: key,
+                                staticClass: "vfc-item",
+                                class: { "vfc-selected": year.selected },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.pickYear(year.year)
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                            " +
+                                    _vm._s(year.year) +
+                                    "\n                        "
+                                )
+                              ]
+                            )
+                          })
+                    ],
+                    2
+                  )
+                ])
+              ]
+            : _vm.showTimePicker
+            ? _c("div", [_c("time-picker")], 1)
+            : [
+                _c("div", { staticClass: "vfc-calendars-container" }, [
+                  _vm.checkHiddenElement("navigationArrows") &&
+                  !_vm.fConfigs.isSeparately
+                    ? _c(
+                        "div",
+                        {
+                          ref: "navigationButtons",
+                          staticClass: "vfc-navigation-buttons"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              class: { "vfc-cursor-pointer": _vm.allowPreDate },
+                              on: {
+                                click: function($event) {
+                                  return _vm.PreMonth()
+                                }
+                              }
+                            },
+                            [
+                              _c("div", {
+                                staticClass: "vfc-arrow-left",
+                                class: { "vfc-disabled": !_vm.allowPreDate }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              class: {
+                                "vfc-cursor-pointer": _vm.allowNextDate
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.NextMonth()
+                                }
+                              }
+                            },
+                            [
+                              _c("div", {
+                                staticClass: "vfc-arrow-right",
+                                class: { "vfc-disabled": !_vm.allowNextDate }
+                              })
+                            ]
+                          )
+                        ]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      key: _vm.calendarsKey,
+                      ref: "calendars",
+                      staticClass: "vfc-calendars"
+                    },
+                    _vm._l(_vm.listCalendars, function(calendarItem, key) {
+                      return _c(
+                        "div",
+                        { key: calendarItem.key, staticClass: "vfc-calendar" },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "vfc-content" },
+                            [
+                              _vm.fConfigs.isSeparately
+                                ? _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "vfc-separately-navigation-buttons"
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          class: {
+                                            "vfc-cursor-pointer":
+                                              _vm.allowPreDate
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.PreMonth(key)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("div", {
+                                            staticClass: "vfc-arrow-left",
+                                            class: {
+                                              "vfc-disabled": !_vm.allowPreDate
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          class: {
+                                            "vfc-cursor-pointer":
+                                              _vm.allowNextDate
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.NextMonth(key)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("div", {
+                                            staticClass: "vfc-arrow-right",
+                                            class: {
+                                              "vfc-disabled": !_vm.allowNextDate
+                                            }
+                                          })
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.checkHiddenElement("month")
+                                ? _c(
+                                    "h2",
+                                    {
+                                      staticClass: "vfc-top-date",
+                                      class: {
+                                        "vfc-cursor-pointer vfc-underline":
+                                          _vm.changeMonthFunction
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.openMonthPicker(key)
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                " +
+                                          _vm._s(calendarItem.dateTop) +
+                                          "\n                            "
+                                      )
+                                    ]
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _c(
+                                "section",
+                                { staticClass: "vfc-dayNames" },
+                                _vm._l(_vm.fConfigs.dayNames, function(
+                                  dayName,
+                                  key
+                                ) {
+                                  return _vm.checkHiddenElement("dayNames")
+                                    ? _c("span", { key: key }, [
+                                        _vm._v(
+                                          "\n                                " +
+                                            _vm._s(dayName) +
+                                            "\n                            "
+                                        )
+                                      ])
+                                    : _vm._e()
+                                }),
+                                0
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "transition-group",
+                                {
+                                  attrs: {
+                                    tag: "div",
+                                    name: _vm.getTransition_(),
+                                    appear: ""
+                                  }
+                                },
+                                _vm._l(calendarItem.weeks, function(
+                                  week,
+                                  week_key
+                                ) {
+                                  return _c(
+                                    "div",
+                                    {
+                                      key: week_key + 0,
+                                      staticClass: "vfc-week"
+                                    },
+                                    _vm._l(week.days, function(day, day_key) {
+                                      return _c(
+                                        "div",
+                                        {
+                                          key: day_key,
+                                          ref: "day",
+                                          refInFor: true,
+                                          staticClass: "vfc-day"
+                                        },
+                                        [
+                                          (day.isDateRangeStart ||
+                                            day.isMouseToLeft) &&
+                                          !day.hideLeftAndRightDays
+                                            ? _c("div", {
+                                                staticClass: "vfc-base-start"
+                                              })
+                                            : (day.isDateRangeEnd ||
+                                                day.isMouseToRight) &&
+                                              !day.hideLeftAndRightDays
+                                            ? _c("div", {
+                                                staticClass: "vfc-base-end"
+                                              })
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !day.hideLeftAndRightDays
+                                            ? _c(
+                                                "span",
+                                                {
+                                                  key: day_key,
+                                                  staticClass: "vfc-span-day",
+                                                  class: _vm.getClassNames(day),
+                                                  attrs: { "data-date": "" },
+                                                  on: {
+                                                    click: function($event) {
+                                                      return _vm.clickDay(day)
+                                                    },
+                                                    mouseover: function(
+                                                      $event
+                                                    ) {
+                                                      return _vm.dayMouseOver(
+                                                        week_key,
+                                                        day.date
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                [
+                                                  _vm._t(
+                                                    "default",
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                " +
+                                                          _vm._s(day.day) +
+                                                          "\n                                            "
+                                                      )
+                                                    ],
+                                                    { week: week, day: day }
+                                                  )
+                                                ],
+                                                2
+                                              )
+                                            : _vm._e()
+                                        ]
+                                      )
+                                    }),
+                                    0
+                                  )
+                                }),
+                                0
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      )
+                    }),
+                    0
+                  )
+                ])
+              ]
+        ],
+        2
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-eb8491ac", module.exports)
+  }
+}
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(o){return typeof o}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":typeof o};!function(){function o(e,t){if(!o.installed){if(o.installed=!0,!t)return void console.error("You have to install axios");e.axios=t,Object.defineProperties(e.prototype,{axios:{get:function(){return t}},$http:{get:function(){return t}}})}}"object"==( false?"undefined":_typeof(exports))?module.exports=o: true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function(){return o}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):window.Vue&&window.axios&&Vue.use(o,window.axios)}();
 
 /***/ }),
-/* 173 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -72109,7 +75681,7 @@ if (typeof this !== 'undefined' && this.Sweetalert2){  this.swal = this.sweetAle
 "undefined"!=typeof document&&function(e,t){var n=e.createElement("style");if(e.getElementsByTagName("head")[0].appendChild(n),n.styleSheet)n.styleSheet.disabled||(n.styleSheet.cssText=t);else try{n.innerHTML=t}catch(e){n.innerText=t}}(document,"@charset \"UTF-8\";@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon::before{display:flex;align-items:center;font-size:2em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon::before{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 1.5em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}@-webkit-keyframes swal2-toast-show{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg)}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg)}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg)}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg)}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg)}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg)}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;background-color:transparent;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{z-index:1;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-actions.swal2-loading .swal2-styled.swal2-confirm{box-sizing:border-box;width:2.5em;height:2.5em;margin:.46875em;padding:0;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{content:\"\";display:inline-block;width:15px;height:15px;margin-left:5px;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff}.swal2-styled{margin:.3125em;padding:.625em 2em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{-webkit-transform:none;transform:none;background:0 0;color:#f27474}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;word-wrap:break-word}#swal2-content{text-align:center}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-file::-webkit-input-placeholder,.swal2-input::-webkit-input-placeholder,.swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::-ms-input-placeholder,.swal2-input::-ms-input-placeholder,.swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:inherit}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:inherit;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:\"!\";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;zoom:normal;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;zoom:normal;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon::before{display:flex;align-items:center;height:92%;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-warning::before{content:\"!\"}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-info::before{content:\"i\"}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-question::before{content:\"?\"}.swal2-icon.swal2-question.swal2-arabic-question-mark::before{content:\"؟\"}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progress-steps{align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;width:2.5em;height:.4em;margin:0 -1px;background:#3085d6}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}");
 
 /***/ }),
-/* 174 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports =
@@ -73126,15 +76698,15 @@ AlertSuccess_component.options.__file = "AlertSuccess.vue"
 /******/ });
 
 /***/ }),
-/* 175 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(176)
+var __vue_script__ = __webpack_require__(191)
 /* template */
-var __vue_template__ = __webpack_require__(177)
+var __vue_template__ = __webpack_require__(192)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -73173,7 +76745,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 176 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73389,10 +76961,68 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
+            myYear: new Date().getFullYear(),
             loansdata: [],
             sharesdata: [],
             members: null,
@@ -73400,7 +77030,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             shares: null,
             loans: null,
             month: null,
-            monthly: null
+            monthly: []
 
         };
     },
@@ -73411,7 +77041,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         this.fetchMembers();
         this.fetchSharesList();
         this.fetchLoansList();
-        this.monthShares();
+        this.currentMonthShares();
+        this.fetchMonthlyShares();
     },
 
     methods: {
@@ -73430,7 +77061,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             console.log('Fetching data....');
 
-            this.axios.get('/api/share').then(function (response) {
+            this.axios.get('/api/dashboardshares').then(function (response) {
                 //  console.log(response.data);
                 _this2.sharesdata = response.data;
             }).catch(function (error) {
@@ -73442,7 +77073,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             console.log('Fetching data....');
 
-            this.axios.get('/api/loan').then(function (response) {
+            this.axios.get('/api/dashboardloans').then(function (response) {
                 //  console.log(response.data);
                 _this3.loansdata = response.data;
             }).catch(function (error) {
@@ -73479,7 +77110,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 console.log(error);
             });
         },
-        monthShares: function monthShares() {
+        currentMonthShares: function currentMonthShares() {
             var _this7 = this;
 
             this.axios.get('/api/month').then(function (response) {
@@ -73488,13 +77119,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }).catch(function (error) {
                 console.log(error);
             });
+        },
+        fetchMonthlyShares: function fetchMonthlyShares() {
+            var _this8 = this;
+
+            this.axios.get('/api/monthly').then(function (response) {
+                //  console.log(response.data);
+                _this8.monthly = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        downloadShares: function downloadShares() {
+            axios.get('/api/download/shares');
+        },
+        monthlySharesDownload: function monthlySharesDownload() {
+            axios.get('/api/monthly/shares');
         }
 
     }
 });
 
 /***/ }),
-/* 177 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -73594,7 +77241,7 @@ var render = function() {
               _c(
                 "h6",
                 { staticClass: "text-uppercase mt-0 float-left text-white-50" },
-                [_vm._v("Monthly shares")]
+                [_vm._v("This month shares")]
               ),
               _vm._v(" "),
               _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
@@ -73623,11 +77270,11 @@ var render = function() {
                     on: {
                       click: function($event) {
                         $event.preventDefault()
-                        return _vm.printme($event)
+                        return _vm.downloadShares($event)
                       }
                     }
                   },
-                  [_vm._v("Print report")]
+                  [_vm._v("Download report")]
                 )
               ])
             ]),
@@ -73688,11 +77335,11 @@ var render = function() {
                     on: {
                       click: function($event) {
                         $event.preventDefault()
-                        return _vm.printme($event)
+                        return _vm.downloadme($event)
                       }
                     }
                   },
-                  [_vm._v("Print report")]
+                  [_vm._v("Download report")]
                 )
               ])
             ]),
@@ -73738,6 +77385,66 @@ var render = function() {
                   )
                 ]
               )
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-5" }, [
+        _c("div", { staticClass: "card m-b-20" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
+              _c("b", [_vm._v("Monthly shares (" + _vm._s(_vm.myYear) + ")")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "float-right" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary btn-sm",
+                    attrs: { type: "button", name: "button" },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.monthlySharesDownload($event)
+                      }
+                    }
+                  },
+                  [_vm._v("Download report")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "table-responsive" }, [
+              _c("table", { staticClass: "table table-vertical" }, [
+                _vm._m(9),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.monthly, function(i, index) {
+                    return _c("tr", { on: { key: index } }, [
+                      _c("td", [
+                        _c("img", {
+                          staticClass: "thumb-sm rounded-circle mr-2",
+                          attrs: {
+                            src: "/img/calendar.png",
+                            alt: "calendar-image"
+                          }
+                        }),
+                        _vm._v(
+                          "\n                                      " +
+                            _vm._s(i.month) +
+                            "\n                                  "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_c("b", [_vm._v(_vm._s(i.total_amount))])])
+                    ])
+                  }),
+                  0
+                )
+              ])
             ])
           ])
         ])
@@ -73891,6 +77598,18 @@ var staticRenderFns = [
         _c("th", [_vm._v("Date issued")])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Month")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Total")])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -73903,19 +77622,19 @@ if (false) {
 }
 
 /***/ }),
-/* 178 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(179)
+  __webpack_require__(194)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(182)
+var __vue_script__ = __webpack_require__(196)
 /* template */
-var __vue_template__ = __webpack_require__(183)
+var __vue_template__ = __webpack_require__(197)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -73954,13 +77673,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 179 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(180);
+var content = __webpack_require__(195);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -73980,7 +77699,7 @@ if(false) {
 }
 
 /***/ }),
-/* 180 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -73994,40 +77713,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 181 */
-/***/ (function(module, exports) {
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles (parentId, list) {
-  var styles = []
-  var newStyles = {}
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i]
-    var id = item[0]
-    var css = item[1]
-    var media = item[2]
-    var sourceMap = item[3]
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    }
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] })
-    } else {
-      newStyles[id].parts.push(part)
-    }
-  }
-  return styles
-}
-
-
-/***/ }),
-/* 182 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74222,7 +77908,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 183 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -74669,19 +78355,19 @@ if (false) {
 }
 
 /***/ }),
-/* 184 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(185)
+  __webpack_require__(199)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(187)
+var __vue_script__ = __webpack_require__(201)
 /* template */
-var __vue_template__ = __webpack_require__(188)
+var __vue_template__ = __webpack_require__(202)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -74720,13 +78406,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 185 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(186);
+var content = __webpack_require__(200);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -74746,7 +78432,7 @@ if(false) {
 }
 
 /***/ }),
-/* 186 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -74760,7 +78446,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 187 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74941,7 +78627,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 188 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -75366,19 +79052,19 @@ if (false) {
 }
 
 /***/ }),
-/* 189 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(190)
+  __webpack_require__(204)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(192)
+var __vue_script__ = __webpack_require__(206)
 /* template */
-var __vue_template__ = __webpack_require__(193)
+var __vue_template__ = __webpack_require__(207)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -75417,13 +79103,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 190 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(191);
+var content = __webpack_require__(205);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -75443,7 +79129,7 @@ if(false) {
 }
 
 /***/ }),
-/* 191 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -75457,7 +79143,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 192 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75598,7 +79284,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 193 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -75819,15 +79505,15 @@ if (false) {
 }
 
 /***/ }),
-/* 194 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(195)
+var __vue_script__ = __webpack_require__(209)
 /* template */
-var __vue_template__ = __webpack_require__(196)
+var __vue_template__ = __webpack_require__(210)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -75866,7 +79552,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 195 */
+/* 209 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76186,13 +79872,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.axios.get(url).then(function (response) {
                 _this3.loans = response.data;
             });
+        },
+        downloadIndividualMemberShares: function downloadIndividualMemberShares() {
+            var url = "/api/individual/shares/" + this.$route.params.id;
+            axios.get(url);
         }
     }
 
 });
 
 /***/ }),
-/* 196 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -76428,11 +80118,7 @@ var render = function() {
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _vm._v(
-                "Shares Trasaction for " +
-                  _vm._s(_vm.post.name) +
-                  "\n                            "
-              ),
+              _vm._v("Shares Trasaction\n                            "),
               _c("span", { staticClass: "float-right" }, [
                 _c(
                   "button",
@@ -76442,11 +80128,11 @@ var render = function() {
                     on: {
                       click: function($event) {
                         $event.preventDefault()
-                        return _vm.printme($event)
+                        return _vm.downloadIndividualMemberShares($event)
                       }
                     }
                   },
-                  [_vm._v("Print report")]
+                  [_vm._v("Download report")]
                 )
               ])
             ]),
@@ -76493,7 +80179,7 @@ var render = function() {
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _vm._v("Applied Loan Report for " + _vm._s(_vm.post.name))
+              _vm._v("Applied Loan Report")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
@@ -76633,19 +80319,19 @@ if (false) {
 }
 
 /***/ }),
-/* 197 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(198)
+  __webpack_require__(212)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(200)
+var __vue_script__ = __webpack_require__(214)
 /* template */
-var __vue_template__ = __webpack_require__(201)
+var __vue_template__ = __webpack_require__(215)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -76684,13 +80370,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 198 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(199);
+var content = __webpack_require__(213);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -76710,7 +80396,7 @@ if(false) {
 }
 
 /***/ }),
-/* 199 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -76724,7 +80410,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 200 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76866,7 +80552,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 201 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -77145,19 +80831,19 @@ if (false) {
 }
 
 /***/ }),
-/* 202 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(203)
+  __webpack_require__(217)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(205)
+var __vue_script__ = __webpack_require__(219)
 /* template */
-var __vue_template__ = __webpack_require__(206)
+var __vue_template__ = __webpack_require__(220)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -77196,13 +80882,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 203 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(204);
+var content = __webpack_require__(218);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -77222,7 +80908,7 @@ if(false) {
 }
 
 /***/ }),
-/* 204 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -77236,7 +80922,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 205 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77389,7 +81075,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 206 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -77706,19 +81392,19 @@ if (false) {
 }
 
 /***/ }),
-/* 207 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(208)
+  __webpack_require__(222)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(210)
+var __vue_script__ = __webpack_require__(224)
 /* template */
-var __vue_template__ = __webpack_require__(211)
+var __vue_template__ = __webpack_require__(225)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -77757,13 +81443,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 208 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(209);
+var content = __webpack_require__(223);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -77783,7 +81469,7 @@ if(false) {
 }
 
 /***/ }),
-/* 209 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -77797,7 +81483,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 210 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77925,7 +81611,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 211 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -78090,15 +81776,15 @@ if (false) {
 }
 
 /***/ }),
-/* 212 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(213)
+var __vue_script__ = __webpack_require__(227)
 /* template */
-var __vue_template__ = __webpack_require__(214)
+var __vue_template__ = __webpack_require__(228)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -78137,7 +81823,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 213 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78316,7 +82002,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 214 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -78561,19 +82247,19 @@ if (false) {
 }
 
 /***/ }),
-/* 215 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(216)
+  __webpack_require__(230)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(218)
+var __vue_script__ = __webpack_require__(232)
 /* template */
-var __vue_template__ = __webpack_require__(219)
+var __vue_template__ = __webpack_require__(233)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -78612,13 +82298,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 216 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(217);
+var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -78638,7 +82324,7 @@ if(false) {
 }
 
 /***/ }),
-/* 217 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -78652,7 +82338,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 218 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78925,7 +82611,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 219 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -79258,19 +82944,19 @@ if (false) {
 }
 
 /***/ }),
-/* 220 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(221)
+  __webpack_require__(235)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(223)
+var __vue_script__ = __webpack_require__(237)
 /* template */
-var __vue_template__ = __webpack_require__(224)
+var __vue_template__ = __webpack_require__(238)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -79309,13 +82995,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 221 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(222);
+var content = __webpack_require__(236);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -79335,7 +83021,7 @@ if(false) {
 }
 
 /***/ }),
-/* 222 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -79349,7 +83035,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 223 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79549,7 +83235,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 224 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -79980,19 +83666,19 @@ if (false) {
 }
 
 /***/ }),
-/* 225 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(226)
+  __webpack_require__(240)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(228)
+var __vue_script__ = __webpack_require__(242)
 /* template */
-var __vue_template__ = __webpack_require__(229)
+var __vue_template__ = __webpack_require__(243)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -80031,13 +83717,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 226 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(227);
+var content = __webpack_require__(241);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -80057,7 +83743,7 @@ if(false) {
 }
 
 /***/ }),
-/* 227 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -80071,7 +83757,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 228 */
+/* 242 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80208,7 +83894,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 229 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -80407,7 +84093,7 @@ if (false) {
 }
 
 /***/ }),
-/* 230 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var normalizeComponent = __webpack_require__(1)
@@ -80437,19 +84123,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 231 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(232)
+  __webpack_require__(246)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(234)
+var __vue_script__ = __webpack_require__(248)
 /* template */
-var __vue_template__ = __webpack_require__(235)
+var __vue_template__ = __webpack_require__(249)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -80488,13 +84174,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 232 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(233);
+var content = __webpack_require__(247);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -80514,7 +84200,7 @@ if(false) {
 }
 
 /***/ }),
-/* 233 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -80528,7 +84214,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 234 */
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80752,7 +84438,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 235 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -81054,19 +84740,19 @@ if (false) {
 }
 
 /***/ }),
-/* 236 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(237)
+  __webpack_require__(251)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(239)
+var __vue_script__ = __webpack_require__(253)
 /* template */
-var __vue_template__ = __webpack_require__(240)
+var __vue_template__ = __webpack_require__(254)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -81105,13 +84791,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 237 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(238);
+var content = __webpack_require__(252);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -81131,7 +84817,7 @@ if(false) {
 }
 
 /***/ }),
-/* 238 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -81139,13 +84825,13 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 239 */
+/* 253 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81221,8 +84907,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
+//import { FunctionalCalendar } from 'vue-functional-calendar';
 /* harmony default export */ __webpack_exports__["default"] = ({
+    // components: {
+    //       FunctionalCalendar
+    //   },
     data: function data() {
         return {
 
@@ -81288,7 +84979,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 240 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -81556,19 +85247,19 @@ if (false) {
 }
 
 /***/ }),
-/* 241 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(242)
+  __webpack_require__(256)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(244)
+var __vue_script__ = __webpack_require__(258)
 /* template */
-var __vue_template__ = __webpack_require__(245)
+var __vue_template__ = __webpack_require__(259)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -81607,13 +85298,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 242 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(243);
+var content = __webpack_require__(257);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -81633,7 +85324,7 @@ if(false) {
 }
 
 /***/ }),
-/* 243 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -81647,7 +85338,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 244 */
+/* 258 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81795,7 +85486,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 245 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -82095,19 +85786,19 @@ if (false) {
 }
 
 /***/ }),
-/* 246 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(247)
+  __webpack_require__(261)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(249)
+var __vue_script__ = __webpack_require__(263)
 /* template */
-var __vue_template__ = __webpack_require__(250)
+var __vue_template__ = __webpack_require__(264)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -82146,13 +85837,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 247 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(248);
+var content = __webpack_require__(262);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -82172,7 +85863,7 @@ if(false) {
 }
 
 /***/ }),
-/* 248 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -82186,7 +85877,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 249 */
+/* 263 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82320,7 +86011,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 250 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -82483,19 +86174,19 @@ if (false) {
 }
 
 /***/ }),
-/* 251 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(252)
+  __webpack_require__(266)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(254)
+var __vue_script__ = __webpack_require__(268)
 /* template */
-var __vue_template__ = __webpack_require__(255)
+var __vue_template__ = __webpack_require__(269)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -82534,13 +86225,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 252 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(253);
+var content = __webpack_require__(267);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -82560,7 +86251,7 @@ if(false) {
 }
 
 /***/ }),
-/* 253 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -82574,7 +86265,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 254 */
+/* 268 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82730,7 +86421,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 255 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -83037,19 +86728,19 @@ if (false) {
 }
 
 /***/ }),
-/* 256 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(257)
+  __webpack_require__(271)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(259)
+var __vue_script__ = __webpack_require__(273)
 /* template */
-var __vue_template__ = __webpack_require__(260)
+var __vue_template__ = __webpack_require__(274)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -83088,13 +86779,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 257 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(258);
+var content = __webpack_require__(272);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -83114,7 +86805,7 @@ if(false) {
 }
 
 /***/ }),
-/* 258 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -83128,7 +86819,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 259 */
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83284,7 +86975,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 260 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -83591,19 +87282,19 @@ if (false) {
 }
 
 /***/ }),
-/* 261 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(262)
+  __webpack_require__(276)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(264)
+var __vue_script__ = __webpack_require__(278)
 /* template */
-var __vue_template__ = __webpack_require__(265)
+var __vue_template__ = __webpack_require__(279)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -83642,13 +87333,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 262 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(263);
+var content = __webpack_require__(277);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -83668,7 +87359,7 @@ if(false) {
 }
 
 /***/ }),
-/* 263 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -83682,7 +87373,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 264 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83823,7 +87514,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 265 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -84043,7 +87734,7 @@ if (false) {
 }
 
 /***/ }),
-/* 266 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var normalizeComponent = __webpack_require__(1)
@@ -84073,19 +87764,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 267 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(268)
+  __webpack_require__(282)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(270)
+var __vue_script__ = __webpack_require__(284)
 /* template */
-var __vue_template__ = __webpack_require__(271)
+var __vue_template__ = __webpack_require__(285)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -84124,13 +87815,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 268 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(269);
+var content = __webpack_require__(283);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -84150,7 +87841,7 @@ if(false) {
 }
 
 /***/ }),
-/* 269 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -84164,7 +87855,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 270 */
+/* 284 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84370,7 +88061,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 271 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -84641,1036 +88332,10 @@ if (false) {
 }
 
 /***/ }),
-/* 272 */
+/* 286 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! @preserve
- * numeral.js
- * version : 2.0.6
- * author : Adam Draper
- * license : MIT
- * http://adamwdraper.github.com/Numeral-js/
- */
-
-(function (global, factory) {
-    if (true) {
-        !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
-				__WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    } else if (typeof module === 'object' && module.exports) {
-        module.exports = factory();
-    } else {
-        global.numeral = factory();
-    }
-}(this, function () {
-    /************************************
-        Variables
-    ************************************/
-
-    var numeral,
-        _,
-        VERSION = '2.0.6',
-        formats = {},
-        locales = {},
-        defaults = {
-            currentLocale: 'en',
-            zeroFormat: null,
-            nullFormat: null,
-            defaultFormat: '0,0',
-            scalePercentBy100: true
-        },
-        options = {
-            currentLocale: defaults.currentLocale,
-            zeroFormat: defaults.zeroFormat,
-            nullFormat: defaults.nullFormat,
-            defaultFormat: defaults.defaultFormat,
-            scalePercentBy100: defaults.scalePercentBy100
-        };
-
-
-    /************************************
-        Constructors
-    ************************************/
-
-    // Numeral prototype object
-    function Numeral(input, number) {
-        this._input = input;
-
-        this._value = number;
-    }
-
-    numeral = function(input) {
-        var value,
-            kind,
-            unformatFunction,
-            regexp;
-
-        if (numeral.isNumeral(input)) {
-            value = input.value();
-        } else if (input === 0 || typeof input === 'undefined') {
-            value = 0;
-        } else if (input === null || _.isNaN(input)) {
-            value = null;
-        } else if (typeof input === 'string') {
-            if (options.zeroFormat && input === options.zeroFormat) {
-                value = 0;
-            } else if (options.nullFormat && input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
-                value = null;
-            } else {
-                for (kind in formats) {
-                    regexp = typeof formats[kind].regexps.unformat === 'function' ? formats[kind].regexps.unformat() : formats[kind].regexps.unformat;
-
-                    if (regexp && input.match(regexp)) {
-                        unformatFunction = formats[kind].unformat;
-
-                        break;
-                    }
-                }
-
-                unformatFunction = unformatFunction || numeral._.stringToNumber;
-
-                value = unformatFunction(input);
-            }
-        } else {
-            value = Number(input)|| null;
-        }
-
-        return new Numeral(input, value);
-    };
-
-    // version number
-    numeral.version = VERSION;
-
-    // compare numeral object
-    numeral.isNumeral = function(obj) {
-        return obj instanceof Numeral;
-    };
-
-    // helper functions
-    numeral._ = _ = {
-        // formats numbers separators, decimals places, signs, abbreviations
-        numberToFormat: function(value, format, roundingFunction) {
-            var locale = locales[numeral.options.currentLocale],
-                negP = false,
-                optDec = false,
-                leadingCount = 0,
-                abbr = '',
-                trillion = 1000000000000,
-                billion = 1000000000,
-                million = 1000000,
-                thousand = 1000,
-                decimal = '',
-                neg = false,
-                abbrForce, // force abbreviation
-                abs,
-                min,
-                max,
-                power,
-                int,
-                precision,
-                signed,
-                thousands,
-                output;
-
-            // make sure we never format a null value
-            value = value || 0;
-
-            abs = Math.abs(value);
-
-            // see if we should use parentheses for negative number or if we should prefix with a sign
-            // if both are present we default to parentheses
-            if (numeral._.includes(format, '(')) {
-                negP = true;
-                format = format.replace(/[\(|\)]/g, '');
-            } else if (numeral._.includes(format, '+') || numeral._.includes(format, '-')) {
-                signed = numeral._.includes(format, '+') ? format.indexOf('+') : value < 0 ? format.indexOf('-') : -1;
-                format = format.replace(/[\+|\-]/g, '');
-            }
-
-            // see if abbreviation is wanted
-            if (numeral._.includes(format, 'a')) {
-                abbrForce = format.match(/a(k|m|b|t)?/);
-
-                abbrForce = abbrForce ? abbrForce[1] : false;
-
-                // check for space before abbreviation
-                if (numeral._.includes(format, ' a')) {
-                    abbr = ' ';
-                }
-
-                format = format.replace(new RegExp(abbr + 'a[kmbt]?'), '');
-
-                if (abs >= trillion && !abbrForce || abbrForce === 't') {
-                    // trillion
-                    abbr += locale.abbreviations.trillion;
-                    value = value / trillion;
-                } else if (abs < trillion && abs >= billion && !abbrForce || abbrForce === 'b') {
-                    // billion
-                    abbr += locale.abbreviations.billion;
-                    value = value / billion;
-                } else if (abs < billion && abs >= million && !abbrForce || abbrForce === 'm') {
-                    // million
-                    abbr += locale.abbreviations.million;
-                    value = value / million;
-                } else if (abs < million && abs >= thousand && !abbrForce || abbrForce === 'k') {
-                    // thousand
-                    abbr += locale.abbreviations.thousand;
-                    value = value / thousand;
-                }
-            }
-
-            // check for optional decimals
-            if (numeral._.includes(format, '[.]')) {
-                optDec = true;
-                format = format.replace('[.]', '.');
-            }
-
-            // break number and format
-            int = value.toString().split('.')[0];
-            precision = format.split('.')[1];
-            thousands = format.indexOf(',');
-            leadingCount = (format.split('.')[0].split(',')[0].match(/0/g) || []).length;
-
-            if (precision) {
-                if (numeral._.includes(precision, '[')) {
-                    precision = precision.replace(']', '');
-                    precision = precision.split('[');
-                    decimal = numeral._.toFixed(value, (precision[0].length + precision[1].length), roundingFunction, precision[1].length);
-                } else {
-                    decimal = numeral._.toFixed(value, precision.length, roundingFunction);
-                }
-
-                int = decimal.split('.')[0];
-
-                if (numeral._.includes(decimal, '.')) {
-                    decimal = locale.delimiters.decimal + decimal.split('.')[1];
-                } else {
-                    decimal = '';
-                }
-
-                if (optDec && Number(decimal.slice(1)) === 0) {
-                    decimal = '';
-                }
-            } else {
-                int = numeral._.toFixed(value, 0, roundingFunction);
-            }
-
-            // check abbreviation again after rounding
-            if (abbr && !abbrForce && Number(int) >= 1000 && abbr !== locale.abbreviations.trillion) {
-                int = String(Number(int) / 1000);
-
-                switch (abbr) {
-                    case locale.abbreviations.thousand:
-                        abbr = locale.abbreviations.million;
-                        break;
-                    case locale.abbreviations.million:
-                        abbr = locale.abbreviations.billion;
-                        break;
-                    case locale.abbreviations.billion:
-                        abbr = locale.abbreviations.trillion;
-                        break;
-                }
-            }
-
-
-            // format number
-            if (numeral._.includes(int, '-')) {
-                int = int.slice(1);
-                neg = true;
-            }
-
-            if (int.length < leadingCount) {
-                for (var i = leadingCount - int.length; i > 0; i--) {
-                    int = '0' + int;
-                }
-            }
-
-            if (thousands > -1) {
-                int = int.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + locale.delimiters.thousands);
-            }
-
-            if (format.indexOf('.') === 0) {
-                int = '';
-            }
-
-            output = int + decimal + (abbr ? abbr : '');
-
-            if (negP) {
-                output = (negP && neg ? '(' : '') + output + (negP && neg ? ')' : '');
-            } else {
-                if (signed >= 0) {
-                    output = signed === 0 ? (neg ? '-' : '+') + output : output + (neg ? '-' : '+');
-                } else if (neg) {
-                    output = '-' + output;
-                }
-            }
-
-            return output;
-        },
-        // unformats numbers separators, decimals places, signs, abbreviations
-        stringToNumber: function(string) {
-            var locale = locales[options.currentLocale],
-                stringOriginal = string,
-                abbreviations = {
-                    thousand: 3,
-                    million: 6,
-                    billion: 9,
-                    trillion: 12
-                },
-                abbreviation,
-                value,
-                i,
-                regexp;
-
-            if (options.zeroFormat && string === options.zeroFormat) {
-                value = 0;
-            } else if (options.nullFormat && string === options.nullFormat || !string.replace(/[^0-9]+/g, '').length) {
-                value = null;
-            } else {
-                value = 1;
-
-                if (locale.delimiters.decimal !== '.') {
-                    string = string.replace(/\./g, '').replace(locale.delimiters.decimal, '.');
-                }
-
-                for (abbreviation in abbreviations) {
-                    regexp = new RegExp('[^a-zA-Z]' + locale.abbreviations[abbreviation] + '(?:\\)|(\\' + locale.currency.symbol + ')?(?:\\))?)?$');
-
-                    if (stringOriginal.match(regexp)) {
-                        value *= Math.pow(10, abbreviations[abbreviation]);
-                        break;
-                    }
-                }
-
-                // check for negative number
-                value *= (string.split('-').length + Math.min(string.split('(').length - 1, string.split(')').length - 1)) % 2 ? 1 : -1;
-
-                // remove non numbers
-                string = string.replace(/[^0-9\.]+/g, '');
-
-                value *= Number(string);
-            }
-
-            return value;
-        },
-        isNaN: function(value) {
-            return typeof value === 'number' && isNaN(value);
-        },
-        includes: function(string, search) {
-            return string.indexOf(search) !== -1;
-        },
-        insert: function(string, subString, start) {
-            return string.slice(0, start) + subString + string.slice(start);
-        },
-        reduce: function(array, callback /*, initialValue*/) {
-            if (this === null) {
-                throw new TypeError('Array.prototype.reduce called on null or undefined');
-            }
-
-            if (typeof callback !== 'function') {
-                throw new TypeError(callback + ' is not a function');
-            }
-
-            var t = Object(array),
-                len = t.length >>> 0,
-                k = 0,
-                value;
-
-            if (arguments.length === 3) {
-                value = arguments[2];
-            } else {
-                while (k < len && !(k in t)) {
-                    k++;
-                }
-
-                if (k >= len) {
-                    throw new TypeError('Reduce of empty array with no initial value');
-                }
-
-                value = t[k++];
-            }
-            for (; k < len; k++) {
-                if (k in t) {
-                    value = callback(value, t[k], k, t);
-                }
-            }
-            return value;
-        },
-        /**
-         * Computes the multiplier necessary to make x >= 1,
-         * effectively eliminating miscalculations caused by
-         * finite precision.
-         */
-        multiplier: function (x) {
-            var parts = x.toString().split('.');
-
-            return parts.length < 2 ? 1 : Math.pow(10, parts[1].length);
-        },
-        /**
-         * Given a variable number of arguments, returns the maximum
-         * multiplier that must be used to normalize an operation involving
-         * all of them.
-         */
-        correctionFactor: function () {
-            var args = Array.prototype.slice.call(arguments);
-
-            return args.reduce(function(accum, next) {
-                var mn = _.multiplier(next);
-                return accum > mn ? accum : mn;
-            }, 1);
-        },
-        /**
-         * Implementation of toFixed() that treats floats more like decimals
-         *
-         * Fixes binary rounding issues (eg. (0.615).toFixed(2) === '0.61') that present
-         * problems for accounting- and finance-related software.
-         */
-        toFixed: function(value, maxDecimals, roundingFunction, optionals) {
-            var splitValue = value.toString().split('.'),
-                minDecimals = maxDecimals - (optionals || 0),
-                boundedPrecision,
-                optionalsRegExp,
-                power,
-                output;
-
-            // Use the smallest precision value possible to avoid errors from floating point representation
-            if (splitValue.length === 2) {
-              boundedPrecision = Math.min(Math.max(splitValue[1].length, minDecimals), maxDecimals);
-            } else {
-              boundedPrecision = minDecimals;
-            }
-
-            power = Math.pow(10, boundedPrecision);
-
-            // Multiply up by precision, round accurately, then divide and use native toFixed():
-            output = (roundingFunction(value + 'e+' + boundedPrecision) / power).toFixed(boundedPrecision);
-
-            if (optionals > maxDecimals - boundedPrecision) {
-                optionalsRegExp = new RegExp('\\.?0{1,' + (optionals - (maxDecimals - boundedPrecision)) + '}$');
-                output = output.replace(optionalsRegExp, '');
-            }
-
-            return output;
-        }
-    };
-
-    // avaliable options
-    numeral.options = options;
-
-    // avaliable formats
-    numeral.formats = formats;
-
-    // avaliable formats
-    numeral.locales = locales;
-
-    // This function sets the current locale.  If
-    // no arguments are passed in, it will simply return the current global
-    // locale key.
-    numeral.locale = function(key) {
-        if (key) {
-            options.currentLocale = key.toLowerCase();
-        }
-
-        return options.currentLocale;
-    };
-
-    // This function provides access to the loaded locale data.  If
-    // no arguments are passed in, it will simply return the current
-    // global locale object.
-    numeral.localeData = function(key) {
-        if (!key) {
-            return locales[options.currentLocale];
-        }
-
-        key = key.toLowerCase();
-
-        if (!locales[key]) {
-            throw new Error('Unknown locale : ' + key);
-        }
-
-        return locales[key];
-    };
-
-    numeral.reset = function() {
-        for (var property in defaults) {
-            options[property] = defaults[property];
-        }
-    };
-
-    numeral.zeroFormat = function(format) {
-        options.zeroFormat = typeof(format) === 'string' ? format : null;
-    };
-
-    numeral.nullFormat = function (format) {
-        options.nullFormat = typeof(format) === 'string' ? format : null;
-    };
-
-    numeral.defaultFormat = function(format) {
-        options.defaultFormat = typeof(format) === 'string' ? format : '0.0';
-    };
-
-    numeral.register = function(type, name, format) {
-        name = name.toLowerCase();
-
-        if (this[type + 's'][name]) {
-            throw new TypeError(name + ' ' + type + ' already registered.');
-        }
-
-        this[type + 's'][name] = format;
-
-        return format;
-    };
-
-
-    numeral.validate = function(val, culture) {
-        var _decimalSep,
-            _thousandSep,
-            _currSymbol,
-            _valArray,
-            _abbrObj,
-            _thousandRegEx,
-            localeData,
-            temp;
-
-        //coerce val to string
-        if (typeof val !== 'string') {
-            val += '';
-
-            if (console.warn) {
-                console.warn('Numeral.js: Value is not string. It has been co-erced to: ', val);
-            }
-        }
-
-        //trim whitespaces from either sides
-        val = val.trim();
-
-        //if val is just digits return true
-        if (!!val.match(/^\d+$/)) {
-            return true;
-        }
-
-        //if val is empty return false
-        if (val === '') {
-            return false;
-        }
-
-        //get the decimal and thousands separator from numeral.localeData
-        try {
-            //check if the culture is understood by numeral. if not, default it to current locale
-            localeData = numeral.localeData(culture);
-        } catch (e) {
-            localeData = numeral.localeData(numeral.locale());
-        }
-
-        //setup the delimiters and currency symbol based on culture/locale
-        _currSymbol = localeData.currency.symbol;
-        _abbrObj = localeData.abbreviations;
-        _decimalSep = localeData.delimiters.decimal;
-        if (localeData.delimiters.thousands === '.') {
-            _thousandSep = '\\.';
-        } else {
-            _thousandSep = localeData.delimiters.thousands;
-        }
-
-        // validating currency symbol
-        temp = val.match(/^[^\d]+/);
-        if (temp !== null) {
-            val = val.substr(1);
-            if (temp[0] !== _currSymbol) {
-                return false;
-            }
-        }
-
-        //validating abbreviation symbol
-        temp = val.match(/[^\d]+$/);
-        if (temp !== null) {
-            val = val.slice(0, -1);
-            if (temp[0] !== _abbrObj.thousand && temp[0] !== _abbrObj.million && temp[0] !== _abbrObj.billion && temp[0] !== _abbrObj.trillion) {
-                return false;
-            }
-        }
-
-        _thousandRegEx = new RegExp(_thousandSep + '{2}');
-
-        if (!val.match(/[^\d.,]/g)) {
-            _valArray = val.split(_decimalSep);
-            if (_valArray.length > 2) {
-                return false;
-            } else {
-                if (_valArray.length < 2) {
-                    return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx));
-                } else {
-                    if (_valArray[0].length === 1) {
-                        return ( !! _valArray[0].match(/^\d+$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
-                    } else {
-                        return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
-                    }
-                }
-            }
-        }
-
-        return false;
-    };
-
-
-    /************************************
-        Numeral Prototype
-    ************************************/
-
-    numeral.fn = Numeral.prototype = {
-        clone: function() {
-            return numeral(this);
-        },
-        format: function(inputString, roundingFunction) {
-            var value = this._value,
-                format = inputString || options.defaultFormat,
-                kind,
-                output,
-                formatFunction;
-
-            // make sure we have a roundingFunction
-            roundingFunction = roundingFunction || Math.round;
-
-            // format based on value
-            if (value === 0 && options.zeroFormat !== null) {
-                output = options.zeroFormat;
-            } else if (value === null && options.nullFormat !== null) {
-                output = options.nullFormat;
-            } else {
-                for (kind in formats) {
-                    if (format.match(formats[kind].regexps.format)) {
-                        formatFunction = formats[kind].format;
-
-                        break;
-                    }
-                }
-
-                formatFunction = formatFunction || numeral._.numberToFormat;
-
-                output = formatFunction(value, format, roundingFunction);
-            }
-
-            return output;
-        },
-        value: function() {
-            return this._value;
-        },
-        input: function() {
-            return this._input;
-        },
-        set: function(value) {
-            this._value = Number(value);
-
-            return this;
-        },
-        add: function(value) {
-            var corrFactor = _.correctionFactor.call(null, this._value, value);
-
-            function cback(accum, curr, currI, O) {
-                return accum + Math.round(corrFactor * curr);
-            }
-
-            this._value = _.reduce([this._value, value], cback, 0) / corrFactor;
-
-            return this;
-        },
-        subtract: function(value) {
-            var corrFactor = _.correctionFactor.call(null, this._value, value);
-
-            function cback(accum, curr, currI, O) {
-                return accum - Math.round(corrFactor * curr);
-            }
-
-            this._value = _.reduce([value], cback, Math.round(this._value * corrFactor)) / corrFactor;
-
-            return this;
-        },
-        multiply: function(value) {
-            function cback(accum, curr, currI, O) {
-                var corrFactor = _.correctionFactor(accum, curr);
-                return Math.round(accum * corrFactor) * Math.round(curr * corrFactor) / Math.round(corrFactor * corrFactor);
-            }
-
-            this._value = _.reduce([this._value, value], cback, 1);
-
-            return this;
-        },
-        divide: function(value) {
-            function cback(accum, curr, currI, O) {
-                var corrFactor = _.correctionFactor(accum, curr);
-                return Math.round(accum * corrFactor) / Math.round(curr * corrFactor);
-            }
-
-            this._value = _.reduce([this._value, value], cback);
-
-            return this;
-        },
-        difference: function(value) {
-            return Math.abs(numeral(this._value).subtract(value).value());
-        }
-    };
-
-    /************************************
-        Default Locale && Format
-    ************************************/
-
-    numeral.register('locale', 'en', {
-        delimiters: {
-            thousands: ',',
-            decimal: '.'
-        },
-        abbreviations: {
-            thousand: 'k',
-            million: 'm',
-            billion: 'b',
-            trillion: 't'
-        },
-        ordinal: function(number) {
-            var b = number % 10;
-            return (~~(number % 100 / 10) === 1) ? 'th' :
-                (b === 1) ? 'st' :
-                (b === 2) ? 'nd' :
-                (b === 3) ? 'rd' : 'th';
-        },
-        currency: {
-            symbol: '$'
-        }
-    });
-
-    
-
-(function() {
-        numeral.register('format', 'bps', {
-            regexps: {
-                format: /(BPS)/,
-                unformat: /(BPS)/
-            },
-            format: function(value, format, roundingFunction) {
-                var space = numeral._.includes(format, ' BPS') ? ' ' : '',
-                    output;
-
-                value = value * 10000;
-
-                // check for space before BPS
-                format = format.replace(/\s?BPS/, '');
-
-                output = numeral._.numberToFormat(value, format, roundingFunction);
-
-                if (numeral._.includes(output, ')')) {
-                    output = output.split('');
-
-                    output.splice(-1, 0, space + 'BPS');
-
-                    output = output.join('');
-                } else {
-                    output = output + space + 'BPS';
-                }
-
-                return output;
-            },
-            unformat: function(string) {
-                return +(numeral._.stringToNumber(string) * 0.0001).toFixed(15);
-            }
-        });
-})();
-
-
-(function() {
-        var decimal = {
-            base: 1000,
-            suffixes: ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
-        },
-        binary = {
-            base: 1024,
-            suffixes: ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']
-        };
-
-    var allSuffixes =  decimal.suffixes.concat(binary.suffixes.filter(function (item) {
-            return decimal.suffixes.indexOf(item) < 0;
-        }));
-        var unformatRegex = allSuffixes.join('|');
-        // Allow support for BPS (http://www.investopedia.com/terms/b/basispoint.asp)
-        unformatRegex = '(' + unformatRegex.replace('B', 'B(?!PS)') + ')';
-
-    numeral.register('format', 'bytes', {
-        regexps: {
-            format: /([0\s]i?b)/,
-            unformat: new RegExp(unformatRegex)
-        },
-        format: function(value, format, roundingFunction) {
-            var output,
-                bytes = numeral._.includes(format, 'ib') ? binary : decimal,
-                suffix = numeral._.includes(format, ' b') || numeral._.includes(format, ' ib') ? ' ' : '',
-                power,
-                min,
-                max;
-
-            // check for space before
-            format = format.replace(/\s?i?b/, '');
-
-            for (power = 0; power <= bytes.suffixes.length; power++) {
-                min = Math.pow(bytes.base, power);
-                max = Math.pow(bytes.base, power + 1);
-
-                if (value === null || value === 0 || value >= min && value < max) {
-                    suffix += bytes.suffixes[power];
-
-                    if (min > 0) {
-                        value = value / min;
-                    }
-
-                    break;
-                }
-            }
-
-            output = numeral._.numberToFormat(value, format, roundingFunction);
-
-            return output + suffix;
-        },
-        unformat: function(string) {
-            var value = numeral._.stringToNumber(string),
-                power,
-                bytesMultiplier;
-
-            if (value) {
-                for (power = decimal.suffixes.length - 1; power >= 0; power--) {
-                    if (numeral._.includes(string, decimal.suffixes[power])) {
-                        bytesMultiplier = Math.pow(decimal.base, power);
-
-                        break;
-                    }
-
-                    if (numeral._.includes(string, binary.suffixes[power])) {
-                        bytesMultiplier = Math.pow(binary.base, power);
-
-                        break;
-                    }
-                }
-
-                value *= (bytesMultiplier || 1);
-            }
-
-            return value;
-        }
-    });
-})();
-
-
-(function() {
-        numeral.register('format', 'currency', {
-        regexps: {
-            format: /(\$)/
-        },
-        format: function(value, format, roundingFunction) {
-            var locale = numeral.locales[numeral.options.currentLocale],
-                symbols = {
-                    before: format.match(/^([\+|\-|\(|\s|\$]*)/)[0],
-                    after: format.match(/([\+|\-|\)|\s|\$]*)$/)[0]
-                },
-                output,
-                symbol,
-                i;
-
-            // strip format of spaces and $
-            format = format.replace(/\s?\$\s?/, '');
-
-            // format the number
-            output = numeral._.numberToFormat(value, format, roundingFunction);
-
-            // update the before and after based on value
-            if (value >= 0) {
-                symbols.before = symbols.before.replace(/[\-\(]/, '');
-                symbols.after = symbols.after.replace(/[\-\)]/, '');
-            } else if (value < 0 && (!numeral._.includes(symbols.before, '-') && !numeral._.includes(symbols.before, '('))) {
-                symbols.before = '-' + symbols.before;
-            }
-
-            // loop through each before symbol
-            for (i = 0; i < symbols.before.length; i++) {
-                symbol = symbols.before[i];
-
-                switch (symbol) {
-                    case '$':
-                        output = numeral._.insert(output, locale.currency.symbol, i);
-                        break;
-                    case ' ':
-                        output = numeral._.insert(output, ' ', i + locale.currency.symbol.length - 1);
-                        break;
-                }
-            }
-
-            // loop through each after symbol
-            for (i = symbols.after.length - 1; i >= 0; i--) {
-                symbol = symbols.after[i];
-
-                switch (symbol) {
-                    case '$':
-                        output = i === symbols.after.length - 1 ? output + locale.currency.symbol : numeral._.insert(output, locale.currency.symbol, -(symbols.after.length - (1 + i)));
-                        break;
-                    case ' ':
-                        output = i === symbols.after.length - 1 ? output + ' ' : numeral._.insert(output, ' ', -(symbols.after.length - (1 + i) + locale.currency.symbol.length - 1));
-                        break;
-                }
-            }
-
-
-            return output;
-        }
-    });
-})();
-
-
-(function() {
-        numeral.register('format', 'exponential', {
-        regexps: {
-            format: /(e\+|e-)/,
-            unformat: /(e\+|e-)/
-        },
-        format: function(value, format, roundingFunction) {
-            var output,
-                exponential = typeof value === 'number' && !numeral._.isNaN(value) ? value.toExponential() : '0e+0',
-                parts = exponential.split('e');
-
-            format = format.replace(/e[\+|\-]{1}0/, '');
-
-            output = numeral._.numberToFormat(Number(parts[0]), format, roundingFunction);
-
-            return output + 'e' + parts[1];
-        },
-        unformat: function(string) {
-            var parts = numeral._.includes(string, 'e+') ? string.split('e+') : string.split('e-'),
-                value = Number(parts[0]),
-                power = Number(parts[1]);
-
-            power = numeral._.includes(string, 'e-') ? power *= -1 : power;
-
-            function cback(accum, curr, currI, O) {
-                var corrFactor = numeral._.correctionFactor(accum, curr),
-                    num = (accum * corrFactor) * (curr * corrFactor) / (corrFactor * corrFactor);
-                return num;
-            }
-
-            return numeral._.reduce([value, Math.pow(10, power)], cback, 1);
-        }
-    });
-})();
-
-
-(function() {
-        numeral.register('format', 'ordinal', {
-        regexps: {
-            format: /(o)/
-        },
-        format: function(value, format, roundingFunction) {
-            var locale = numeral.locales[numeral.options.currentLocale],
-                output,
-                ordinal = numeral._.includes(format, ' o') ? ' ' : '';
-
-            // check for space before
-            format = format.replace(/\s?o/, '');
-
-            ordinal += locale.ordinal(value);
-
-            output = numeral._.numberToFormat(value, format, roundingFunction);
-
-            return output + ordinal;
-        }
-    });
-})();
-
-
-(function() {
-        numeral.register('format', 'percentage', {
-        regexps: {
-            format: /(%)/,
-            unformat: /(%)/
-        },
-        format: function(value, format, roundingFunction) {
-            var space = numeral._.includes(format, ' %') ? ' ' : '',
-                output;
-
-            if (numeral.options.scalePercentBy100) {
-                value = value * 100;
-            }
-
-            // check for space before %
-            format = format.replace(/\s?\%/, '');
-
-            output = numeral._.numberToFormat(value, format, roundingFunction);
-
-            if (numeral._.includes(output, ')')) {
-                output = output.split('');
-
-                output.splice(-1, 0, space + '%');
-
-                output = output.join('');
-            } else {
-                output = output + space + '%';
-            }
-
-            return output;
-        },
-        unformat: function(string) {
-            var number = numeral._.stringToNumber(string);
-            if (numeral.options.scalePercentBy100) {
-                return number * 0.01;
-            }
-            return number;
-        }
-    });
-})();
-
-
-(function() {
-        numeral.register('format', 'time', {
-        regexps: {
-            format: /(:)/,
-            unformat: /(:)/
-        },
-        format: function(value, format, roundingFunction) {
-            var hours = Math.floor(value / 60 / 60),
-                minutes = Math.floor((value - (hours * 60 * 60)) / 60),
-                seconds = Math.round(value - (hours * 60 * 60) - (minutes * 60));
-
-            return hours + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
-        },
-        unformat: function(string) {
-            var timeArray = string.split(':'),
-                seconds = 0;
-
-            // turn hours and minutes into seconds and add them all up
-            if (timeArray.length === 3) {
-                // hours
-                seconds = seconds + (Number(timeArray[0]) * 60 * 60);
-                // minutes
-                seconds = seconds + (Number(timeArray[1]) * 60);
-                // seconds
-                seconds = seconds + Number(timeArray[2]);
-            } else if (timeArray.length === 2) {
-                // minutes
-                seconds = seconds + (Number(timeArray[0]) * 60);
-                // seconds
-                seconds = seconds + Number(timeArray[1]);
-            }
-            return Number(seconds);
-        }
-    });
-})();
-
-return numeral;
-}));
-
 
 /***/ })
 /******/ ]);

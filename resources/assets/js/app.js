@@ -12,8 +12,10 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router'
 import moment from 'moment'
 import numeral from 'numeral'
+import FunctionalCalendar from 'vue-functional-calendar';
 import VueAxios from 'vue-axios';
 import axios from 'axios';
+
 
 import swal from 'sweetalert2';
 window.swal = swal;

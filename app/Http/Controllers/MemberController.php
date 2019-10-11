@@ -24,6 +24,7 @@ class MemberController extends Controller
     ->join('members', 'members.id', '=', 'shares.member_id')
     ->select('shares.*','members.name')
     ->where('shares.member_id',$id)
+    ->orderBy('shares.created_at','DESC')
     ->get();
       return response()->json($prop);
     }

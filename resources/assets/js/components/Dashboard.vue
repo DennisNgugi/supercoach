@@ -95,7 +95,7 @@
                   <div class="card bg-warning mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
-                              <h6 class="text-uppercase mt-0 float-left text-white-50">Monthly shares</h6>
+                              <h6 class="text-uppercase mt-0 float-left text-white-50">This month shares</h6>
                               <h4 class="mb-3 mt-0 float-right">{{this.month}}</h4>
                           </div>
                           <!-- <div><span class="badge badge-light text-info">+11% </span><span class="ml-2">From previous period</span></div> -->
@@ -114,7 +114,7 @@
                       <div class="card-body">
                         <h4 class="mt-0 header-title mb-4">Latest Shares Trasaction
                           <span class="float-right">
-                            <button type="button" @click.prevent="printme" class="btn btn-secondary btn-sm" name="button">Print report</button>
+                            <button type="button" @click.prevent="downloadShares" class="btn btn-secondary btn-sm" name="button">Download report</button>
                           </span>
                         </h4>
                           <div class="table-rep-plugin">
@@ -157,7 +157,7 @@
                     <div class="card-body">
                       <h4 class="mt-0 header-title mb-4">Latest Loan Trasaction
                         <span class="float-right">
-                          <button type="button" @click.prevent="printme" class="btn btn-secondary btn-sm" name="button">Print report</button>
+                          <button type="button" @click.prevent="downloadme" class="btn btn-secondary btn-sm" name="button">Download report</button>
                         </span>
                       </h4>
                         <div class="table-rep-plugin">
@@ -203,6 +203,63 @@
               </div>
           </div><!-- end row -->
 
+          <div class="row">
+            <div class="col-5">
+                <div class="card m-b-20">
+                  <div class="card-body">
+                      <h4 class="mt-0 header-title mb-4"><b>Monthly shares ({{myYear}})</b>
+                        <span class="float-right">
+                          <button type="button" @click.prevent="monthlySharesDownload" class="btn btn-secondary btn-sm" name="button">Download report</button>
+                        </span>
+
+                      </h4>
+
+                      <div class="table-responsive">
+                          <table class="table table-vertical">
+                            <thead>
+                              <tr>
+                                <th>Month</th>
+                                <th>Total</th>
+
+                            </tr>
+                            </thead>
+                              <tbody>
+                              <tr v-for="(i,index) in monthly" @key="index">
+                                  <td>
+                                      <img src="/img/calendar.png" alt="calendar-image" class="thumb-sm rounded-circle mr-2"/>
+                                      {{i.month}}
+                                  </td>
+                                  <!-- <td><i class="mdi mdi-checkbox-blank-circle text-success"></i> Confirm</td> -->
+                                  <td>
+                                    <b>{{i.total_amount}}</b>
+                                      <!-- <p class="m-0 text-muted font-14">Amount</p> -->
+                                  </td>
+
+
+                              </tr>
+                              <!-- <tr>
+
+                              <td  rowspan="1"><b>Grand Total</b></td>
+                              <td style="color:red; text-align:center;" rowspan="1" ><b>{{yearTotal}}</b></td>
+                              <td style="color:red; text-align:center;" rowspan="1"><b> {{yearQuantity}}</b></td>
+
+
+                              </tr> -->
+
+
+
+                              </tbody>
+
+
+                          </table>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+
+          </div>
+
 
 
 
@@ -213,6 +270,7 @@
     export default {
       data(){
         return {
+          myYear : new Date().getFullYear(),
           loansdata:[],
           sharesdata:[],
           members:null,
@@ -220,7 +278,8 @@
           shares:null,
           loans:null,
           month:null,
-          monthly:null
+          monthly:[],
+
 
         }
       },
@@ -231,7 +290,8 @@
             this.fetchMembers();
             this.fetchSharesList();
             this.fetchLoansList();
-            this.monthShares();
+            this.currentMonthShares();
+            this.fetchMonthlyShares();
         },
         methods:{
           fetchShares: function() {
@@ -247,7 +307,7 @@
           fetchSharesList: function() {
               console.log('Fetching data....');
 
-              this.axios.get('/api/share').then((response) => {
+              this.axios.get('/api/dashboardshares').then((response) => {
                   //  console.log(response.data);
                   this.sharesdata = response.data;
               }).catch((error) => {
@@ -257,7 +317,7 @@
           fetchLoansList: function() {
               console.log('Fetching data....');
 
-              this.axios.get('/api/loan').then((response) => {
+              this.axios.get('/api/dashboardloans').then((response) => {
                   //  console.log(response.data);
                   this.loansdata = response.data;
               }).catch((error) => {
@@ -291,7 +351,7 @@
                   console.log(error);
               })
           },
-          monthShares: function() {
+          currentMonthShares: function() {
 
               this.axios.get('/api/month').then((response) => {
                   //  console.log(response.data);
@@ -300,6 +360,21 @@
                   console.log(error);
               })
           },
+          fetchMonthlyShares: function() {
+
+              this.axios.get('/api/monthly').then((response) => {
+                  //  console.log(response.data);
+                  this.monthly = response.data;
+              }).catch((error) => {
+                  console.log(error);
+              })
+          },
+          downloadShares:function(){
+            axios.get('/api/download/shares')
+          },
+          monthlySharesDownload:function(){
+            axios.get('/api/monthly/shares')
+          }
 
 
         }
