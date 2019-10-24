@@ -204,6 +204,50 @@
           </div><!-- end row -->
 
           <div class="row">
+            <div class="col-4">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                      <h4 class="mt-0 header-title mb-4">Latest Withdrawal Trasaction
+                        <span class="float-right">
+                          <button type="button" @click.prevent="downloadWithdrawalShares" class="btn btn-secondary btn-sm" name="button">Download report</button>
+                        </span>
+                      </h4>
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive b-0" data-pattern="priority-columns">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Member name</th>
+
+                                    <th>Withdrawal amount</th>
+
+                                    <th>Withdrawal Date</th>
+
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+                                  <tr v-for="(p,index) in withdrawdata" @key="index">
+                                    <td>{{index+1}}</td>
+
+                                    <td>{{p.name}}</td>
+                                    <td>{{p.amount | formatNumber}}</td>
+
+                                    <td>{{p.date|date}}</td>
+
+
+
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
             <div class="col-5">
                 <div class="card m-b-20">
                   <div class="card-body">
@@ -273,6 +317,7 @@
           myYear : new Date().getFullYear(),
           loansdata:[],
           sharesdata:[],
+          withdrawdata:[],
           members:null,
           vehicles:null,
           shares:null,
@@ -292,6 +337,7 @@
             this.fetchLoansList();
             this.currentMonthShares();
             this.fetchMonthlyShares();
+            this.fetchWithdrawnSharesList();
         },
         methods:{
           fetchShares: function() {
@@ -310,6 +356,16 @@
               this.axios.get('/api/dashboardshares').then((response) => {
                   //  console.log(response.data);
                   this.sharesdata = response.data;
+              }).catch((error) => {
+                  console.log(error);
+              })
+          },
+          fetchWithdrawnSharesList: function() {
+              console.log('Fetching data....');
+
+              this.axios.get('/api/dashboardwithdrawalshares').then((response) => {
+                  //  console.log(response.data);
+                  this.withdrawdata = response.data;
               }).catch((error) => {
                   console.log(error);
               })
@@ -371,6 +427,9 @@
           },
           downloadShares:function(){
             axios.get('/api/download/shares')
+          },
+          downloadWithdrawalShares:function(){
+            axios.get('/api/download/withdraw/shares')
           },
           monthlySharesDownload:function(){
             axios.get('/api/monthly/shares')

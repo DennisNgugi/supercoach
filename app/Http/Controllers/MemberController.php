@@ -28,6 +28,15 @@ class MemberController extends Controller
     ->get();
       return response()->json($prop);
     }
+    public function memberwithdrawnshares($id){
+      $prop = DB::table('withdraw_shares')
+    ->join('members', 'members.id', '=', 'withdraw_shares.member_id')
+    ->select('withdraw_shares.*','members.name')
+    ->where('withdraw_shares.member_id',$id)
+    ->orderBy('withdraw_shares.created_at','DESC')
+    ->get();
+      return response()->json($prop);
+    }
 
     public function memberloan($id){
       $prop = DB::table('loans')

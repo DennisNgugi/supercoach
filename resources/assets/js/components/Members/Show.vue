@@ -19,61 +19,28 @@
           </div><!-- end page title end breadcrumb -->
           <div class="row">
 
-            <div class="col-xl-3 col-md-6">
-              <img :src="'/images/' +post.image" class="rounded-circle mb-3" alt="">
+            <div class="col-xl-2 col-md-6">
+              <!-- <img :src="'/images/' +post.image" class="rounded-circle mb-3" alt=""> -->
                 <h4 class="page-title mt-3">{{post.name}}</h4> <br>
-                <p v-if="post.status == 'Active'" class="page-title">Status: <span class="text-success">{{post.status}}</span> </p>
+                <p v-if="post.status == 'Active'" class="page-title">Status: <span class="text-success">
+              <b>{{post.status}}</b>
+                </span> </p>
                 <p v-else class="page-title">Status: <span class="text-danger">Inactive</span> </p>
+                  <p v-if="post.email == null" class="text-muted text-dark">Email: <b>N/A</b> </p>
+                <p v-else class="text-muted text-dark">Email: <b>{{post.email}}</b> </p>
+                <p class="text-muted text-dark">Phone: <b>0{{post.mobile}}</b> </p>
+                <p v-if="post.national_id == null" class="text-muted text-dark">National ID: <b>N/A</b> </p>
+                <p v-else class="text-muted text-dark">National ID: <b>{{post.national_id}}</b> </p>
+                <p class="text-muted text-dark">Date Registered: <b>{{post.registration_date|date}}</b> </p>
 
             </div>
-            <div class="col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="mt-0 header-title mb-4">Profile</h4>
-                        <div class="latest-massage"><a href="#" class="latest-message-list">
-                                <div class="border-bottom position-relative">
-                                      <div class="massage-desc">
-
-                              <h5 class="font-14 mt-0 text-dark">Email:</h5>
-                                        <p class="text-muted text-dark">{{post.email}}</p>
-                                    </div>
-                                </div>
-                            </a><a href="#" class="latest-message-list">
-                                <div class="border-bottom mt-3 position-relative">
-                                        <div class="massage-desc">
-                                        <h5 class="font-14 mt-0 text-dark">Mobile</h5>
-                                        <p class="text-muted text-dark">0{{post.mobile}}</p>
-                                    </div>
-                                </div>
-                            </a><a href="#" class="latest-message-list">
-                                <div class="border-bottom mt-3 position-relative">
-
-                                    <div class="massage-desc">
-                                        <h5 class="font-14 mt-0 text-dark">National ID</h5>
-                                        <p class="text-muted text-dark">{{post.national_id}}</p>
-                                    </div>
-                                </div>
-                            </a><a href="#" class="latest-message-list">
-                                <div class="border-bottom mt-3 position-relative">
-
-                                    <div class="massage-desc">
-                                        <h5 class="font-14 mt-0 text-dark">Date Registered</h5>
-                                        <p class="text-muted text-dark">{{post.registration_date|date}}</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                          </div>
-                    </div>
-                </div>
-            </div><!-- end col -->
 
               <div class="col-xl-3 col-md-6">
                   <div class="card bg-primary mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
                               <h6 class="text-uppercase mt-0 float-left text-white-80">Shares</h6>
-                              <h4 class="mb-3 mt-0 float-right">{{totalShares}}</h4>
+                              <h4 class="mb-3 mt-0 float-right">{{totalShares|formatNumber}}</h4>
                           </div>
                       </div>
                       <div class="p-3">
@@ -85,7 +52,7 @@
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
                               <h6 class="text-uppercase mt-0 float-left text-white-80">Loan amount</h6>
-                              <h4 class="mb-3 mt-0 float-right">{{totalLoan}}</h4>
+                              <h4 class="mb-3 mt-0 float-right">{{totalLoan|formatNumber}}</h4>
                           </div>
                       </div>
                       <div class="p-3">
@@ -94,6 +61,50 @@
                       </div>
                   </div>
               </div>
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-secondary mini-stat text-white">
+                      <div class="p-3 mini-stat-desc">
+                          <div class="clearfix">
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Withdrawn Shares</h6>
+                              <h4 class="mb-3 mt-0 float-right">{{totalWithdrawanShares|formatNumber}}</h4>
+                          </div>
+                      </div>
+                      <div class="p-3">
+                          <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a></div>
+
+                      </div>
+                  </div>
+                  <div class="card bg-warning mini-stat text-white">
+                      <div class="p-3 mini-stat-desc">
+                          <div class="clearfix">
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Loan paid</h6>
+                              <h4 class="mb-3 mt-0 float-right">{{totalLoan|formatNumber}}</h4>
+                          </div>
+                      </div>
+                      <div class="p-3">
+                          <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a></div>
+
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-pink mini-stat text-white">
+                      <div class="p-3 mini-stat-desc">
+                          <div class="clearfix">
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Current balance</h6>
+                              <h4 class="mb-3 mt-0 float-right">{{currentBalance|formatNumber}}</h4>
+                          </div>
+                      </div>
+                      <div class="p-3">
+                          <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a></div>
+
+                      </div>
+                  </div>
+
+              </div>
+
 
               <div class="col-xl-2">
                   <div class="card">
@@ -138,7 +149,7 @@
                                     <tr v-for="(p,index) in shares" @key="index">
 
                                           <th scope="row">{{index+1}}</th>
-                                          <td>{{p.amount}}</td>
+                                          <td>{{p.amount|formatNumber}}</td>
                                           <td>{{p.payment_date|date}}</td>
 
 
@@ -149,7 +160,7 @@
                                   </tbody>
                                   <tr>
                                     <td  rowspan="1"><b>Total</b></td>
-                                    <td style="color:red; text-align:center;" rowspan="1" ><b>{{totalShares}}</b></td>
+                                    <td style="color:red; text-align:center;" rowspan="1" ><b>{{totalShares|formatNumber}}</b></td>
 
                                   </tr>
 
@@ -181,7 +192,7 @@
 
                                         <th scope="row">{{index+1}}</th>
                                         <td>{{p.loan_id}}</td>
-                                        <td>{{p.amount}}</td>
+                                        <td>{{p.amount |formatNumber}}</td>
                                         <td>{{p.interest_rate}}</td>
                                         <td>{{p.duration}}</td>
                                         <td>{{p.date|date}}</td>
@@ -243,7 +254,52 @@
                   </div>
               </div> -->
           </div><!-- end row -->
+            <div class="row">
+              <div class="col-xl-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <h4 class="mt-0 header-title mb-4">Withdrawal Trasaction
+                            <span class="float-right">
+                              <button type="button" @click.prevent="downloadIndividualWithdrawnMemberShares" class="btn btn-secondary btn-sm" name="button">Download report</button>
+                            </span>
+                          </h4>
 
+                          <div class="table-responsive">
+                              <table class="table table-striped">
+                                  <thead>
+                                      <tr>
+                                          <th>#</th>
+                                          <th scope="col">Amount</th>
+                                          <th scope="col">Withdrawal Date</th>
+
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr v-for="(p,index) in withdrawnShares" @key="index">
+
+                                          <th scope="row">{{index+1}}</th>
+                                          <td>{{p.amount|formatNumber}}</td>
+                                          <td>{{p.date|date}}</td>
+
+
+                                      </tr>
+
+
+
+                                  </tbody>
+                                  <tr>
+                                    <td  rowspan="1"><b>Total</b></td>
+                                    <td style="color:red; text-align:center;" rowspan="1" ><b>{{totalWithdrawanShares|formatNumber}}</b></td>
+
+                                  </tr>
+
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
 
 </div>
 </template>
@@ -255,6 +311,7 @@ export default {
       return {
           post: {},
           shares:[],
+          withdrawnShares:[],
           loans:[],
       }
   },
@@ -268,6 +325,29 @@ export default {
       //  this.form.total = total;
         return total;
 
+    },
+    totalWithdrawanShares: function() {
+        var total = 0;
+        this.withdrawnShares.forEach(function(item) {
+          total += parseInt(item.amount);
+
+        });
+      //  this.form.total = total;
+        return total;
+
+    },
+    currentBalance:function(){
+      var totalShares = 0;
+      var withdrawnShares = 0;
+      this.shares.forEach(function(item) {
+        totalShares += parseInt(item.amount);
+
+      });
+      this.withdrawnShares.forEach(function(item) {
+        withdrawnShares += parseInt(item.amount);
+
+      });
+      return totalShares-withdrawnShares;
     },
     totalLoan: function() {
         var total = 0;
@@ -284,6 +364,7 @@ export default {
   mounted: function() {
       this.fetchShares();
       this.fetchLoan();
+      this.fetchWithdrawnShares();
 
   },
 
@@ -296,14 +377,19 @@ export default {
   },
 
   methods:{
-    printme(){
-      window.print();
-    },
+
     fetchShares:function(){
       let url = `/api/membershares/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.shares = response.data;
+          });
+    },
+    fetchWithdrawnShares:function(){
+      let url = `/api/memberwithdrawnshares/${this.$route.params.id}`;
+      this.axios.get(url)
+          .then((response) => {
+              this.withdrawnShares = response.data;
           });
     },
     fetchLoan:function(){
@@ -315,6 +401,10 @@ export default {
   },
   downloadIndividualMemberShares:function(){
     let url = `/api/individual/shares/${this.$route.params.id}`;
+    axios.get(url)
+  },
+  downloadIndividualWithdrawnMemberShares:function(){
+    let url = `/api/individual/withdrawn/shares/${this.$route.params.id}`;
     axios.get(url)
   },
   }

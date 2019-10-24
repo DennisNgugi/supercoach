@@ -31,6 +31,7 @@ Route::get('memberloan/{id}','MemberController@memberloan');
 Route::get('/share/report','ReportController@filter');
 
 Route::get('/dashboardshares','DashboardController@dashboardShares');
+Route::get('/dashboardwithdrawalshares','DashboardController@dashboardWithdrawalShares');
 Route::get('/dashboardloans','DashboardController@dashboardLoans');
 
 Route::get('/totalshares','DashboardController@totalShares');
@@ -45,7 +46,21 @@ Route::get('/monthly','DashboardController@monthly');
 
 // pdf download for all shares
 Route::get('/download/shares','DashboardController@downloadShares');
+// pdf download for all withdrawal shares
+Route::get('/download/withdraw/shares','DashboardController@downloadWithdrawalShares');
+
 // pdf download for all individual shares
 Route::get('/individual/shares/{id}','DashboardController@individualShares');
+// pdf download for all individual withdrawn shares
+Route::get('/individual/withdrawn/shares/{id}','DashboardController@individualWithdrawnShares');
 // pdf download for monthly shares
 Route::get('/monthly/shares','DashboardController@monthlySharesDownload');
+// withdraw shares
+Route::post('/share/withdraw','WithdrawSharesController@store');
+Route::get('/sharewithdrawal','WithdrawSharesController@withdrawalshares');
+Route::delete('/sharewithdrawal/{id}','WithdrawSharesController@destroy');
+
+// individual member shares total
+Route::get('/member/share','WithdrawSharesController@membershares');
+// individual member shares summary
+Route::get('/memberwithdrawnshares/{id}','MemberController@memberwithdrawnshares');

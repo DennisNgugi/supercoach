@@ -76,6 +76,7 @@ import LoanPay from './components/LoanPayment/PayLoan.vue';
 import ShareCreate from './components/Shares/Create.vue';
 import ShareEdit from './components/Shares/Edit.vue';
 import ShareIndex from './components/Shares/Index.vue';
+import ShareWithdraw from './components/Shares/Withdraw.vue';
 
 import GuarantorCreate from './components/Guarantors/Create.vue';
 import GuarantorEdit from './components/Guarantors/Edit.vue';
@@ -176,6 +177,11 @@ const routes = [
       name: 'sharereport',
       path: '/share/report',
       component: ShareReport
+  },
+  {
+      name: 'sharewithdraw',
+      path: '/share/withdraw',
+      component: ShareWithdraw
   },
   {
       name: 'guarantor_create',

@@ -14,4 +14,8 @@ class Member extends Model
       return $this->hasMany(Share::class);
 
     }
+    public function withdrawshare(){
+      return $this->hasMany(WithdrawShares::class);
+
+    }
 }

@@ -29,6 +29,7 @@ class SendMailable extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.shares');
+        return $this->view('emails.shares')
+                 ->attach($this->shares);
     }
 }

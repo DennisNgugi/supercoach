@@ -84,6 +84,8 @@
                                         <ul>
                                             <li><router-link to="/share/create">Add shares</router-link></li>
                                             <li><router-link to="/share">Shares list</router-link></li>
+                                            <li><router-link to="/share/withdraw">Withdraw shares</router-link></li>
+
 
                                         </ul>
                                     </li>

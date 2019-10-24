@@ -6,6 +6,8 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMailable;
 use DB;
+use PDF;
+use Carbon\Carbon;
 class MonthlyShares extends Command
 {
     /**
@@ -40,7 +42,17 @@ class MonthlyShares extends Command
     public function handle()
     {
         //
-        $monthlyShares = DB::table('shares')->get();
-         Mail::to('denongugi16@gmail.com')->send(new SendMailable($monthlyShares));
+        //$monthlyShares = DB::table('shares')->get();
+        $currentYear = date('Y');
+        $date = Carbon::now();
+        $show = DB::table('shares')
+      ->whereRaw('YEAR(created_at) = ?',[$currentYear])
+      ->select(DB::raw('SUM(amount) as total_amount,MONTHNAME( created_at ) as month'))
+    //  ->orderBy(DB::raw('MONTHNAME(created_at) ASC'))
+      ->groupBy(DB::raw('MONTHNAME(created_at) ASC'))->get();
+
+      $pdf = PDF::loadView('monthlysharespdf', compact('show'))->setPaper('a4','potrait');
+       $download = 'Monthly report'.'-'.$date.'.'.'pdf';
+         Mail::to('denongugi16@gmail.com')->send(new SendMailable($download));
     }
 }
