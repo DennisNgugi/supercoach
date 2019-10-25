@@ -67,19 +67,13 @@ class MemberController extends Controller
     {
         //
         $request->validate([
-          'name' => 'required',
-          'national_id' => 'required',
-          'mobile' => 'required',
+          'name' => 'required|unique:members',
+          'national_id' => 'required|unique:members',
+          'mobile' => 'required|unique:members',
           'registration_date' => 'required|date',
-          'number' => 'required'
+          'number' => 'required|unique:members'
 
         ]);
-        if($request->get('image'))
-       {
-          $image = $request->get('image');
-          $filename = time().str_random(5).'.' . explode('/', explode(':', substr($image, 0, strpos($image, ';')))[1])[1];
-          \Image::make($request->get('image'))->resize(250, 250)->save(public_path('images/').$filename);
-        }
 
         $prop = new Member();
         $prop->name = $request->name;
@@ -89,8 +83,6 @@ class MemberController extends Controller
         $prop->mobile = $request->mobile;
 
         $prop->national_id = $request->national_id;
-
-        $prop->image = $filename;
 
         $prop->registration_date = $request->registration_date;
 

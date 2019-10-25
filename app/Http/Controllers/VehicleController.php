@@ -50,7 +50,7 @@ class VehicleController extends Controller
         //
         $request->validate([
 
-          'registration_no' => 'required',
+          'registration_no' => 'required|unique:vehicles',
           'member_id' => 'required',
 
         ]);

@@ -15,7 +15,12 @@ import numeral from 'numeral'
 import FunctionalCalendar from 'vue-functional-calendar';
 import VueAxios from 'vue-axios';
 import axios from 'axios';
+import vSelect from 'vue-select'
+import Vue from 'vue';
 
+//working vue select 2
+Vue.component('v-select', vSelect)
+import 'vue-select/dist/vue-select.css';
 
 import swal from 'sweetalert2';
 window.swal = swal;
@@ -23,7 +28,7 @@ const toast = swal.mixin({
   toast: true,
   position: 'top-end',
   showConfirmButton: false,
-  timer: 3000
+  timer: 5000
 });
 window.toast = toast;
 

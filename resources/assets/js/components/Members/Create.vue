@@ -24,7 +24,7 @@
                     <h4 class="mt-0 header-title">Add member</h4>
                     <!-- <p class="text-muted m-b-30 font-14">Here are examples of </p> -->
 
-                    <form @submit.prevent="add" enctype="multipart/form-data">
+                    <form @submit.prevent="add">
 
                       <div :class="['form-group row',allerrors.name ? 'has-error' : '']">
 
@@ -69,7 +69,7 @@
 
                             </div>
                         </div>
-                        <div :class="['form-group row',allerrors.image ? 'has-error' : '']">
+                        <!-- <div :class="['form-group row',allerrors.image ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Member photo</label>
                             <div class="col-sm-10">
                               <div class="col-md-3" v-if="post.image">
@@ -81,7 +81,7 @@
 
 
                             </div>
-                        </div>
+                        </div> -->
                         <div :class="['form-group row',allerrors.registration_date ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Registration date</label>
                             <div class="col-sm-10">
@@ -119,7 +119,7 @@ export default {
                 email:'',
                 national_id: '',
                 mobile: '',
-                image: '',
+                //image: '',
                 registration_date:''
 
 
@@ -130,44 +130,44 @@ export default {
 
 
     methods: {
-        onImageChange(e) {
-            let files = e.target.files || e.dataTransfer.files;
-            if (!files.length)
-                return;
-            this.createImage(files[0]);
-        },
-        createImage(file) {
-            let reader = new FileReader();
-            let vm = this;
-            reader.onload = (e) => {
-                vm.post.image = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        },
+        // onImageChange(e) {
+        //     let files = e.target.files || e.dataTransfer.files;
+        //     if (!files.length)
+        //         return;
+        //     this.createImage(files[0]);
+        // },
+        // createImage(file) {
+        //     let reader = new FileReader();
+        //     let vm = this;
+        //     reader.onload = (e) => {
+        //         vm.post.image = e.target.result;
+        //     };
+        //     reader.readAsDataURL(file);
+        // },
 
         add: function() {
 
             let self = this;
             form = new FormData();
 
-            const config = {
-                headers: {
-                    'content-type': 'multipart/form-data'
-                }
-            }
+            // const config = {
+            //     headers: {
+            //         'content-type': 'multipart/form-data'
+            //     }
+            // }
 
             form.append('name', self.post.name);
             form.append('number', self.post.number);
             form.append('mobile', self.post.mobile);
 
             form.append('email', self.post.email);
-            form.append('image', self.post.image);
+            //form.append('image', self.post.image);
             form.append('national_id', self.post.national_id);
             form.append('registration_date', self.post.registration_date);
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/member', form, config)
+            axios.post('/api/member', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.name = '';
@@ -176,7 +176,7 @@ export default {
                     self.post.mobile = '';
                     self.post.registration_date = '';
                     self.post.national_id = '';
-                    self.post.image = '';
+                    //self.post.image = '';
 
                     toast.fire({
                         type: 'success',
@@ -186,6 +186,10 @@ export default {
                 })
                 .catch((error) => {
                     self.allerrors = error.response.data.errors;
+                    toast.fire({
+                        type: 'error',
+                        title: 'Member not added. Check your inputs again!'
+                    })
                 });
             return;
         },

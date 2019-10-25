@@ -29,7 +29,6 @@
                             <thead>
                               <tr>
                                 <th>#</th>
-                                <th>Image</th>
                                 <th>Member number</th>
                                 <th>Member name</th>
                                 <th>Mobile</th>
@@ -44,16 +43,17 @@
 
                               <tr v-for="(p,index) in posts" @key="index">
                                 <td>{{index+1}}</td>
-                                <td v-if="p.image !== null">
+                                <!-- <td v-if="p.image !== null">
                                   <img :src="'/images/' +p.image" class="rounded-circle mb-3" height="40px" width="40px" alt="">
                                 </td>
                                 <td v-else>
                                   <img src="/assets/images/admin2.png" class="rounded-circle mb-3" height="40px" width="40px" alt="">
-                                </td>
+                                </td> -->
                                   <td><b>{{p.number}}</b></td>
                                 <td><b>{{p.name|capitalize}}</b></td>
                                 <td>0{{p.mobile}}</td>
-                                <td>{{p.email}}</td>
+                                <td v-if="p.email == null">N/A</td>
+                                <td v-else>{{p.email}}</td>
                                 <td>{{p.national_id}}</td>
                                 <td>{{p.registration_date|date}}</td>
                                 <td><span class="badge badge-pill badge-success">{{p.status}}</span></td>

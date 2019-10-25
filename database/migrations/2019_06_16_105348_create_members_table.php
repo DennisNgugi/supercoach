@@ -20,7 +20,6 @@ class CreateMembersTable extends Migration
           $table->string('email')->nullable();
           $table->double('mobile');
           $table->double('national_id');
-          $table->string('image')->nullable();
           $table->date('registration_date');
           $table->string('status')->default('Active');
           $table->timestamps();

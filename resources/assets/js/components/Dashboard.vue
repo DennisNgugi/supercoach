@@ -204,7 +204,7 @@
           </div><!-- end row -->
 
           <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <div class="card m-b-30">
                     <div class="card-body">
                       <h4 class="mt-0 header-title mb-4">Latest Withdrawal Trasaction
@@ -275,7 +275,7 @@
                                   </td>
                                   <!-- <td><i class="mdi mdi-checkbox-blank-circle text-success"></i> Confirm</td> -->
                                   <td>
-                                    <b>{{i.total_amount}}</b>
+                                    <b>{{i.total_amount}} /=</b>
                                       <!-- <p class="m-0 text-muted font-14">Amount</p> -->
                                   </td>
 

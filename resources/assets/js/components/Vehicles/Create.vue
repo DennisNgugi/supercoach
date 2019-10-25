@@ -35,11 +35,13 @@
                         <div :class="['form-group row',allerrors.member_id ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Owner name</label>
                             <div class="col-sm-10">
-                                <select id="member_id"  v-model="post.member_id" class="form-control" placeholder="">
+                                <!-- <select id="member_id"  v-model="post.member_id" class="form-control" placeholder="">
                                   <option value="">Choose owner</option>
                                   <option v-for="p in member"v-bind:value="p.id" >{{p.name}}</option>
 
-                                </select>
+                                </select> -->
+
+                               <v-select  v-model="post.member_id" label="name" :options="member" :reduce="member => member.id" />
                                 <span v-if="allerrors.member_id" :class="['label label-danger']"><p style="color:red;">{{ allerrors.member_id[0]}}</p></span>
 
                             </div>
@@ -76,13 +78,10 @@ export default {
         return {
 
             member: [],
-
             post: {
                 registration_no: '',
                 member_id:'',
                 registration_date: '',
-
-
             },
             allerrors: [],
         }
@@ -133,6 +132,10 @@ export default {
                 })
                 .catch((error) => {
                     self.allerrors = error.response.data.errors;
+                    toast.fire({
+                        type: 'error',
+                        title: 'Vehicle not added. Check your inputs again!'
+                    })
                 });
             return;
         },
