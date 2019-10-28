@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
   <div>
     <div class="row">
         <div class="col-sm-12">
@@ -21,6 +21,12 @@
         <div class="col-12">
             <div class="card m-b-30">
                 <div class="card-body">
+
+                  <v-data-table
+
+                    :items="posts"
+                    :search="search"
+                  ></v-data-table>
                     <!-- <h4 class="mt-0 header-title">Example</h4>
                     <p class="text-muted m-b-30 font-14">This is an experimental awesome solution for responsive tables with complex data.</p> -->
                     <div class="table-rep-plugin">
@@ -83,6 +89,8 @@ export default {
 
     data() {
         return {
+          search:'',
+
             posts: [],
             post: {}
         }

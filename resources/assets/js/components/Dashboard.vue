@@ -109,7 +109,7 @@
 
           </div><!-- end row -->
           <div class="row">
-              <div class="col-4">
+              <div class="col-xl-4 col-md-6">
                   <div class="card m-b-30">
                       <div class="card-body">
                         <h4 class="mt-0 header-title mb-4">Latest Shares Trasaction
@@ -152,7 +152,7 @@
                       </div>
                   </div>
               </div><!-- end col -->
-              <div class="col-8">
+              <div class="col-xl-8 col-md-6">
                 <div class="card m-b-30">
                     <div class="card-body">
                       <h4 class="mt-0 header-title mb-4">Latest Loan Trasaction
@@ -204,7 +204,7 @@
           </div><!-- end row -->
 
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="card m-b-30">
                     <div class="card-body">
                       <h4 class="mt-0 header-title mb-4">Latest Withdrawal Trasaction
@@ -248,7 +248,7 @@
                 </div>
             </div><!-- end col -->
 
-            <div class="col-5">
+            <div class="col-xl-5 col-md-6">
                 <div class="card m-b-20">
                   <div class="card-body">
                       <h4 class="mt-0 header-title mb-4"><b>Monthly shares ({{myYear}})</b>

@@ -18,10 +18,25 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('member','MemberController');
+Route::get('/member/edit/{id}','MemberController@edit');
 Route::apiResource('vehicle','VehicleController');
+Route::get('/vehicle/edit/{id}','VehicleController@edit');
 Route::apiResource('loan','LoanController');
-Route::apiResource('guarantor','GuarantorController');
+
+// show loan information including amortization schedule
+Route::get('/loan/view/{id}','LoanController@show');
+
+//Route::apiResource('guarantor','GuarantorController');
+// Route::get('/guarantor/edit/{id}','GuarantorController@edit');
 Route::apiResource('share','ShareController');
+Route::get('/share/edit/{id}','ShareController@edit');
+
+// Add guarantor to loan
+Route::post('/guarantor/create/{id}','GuarantorController@store');
+// Fetch guarantor on each loan
+Route::get('/guarantor/{id}','GuarantorController@index');
+// Delete guarantor from loan
+Route::delete('/guarantor/delete/{id}','GuarantorController@destroy');
 
 Route::post('payloan/{id}','LoanPaymentController@payloan');
 Route::get('payloan/{id}','LoanPaymentController@loan_pay_view');
@@ -64,3 +79,11 @@ Route::delete('/sharewithdrawal/{id}','WithdrawSharesController@destroy');
 Route::get('/member/share','WithdrawSharesController@membershares');
 // individual member shares summary
 Route::get('/memberwithdrawnshares/{id}','MemberController@memberwithdrawnshares');
+// yearly dividends for each member
+Route::get('dividends/{id}','MemberController@dividends');
+// monthly contributed shares for each member
+Route::get('monthlydividends/{id}','MemberController@monthlydividends');
+// Upload amortization schedule in excel format to database
+Route::post('/schedule/{id}','AmortizationController@store');
+// get amortization schedule for loan applied by each member
+Route::get('/myloan/{id}','MemberController@memberamortizationschedule');

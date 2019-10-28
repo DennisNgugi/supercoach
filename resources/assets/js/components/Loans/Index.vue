@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
   <div>
     <div class="row">
         <div class="col-sm-12">
@@ -44,7 +44,7 @@
                                 <td>{{index+1}}</td>
                                 <td>{{p.loan_id}}</td>
                                 <td>{{p.name}}</td>
-                                <td>{{p.amount}}</td>
+                                <td>{{p.amount|formatNumber}}</td>
                                 <td>{{p.interest_rate}}</td>
                                 <td>{{p.duration}}</td>
                                 <td>{{p.date|date}}</td>
@@ -53,10 +53,10 @@
 
 
                                 <td>
-                                  <router-link :to="{name: 'loan_pay', params: { id: p.id }}" class="btn btn-info btn-sm">Pay loan</router-link>
-                                  <router-link :to="{name: 'loan_edit', params: { id: p.id }}" class="btn btn-secondary btn-sm">Guarantor</router-link>
+                                  <router-link :to="{name: 'amortization', params: { id: p.id }}" class="btn btn-info btn-sm">Upload amortization</router-link>
+                                  <router-link :to="{name: 'guarantor_create', params: { id: p.id , name: p.name }}" class="btn btn-secondary btn-sm">Guarantor</router-link>
 
-                                <router-link :to="{name: 'loan_edit', params: { id: p.id }}" class="btn btn-primary btn-sm">Edit</router-link>
+                                <router-link :to="{name: 'loan_show', params: { id: p.id, name: p.name ,no:p.number }}" class="btn btn-primary btn-sm">View</router-link>
 
                                 <input type="submit" @click.prevent="disable(p.id)" class="btn btn-danger btn-sm" value="Delete">
                                 </td>

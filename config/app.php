@@ -148,6 +148,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         'Intervention\Image\ImageServiceProvider',
          Barryvdh\DomPDF\ServiceProvider::class,
+         Maatwebsite\Excel\ExcelServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -211,6 +212,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => 'Intervention\Image\Facades\Image',
         'PDF' => Barryvdh\DomPDF\Facade::class,
+         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 

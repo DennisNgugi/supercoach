@@ -18,7 +18,7 @@ class LoanController extends Controller
         //
         $prop = DB::table('loans')
       ->join('members', 'members.id', '=', 'loans.member_id')
-        ->select('loans.*','members.name')
+        ->select('loans.*','members.name','members.number')
         ->where('loans.status','Active')
         ->orderBy('loans.created_at','DESC')
       ->get();
@@ -75,6 +75,13 @@ class LoanController extends Controller
     public function show($id)
     {
         //
+        $prop = DB::table('amortizations')
+        //->join('loans','loans.id','=','amortizations.loan_id')
+        ->where('loan_id',$id)
+        //->select('amortizations.*')
+        ->get();
+
+        return response()->json($prop);
     }
 
 

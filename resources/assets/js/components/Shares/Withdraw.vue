@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div>
     <div class="row">
         <div class="col-sm-12">
@@ -28,10 +28,12 @@
                             <label class="col-sm-2 col-form-label">Member name
                             </label>
                             <div class="col-sm-10">
-                                <select  id="member"  v-model="post.member_id" class="form-control" placeholder="">
+                                <!-- <select  id="member"  v-model="post.member_id" class="form-control" placeholder="">
                                       <option value="">Choose Member</option>
                                       <option v-for="p in member" v-bind:value="p.id" >{{p.name}}</option>
-                                </select>
+                                </select> -->
+                                <v-select  v-model="post.member_id" label="name" :options="member" :reduce="member => member.id" />
+
                                 <span v-if="allerrors.member_id" :class="['label label-danger']"><p style="color:red;">{{ allerrors.member_id[0]}}</p></span>
 
                             </div>

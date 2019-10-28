@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
   <div>
     <div class="row">
         <div class="col-sm-12">
@@ -28,7 +28,7 @@
                     <h4 class="mt-0 header-title">Add member</h4>
                     <!-- <p class="text-muted m-b-30 font-14">Here are examples of </p> -->
 
-                    <form @submit.prevent="add" enctype="multipart/form-data">
+                    <form @submit.prevent="update">
 
                       <div :class="['form-group row',allerrors.name ? 'has-error' : '']">
 
@@ -63,14 +63,7 @@
 
                             </div>
                         </div>
-                        <div :class="['form-group row',allerrors.image ? 'has-error' : '']">
-                            <label class="col-sm-2 col-form-label">Member photo</label>
-                            <div class="col-sm-10">
-                                <input type="file" id="image" name="post.image" class="form-control" placeholder="">
-                                <span v-if="allerrors.image" :class="['label label-danger']"><p style="color:red;">{{ allerrors.image[0]}}</p></span>
 
-                            </div>
-                        </div>
                         <div :class="['form-group row',allerrors.registration_date ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Registration date</label>
                             <div class="col-sm-10">
@@ -102,59 +95,37 @@ export default {
     data() {
         return {
 
-            post: {
-                name: '',
-                email:'',
-                national_id: '',
-                mobile: '',
-                image: '',
-                registration_date:''
-
-
-            },
+            post: {},
             allerrors: [],
         }
     },
-
+      created(){
+        let url = `/api/member/edit/${this.$route.params.id}`
+        this.axios.get(url).then((response) => {
+          console.log(response.data);
+          this.post = response.data;
+        });
+      },
 
     methods: {
-        onImageChange(e) {
-            let files = e.target.files || e.dataTransfer.files;
-            if (!files.length)
-                return;
-            this.createImage(files[0]);
-        },
-        createImage(file) {
-            let reader = new FileReader();
-            let vm = this;
-            reader.onload = (e) => {
-                vm.post.image = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        },
-
-        add: function() {
+             update: function() {
 
             let self = this;
             form = new FormData();
 
-            const config = {
-                headers: {
-                    'content-type': 'multipart/form-data'
-                }
-            }
 
             form.append('name', self.post.name);
             form.append('mobile', self.post.mobile);
 
             form.append('email', self.post.email);
-            form.append('image', self.post.image);
+
             form.append('national_id', self.post.national_id);
             form.append('registration_date', self.post.registration_date);
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/member', form, config)
+            let uri = `/api/member/${this.$route.params.id}`;
+            axios.put(uri, this.post)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.name = '';
@@ -162,16 +133,22 @@ export default {
                     self.post.mobile = '';
                     self.post.registration_date = '';
                     self.post.national_id = '';
-                    self.post.image = '';
+
 
                     toast.fire({
                         type: 'success',
-                        title: 'Member added successfully'
+                        title: 'Member updated successfully'
                     })
+
+                    this.$router.push({ name: 'member' })
                     //flash('post added Succesfully', 'success');
                 })
                 .catch((error) => {
                     self.allerrors = error.response.data.errors;
+                    toast.fire({
+                        type: 'error',
+                        title: 'Member not updated. Please Check your inputs!'
+                    })
                 });
             return;
         },

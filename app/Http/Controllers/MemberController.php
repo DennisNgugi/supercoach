@@ -6,6 +6,8 @@ use App\Member;
 use Illuminate\Http\Request;
 use Image;
 use DB;
+use App\Share;
+use App\Loan;
 class MemberController extends Controller
 {
     /**
@@ -28,6 +30,27 @@ class MemberController extends Controller
     ->get();
       return response()->json($prop);
     }
+    public function dividends($id){
+        $currentYear = date('Y');
+
+        $prop = DB::table('shares')
+       ->where('member_id',$id)
+      ->whereRaw('YEAR(payment_date) = ?',[$currentYear])
+      ->sum('amount');
+
+      return response()->json($prop);
+
+    }
+    public function monthlydividends($id){
+      $currentYear = date('Y');
+      $prop = DB::table('shares')
+       ->where('member_id',$id)
+    ->whereRaw('YEAR(payment_date) = ?',[$currentYear])
+    ->select(DB::raw('SUM(amount) as total_amount,MONTHNAME( payment_date ) as month'))
+    ->groupBy(DB::raw('MONTHNAME(payment_date) ASC'))->get();
+
+    return response()->json($prop);
+    }
     public function memberwithdrawnshares($id){
       $prop = DB::table('withdraw_shares')
     ->join('members', 'members.id', '=', 'withdraw_shares.member_id')
@@ -37,6 +60,16 @@ class MemberController extends Controller
     ->get();
       return response()->json($prop);
     }
+      public function memberamortizationschedule($id){
+        $prop = DB::table('amortizations')
+        ->join('loans','loans.id','=','amortizations.loan_id')
+        ->select('amortizations.*','loans.loan_id','loans.amount','loans.interest_rate','loans.duration','loans.date')
+        ->where('amortizations.loan_id',$id)
+        ->get();
+        //$prop = Loan::with('amortization')->get();
+
+        return response()->json($prop);
+      }
 
     public function memberloan($id){
       $prop = DB::table('loans')
@@ -120,6 +153,8 @@ class MemberController extends Controller
     public function edit($id)
     {
         //
+        $prop = Member::find($id);
+      return response()->json($prop);
     }
 
     /**
@@ -132,6 +167,21 @@ class MemberController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $prop = Member::find($id);
+
+        $prop->name = $request->name;
+        $prop->number = $request->number;
+        $prop->email = $request->email;
+
+        $prop->mobile = $request->mobile;
+
+        $prop->national_id = $request->national_id;
+
+        $prop->registration_date = $request->registration_date;
+
+        $prop->save();
+
+     return response()->json('successfully updated');
     }
 
     /**

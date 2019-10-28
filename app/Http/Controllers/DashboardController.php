@@ -38,17 +38,19 @@ class DashboardController extends Controller
       $currentMonth = date('m');
 
         $data = DB::table("shares")
-          ->whereRaw('MONTH(created_at) = ?',[$currentMonth])
+          ->whereRaw('MONTH(payment_date) = ?',[$currentMonth])
           ->sum('amount');
           return response()->json($data);
 
 
     }
+
+
     public function dashboardShares(){
       $prop = DB::table('shares')
     ->join('members', 'members.id', '=', 'shares.member_id')
     ->select('shares.*','members.name')
-    ->orderBy('shares.created_at','DESC')
+    ->orderBy('shares.payment_date','DESC')
     ->latest()->take(5)->get();
 
       return response()->json($prop);
@@ -58,7 +60,7 @@ class DashboardController extends Controller
       $prop = DB::table('withdraw_shares')
     ->join('members', 'members.id', '=', 'withdraw_shares.member_id')
     ->select('withdraw_shares.*','members.name')
-    ->orderBy('withdraw_shares.created_at','DESC')
+    ->orderBy('withdraw_shares.date','DESC')
     ->latest()->take(5)->get();
 
       return response()->json($prop);
@@ -78,9 +80,9 @@ class DashboardController extends Controller
     public function monthly(){
         $currentYear = date('Y');
         $prop = DB::table('shares')
-      ->whereRaw('YEAR(created_at) = ?',[$currentYear])
-      ->select(DB::raw('SUM(amount) as total_amount,MONTHNAME( created_at ) as month'))
-      ->groupBy(DB::raw('MONTHNAME(created_at) ASC'))->get();
+      ->whereRaw('YEAR(payment_date) = ?',[$currentYear])
+      ->select(DB::raw('SUM(amount) as total_amount,MONTHNAME( payment_date ) as month'))
+      ->groupBy(DB::raw('MONTHNAME(payment_date) ASC'))->get();
 
       return response()->json($prop);
 

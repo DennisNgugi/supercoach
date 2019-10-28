@@ -39,7 +39,7 @@
                   <div class="card bg-primary mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
-                              <h6 class="text-uppercase mt-0 float-left text-white-80">Shares</h6>
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Total Shares</h6>
                               <h4 class="mb-3 mt-0 float-right">{{totalShares|formatNumber}}</h4>
                           </div>
                       </div>
@@ -95,6 +95,18 @@
                           <div class="clearfix">
                               <h6 class="text-uppercase mt-0 float-left text-white-80">Current balance</h6>
                               <h4 class="mb-3 mt-0 float-right">{{currentBalance|formatNumber}}</h4>
+                          </div>
+                      </div>
+                      <div class="p-3">
+                          <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a></div>
+
+                      </div>
+                  </div>
+                  <div class="card bg-info mini-stat text-white">
+                      <div class="p-3 mini-stat-desc">
+                          <div class="clearfix">
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Dividends this year</h6>
+                              <h4 class="mb-3 mt-0 float-right">{{this.dividends|formatNumber}}</h4>
                           </div>
                       </div>
                       <div class="p-3">
@@ -198,7 +210,7 @@
                                         <td>{{p.date|date}}</td>
                                         <td>
 
-                                          <router-link :to="{ name: '', params: {} }" class="btn btn-secondary btn-sm">View Loan</router-link>
+                                          <router-link :to="{ name: 'view_member_loan', params: {id: p.id} }" class="btn btn-secondary btn-sm">View Loan</router-link>
                                         </td>
 
                                     </tr>
@@ -298,6 +310,60 @@
                       </div>
                   </div>
               </div>
+              <div class="col-xl-5">
+                <div class="card m-b-20">
+                  <div class="card-body">
+                      <h4 class="mt-0 header-title mb-4"><b>Monthly shares ({{myYear}})</b>
+                        <span class="float-right">
+                          <!-- <button type="button" @click.prevent="monthlyDividendsDownload" class="btn btn-secondary btn-sm" name="button">Download report</button> -->
+                        </span>
+
+                      </h4>
+
+                      <div class="table-responsive">
+                          <table class="table table-vertical">
+                            <thead>
+                              <tr>
+                                <th>Month</th>
+                                <th>Total</th>
+
+                            </tr>
+                            </thead>
+                              <tbody>
+                              <tr v-for="(i,index) in monthlydividends" @key="index">
+                                  <td>
+                                      <img src="/img/calendar.png" alt="calendar-image" class="thumb-sm rounded-circle mr-2"/>
+                                      {{i.month}}
+                                  </td>
+                                  <!-- <td><i class="mdi mdi-checkbox-blank-circle text-success"></i> Confirm</td> -->
+                                  <td>
+                                    <b>{{i.total_amount}} /=</b>
+                                      <!-- <p class="m-0 text-muted font-14">Amount</p> -->
+                                  </td>
+
+
+                              </tr>
+                              <!-- <tr>
+
+                              <td  rowspan="1"><b>Grand Total</b></td>
+                              <td style="color:red; text-align:center;" rowspan="1" ><b>{{yearTotal}}</b></td>
+                              <td style="color:red; text-align:center;" rowspan="1"><b> {{yearQuantity}}</b></td>
+
+
+                              </tr> -->
+
+
+
+                              </tbody>
+
+
+                          </table>
+                      </div>
+                  </div>
+
+                </div>
+
+              </div>
 
             </div>
 
@@ -309,10 +375,13 @@
 export default {
   data() {
       return {
+        myYear : new Date().getFullYear(),
           post: {},
           shares:[],
           withdrawnShares:[],
           loans:[],
+          dividends:null,
+          monthlydividends:[]
       }
   },
   computed:{
@@ -365,6 +434,8 @@ export default {
       this.fetchShares();
       this.fetchLoan();
       this.fetchWithdrawnShares();
+      this.fetchDividends();
+      this.fetchMonthlyDividends();
 
   },
 
@@ -399,6 +470,20 @@ export default {
               this.loans = response.data;
           });
   },
+  fetchDividends:function(){
+    let url = `/api/dividends/${this.$route.params.id}`;
+    this.axios.get(url)
+        .then((response) => {
+            this.dividends = response.data;
+        });
+},
+fetchMonthlyDividends:function(){
+  let url = `/api/monthlydividends/${this.$route.params.id}`;
+  this.axios.get(url)
+      .then((response) => {
+          this.monthlydividends = response.data;
+      });
+},
   downloadIndividualMemberShares:function(){
     let url = `/api/individual/shares/${this.$route.params.id}`;
     axios.get(url)

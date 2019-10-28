@@ -22,6 +22,9 @@ import Vue from 'vue';
 Vue.component('v-select', vSelect)
 import 'vue-select/dist/vue-select.css';
 
+// const opts = {}
+//
+// export default new Vuetify(opts)
 import swal from 'sweetalert2';
 window.swal = swal;
 const toast = swal.mixin({
@@ -75,7 +78,12 @@ import LoanEdit from './components/Loans/Edit.vue';
 import LoanIndex from './components/Loans/Index.vue';
 import LoanShow from './components/Loans/Show.vue';
 
+import MyLoan from './components/Members/MyLoan.vue';
+
+
 import LoanPay from './components/LoanPayment/PayLoan.vue';
+
+import Amortization from './components/Loans/Amortization.vue';
 
 
 import ShareCreate from './components/Shares/Create.vue';
@@ -154,8 +162,18 @@ const routes = [
   },
   {
       name: 'loan_show',
-      path: '/loan/:id',
+      path: '/loan/view/:name/:no/:id',
       component: LoanShow
+  },
+  {
+      name: 'view_member_loan',
+      path: '/myloan/:id',
+      component: MyLoan
+  },
+  {
+      name: 'amortization',
+      path: '/amortization/:id',
+      component: Amortization
   },
   {
       name: 'loan_pay',
@@ -190,7 +208,7 @@ const routes = [
   },
   {
       name: 'guarantor_create',
-      path: '/guarantor/create',
+      path: '/guarantor/create/:name/:id',
       component:  GuarantorCreate
   },
   {

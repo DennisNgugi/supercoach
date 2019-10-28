@@ -5,9 +5,7 @@
             <div class="page-title-box">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h4 class="page-title mt-3">Loan amortization schedule</h4> <br>
-                        <h5 class="page-title mt-1">Member name: {{this.loanee}}</h5> <br>
-                        <h6 class="page-title">Member number: {{this.loaneeNumber}}</h6>
+                        <h4 class="page-title mt-3">Loan amortization schedule</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="float-right d-none d-md-block">
@@ -89,20 +87,18 @@ export default {
         return {
 
             amortization: [],
-            loanee:this.$route.params.name,
-            loaneeNumber:this.$route.params.no,
             //post: {}
         }
     },
     mounted: function() {
-        this.fetchLoanAmortization();
+        this.fetchMemberAmortization();
     },
 
 
     methods: {
 
-      fetchLoanAmortization:function(){
-        let url = `/api/loan/view/${this.$route.params.id}`;
+      fetchMemberAmortization:function(){
+        let url = `/api/myloan/${this.$route.params.id}`;
         this.axios.get(url)
             .then((response) => {
                 this.amortization = response.data;

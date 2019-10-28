@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\Guarantor;
 use Illuminate\Http\Request;
 
@@ -12,9 +12,16 @@ class GuarantorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         //
+          $prop = DB::table('guarantors')
+          ->join('members','members.id','=','guarantors.member_id')
+          ->select('guarantors.*','members.name','members.number')
+          ->where('guarantors.loan_id',$id)
+          ->get();
+
+          return response()->json($prop);
     }
 
     /**
@@ -25,6 +32,7 @@ class GuarantorController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -33,9 +41,22 @@ class GuarantorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$id)
     {
         //
+        $this->validate($request,[
+          'guarantor' => 'required',
+          'amount' => 'required',
+          'date'=>'required'
+        ]);
+        $prop = new Guarantor;
+        $prop->member_id = $request->guarantor;
+        $prop->loan_id = $id;
+        $prop->amount = $request->amount;
+        $prop->date = $request->date;
+
+        $prop->save();
+        return response()->json('Guarantor succesfully added');
     }
 
     /**
@@ -81,8 +102,8 @@ class GuarantorController extends Controller
     public function destroy($id)
     {
         //
-        $prop = Guarantor::where('id',$id)->update(['status' => 'Inactive']);
-
-            return response()->json($prop);
+        $prop = Guarantor::find($id);
+          $prop->delete();
+        return response()->json($prop);
     }
 }
