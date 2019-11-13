@@ -4927,6 +4927,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -5034,6 +5039,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     downloadIndividualMemberShares: function downloadIndividualMemberShares() {
       var url = "/api/individual/shares/".concat(this.$route.params.id);
+      axios.get(url);
+    },
+    downloadIndividualMemberLoan: function downloadIndividualMemberLoan(id) {
+      var url = "/api/individual/loan/".concat(this.$route.params.id, "/").concat(id);
       axios.get(url);
     },
     downloadIndividualWithdrawnMemberShares: function downloadIndividualWithdrawnMemberShares() {
@@ -71907,6 +71916,11 @@ var render = function() {
               _c("span", { staticClass: "text-danger" }, [_vm._v("Inactive")])
             ]),
         _vm._v(" "),
+        _c("p", { staticClass: "text-muted text-dark" }, [
+          _vm._v("Membership no: "),
+          _c("b", [_vm._v("0" + _vm._s(_vm.post.number))])
+        ]),
+        _vm._v(" "),
         _vm.post.email == null
           ? _c("p", { staticClass: "text-muted text-dark" }, [
               _vm._v("Email: "),
@@ -72193,7 +72207,7 @@ var render = function() {
                             _c(
                               "router-link",
                               {
-                                staticClass: "btn btn-secondary btn-sm",
+                                staticClass: "btn btn-info btn-sm",
                                 attrs: {
                                   to: {
                                     name: "view_member_loan",
@@ -72205,7 +72219,24 @@ var render = function() {
                             )
                           ],
                           1
-                        )
+                        ),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-secondary btn-sm",
+                              attrs: { type: "button", name: "button" },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.downloadIndividualMemberLoan(p.id)
+                                }
+                              }
+                            },
+                            [_vm._v("Print")]
+                          )
+                        ])
                       ])
                     })
                   ],
@@ -72458,7 +72489,9 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Date issued")]),
         _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Action")])
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("View")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Print")])
       ])
     ])
   },

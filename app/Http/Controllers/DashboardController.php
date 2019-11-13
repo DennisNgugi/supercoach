@@ -127,6 +127,40 @@ class DashboardController extends Controller
         $download = $name.'-'.'shares'.'-'.$date.'.'.'pdf';
         return $pdf->download($download);
     }
+    public function individualLoan($id,$loanID){
+      $date = Carbon::now();
+      $member = Member::find($id);
+      $name = $member->name;
+      $show  = DB::table('loans')
+      ->join('members', 'members.id', '=', 'loans.member_id')
+      ->select('loans.*','members.name','members.number')
+      ->where('loans.member_id',$id)
+      //->orderBy('loans.created_at','DESC')
+      ->get();
+
+      $amortization = DB::table('amortizations')
+      ->join('loans', 'loans.id', '=', 'amortizations.loan_id')
+      ->select('amortizations.*')
+      ->where('amortizations.loan_id',$loanID)
+      //->orderBy('loans.created_at','DESC')
+      ->get();
+
+      $guarantors = DB::table('guarantors')
+      ->join('members','members.id','=','guarantors.member_id')
+      ->join('loans','loans.id','=','guarantors.loan_id')
+      ->select('members.name','members.number','guarantors.*')
+      ->where('guarantors.loan_id',$loanID)
+      ->where('guarantors.member_id',$id)
+      ->get();
+      // $sum  = DB::table('shares')
+      // ->join('members', 'members.id', '=', 'shares.member_id')
+      // ->where('shares.member_id',$id)
+      // ->sum('amount');
+
+       $pdf = PDF::loadView('memberloanpdf', compact('show','amortization','guarantors'))->setPaper('a4','landscape');
+        $download = $name.'-'.'loan'.'-'.$date.'.'.'pdf';
+        return $pdf->download($download);
+    }
 
     public function individualWithdrawnShares($id){
       $date = Carbon::now();

@@ -66,6 +66,8 @@ Route::get('/download/withdraw/shares','DashboardController@downloadWithdrawalSh
 
 // pdf download for all individual shares
 Route::get('/individual/shares/{id}','DashboardController@individualShares');
+// pdf download for individual loans
+Route::get('/individual/loan/{id}/{loanID}','DashboardController@individualLoan');
 // pdf download for all individual withdrawn shares
 Route::get('/individual/withdrawn/shares/{id}','DashboardController@individualWithdrawnShares');
 // pdf download for monthly shares
