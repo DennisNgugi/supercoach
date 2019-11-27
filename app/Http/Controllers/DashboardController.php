@@ -157,7 +157,7 @@ class DashboardController extends Controller
       // ->where('shares.member_id',$id)
       // ->sum('amount');
 
-       $pdf = PDF::loadView('memberloanpdf', compact('show','amortization','guarantors'))->setPaper('a4','landscape');
+       $pdf = PDF::loadView('memberloanpdf', compact('show','amortization','guarantors'))->setPaper('a4','potrait');
         $download = $name.'-'.'loan'.'-'.$date.'.'.'pdf';
         return $pdf->download($download);
     }

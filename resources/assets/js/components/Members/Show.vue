@@ -26,7 +26,7 @@
               <b>{{post.status}}</b>
                 </span> </p>
                 <p v-else class="page-title">Status: <span class="text-danger">Inactive</span> </p>
-                <p class="text-muted text-dark">Membership no: <b>0{{post.number}}</b> </p>
+                <p class="text-muted text-dark">Membership no: <b>{{post.number}}</b> </p>
                   <p v-if="post.email == null" class="text-muted text-dark">Email: <b>N/A</b> </p>
                 <p v-else class="text-muted text-dark">Email: <b>{{post.email}}</b> </p>
                 <p class="text-muted text-dark">Phone: <b>0{{post.mobile}}</b> </p>

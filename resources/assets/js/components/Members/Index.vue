@@ -22,11 +22,6 @@
             <div class="card m-b-30">
                 <div class="card-body">
 
-                  <v-data-table
-
-                    :items="posts"
-                    :search="search"
-                  ></v-data-table>
                     <!-- <h4 class="mt-0 header-title">Example</h4>
                     <p class="text-muted m-b-30 font-14">This is an experimental awesome solution for responsive tables with complex data.</p> -->
                     <div class="table-rep-plugin">

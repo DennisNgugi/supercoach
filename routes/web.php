@@ -15,3 +15,7 @@
 Route::get('/{any}', function () {
   return view('layouts.admin');
 })->where('any', '.*');
+
+// Route::get('/loanview',function(){
+//   return view('memberloanpdf');
+// });

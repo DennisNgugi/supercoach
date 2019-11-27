@@ -4346,11 +4346,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -71513,123 +71508,113 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12" }, [
         _c("div", { staticClass: "card m-b-30" }, [
-          _c(
-            "div",
-            { staticClass: "card-body" },
-            [
-              _c("v-data-table", {
-                attrs: { items: _vm.posts, search: _vm.search }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "table-rep-plugin" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "table-responsive b-0",
-                    attrs: { "data-pattern": "priority-columns" }
-                  },
-                  [
-                    _c(
-                      "table",
-                      { staticClass: "table table-hover table-striped" },
-                      [
-                        _vm._m(1),
-                        _vm._v(" "),
-                        _c(
-                          "tbody",
-                          _vm._l(_vm.posts, function(p, index) {
-                            return _c("tr", { on: { key: index } }, [
-                              _c("td", [_vm._v(_vm._s(index + 1))]),
-                              _vm._v(" "),
-                              _c("td", [_c("b", [_vm._v(_vm._s(p.number))])]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _c("b", [
-                                  _vm._v(_vm._s(_vm._f("capitalize")(p.name)))
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("td", [_vm._v("0" + _vm._s(p.mobile))]),
-                              _vm._v(" "),
-                              p.email == null
-                                ? _c("td", [_vm._v("N/A")])
-                                : _c("td", [_vm._v(_vm._s(p.email))]),
-                              _vm._v(" "),
-                              _c("td", [_vm._v(_vm._s(p.national_id))]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(
-                                  _vm._s(_vm._f("date")(p.registration_date))
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "badge badge-pill badge-success"
-                                  },
-                                  [_vm._v(_vm._s(p.status))]
-                                )
-                              ]),
-                              _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("div", { staticClass: "table-rep-plugin" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "table-responsive b-0",
+                  attrs: { "data-pattern": "priority-columns" }
+                },
+                [
+                  _c(
+                    "table",
+                    { staticClass: "table table-hover table-striped" },
+                    [
+                      _vm._m(1),
+                      _vm._v(" "),
+                      _c(
+                        "tbody",
+                        _vm._l(_vm.posts, function(p, index) {
+                          return _c("tr", { on: { key: index } }, [
+                            _c("td", [_vm._v(_vm._s(index + 1))]),
+                            _vm._v(" "),
+                            _c("td", [_c("b", [_vm._v(_vm._s(p.number))])]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _c("b", [
+                                _vm._v(_vm._s(_vm._f("capitalize")(p.name)))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("0" + _vm._s(p.mobile))]),
+                            _vm._v(" "),
+                            p.email == null
+                              ? _c("td", [_vm._v("N/A")])
+                              : _c("td", [_vm._v(_vm._s(p.email))]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v(_vm._s(p.national_id))]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                _vm._s(_vm._f("date")(p.registration_date))
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [
                               _c(
-                                "td",
-                                [
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass: "btn btn-primary btn-sm",
-                                      attrs: {
-                                        to: {
-                                          name: "member_edit",
-                                          params: { id: p.id }
-                                        }
-                                      }
-                                    },
-                                    [_vm._v("Edit")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    staticClass: "btn btn-danger btn-sm",
-                                    attrs: { type: "submit", value: "Delete" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.preventDefault()
-                                        return _vm.disable(p.id)
+                                "span",
+                                {
+                                  staticClass: "badge badge-pill badge-success"
+                                },
+                                [_vm._v(_vm._s(p.status))]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "td",
+                              [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "btn btn-primary btn-sm",
+                                    attrs: {
+                                      to: {
+                                        name: "member_edit",
+                                        params: { id: p.id }
                                       }
                                     }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass: "btn btn-info btn-sm",
-                                      attrs: {
-                                        to: {
-                                          name: "member_show",
-                                          params: { id: p.id }
-                                        }
+                                  },
+                                  [_vm._v("Edit")]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  staticClass: "btn btn-danger btn-sm",
+                                  attrs: { type: "submit", value: "Delete" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.disable(p.id)
+                                    }
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "btn btn-info btn-sm",
+                                    attrs: {
+                                      to: {
+                                        name: "member_show",
+                                        params: { id: p.id }
                                       }
-                                    },
-                                    [_vm._v("View")]
-                                  )
-                                ],
-                                1
-                              )
-                            ])
-                          }),
-                          0
-                        )
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ],
-            1
-          )
+                                    }
+                                  },
+                                  [_vm._v("View")]
+                                )
+                              ],
+                              1
+                            )
+                          ])
+                        }),
+                        0
+                      )
+                    ]
+                  )
+                ]
+              )
+            ])
+          ])
         ])
       ])
     ])
@@ -71918,7 +71903,7 @@ var render = function() {
         _vm._v(" "),
         _c("p", { staticClass: "text-muted text-dark" }, [
           _vm._v("Membership no: "),
-          _c("b", [_vm._v("0" + _vm._s(_vm.post.number))])
+          _c("b", [_vm._v(_vm._s(_vm.post.number))])
         ]),
         _vm._v(" "),
         _vm.post.email == null

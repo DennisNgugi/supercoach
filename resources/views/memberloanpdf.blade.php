@@ -55,10 +55,11 @@
                                         <b>Name : {{$show[0]->name}}</b> <br>
 
                                       </div>
-                                      <div class="row mb-3">
+                                      <div class="row mb-1">
                                         <b>Membership no : {{$show[0]->number}}</b>
                                       </div>
-                      
+
+
                                     </div>
 
                                     <div class="col-md-4">
@@ -71,6 +72,10 @@
                                 </div>
                             </div>
                             <div class="row">
+                              <h6 class="my-2 text-center">LOAN SUMMARY</h6>
+
+                            </div>
+                            <div class="row">
                                 <div class="col-12">
                                     <div class="panel panel-default">
                                         <div class="p-2">
@@ -78,18 +83,68 @@
                                         </div>
                                         <div class="">
                                             <div class="table-responsive">
-                                                <table class="table table-striped">
+                                                <table id="loanSummary" class="table">
+
+
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>Loan ID</td>
+                                                      <td>{{$show[0]->loan_id}}</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Loan Amount</td>
+                                                      <td>{{number_format($show[0]->amount,2)}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Interest rate</td>
+                                                      <td>{{$show[0]->interest_rate}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Duration (months)</td>
+                                                      <td>{{$show[0]->duration}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Date issued</td>
+                                                      <td>{{ \Carbon\Carbon::parse($show[0]->date)->format('d M Y') }}</td>
+                                                    </tr>
+
+                                                  </tbody>
+
+                                                </table>
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                            <div class="row">
+                              <h6 class="my-2 text-center">LOAN DETAILS</h5>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="panel panel-default">
+                                        <div class="p-2">
+                                            <h3 class="panel-title font-20"></h3>
+                                        </div>
+                                        <div class="">
+                                            <div class="table-responsive">
+                                                <table id="loanTable" class="table table-striped">
                                                     <thead>
                                                         <tr>
-                                                            <td height="6px" class="text-center"><strong>#</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Instalment</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Principal</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Interest</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Penalty</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Totals</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Paid amount</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Loan balance</strong></td>
-                                                            <td height="6px" class="text-center"><strong>Payment date</strong></td>
+                                                            <th class="text-center"><strong>#</strong></th>
+                                                            <th class="text-center"><strong>Instalment</strong></th>
+                                                            <th class="text-center"><strong>Principal</strong></th>
+                                                            <th class="text-center"><strong>Interest</strong></th>
+                                                            <th class="text-center"><strong>Penalty</strong></th>
+                                                            <th class="text-center"><strong>Totals</strong></th>
+                                                            <th class="text-center"><strong>Paid</strong></th>
+                                                            <th class="text-center"><strong>Balance</strong></th>
+                                                            <th class="text-center"><strong>Payment date</strong></th>
 
 
 
@@ -100,47 +155,47 @@
                                                         @foreach ($amortization as $s)
                                                         <tr>
 
-                                                            <td height="5px" class="text-center">{{$count}}</td>
+                                                            <td class="text-center">{{$count}}</td>
                                                             @if($s->instalment != "")
-                                                            <td height="5px" class="text-center">{{$s->instalment}}</td>
+                                                            <td class="text-center">{{number_format($s->instalment,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                             @if($s->principal != "")
-                                                            <td height="5px" class="text-center">{{$s->principal}}</td>
+                                                            <td class="text-center">{{number_format($s->principal,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                             @if($s->interest != "")
-                                                            <td height="5px" class="text-center">{{$s->interest}}</td>
+                                                            <td class="text-center">{{number_format($s->interest,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                             @if($s->penalty != "")
-                                                            <td height="5px" class="text-center">{{$s->penalty}}</td>
+                                                            <td class="text-center">{{number_format($s->penalty,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                             @if($s->totals != "")
-                                                            <td height="5px" class="text-center">{{$s->totals}}</td>
+                                                            <td class="text-center">{{number_format($s->totals,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                             @if($s->paid_amount != "")
-                                                            <td height="5px" class="text-center">{{$s->paid_amount}}</td>
+                                                            <td class="text-center">{{number_format($s->paid_amount,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                             @if($s->loan_balance != "")
-                                                            <td height="5px" class="text-center">{{$s->loan_balance}}</td>
+                                                            <td class="text-center">{{number_format($s->loan_balance,2)}}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
 
                                                             @if($s->payment_date != "")
-                                                            <td height="5px" class="text-center">{{$s->payment_date}}</td>
+                                                            <td class="text-center">{{ \Carbon\Carbon::parse($s->payment_date)->format('d-M-Y') }}</td>
                                                             @else
-                                                            <td height="5px" class="text-center">__</td>
+                                                            <td class="text-center">__</td>
                                                             @endif
                                                         </tr>
                                                         <?php $count++; ?>
@@ -149,6 +204,49 @@
                                                     </tbody>
 
                                                 </table>
+
+
+                                        <style>
+                                        html{
+                                          height: 100%;
+                                          width:100%;
+                                        }
+                                        #loanTable {
+                                        font-family: 'Nunito Sans', sans-serif;
+                                        font-size:10px;
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      }
+                                      #loanSummary {
+                                      font-family: 'Nunito Sans', sans-serif;
+                                      font-size:10px;
+                                      border-collapse: collapse;
+                                      width: 100%;
+                                    }
+                                        #loanSummary td {
+                                          border: 1px solid #ddd;
+                                        }
+                                        #loanTable tr:nth-child(even){
+                                          background-color: #f2f2f2;
+                                        }
+                                        #loanSummary tr:nth-child(even){
+                                          background-color: #f2f2f2;
+                                        }
+
+                                        th {
+                                          background-color: #4CAF50;
+                                          height: 25px;
+                                          color: white;
+                                          }
+                                          #loanTable tbody tr td {
+                                            height: 20px;
+                                            vertical-align: bottom;
+                                          }
+                                          #loanSummary tbody tr td {
+                                            height: 20px;
+                                            vertical-align: bottom;
+                                          }
+                                        </style>
 
                                             </div>
 
