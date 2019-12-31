@@ -147,7 +147,7 @@ export default {
 
   methods:{
     fetchShares:function(){
-      let url = `/api/membershares/${this.$route.params.id}`;
+      let url = `/membershares/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.shares = response.data;
@@ -155,14 +155,14 @@ export default {
     },
 
     fetchLoan:function(){
-      let url = `/api/vehicleloan/${this.$route.params.id}`;
+      let url = `/vehicleloan/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.loans = response.data;
           });
   },
   fetchVehicle:function(){
-    let url = `/api/vehicle/${this.$route.params.id}`;
+    let url = `/vehicle/${this.$route.params.id}`;
     this.axios.get(url)
         .then((response) => {
             this.post = response.data;

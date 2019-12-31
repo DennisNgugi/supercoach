@@ -53,13 +53,13 @@
                     <div id="navigation">
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu">
-                            <li class="has-submenu"><router-link to="/"><i class="dripicons-home"></i> Dashboard</router-link></li>
+                            <li class="has-submenu"><router-link to="/admin/dashboard"><i class="dripicons-home"></i> Dashboard</router-link></li>
                             <li class="has-submenu"><a href="#"><i class="dripicons-suitcase"></i> Members <i class="mdi mdi-chevron-down mdi-drop"></i></a>
                                 <ul class="submenu megamenu">
                                     <li>
                                         <ul>
-                                            <li><router-link to="/member/create">Add member</router-link></li>
-                                            <li><router-link to="/member">Members list</router-link></li>
+                                            <li><router-link to="/admin/member/create">Add member</router-link></li>
+                                            <li><router-link to="/admin/member">Members list</router-link></li>
 
                                         </ul>
                                     </li>
@@ -70,21 +70,21 @@
                                 <ul class="submenu megamenu">
                                     <li>
                                         <ul>
-                                            <li><router-link to="/vehicle/create">Add vehicle</router-link></li>
-                                            <li><router-link to="/vehicle">Vehicle list</router-link></li>
+                                            <li><router-link to="/admin/vehicle/create">Add vehicle</router-link></li>
+                                            <li><router-link to="/admin/vehicle">Vehicle list</router-link></li>
 
                                         </ul>
                                     </li>
 
                                 </ul>
                             </li>
-                            <li class="has-submenu"><a href="#"><i class="dripicons-suitcase"></i> Shares <i class="mdi mdi-chevron-down mdi-drop"></i></a>
+                            <li class="has-submenu"><a href="#"><i class="dripicons-suitcase"></i> Deposits <i class="mdi mdi-chevron-down mdi-drop"></i></a>
                                 <ul class="submenu megamenu">
                                     <li>
                                         <ul>
-                                            <li><router-link to="/share/create">Add shares</router-link></li>
-                                            <li><router-link to="/share">Shares list</router-link></li>
-                                            <li><router-link to="/share/withdraw">Withdraw shares</router-link></li>
+                                            <li><router-link to="/admin/share/create">Add deposit</router-link></li>
+                                            <li><router-link to="/admin/share">Deposit list</router-link></li>
+                                            <li><router-link to="/admin/share/withdraw">Withdraw deposit</router-link></li>
 
 
                                         </ul>
@@ -92,20 +92,12 @@
 
                                 </ul>
                             </li>
-                            <li class="has-submenu"><a href="#"><i class="dripicons-suitcase"></i> Loan <i class="mdi mdi-chevron-down mdi-drop"></i></a>
-                                <ul class="submenu megamenu">
-                                    <li>
-                                        <ul>
-                                            <li><router-link to="/loan/create">Add loan</router-link></li>
-                                            <li><router-link to="/loan">Loan list</router-link></li>
-                                            <li><router-link to="/loan">Unsettled loan</router-link></li>
 
-                                        </ul>
-                                    </li>
+                            <li class="has-submenu"><a href="{{ url('/logout') }}"  class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="typcn typcn-power-outline"></i> Sign Out </a></li>
+                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }} </form>
 
-                                </ul>
-                            </li>
-                            <li class="has-submenu"><a href="#"><i class="dripicons-suitcase"></i> Report <i class="mdi mdi-chevron-down mdi-drop"></i></a>
+
+                            <!-- <li class="has-submenu"><a href="#"><i class="dripicons-suitcase"></i> Report <i class="mdi mdi-chevron-down mdi-drop"></i></a>
                                 <ul class="submenu megamenu">
                                     <li>
                                         <ul>
@@ -117,7 +109,7 @@
                                     </li>
 
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul><!-- End navigation menu -->
                     </div><!-- end #navigation -->
                 </div><!-- end container -->

@@ -46,7 +46,7 @@
                                     </div>
                                     <hr>
                                     <div class="row">
-                                      <h6 class="my-4">Shares report</h6>
+                                      <h6 class="my-4">Deposits report</h6>
                                     </div>
 
                                 </div>

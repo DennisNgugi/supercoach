@@ -102,7 +102,7 @@ export default {
         fetchMember: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.member = response.data.data;
             }).catch((error) => {
@@ -124,7 +124,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/shares', form)
+            axios.post('/shares', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.member_no = '';

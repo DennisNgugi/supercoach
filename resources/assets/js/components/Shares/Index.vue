@@ -5,11 +5,11 @@
             <div class="page-title-box">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h4 class="page-title mt-3">Shares</h4>
+                        <h4 class="page-title mt-3">Deposit</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="float-right d-none d-md-block">
-                          <router-link class="btn btn-primary"to="/share/create">Add shares</router-link>
+                          <router-link class="btn btn-primary"to="/share/create">Add deposit</router-link>
 
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                                 <th>#</th>
                                 <th>Member name</th>
 
-                                <th>Shares amount</th>
+                                <th>Deposit amount</th>
 
                                 <th>Payment Date</th>
                                 <th>Status</th>
@@ -53,7 +53,7 @@
 
                                 <td>
 
-                                <router-link :to="{name: 'share_edit', params: { id: p.id }}" class="btn btn-primary btn-sm">Edit</router-link>
+                                <!-- <router-link :to="{name: 'share_edit', params: { id: p.id }}" class="btn btn-primary btn-sm">Edit</router-link> -->
 
                                 <input type="submit" @click.prevent="disable(p.id)" class="btn btn-danger btn-sm" value="Delete">
                                 </td>
@@ -90,7 +90,7 @@ export default {
         fetchData: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/share').then((response) => {
+            this.axios.get('/share').then((response) => {
                 //  console.log(response.data);
                 this.posts = response.data;
             }).catch((error) => {
@@ -109,7 +109,7 @@ export default {
             }).then((result) => {
 
                 if (result.value) {
-                  let uri = `/api/share/${id}`;
+                  let uri = `/share/${id}`;
                   this.axios.delete(uri).then(response => {
                       this.posts.splice(this.posts.indexOf(id), 1);
                       this.fetchData();

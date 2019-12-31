@@ -19,7 +19,7 @@ class CreateLoansTable extends Migration
         $table->integer('member_id')->unsigned();
         $table->date('date');
         $table->double('amount');
-        $table->double('interest_rate');
+        $table->string('interest_rate');
         $table->integer('duration');
         $table->string('status')->default('Active');
         $table->timestamps();

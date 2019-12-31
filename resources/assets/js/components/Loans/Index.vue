@@ -23,7 +23,7 @@
                     <p class="text-muted m-b-30 font-14">This is an experimental awesome solution for responsive tables with complex data.</p> -->
                     <div class="table-rep-plugin">
                         <div class="table-responsive b-0" data-pattern="priority-columns">
-                          <table class="table table-hover table-striped">
+                          <table class="table table-xs table-hover table-striped">
                             <thead>
                               <tr>
                                 <th>#</th>
@@ -93,7 +93,7 @@ export default {
         fetchData: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/loan').then((response) => {
+            this.axios.get('/loan').then((response) => {
                 //  console.log(response.data);
                 this.posts = response.data;
             }).catch((error) => {
@@ -112,7 +112,7 @@ export default {
             }).then((result) => {
 
                 if (result.value) {
-                  let uri = `/api/loan/${id}`;
+                  let uri = `/loan/${id}`;
                   this.axios.delete(uri).then(response => {
                       //this.posts.splice(this.posts.indexOf(id), 1);
                       this.fetchData();

@@ -100,7 +100,7 @@ export default {
         fetchData: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.posts = response.data.data;
             }).catch((error) => {
@@ -119,7 +119,7 @@ export default {
             }).then((result) => {
 
                 if (result.value) {
-                  let uri = `/api/member/${id}`;
+                  let uri = `/member/${id}`;
                   this.axios.delete(uri).then(response => {
                       //this.posts.splice(this.posts.indexOf(id), 1);
                       this.fetchData();

@@ -173,7 +173,7 @@ export default {
       fetchMember: function() {
           console.log('Fetching data....');
 
-          this.axios.get('/api/member').then((response) => {
+          this.axios.get('/member').then((response) => {
               //  console.log(response.data);
               this.members = response.data.data;
           }).catch((error) => {
@@ -183,7 +183,7 @@ export default {
         fetchData: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/share').then((response) => {
+            this.axios.get('/share').then((response) => {
                 //  console.log(response.data);
                 this.posts = response.data;
             }).catch((error) => {

@@ -46,7 +46,7 @@
                                     </div>
                                     <hr>
                                     <div class="row">
-                                      <h6 class="my-4">Shares monthly report for year {{ \Carbon\Carbon::now()->year }}</h6>
+                                      <h6 class="my-4">Deposits monthly report for year {{ \Carbon\Carbon::now()->year }}</h6>
 
                                     </div>
 

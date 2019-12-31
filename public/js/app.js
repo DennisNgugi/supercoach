@@ -2039,7 +2039,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchShares: function fetchShares() {
       var _this = this;
 
-      this.axios.get('/api/totalshares').then(function (response) {
+      this.axios.get('/totalshares').then(function (response) {
         //console.log(response.data);
         _this.shares = response.data;
       })["catch"](function (error) {
@@ -2050,7 +2050,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/dashboardshares').then(function (response) {
+      this.axios.get('/dashboardshares').then(function (response) {
         //  console.log(response.data);
         _this2.sharesdata = response.data;
       })["catch"](function (error) {
@@ -2061,7 +2061,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this3 = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/dashboardwithdrawalshares').then(function (response) {
+      this.axios.get('/dashboardwithdrawalshares').then(function (response) {
         //  console.log(response.data);
         _this3.withdrawdata = response.data;
       })["catch"](function (error) {
@@ -2072,7 +2072,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this4 = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/dashboardloans').then(function (response) {
+      this.axios.get('/dashboardloans').then(function (response) {
         //  console.log(response.data);
         _this4.loansdata = response.data;
       })["catch"](function (error) {
@@ -2082,7 +2082,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchMembers: function fetchMembers() {
       var _this5 = this;
 
-      this.axios.get('/api/totalmembers').then(function (response) {
+      this.axios.get('/totalmembers').then(function (response) {
         //  console.log(response.data);
         _this5.members = response.data;
       })["catch"](function (error) {
@@ -2092,7 +2092,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchVehicles: function fetchVehicles() {
       var _this6 = this;
 
-      this.axios.get('/api/totalvehicles').then(function (response) {
+      this.axios.get('/totalvehicles').then(function (response) {
         //  console.log(response.data);
         _this6.vehicles = response.data;
       })["catch"](function (error) {
@@ -2102,7 +2102,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchLoans: function fetchLoans() {
       var _this7 = this;
 
-      this.axios.get('/api/totalloans').then(function (response) {
+      this.axios.get('/totalloans').then(function (response) {
         //  console.log(response.data);
         _this7.loans = response.data;
       })["catch"](function (error) {
@@ -2112,7 +2112,7 @@ __webpack_require__.r(__webpack_exports__);
     currentMonthShares: function currentMonthShares() {
       var _this8 = this;
 
-      this.axios.get('/api/month').then(function (response) {
+      this.axios.get('/month').then(function (response) {
         //  console.log(response.data);
         _this8.month = response.data;
       })["catch"](function (error) {
@@ -2122,7 +2122,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchMonthlyShares: function fetchMonthlyShares() {
       var _this9 = this;
 
-      this.axios.get('/api/monthly').then(function (response) {
+      this.axios.get('/monthly').then(function (response) {
         //  console.log(response.data);
         _this9.monthly = response.data;
       })["catch"](function (error) {
@@ -2130,13 +2130,13 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     downloadShares: function downloadShares() {
-      axios.get('/api/download/shares');
+      axios.get('/download/shares');
     },
     downloadWithdrawalShares: function downloadWithdrawalShares() {
-      axios.get('/api/download/withdraw/shares');
+      axios.get('/download/withdraw/shares');
     },
     monthlySharesDownload: function monthlySharesDownload() {
-      axios.get('/api/monthly/shares');
+      axios.get('/monthly/shares');
     }
   }
 });
@@ -2306,7 +2306,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -2317,7 +2317,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       console.log('Fetching data....');
-      var uri = "/api/guarantor/".concat(this.$route.params.id);
+      var uri = "/guarantor/".concat(this.$route.params.id);
       this.axios.get(uri).then(function (response) {
         //  console.log(response.data);
         _this2.guarantors = response.data;
@@ -2334,7 +2334,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('amount', self.post.amount);
       form.append('date', self.post.date); //let params = Object.assign({}, self.post);
 
-      var url = "/api/guarantor/create/".concat(this.$route.params.id);
+      var url = "/guarantor/create/".concat(this.$route.params.id);
       this.axios.post(url, form).then(function (response) {
         self.allerrors = [];
         self.post.guarantor = '';
@@ -2369,7 +2369,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete record!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/guarantor/delete/".concat(id);
+          var uri = "/guarantor/delete/".concat(id);
 
           _this4.axios["delete"](uri).then(function (response) {
             _this4.guarantors.splice(_this4.guarantors.indexOf(id), 1);
@@ -2505,7 +2505,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/category').then(function (response) {
+      this.axios.get('/category').then(function (response) {
         //  console.log(response.data);
         _this.category = response.data.data;
       })["catch"](function (error) {
@@ -2519,7 +2519,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('amount', self.post.amount);
       form.append('date', self.post.date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/products', form).then(function (response) {
+      axios.post('/products', form).then(function (response) {
         self.allerrors = [];
         self.post.guarantor = '';
         self.post.amount = '';
@@ -2642,7 +2642,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.posts = response.data;
       })["catch"](function (error) {
@@ -2662,7 +2662,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/member/".concat(id);
+          var uri = "/member/".concat(id);
 
           _this2.axios["delete"](uri).then(function (response) {
             //  this.posts.splice(this.posts.indexOf(id), 1);
@@ -2789,7 +2789,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchLoanAmortization: function fetchLoanAmortization() {
       var _this = this;
 
-      var url = "/api/loan/view/".concat(this.$route.params.id);
+      var url = "/loan/view/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this.amortization = response.data;
       });
@@ -2804,7 +2804,7 @@ __webpack_require__.r(__webpack_exports__);
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {// if (result.value) {
-        //   let uri = `/api/member/${id}`;
+        //   let uri = `/member/${id}`;
         //   this.axios.delete(uri).then(response => {
         //       //this.posts.splice(this.posts.indexOf(id), 1);
         //       this.fetchData();
@@ -3011,7 +3011,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      var url = "/api/payloan/".concat(this.$route.params.id);
+      var url = "/payloan/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         //  console.log(response.data);
         _this.loan = response.data;
@@ -3024,7 +3024,7 @@ __webpack_require__.r(__webpack_exports__);
       form = new FormData();
       form.append('amt', self.post.amt); //let params = Object.assign({}, self.post);
 
-      var url = "/api/payloan/".concat(this.$route.params.id);
+      var url = "/payloan/".concat(this.$route.params.id);
       axios.post(url, form).then(function (response) {
         self.allerrors = [];
         self.post.amt = '';
@@ -3128,7 +3128,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.formData = new FormData();
       this.formData.append('file', this.$refs.file.files[0]);
-      var url = "/api/schedule/".concat(this.$route.params.id);
+      var url = "/schedule/".concat(this.$route.params.id);
       axios.post(url, this.formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
@@ -3327,7 +3327,7 @@ __webpack_require__.r(__webpack_exports__);
         duration: '',
         amount: '',
         member: '',
-        rate: ''
+        rate: '1% r.bal'
       },
       allerrors: [] //rowData:[]
 
@@ -3384,7 +3384,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -3402,7 +3402,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('duration', self.post.duration);
       form.append('member', self.post.member); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/loan', form).then(function (response) {
+      axios.post('/loan', form).then(function (response) {
         self.allerrors = [];
         self.post.duration = '';
         self.post.amount = '';
@@ -3583,7 +3583,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -3601,7 +3601,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('member', self.post.member);
       form.append('vehicle_no', self.post.vehicle_no); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/products', form).then(function (response) {
+      axios.post('/products', form).then(function (response) {
         self.allerrors = [];
         self.post.name = '';
         self.post.duration = '';
@@ -3724,7 +3724,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/loan').then(function (response) {
+      this.axios.get('/loan').then(function (response) {
         //  console.log(response.data);
         _this.posts = response.data;
       })["catch"](function (error) {
@@ -3744,7 +3744,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/loan/".concat(id);
+          var uri = "/loan/".concat(id);
 
           _this2.axios["delete"](uri).then(function (response) {
             //this.posts.splice(this.posts.indexOf(id), 1);
@@ -3871,7 +3871,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchLoanAmortization: function fetchLoanAmortization() {
       var _this = this;
 
-      var url = "/api/loan/view/".concat(this.$route.params.id);
+      var url = "/loan/view/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this.amortization = response.data;
       });
@@ -3886,7 +3886,7 @@ __webpack_require__.r(__webpack_exports__);
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {// if (result.value) {
-        //   let uri = `/api/member/${id}`;
+        //   let uri = `/member/${id}`;
         //   this.axios.delete(uri).then(response => {
         //       //this.posts.splice(this.posts.indexOf(id), 1);
         //       this.fetchData();
@@ -4070,7 +4070,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('national_id', self.post.national_id);
       form.append('registration_date', self.post.registration_date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/member', form).then(function (response) {
+      axios.post('/member', form).then(function (response) {
         self.allerrors = [];
         self.post.name = '';
         self.post.number = '';
@@ -4207,7 +4207,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var url = "/api/member/edit/".concat(this.$route.params.id);
+    var url = "/member/edit/".concat(this.$route.params.id);
     this.axios.get(url).then(function (response) {
       console.log(response.data);
       _this.post = response.data;
@@ -4225,7 +4225,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('national_id', self.post.national_id);
       form.append('registration_date', self.post.registration_date); //let params = Object.assign({}, self.post);
 
-      var uri = "/api/member/".concat(this.$route.params.id);
+      var uri = "/member/".concat(this.$route.params.id);
       axios.put(uri, this.post).then(function (response) {
         self.allerrors = [];
         self.post.name = '';
@@ -4362,7 +4362,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.posts = response.data.data;
       })["catch"](function (error) {
@@ -4382,7 +4382,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/member/".concat(id);
+          var uri = "/member/".concat(id);
 
           _this2.axios["delete"](uri).then(function (response) {
             //this.posts.splice(this.posts.indexOf(id), 1);
@@ -4505,7 +4505,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchMemberAmortization: function fetchMemberAmortization() {
       var _this = this;
 
-      var url = "/api/myloan/".concat(this.$route.params.id);
+      var url = "/myloan/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this.amortization = response.data;
       });
@@ -4520,7 +4520,7 @@ __webpack_require__.r(__webpack_exports__);
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {// if (result.value) {
-        //   let uri = `/api/member/${id}`;
+        //   let uri = `/member/${id}`;
         //   this.axios.delete(uri).then(response => {
         //       //this.posts.splice(this.posts.indexOf(id), 1);
         //       this.fetchData();
@@ -4986,7 +4986,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var url = "/api/member/".concat(this.$route.params.id);
+    var url = "/member/".concat(this.$route.params.id);
     this.axios.get(url).then(function (response) {
       _this.post = response.data;
     });
@@ -4995,7 +4995,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchShares: function fetchShares() {
       var _this2 = this;
 
-      var url = "/api/membershares/".concat(this.$route.params.id);
+      var url = "/membershares/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this2.shares = response.data;
       });
@@ -5003,7 +5003,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchWithdrawnShares: function fetchWithdrawnShares() {
       var _this3 = this;
 
-      var url = "/api/memberwithdrawnshares/".concat(this.$route.params.id);
+      var url = "/memberwithdrawnshares/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this3.withdrawnShares = response.data;
       });
@@ -5011,7 +5011,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchLoan: function fetchLoan() {
       var _this4 = this;
 
-      var url = "/api/memberloan/".concat(this.$route.params.id);
+      var url = "/memberloan/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this4.loans = response.data;
       });
@@ -5019,7 +5019,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchDividends: function fetchDividends() {
       var _this5 = this;
 
-      var url = "/api/dividends/".concat(this.$route.params.id);
+      var url = "/dividends/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this5.dividends = response.data;
       });
@@ -5027,21 +5027,21 @@ __webpack_require__.r(__webpack_exports__);
     fetchMonthlyDividends: function fetchMonthlyDividends() {
       var _this6 = this;
 
-      var url = "/api/monthlydividends/".concat(this.$route.params.id);
+      var url = "/monthlydividends/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this6.monthlydividends = response.data;
       });
     },
     downloadIndividualMemberShares: function downloadIndividualMemberShares() {
-      var url = "/api/individual/shares/".concat(this.$route.params.id);
+      var url = "/individual/shares/".concat(this.$route.params.id);
       axios.get(url);
     },
     downloadIndividualMemberLoan: function downloadIndividualMemberLoan(id) {
-      var url = "/api/individual/loan/".concat(this.$route.params.id, "/").concat(id);
+      var url = "/individual/loan/".concat(this.$route.params.id, "/").concat(id);
       axios.get(url);
     },
     downloadIndividualWithdrawnMemberShares: function downloadIndividualWithdrawnMemberShares() {
-      var url = "/api/individual/withdrawn/shares/".concat(this.$route.params.id);
+      var url = "/individual/withdrawn/shares/".concat(this.$route.params.id);
       axios.get(url);
     }
   }
@@ -5231,7 +5231,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this2.members = response.data.data;
       })["catch"](function (error) {
@@ -5242,7 +5242,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this3 = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/share').then(function (response) {
+      this.axios.get('/share').then(function (response) {
         //  console.log(response.data);
         _this3.posts = response.data;
       })["catch"](function (error) {
@@ -5361,7 +5361,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -5375,7 +5375,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('amount', self.post.amount);
       form.append('payment_date', self.post.payment_date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/share', form).then(function (response) {
+      axios.post('/share', form).then(function (response) {
         self.allerrors = [];
         self.post.member_id = '';
         self.post.amount = '';
@@ -5503,7 +5503,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -5517,7 +5517,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('amount', self.post.amount);
       form.append('payment_date', self.post.payment_date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/shares', form).then(function (response) {
+      axios.post('/shares', form).then(function (response) {
         self.allerrors = [];
         self.post.member_no = '';
         self.post.amount = '';
@@ -5633,7 +5633,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/share').then(function (response) {
+      this.axios.get('/share').then(function (response) {
         //  console.log(response.data);
         _this.posts = response.data;
       })["catch"](function (error) {
@@ -5653,7 +5653,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/share/".concat(id);
+          var uri = "/share/".concat(id);
 
           _this2.axios["delete"](uri).then(function (response) {
             _this2.posts.splice(_this2.posts.indexOf(id), 1);
@@ -5827,7 +5827,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchMember: function fetchMember() {
       var _this = this;
 
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -5837,7 +5837,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchWithdrawnShares: function fetchWithdrawnShares() {
       var _this2 = this;
 
-      this.axios.get('/api/sharewithdrawal').then(function (response) {
+      this.axios.get('/sharewithdrawal').then(function (response) {
         // console.log(response.data);
         _this2.withdrawaldata = response.data;
       })["catch"](function (error) {
@@ -5853,7 +5853,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('amount', self.post.amount);
       form.append('payment_date', self.post.payment_date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/share/withdraw', form).then(function (response) {
+      axios.post('/share/withdraw', form).then(function (response) {
         self.allerrors = [];
         self.post.member_id = '';
         self.post.amount = '';
@@ -5883,7 +5883,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/sharewithdrawal/".concat(id);
+          var uri = "/sharewithdrawal/".concat(id);
 
           _this4.axios["delete"](uri).then(function (response) {
             _this4.withdrawaldata.splice(_this4.withdrawaldata.indexOf(id), 1);
@@ -6004,7 +6004,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -6018,7 +6018,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('member_id', self.post.member_id);
       form.append('registration_date', self.post.registration_date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/vehicle', form).then(function (response) {
+      axios.post('/vehicle', form).then(function (response) {
         self.allerrors = [];
         self.post.registration_no = '';
         self.post.member_id = '';
@@ -6146,7 +6146,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/member').then(function (response) {
+      this.axios.get('/member').then(function (response) {
         //  console.log(response.data);
         _this.member = response.data.data;
       })["catch"](function (error) {
@@ -6165,7 +6165,7 @@ __webpack_require__.r(__webpack_exports__);
       form.append('member_no', self.post.member_no);
       form.append('registration_date', self.post.registration_date); //let params = Object.assign({}, self.post);
 
-      axios.post('/api/vehicle', form).then(function (response) {
+      axios.post('/vehicle', form).then(function (response) {
         self.allerrors = [];
         self.post.registration_no = '';
         self.post.member_no = '';
@@ -6275,7 +6275,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log('Fetching data....');
-      this.axios.get('/api/vehicle').then(function (response) {
+      this.axios.get('/vehicle').then(function (response) {
         //  console.log(response.data);
         _this.posts = response.data;
       })["catch"](function (error) {
@@ -6295,7 +6295,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.value) {
-          var uri = "/api/vehicle/".concat(id);
+          var uri = "/vehicle/".concat(id);
 
           _this2.axios["delete"](uri).then(function (response) {
             //this.posts.splice(this.posts.indexOf(id), 1);
@@ -6465,7 +6465,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchShares: function fetchShares() {
       var _this = this;
 
-      var url = "/api/membershares/".concat(this.$route.params.id);
+      var url = "/membershares/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this.shares = response.data;
       });
@@ -6473,7 +6473,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchLoan: function fetchLoan() {
       var _this2 = this;
 
-      var url = "/api/vehicleloan/".concat(this.$route.params.id);
+      var url = "/vehicleloan/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this2.loans = response.data;
       });
@@ -6481,7 +6481,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchVehicle: function fetchVehicle() {
       var _this3 = this;
 
-      var url = "/api/vehicle/".concat(this.$route.params.id);
+      var url = "/vehicle/".concat(this.$route.params.id);
       this.axios.get(url).then(function (response) {
         _this3.post = response.data;
       });
@@ -67430,7 +67430,7 @@ var render = function() {
               _c(
                 "h6",
                 { staticClass: "text-uppercase mt-0 float-left text-white-50" },
-                [_vm._v("Total shares")]
+                [_vm._v("Total deposits")]
               ),
               _vm._v(" "),
               _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
@@ -67463,8 +67463,6 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
       _c("div", { staticClass: "col-xl-3 col-md-6" }, [
         _c("div", { staticClass: "card bg-pink mini-stat text-white" }, [
           _c("div", { staticClass: "p-3 mini-stat-desc" }, [
@@ -67481,7 +67479,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(4)
+          _vm._m(3)
         ])
       ]),
       _vm._v(" "),
@@ -67501,7 +67499,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(5)
+          _vm._m(4)
         ])
       ]),
       _vm._v(" "),
@@ -67512,7 +67510,7 @@ var render = function() {
               _c(
                 "h6",
                 { staticClass: "text-uppercase mt-0 float-left text-white-50" },
-                [_vm._v("This month shares")]
+                [_vm._v("This month deposits")]
               ),
               _vm._v(" "),
               _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
@@ -67521,7 +67519,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(6)
+          _vm._m(5)
         ])
       ])
     ]),
@@ -67531,7 +67529,7 @@ var render = function() {
         _c("div", { staticClass: "card m-b-30" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _vm._v("Latest Shares Trasaction\n                          "),
+              _vm._v("Latest Deposits Trasaction\n                          "),
               _c("span", { staticClass: "float-right" }, [
                 _c(
                   "button",
@@ -67562,7 +67560,7 @@ var render = function() {
                     "table",
                     { staticClass: "table table-hover table-striped" },
                     [
-                      _vm._m(7),
+                      _vm._m(6),
                       _vm._v(" "),
                       _c(
                         "tbody",
@@ -67627,7 +67625,7 @@ var render = function() {
                     "table",
                     { staticClass: "table table-hover table-striped" },
                     [
-                      _vm._m(8),
+                      _vm._m(7),
                       _vm._v(" "),
                       _c(
                         "tbody",
@@ -67698,7 +67696,7 @@ var render = function() {
                     "table",
                     { staticClass: "table table-hover table-striped" },
                     [
-                      _vm._m(9),
+                      _vm._m(8),
                       _vm._v(" "),
                       _c(
                         "tbody",
@@ -67730,7 +67728,9 @@ var render = function() {
         _c("div", { staticClass: "card m-b-20" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _c("b", [_vm._v("Monthly shares (" + _vm._s(_vm.myYear) + ")")]),
+              _c("b", [
+                _vm._v("Monthly deposits (" + _vm._s(_vm.myYear) + ")")
+              ]),
               _vm._v(" "),
               _c("span", { staticClass: "float-right" }, [
                 _c(
@@ -67752,7 +67752,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
               _c("table", { staticClass: "table table-vertical" }, [
-                _vm._m(10),
+                _vm._m(9),
                 _vm._v(" "),
                 _c(
                   "tbody",
@@ -67835,36 +67835,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xl-3 col-md-6" }, [
-      _c("div", { staticClass: "card bg-success mini-stat text-white" }, [
-        _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-          _c("div", { staticClass: "clearfix" }, [
-            _c(
-              "h6",
-              { staticClass: "text-uppercase mt-0 float-left text-white-50" },
-              [_vm._v("Loan payed")]
-            ),
-            _vm._v(" "),
-            _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-              _vm._v("1,587")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "p-3" }, [
-          _c("div", { staticClass: "float-right" }, [
-            _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
-              _c("i", { staticClass: "mdi mdi-cube-outline h5" })
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "p-3" }, [
       _c("div", { staticClass: "float-right" }, [
         _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
@@ -67907,7 +67877,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Member name")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Shares amount")]),
+        _c("th", [_vm._v("Deposit amount")]),
         _vm._v(" "),
         _c("th", [_vm._v("Payment Date")])
       ])
@@ -69773,7 +69743,7 @@ var render = function() {
                             type: "text",
                             id: "rate",
                             autocomplete: "off",
-                            placeholder: ""
+                            disabled: ""
                           },
                           domProps: { value: _vm.post.rate },
                           on: {
@@ -70327,7 +70297,7 @@ var render = function() {
                 [
                   _c(
                     "table",
-                    { staticClass: "table table-hover table-striped" },
+                    { staticClass: "table table-xs table-hover table-striped" },
                     [
                       _vm._m(1),
                       _vm._v(" "),
@@ -71982,7 +71952,7 @@ var render = function() {
               _c(
                 "h6",
                 { staticClass: "text-uppercase mt-0 float-left text-white-80" },
-                [_vm._v("Withdrawn Shares")]
+                [_vm._v("Withdrawn Deposits")]
               ),
               _vm._v(" "),
               _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
@@ -71994,24 +71964,6 @@ var render = function() {
           ]),
           _vm._v(" "),
           _vm._m(3)
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card bg-warning mini-stat text-white" }, [
-          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-            _c("div", { staticClass: "clearfix" }, [
-              _c(
-                "h6",
-                { staticClass: "text-uppercase mt-0 float-left text-white-80" },
-                [_vm._v("Loan paid")]
-              ),
-              _vm._v(" "),
-              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-                _vm._v(_vm._s(_vm._f("formatNumber")(_vm.totalLoan)))
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _vm._m(4)
         ])
       ]),
       _vm._v(" "),
@@ -72031,25 +71983,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(5)
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card bg-info mini-stat text-white" }, [
-          _c("div", { staticClass: "p-3 mini-stat-desc" }, [
-            _c("div", { staticClass: "clearfix" }, [
-              _c(
-                "h6",
-                { staticClass: "text-uppercase mt-0 float-left text-white-80" },
-                [_vm._v("Dividends this year")]
-              ),
-              _vm._v(" "),
-              _c("h4", { staticClass: "mb-3 mt-0 float-right" }, [
-                _vm._v(_vm._s(_vm._f("formatNumber")(this.dividends)))
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _vm._m(6)
+          _vm._m(4)
         ])
       ]),
       _vm._v(" "),
@@ -72090,7 +72024,7 @@ var render = function() {
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _vm._v("Shares Trasaction\n                            "),
+              _vm._v("Deposits Trasaction\n                            "),
               _c("span", { staticClass: "float-right" }, [
                 _c(
                   "button",
@@ -72111,7 +72045,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
               _c("table", { staticClass: "table table-striped" }, [
-                _vm._m(7),
+                _vm._m(5),
                 _vm._v(" "),
                 _c(
                   "tbody",
@@ -72132,7 +72066,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("tr", [
-                  _vm._m(8),
+                  _vm._m(6),
                   _vm._v(" "),
                   _c(
                     "td",
@@ -72162,7 +72096,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
               _c("table", { staticClass: "table table-striped" }, [
-                _vm._m(9),
+                _vm._m(7),
                 _vm._v(" "),
                 _c(
                   "tbody",
@@ -72262,7 +72196,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
               _c("table", { staticClass: "table table-striped" }, [
-                _vm._m(10),
+                _vm._m(8),
                 _vm._v(" "),
                 _c(
                   "tbody",
@@ -72283,7 +72217,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("tr", [
-                  _vm._m(11),
+                  _vm._m(9),
                   _vm._v(" "),
                   _c(
                     "td",
@@ -72312,14 +72246,16 @@ var render = function() {
         _c("div", { staticClass: "card m-b-20" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title mb-4" }, [
-              _c("b", [_vm._v("Monthly shares (" + _vm._s(_vm.myYear) + ")")]),
+              _c("b", [
+                _vm._v("Monthly deposits (" + _vm._s(_vm.myYear) + ")")
+              ]),
               _vm._v(" "),
               _c("span", { staticClass: "float-right" })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive" }, [
               _c("table", { staticClass: "table table-vertical" }, [
-                _vm._m(12),
+                _vm._m(10),
                 _vm._v(" "),
                 _c(
                   "tbody",
@@ -72362,30 +72298,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-8" }, [
       _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Member Details")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "p-3" }, [
-      _c("div", { staticClass: "float-right" }, [
-        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "mdi mdi-briefcase-check h5" })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "p-3" }, [
-      _c("div", { staticClass: "float-right" }, [
-        _c("a", { staticClass: "text-white-50", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "mdi mdi-briefcase-check h5" })
-        ])
-      ])
     ])
   },
   function() {
@@ -72823,7 +72735,7 @@ var render = function() {
                 _c(
                   "router-link",
                   { staticClass: "btn btn-primary", attrs: { to: "/share" } },
-                  [_vm._v("Shares list")]
+                  [_vm._v("Deposit list")]
                 )
               ],
               1
@@ -72838,7 +72750,7 @@ var render = function() {
         _c("div", { staticClass: "card m-b-30" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title" }, [
-              _vm._v("Add shares")
+              _vm._v("Add deposit")
             ]),
             _vm._v(" "),
             _c(
@@ -73018,7 +72930,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-8" }, [
-      _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Shares")])
+      _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Deposit")])
     ])
   },
   function() {
@@ -73378,7 +73290,7 @@ var render = function() {
                       staticClass: "btn btn-primary",
                       attrs: { to: "/share/create" }
                     },
-                    [_vm._v("Add shares")]
+                    [_vm._v("Add deposit")]
                   )
                 ],
                 1
@@ -73431,36 +73343,18 @@ var render = function() {
                               )
                             ]),
                             _vm._v(" "),
-                            _c(
-                              "td",
-                              [
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass: "btn btn-primary btn-sm",
-                                    attrs: {
-                                      to: {
-                                        name: "share_edit",
-                                        params: { id: p.id }
-                                      }
-                                    }
-                                  },
-                                  [_vm._v("Edit")]
-                                ),
-                                _vm._v(" "),
-                                _c("input", {
-                                  staticClass: "btn btn-danger btn-sm",
-                                  attrs: { type: "submit", value: "Delete" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.disable(p.id)
-                                    }
+                            _c("td", [
+                              _c("input", {
+                                staticClass: "btn btn-danger btn-sm",
+                                attrs: { type: "submit", value: "Delete" },
+                                on: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.disable(p.id)
                                   }
-                                })
-                              ],
-                              1
-                            )
+                                }
+                              })
+                            ])
                           ])
                         }),
                         0
@@ -73482,7 +73376,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-8" }, [
-      _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Shares")])
+      _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Deposit")])
     ])
   },
   function() {
@@ -73495,7 +73389,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Member name")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Shares amount")]),
+        _c("th", [_vm._v("Deposit amount")]),
         _vm._v(" "),
         _c("th", [_vm._v("Payment Date")]),
         _vm._v(" "),
@@ -73541,7 +73435,7 @@ var render = function() {
                 _c(
                   "router-link",
                   { staticClass: "btn btn-primary", attrs: { to: "/share" } },
-                  [_vm._v("Shares list")]
+                  [_vm._v("Deposit list")]
                 )
               ],
               1
@@ -73556,7 +73450,7 @@ var render = function() {
         _c("div", { staticClass: "card m-b-30" }, [
           _c("div", { staticClass: "card-body" }, [
             _c("h4", { staticClass: "mt-0 header-title" }, [
-              _vm._v("Withdraw shares")
+              _vm._v("Withdraw deposits")
             ]),
             _vm._v(" "),
             _c(
@@ -73794,7 +73688,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-8" }, [
-      _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Withdraw Shares")])
+      _c("h4", { staticClass: "page-title mt-3" }, [_vm._v("Withdraw Deposit")])
     ])
   },
   function() {
@@ -89828,99 +89722,99 @@ var routes = [{
   component: _components_Dashboard_vue__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
   name: 'member_create',
-  path: '/member/create',
+  path: '/admin/member/create',
   component: _components_Members_Create_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
 }, {
   name: 'member',
-  path: '/member',
+  path: '/admin/member',
   component: _components_Members_Index_vue__WEBPACK_IMPORTED_MODULE_14__["default"]
 }, {
   name: 'member_edit',
-  path: '/member/edit/:id',
+  path: '/admin/member/edit/:id',
   component: _components_Members_Edit_vue__WEBPACK_IMPORTED_MODULE_13__["default"]
 }, {
   name: 'member_show',
-  path: '/member/:id',
+  path: '/admin/member/:id',
   component: _components_Members_Show_vue__WEBPACK_IMPORTED_MODULE_15__["default"]
 }, {
   name: 'vehicle_create',
-  path: '/vehicle/create',
+  path: '/admin/vehicle/create',
   component: _components_Vehicles_Create_vue__WEBPACK_IMPORTED_MODULE_16__["default"]
 }, {
   name: 'vehicle',
-  path: '/vehicle',
+  path: '/admin/vehicle',
   component: _components_Vehicles_Index_vue__WEBPACK_IMPORTED_MODULE_18__["default"]
 }, {
   name: 'vehicle_edit',
-  path: '/vehicle/edit/:id',
+  path: '/admin/vehicle/edit/:id',
   component: _components_Vehicles_Edit_vue__WEBPACK_IMPORTED_MODULE_17__["default"]
 }, {
   name: 'vehicle_show',
-  path: '/vehicle/:id',
+  path: '/admin/vehicle/:id',
   component: _components_Vehicles_Show_vue__WEBPACK_IMPORTED_MODULE_19__["default"]
 }, {
   name: 'loan_create',
-  path: '/loan/create',
+  path: '/admin/loan/create',
   component: _components_Loans_Create_vue__WEBPACK_IMPORTED_MODULE_20__["default"]
 }, {
   name: 'loan',
-  path: '/loan',
+  path: '/admin/loan',
   component: _components_Loans_Index_vue__WEBPACK_IMPORTED_MODULE_22__["default"]
 }, {
   name: 'loan_edit',
-  path: '/loan/edit/:id',
+  path: '/admin/loan/edit/:id',
   component: _components_Loans_Edit_vue__WEBPACK_IMPORTED_MODULE_21__["default"]
 }, {
   name: 'loan_show',
-  path: '/loan/view/:name/:no/:id',
+  path: '/admin/loan/view/:name/:no/:id',
   component: _components_Loans_Show_vue__WEBPACK_IMPORTED_MODULE_23__["default"]
 }, {
   name: 'view_member_loan',
-  path: '/myloan/:id',
+  path: '/admin/myloan/:id',
   component: _components_Members_MyLoan_vue__WEBPACK_IMPORTED_MODULE_24__["default"]
 }, {
   name: 'amortization',
-  path: '/amortization/:id',
+  path: '/admin/amortization/:id',
   component: _components_Loans_Amortization_vue__WEBPACK_IMPORTED_MODULE_26__["default"]
 }, {
   name: 'loan_pay',
-  path: '/payloan/:id',
+  path: '/admin/payloan/:id',
   component: _components_LoanPayment_PayLoan_vue__WEBPACK_IMPORTED_MODULE_25__["default"]
 }, {
   name: 'share_create',
-  path: '/share/create',
+  path: '/admin/share/create',
   component: _components_Shares_Create_vue__WEBPACK_IMPORTED_MODULE_27__["default"]
 }, {
   name: 'share',
-  path: '/share',
+  path: '/admin/share',
   component: _components_Shares_Index_vue__WEBPACK_IMPORTED_MODULE_29__["default"]
 }, {
   name: 'share_edit',
-  path: '/share/edit/:id',
+  path: '/admin/share/edit/:id',
   component: _components_Shares_Edit_vue__WEBPACK_IMPORTED_MODULE_28__["default"]
 }, {
   name: 'sharereport',
-  path: '/share/report',
+  path: '/admin/share/report',
   component: _components_Report_ShareReport_vue__WEBPACK_IMPORTED_MODULE_35__["default"]
 }, {
   name: 'sharewithdraw',
-  path: '/share/withdraw',
+  path: '/admin/share/withdraw',
   component: _components_Shares_Withdraw_vue__WEBPACK_IMPORTED_MODULE_30__["default"]
 }, {
   name: 'guarantor_create',
-  path: '/guarantor/create/:name/:id',
+  path: '/admin/guarantor/create/:name/:id',
   component: _components_Guarantors_Create_vue__WEBPACK_IMPORTED_MODULE_31__["default"]
 }, {
   name: 'guarantor',
-  path: 'guarantorn',
+  path: '/admin/guarantor',
   component: _components_Guarantors_Index_vue__WEBPACK_IMPORTED_MODULE_33__["default"]
 }, {
   name: 'guarantor_edit',
-  path: '/guarantor/edit/:id',
+  path: '/admin/guarantor/edit/:id',
   component: _components_Guarantors_Edit_vue__WEBPACK_IMPORTED_MODULE_32__["default"]
 }, {
   name: 'guarantor_show',
-  path: '/guarantor/:id',
+  path: '/admin/guarantor/:id',
   component: _components_Guarantors_Show_vue__WEBPACK_IMPORTED_MODULE_34__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({

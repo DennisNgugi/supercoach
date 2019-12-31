@@ -98,7 +98,7 @@ export default {
     methods: {
 
       fetchMemberAmortization:function(){
-        let url = `/api/myloan/${this.$route.params.id}`;
+        let url = `/myloan/${this.$route.params.id}`;
         this.axios.get(url)
             .then((response) => {
                 this.amortization = response.data;
@@ -116,7 +116,7 @@ export default {
             }).then((result) => {
 
                 // if (result.value) {
-                //   let uri = `/api/member/${id}`;
+                //   let uri = `/member/${id}`;
                 //   this.axios.delete(uri).then(response => {
                 //       //this.posts.splice(this.posts.indexOf(id), 1);
                 //       this.fetchData();

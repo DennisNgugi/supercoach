@@ -100,7 +100,7 @@ export default {
         }
     },
       created(){
-        let url = `/api/member/edit/${this.$route.params.id}`
+        let url = `/member/edit/${this.$route.params.id}`
         this.axios.get(url).then((response) => {
           console.log(response.data);
           this.post = response.data;
@@ -124,7 +124,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            let uri = `/api/member/${this.$route.params.id}`;
+            let uri = `/member/${this.$route.params.id}`;
             axios.put(uri, this.post)
                 .then((response) => {
                     self.allerrors = [];

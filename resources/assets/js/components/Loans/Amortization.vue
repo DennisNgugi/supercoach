@@ -75,7 +75,7 @@ methods:{
 upload() {
     this.formData = new FormData();
     this.formData.append('file', this.$refs.file.files[0]);
-    let url = `/api/schedule/${this.$route.params.id}`;
+    let url = `/schedule/${this.$route.params.id}`;
     axios.post(url, this.formData, {
         headers: {
             'Content-Type': 'multipart/form-data'

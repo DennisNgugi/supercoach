@@ -167,7 +167,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/member', form)
+            axios.post('/member', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.name = '';

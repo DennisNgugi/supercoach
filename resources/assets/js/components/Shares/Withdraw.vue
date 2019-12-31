@@ -5,10 +5,10 @@
             <div class="page-title-box">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h4 class="page-title mt-3">Withdraw Shares</h4>
+                        <h4 class="page-title mt-3">Withdraw Deposit</h4>
                     </div>
                     <div class="col-md-4">
-                      <router-link class="btn btn-primary"to="/share">Shares list</router-link>
+                      <router-link class="btn btn-primary"to="/share">Deposit list</router-link>
 
                     </div>
                 </div>
@@ -19,7 +19,7 @@
         <div class="col-12">
             <div class="card m-b-30">
                 <div class="card-body">
-                    <h4 class="mt-0 header-title">Withdraw shares</h4>
+                    <h4 class="mt-0 header-title">Withdraw deposits</h4>
                     <!-- <p class="text-muted m-b-30 font-14">Here are examples of </p> -->
                     <form @submit.prevent="add" enctype="multipart/form-data">
 
@@ -148,7 +148,7 @@ export default {
         fetchMember: function() {
 
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.member = response.data.data;
             }).catch((error) => {
@@ -158,7 +158,7 @@ export default {
         fetchWithdrawnShares: function() {
 
 
-            this.axios.get('/api/sharewithdrawal').then((response) => {
+            this.axios.get('/sharewithdrawal').then((response) => {
                 // console.log(response.data);
                 this.withdrawaldata = response.data;
             }).catch((error) => {
@@ -180,7 +180,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/share/withdraw', form)
+            axios.post('/share/withdraw', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.member_id = '';
@@ -211,7 +211,7 @@ export default {
             }).then((result) => {
 
                 if (result.value) {
-                  let uri = `/api/sharewithdrawal/${id}`;
+                  let uri = `/sharewithdrawal/${id}`;
                   this.axios.delete(uri).then(response => {
                       this.withdrawaldata.splice(this.withdrawaldata.indexOf(id), 1);
                       this.fetchData();

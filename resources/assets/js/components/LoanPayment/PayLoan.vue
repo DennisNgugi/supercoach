@@ -182,7 +182,7 @@ export default {
 
 fetchLoanInformation: function() {
             console.log('Fetching data....');
-              let url = `/api/payloan/${this.$route.params.id}`;
+              let url = `/payloan/${this.$route.params.id}`;
             this.axios.get(url).then((response) => {
                 //  console.log(response.data);
                 this.loan = response.data;
@@ -201,7 +201,7 @@ fetchLoanInformation: function() {
 
 
             //let params = Object.assign({}, self.post);
-              let url = `/api/payloan/${this.$route.params.id}`;
+              let url = `/payloan/${this.$route.params.id}`;
             axios.post(url, form)
                 .then((response) => {
                     self.allerrors = [];

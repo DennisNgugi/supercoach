@@ -66,7 +66,7 @@
                   <div class="card bg-secondary mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
-                              <h6 class="text-uppercase mt-0 float-left text-white-80">Withdrawn Shares</h6>
+                              <h6 class="text-uppercase mt-0 float-left text-white-80">Withdrawn Deposits</h6>
                               <h4 class="mb-3 mt-0 float-right">{{totalWithdrawanShares|formatNumber}}</h4>
                           </div>
                       </div>
@@ -75,7 +75,7 @@
 
                       </div>
                   </div>
-                  <div class="card bg-warning mini-stat text-white">
+                  <!-- <div class="card bg-warning mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
                               <h6 class="text-uppercase mt-0 float-left text-white-80">Loan paid</h6>
@@ -86,7 +86,7 @@
                           <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a></div>
 
                       </div>
-                  </div>
+                  </div> -->
               </div>
 
 
@@ -103,7 +103,7 @@
 
                       </div>
                   </div>
-                  <div class="card bg-info mini-stat text-white">
+                  <!-- <div class="card bg-info mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
                               <h6 class="text-uppercase mt-0 float-left text-white-80">Dividends this year</h6>
@@ -114,7 +114,7 @@
                           <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a></div>
 
                       </div>
-                  </div>
+                  </div> -->
 
               </div>
 
@@ -142,7 +142,7 @@
               <div class="col-xl-4">
                   <div class="card">
                       <div class="card-body">
-                          <h4 class="mt-0 header-title mb-4">Shares Trasaction
+                          <h4 class="mt-0 header-title mb-4">Deposits Trasaction
                             <span class="float-right">
                               <button type="button" @click.prevent="downloadIndividualMemberShares" class="btn btn-secondary btn-sm" name="button">Download report</button>
                             </span>
@@ -318,7 +318,7 @@
               <div class="col-xl-5">
                 <div class="card m-b-20">
                   <div class="card-body">
-                      <h4 class="mt-0 header-title mb-4"><b>Monthly shares ({{myYear}})</b>
+                      <h4 class="mt-0 header-title mb-4"><b>Monthly deposits ({{myYear}})</b>
                         <span class="float-right">
                           <!-- <button type="button" @click.prevent="monthlyDividendsDownload" class="btn btn-secondary btn-sm" name="button">Download report</button> -->
                         </span>
@@ -445,7 +445,7 @@ export default {
   },
 
   created() {
-      let url = `/api/member/${this.$route.params.id}`;
+      let url = `/member/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.post = response.data;
@@ -455,50 +455,50 @@ export default {
   methods:{
 
     fetchShares:function(){
-      let url = `/api/membershares/${this.$route.params.id}`;
+      let url = `/membershares/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.shares = response.data;
           });
     },
     fetchWithdrawnShares:function(){
-      let url = `/api/memberwithdrawnshares/${this.$route.params.id}`;
+      let url = `/memberwithdrawnshares/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.withdrawnShares = response.data;
           });
     },
     fetchLoan:function(){
-      let url = `/api/memberloan/${this.$route.params.id}`;
+      let url = `/memberloan/${this.$route.params.id}`;
       this.axios.get(url)
           .then((response) => {
               this.loans = response.data;
           });
   },
   fetchDividends:function(){
-    let url = `/api/dividends/${this.$route.params.id}`;
+    let url = `/dividends/${this.$route.params.id}`;
     this.axios.get(url)
         .then((response) => {
             this.dividends = response.data;
         });
 },
 fetchMonthlyDividends:function(){
-  let url = `/api/monthlydividends/${this.$route.params.id}`;
+  let url = `/monthlydividends/${this.$route.params.id}`;
   this.axios.get(url)
       .then((response) => {
           this.monthlydividends = response.data;
       });
 },
   downloadIndividualMemberShares:function(){
-    let url = `/api/individual/shares/${this.$route.params.id}`;
+    let url = `/individual/shares/${this.$route.params.id}`;
     axios.get(url)
   },
   downloadIndividualMemberLoan:function(id){
-    let url = `/api/individual/loan/${this.$route.params.id}/${id}`;
+    let url = `/individual/loan/${this.$route.params.id}/${id}`;
     axios.get(url)
   },
   downloadIndividualWithdrawnMemberShares:function(){
-    let url = `/api/individual/withdrawn/shares/${this.$route.params.id}`;
+    let url = `/individual/withdrawn/shares/${this.$route.params.id}`;
     axios.get(url)
   },
   }

@@ -5,10 +5,10 @@
             <div class="page-title-box">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h4 class="page-title mt-3">Shares</h4>
+                        <h4 class="page-title mt-3">Deposit</h4>
                     </div>
                     <div class="col-md-4">
-                      <router-link class="btn btn-primary"to="/share">Shares list</router-link>
+                      <router-link class="btn btn-primary"to="/share">Deposit list</router-link>
 
                     </div>
                 </div>
@@ -19,7 +19,7 @@
         <div class="col-12">
             <div class="card m-b-30">
                 <div class="card-body">
-                    <h4 class="mt-0 header-title">Add shares</h4>
+                    <h4 class="mt-0 header-title">Add deposit</h4>
                     <!-- <p class="text-muted m-b-30 font-14">Here are examples of </p> -->
                     <form @submit.prevent="add" enctype="multipart/form-data">
 
@@ -103,7 +103,7 @@ export default {
         fetchMember: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.member = response.data.data;
             }).catch((error) => {
@@ -125,7 +125,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/share', form)
+            axios.post('/share', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.member_id = '';

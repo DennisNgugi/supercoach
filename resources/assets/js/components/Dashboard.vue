@@ -18,7 +18,7 @@
                   <div class="card bg-primary mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
-                              <h6 class="text-uppercase mt-0 float-left text-white-50">Total shares</h6>
+                              <h6 class="text-uppercase mt-0 float-left text-white-50">Total deposits</h6>
                               <h4 class="mb-3 mt-0 float-right">{{this.shares | formatNumber}}</h4>
                           </div>
                           <!-- <div><span class="badge badge-light text-info">+11% </span><span class="ml-2">From previous period</span></div> -->
@@ -44,21 +44,21 @@
                       </div>
                   </div>
               </div>
-              <div class="col-xl-3 col-md-6">
+              <!-- <div class="col-xl-3 col-md-6">
                   <div class="card bg-success mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
                               <h6 class="text-uppercase mt-0 float-left text-white-50">Loan payed</h6>
                               <h4 class="mb-3 mt-0 float-right">1,587</h4>
                           </div>
-                          <!-- <div><span class="badge badge-light text-info">+11% </span><span class="ml-2">From previous period</span></div> -->
+                          <!-- <div><span class="badge badge-light text-info">+11% </span><span class="ml-2">From previous period</span></div>
                       </div>
                       <div class="p-3">
                           <div class="float-right"><a href="#" class="text-white-50"><i class="mdi mdi-cube-outline h5"></i></a></div>
-                          <!-- <p class="font-14 m-0">Last : 1447</p> -->
+                          <!-- <p class="font-14 m-0">Last : 1447</p>
                       </div>
                   </div>
-              </div>
+              </div> -->
               <div class="col-xl-3 col-md-6">
                   <div class="card bg-pink mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
@@ -95,7 +95,7 @@
                   <div class="card bg-warning mini-stat text-white">
                       <div class="p-3 mini-stat-desc">
                           <div class="clearfix">
-                              <h6 class="text-uppercase mt-0 float-left text-white-50">This month shares</h6>
+                              <h6 class="text-uppercase mt-0 float-left text-white-50">This month deposits</h6>
                               <h4 class="mb-3 mt-0 float-right">{{this.month}}</h4>
                           </div>
                           <!-- <div><span class="badge badge-light text-info">+11% </span><span class="ml-2">From previous period</span></div> -->
@@ -112,7 +112,7 @@
               <div class="col-xl-4 col-md-6">
                   <div class="card m-b-30">
                       <div class="card-body">
-                        <h4 class="mt-0 header-title mb-4">Latest Shares Trasaction
+                        <h4 class="mt-0 header-title mb-4">Latest Deposits Trasaction
                           <span class="float-right">
                             <button type="button" @click.prevent="downloadShares" class="btn btn-secondary btn-sm" name="button">Download report</button>
                           </span>
@@ -125,7 +125,7 @@
                                       <th>#</th>
                                       <th>Member name</th>
 
-                                      <th>Shares amount</th>
+                                      <th>Deposit amount</th>
 
                                       <th>Payment Date</th>
 
@@ -251,7 +251,7 @@
             <div class="col-xl-5 col-md-6">
                 <div class="card m-b-20">
                   <div class="card-body">
-                      <h4 class="mt-0 header-title mb-4"><b>Monthly shares ({{myYear}})</b>
+                      <h4 class="mt-0 header-title mb-4"><b>Monthly deposits ({{myYear}})</b>
                         <span class="float-right">
                           <button type="button" @click.prevent="monthlySharesDownload" class="btn btn-secondary btn-sm" name="button">Download report</button>
                         </span>
@@ -342,7 +342,7 @@
         methods:{
           fetchShares: function() {
 
-              this.axios.get('/api/totalshares').then((response) => {
+              this.axios.get('/totalshares').then((response) => {
                     //console.log(response.data);
                   this.shares = response.data;
 
@@ -353,7 +353,7 @@
           fetchSharesList: function() {
               console.log('Fetching data....');
 
-              this.axios.get('/api/dashboardshares').then((response) => {
+              this.axios.get('/dashboardshares').then((response) => {
                   //  console.log(response.data);
                   this.sharesdata = response.data;
               }).catch((error) => {
@@ -363,7 +363,7 @@
           fetchWithdrawnSharesList: function() {
               console.log('Fetching data....');
 
-              this.axios.get('/api/dashboardwithdrawalshares').then((response) => {
+              this.axios.get('/dashboardwithdrawalshares').then((response) => {
                   //  console.log(response.data);
                   this.withdrawdata = response.data;
               }).catch((error) => {
@@ -373,7 +373,7 @@
           fetchLoansList: function() {
               console.log('Fetching data....');
 
-              this.axios.get('/api/dashboardloans').then((response) => {
+              this.axios.get('/dashboardloans').then((response) => {
                   //  console.log(response.data);
                   this.loansdata = response.data;
               }).catch((error) => {
@@ -382,7 +382,7 @@
           },
           fetchMembers: function() {
 
-              this.axios.get('/api/totalmembers').then((response) => {
+              this.axios.get('/totalmembers').then((response) => {
                   //  console.log(response.data);
                   this.members = response.data;
               }).catch((error) => {
@@ -391,7 +391,7 @@
           },
           fetchVehicles: function() {
 
-              this.axios.get('/api/totalvehicles').then((response) => {
+              this.axios.get('/totalvehicles').then((response) => {
                   //  console.log(response.data);
                   this.vehicles = response.data;
               }).catch((error) => {
@@ -400,7 +400,7 @@
           },
           fetchLoans: function() {
 
-              this.axios.get('/api/totalloans').then((response) => {
+              this.axios.get('/totalloans').then((response) => {
                   //  console.log(response.data);
                   this.loans = response.data;
               }).catch((error) => {
@@ -409,7 +409,7 @@
           },
           currentMonthShares: function() {
 
-              this.axios.get('/api/month').then((response) => {
+              this.axios.get('/month').then((response) => {
                   //  console.log(response.data);
                   this.month = response.data;
               }).catch((error) => {
@@ -418,7 +418,7 @@
           },
           fetchMonthlyShares: function() {
 
-              this.axios.get('/api/monthly').then((response) => {
+              this.axios.get('/monthly').then((response) => {
                   //  console.log(response.data);
                   this.monthly = response.data;
               }).catch((error) => {
@@ -426,13 +426,13 @@
               })
           },
           downloadShares:function(){
-            axios.get('/api/download/shares')
+            axios.get('/download/shares')
           },
           downloadWithdrawalShares:function(){
-            axios.get('/api/download/withdraw/shares')
+            axios.get('/download/withdraw/shares')
           },
           monthlySharesDownload:function(){
-            axios.get('/api/monthly/shares')
+            axios.get('/monthly/shares')
           }
 
 

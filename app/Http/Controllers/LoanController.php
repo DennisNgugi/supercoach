@@ -46,7 +46,7 @@ class LoanController extends Controller
 
       $request->validate([
         'amount' => 'required|integer',
-        'rate' => 'required|integer',
+    
         'date'=>'required|date',
         'duration'=> 'required|integer',
         'member' => 'required',

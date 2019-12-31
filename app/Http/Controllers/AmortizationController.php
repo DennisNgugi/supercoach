@@ -55,8 +55,16 @@ class AmortizationController extends Controller
           //  $insert_data[] = array(
             $amort = new Amortization;
               $amort->loan_id = $loan->id;
-              $amort->instalment = $row['instalment'];
-              $amort->payment_date = Carbon::parse($row['payment'])->toDateTimeString();
+              if($amort->instalment == '' ){
+                $amort->instalment = '';
+              }else{
+                $amort->instalment = Carbon::parse($row['instalment'])->toDateTimeString();
+              }
+              if($amort->payment_date == '' ){
+                $amort->payment_date = '';
+              }else{
+                $amort->payment_date = Carbon::parse($row['payment'])->toDateTimeString();
+              }
               $amort->principal = $row['principal'];
               $amort->interest = $row['interest'];
               $amort->penalty = $row['penalty'];

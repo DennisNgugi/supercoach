@@ -106,124 +106,124 @@ const routes = [
   },
   {
       name: 'member_create',
-      path: '/member/create',
+      path: '/admin/member/create',
       component: MemberCreate
   },
   {
       name: 'member',
-      path: '/member',
+      path: '/admin/member',
       component: MemberIndex
   },
   {
       name: 'member_edit',
-      path: '/member/edit/:id',
+      path: '/admin/member/edit/:id',
       component: MemberEdit
   },
   {
       name: 'member_show',
-      path: '/member/:id',
+      path: '/admin/member/:id',
       component: MemberShow
   },
 
   {
       name: 'vehicle_create',
-      path: '/vehicle/create',
+      path: '/admin/vehicle/create',
       component: VehicleCreate
   },
   {
       name: 'vehicle',
-      path: '/vehicle',
+      path: '/admin/vehicle',
       component: VehicleIndex
   },
   {
       name: 'vehicle_edit',
-      path: '/vehicle/edit/:id',
+      path: '/admin/vehicle/edit/:id',
       component: VehicleEdit
   },
   {
       name: 'vehicle_show',
-      path: '/vehicle/:id',
+      path: '/admin/vehicle/:id',
       component: VehicleShow
   },
   {
       name: 'loan_create',
-      path: '/loan/create',
+      path: '/admin/loan/create',
       component: LoanCreate
   },
   {
       name: 'loan',
-      path: '/loan',
+      path: '/admin/loan',
       component: LoanIndex
   },
   {
       name: 'loan_edit',
-      path: '/loan/edit/:id',
+      path: '/admin/loan/edit/:id',
       component: LoanEdit
   },
   {
       name: 'loan_show',
-      path: '/loan/view/:name/:no/:id',
+      path: '/admin/loan/view/:name/:no/:id',
       component: LoanShow
   },
   {
       name: 'view_member_loan',
-      path: '/myloan/:id',
+      path: '/admin/myloan/:id',
       component: MyLoan
   },
   {
       name: 'amortization',
-      path: '/amortization/:id',
+      path: '/admin/amortization/:id',
       component: Amortization
   },
   {
       name: 'loan_pay',
-      path: '/payloan/:id',
+      path: '/admin/payloan/:id',
       component: LoanPay
   },
   {
       name: 'share_create',
-      path: '/share/create',
+      path: '/admin/share/create',
       component: ShareCreate
   },
   {
       name: 'share',
-      path: '/share',
+      path: '/admin/share',
       component: ShareIndex
   },
   {
       name: 'share_edit',
-      path: '/share/edit/:id',
+      path: '/admin/share/edit/:id',
       component: ShareEdit
   },
 
   {
       name: 'sharereport',
-      path: '/share/report',
+      path: '/admin/share/report',
       component: ShareReport
   },
   {
       name: 'sharewithdraw',
-      path: '/share/withdraw',
+      path: '/admin/share/withdraw',
       component: ShareWithdraw
   },
   {
       name: 'guarantor_create',
-      path: '/guarantor/create/:name/:id',
+      path: '/admin/guarantor/create/:name/:id',
       component:  GuarantorCreate
   },
   {
       name: 'guarantor',
-      path: 'guarantorn',
+      path: '/admin/guarantor',
       component:  GuarantorIndex
   },
   {
       name: 'guarantor_edit',
-      path: '/guarantor/edit/:id',
+      path: '/admin/guarantor/edit/:id',
       component:  GuarantorEdit
   },
   {
       name: 'guarantor_show',
-      path: '/guarantor/:id',
+      path: '/admin/guarantor/:id',
       component:  GuarantorShow
   },
 ];

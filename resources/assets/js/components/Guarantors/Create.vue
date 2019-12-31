@@ -158,7 +158,7 @@ export default {
         fetchMember: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.member = response.data.data;
             }).catch((error) => {
@@ -168,7 +168,7 @@ export default {
 
                 fetchGuarantor: function() {
                     console.log('Fetching data....');
-                    let uri = `/api/guarantor/${this.$route.params.id}`;
+                    let uri = `/guarantor/${this.$route.params.id}`;
                     this.axios.get(uri).then((response) => {
                         //  console.log(response.data);
                         this.guarantors = response.data;
@@ -187,7 +187,7 @@ export default {
             form.append('date', self.post.date);
 
             //let params = Object.assign({}, self.post);
-            let url = `/api/guarantor/create/${this.$route.params.id}`;
+            let url = `/guarantor/create/${this.$route.params.id}`;
             this.axios.post(url, form)
                 .then((response) => {
                     self.allerrors = [];
@@ -223,7 +223,7 @@ export default {
             }).then((result) => {
 
                 if (result.value) {
-                  let uri = `/api/guarantor/delete/${id}`;
+                  let uri = `/guarantor/delete/${id}`;
                   this.axios.delete(uri).then(response => {
                       this.guarantors.splice(this.guarantors.indexOf(id), 1);
                       this.fetchGuarantor();

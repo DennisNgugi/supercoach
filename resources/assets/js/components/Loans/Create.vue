@@ -71,7 +71,7 @@
                         <div :class="['form-group row',allerrors.rate ? 'has-error' : '']">
                             <label class="col-sm-2 col-form-label">Interest rate per month</label>
                             <div class="col-sm-10">
-                                <input type="text" id="rate" autocomplete="off" v-model="post.rate" class="form-control" placeholder="">
+                                <input type="text" id="rate" autocomplete="off" v-model="post.rate" disabled class="form-control" >
                                 <span v-if="allerrors.rate" :class="['label label-danger']"><p style="color:red;">{{ allerrors.rate[0]}}</p></span>
 
                             </div>
@@ -161,7 +161,7 @@ export default {
                 amount: '',
 
                 member: '',
-                rate:''
+                rate:'1% r.bal'
             },
             allerrors: [],
             //rowData:[]
@@ -221,7 +221,7 @@ export default {
         fetchMember: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.member = response.data.data;
             }).catch((error) => {
@@ -243,7 +243,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/loan', form)
+            axios.post('/loan', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.duration = '';

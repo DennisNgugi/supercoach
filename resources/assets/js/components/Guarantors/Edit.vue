@@ -111,7 +111,7 @@ export default {
         fetchCategory: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/category').then((response) => {
+            this.axios.get('/category').then((response) => {
                 //  console.log(response.data);
                 this.category = response.data.data;
             }).catch((error) => {
@@ -131,7 +131,7 @@ export default {
             form.append('date', self.post.date);
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/products', form)
+            axios.post('/products', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.guarantor = '';

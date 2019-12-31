@@ -96,7 +96,7 @@ export default {
         fetchMember: function() {
             console.log('Fetching data....');
 
-            this.axios.get('/api/member').then((response) => {
+            this.axios.get('/member').then((response) => {
                 //  console.log(response.data);
                 this.member = response.data.data;
             }).catch((error) => {
@@ -117,7 +117,7 @@ export default {
 
 
             //let params = Object.assign({}, self.post);
-            axios.post('/api/vehicle', form)
+            axios.post('/vehicle', form)
                 .then((response) => {
                     self.allerrors = [];
                     self.post.registration_no = '';
