@@ -63,6 +63,8 @@
                             </div>
                         </div>
                     </form>
+                    <h3>Email: admin@gmail.com</h3>
+                    <h3>Password: password <h3>
                 </div>
             </div>
         </div>
